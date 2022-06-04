@@ -517,7 +517,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title bt text-center pt-100 mb-30 section-title-res">
-                        <h2>Featured Books</h2>
+                        <h2>Latest Books</h2>
                     </div>
                 </div>
             </div>
