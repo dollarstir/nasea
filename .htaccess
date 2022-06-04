@@ -1,0 +1,18 @@
+DirectoryIndex engine.php
+
+# enable apache rewrite engine
+RewriteEngine on
+
+# Deliver the folder or file directly if it exists on the server
+RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+ 
+# Redirect all php and html files to engine.php
+# RewriteRule \/?(.+)\.(php|html)$ engine.php [L]
+
+# Redirect all asseets files to respective subfolder or location
+# RewriteRule \/?(.+)\.(.+)$ $1.$2 [L]
+
+#  Push every request to index.php
+RewriteRule ^(.*)$ engine.php [QSA]
+
