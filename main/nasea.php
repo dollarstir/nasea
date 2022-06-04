@@ -616,6 +616,8 @@
                             </div>
                         </div>
                     </div>
+
+                    
                     <!-- single-product-end -->
                 </div>
                 <div class="tab-total">
