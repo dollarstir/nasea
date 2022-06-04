@@ -5,7 +5,14 @@ $router = new Router([
     new Route(
         '/',
         function ($context) {
-            return Viewer::view('install.php', $context);
+            return Viewer::view('nasea.php', $context);
+        }
+    ),
+
+    new Route(
+        '/home',
+        function ($context) {
+            return Viewer::view('nasea.php', $context);
         }
     ),
 ]);
