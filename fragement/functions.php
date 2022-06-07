@@ -280,8 +280,8 @@ function mainmenu($pid)
         ],
         'About' => 'aboutus',
         'Contact' => 'contact',
-        'View Cart' => 'cart',
         'Free Peoms' => 'poems',
+        'View Cart' => 'cart',
     ];
 
     $tt = '<!-- main-menu-area-start -->
