@@ -280,6 +280,7 @@ function mainmenu($pid)
         ],
         'About' => 'aboutus',
         'Contact' => 'contact',
+        'View Cart' => 'cart',
     ];
 
     $tt = '<!-- main-menu-area-start -->
