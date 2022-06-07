@@ -281,6 +281,7 @@ function mainmenu($pid)
         'About' => 'aboutus',
         'Contact' => 'contact',
         'View Cart' => 'cart',
+        'Free Peoms' => 'poems',
     ];
 
     $tt = '<!-- main-menu-area-start -->
