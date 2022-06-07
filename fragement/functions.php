@@ -272,6 +272,7 @@ function mainmenu($pid)
 {
     $pages = [
         'Home' => 'home',
+        'Books' => 'books',
         'Categories' => [
             'Poem' => 'poem',
             'History' => 'history',
@@ -327,6 +328,8 @@ function mainmenu($pid)
         </div>
     </div>
     <!-- main-menu-area-end -->';
+
+    return $tt;
 }
 
 function mobilemenu()
