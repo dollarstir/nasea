@@ -159,3 +159,8 @@ function footer()
     <!-- footer-bottom-end -->
 </footer>';
 }
+
+// logical navbar by dollarstir
+function navbar($pid)
+{
+}
