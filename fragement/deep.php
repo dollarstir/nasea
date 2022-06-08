@@ -93,8 +93,10 @@ function minicart()
 function countcart()
 {
     if (!empty($_SESSION['cart'])) {
-        $total = 0;
-        foreach ($_SESSION['cart'] as $key => $value) {
-        }
+        $count = count($_SESSION['cart']);
+    } else {
+        $count = '0';
     }
+
+    return $count;
 }
