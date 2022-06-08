@@ -100,3 +100,17 @@ function countcart()
 
     return $count;
 }
+
+function carttotal()
+{
+    if (!empty($_SESSION['cart'])) {
+        $total = 0;
+        foreach ($_SESSION['cart'] as $key => $value) {
+            $total + $value['bookprice'];
+        }
+    } else {
+        $total = 0;
+    }
+
+    return $total;
+}
