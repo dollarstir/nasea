@@ -22,5 +22,12 @@ $router = new Router([
             return Viewer::view('main/products.php', $context);
         }
     ),
+
+    new Route(
+        '/cart',
+        function ($context) {
+            return Viewer::view('main/mycart.php', $context);
+        }
+    ),
 ]);
 $router->launch();
