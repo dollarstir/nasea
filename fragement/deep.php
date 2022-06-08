@@ -44,4 +44,28 @@ function addtocart($id)
 
 function viewcartmain()
 {
+    if (!empty($_SESSION['cart'])) {
+        $total = 0;
+
+        foreach ($_SESSION['cart'] as $key => $value) {
+            echo '<tr>
+            <td class="product-thumbnail"><a href="#"><img src="yolkassets/upload/'.$value['bookcover'].'" alt="man" /></a></td>
+            <td class="product-name"><a href="#">'.$value['bookname'].'</a></td>
+            <td class="product-price"><span class="amount">&#8373'.$value['price'].'</span></td>
+            <!--<td class="product-quantity"><input type="number" value="1"></td>-->
+            <!--<td class="product-subtotal">£165.00</td>-->
+            <td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
+        </tr>';
+        }
+    }
+}
+
+function deletefromcart($id)
+{
+    foreach ($_SESSION['cart'] as $keys => $values) {
+        if ($values['item_id'] == $_GET['id']) {
+            unset($_SESSION['cart'][$keys]);
+            echo 'Item Removed';
+        }
+    }
 }
