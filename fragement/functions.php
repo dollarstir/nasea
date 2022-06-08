@@ -4,7 +4,7 @@
 // Author : Frederick Ennin (Dollarstir)
 //
 // Email: kpin463@gmail.com
-
+include 'deep.php';
 function begin($title)
 {
     echo '<!doctype html>
@@ -263,18 +263,7 @@ function topbars()
                                 <span>2</span>
                                 <div class="mini-cart-sub">
                                     <div class="cart-product">
-                                        <div class="single-cart">
-                                            <div class="cart-img">
-                                                <a href="main/#"><img src="main/img/product/1.jpg" alt="book" /></a>
-                                            </div>
-                                            <div class="cart-info">
-                                                <h5><a href="main/#">Joust Duffle Bag</a></h5>
-                                                <p>1 x £60.00</p>
-                                            </div>
-                                            <div class="cart-icon">
-                                                <a href="main/#"><i class="fa fa-remove"></i></a>
-                                            </div>
-                                        </div>
+                                        '.minicart().'
                                         <div class="single-cart">
                                             <div class="cart-img">
                                                 <a href="main/#"><img src="main/img/product/3.jpg" alt="book" /></a>
@@ -289,7 +278,7 @@ function topbars()
                                         </div>
                                     </div>
                                     <div class="cart-totals">
-                                        <h5>Total <span>&#8373'.carttotal().'</span></h5>
+                                        <h5>Total <span>&#8373;'.carttotal().'</span></h5>
                                     </div>
                                     <div class="cart-bottom">
                                         <a class="view-cart" href="cart">view cart</a>

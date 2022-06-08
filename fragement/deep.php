@@ -104,12 +104,12 @@ function countcart()
 function carttotal()
 {
     if (!empty($_SESSION['cart'])) {
-        $total = 0;
+        $total = 0.00;
         foreach ($_SESSION['cart'] as $key => $value) {
             $total + $value['bookprice'];
         }
     } else {
-        $total = 0;
+        $total = '0.00';
     }
 
     return $total;
