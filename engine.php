@@ -29,5 +29,12 @@ $router = new Router([
             return Viewer::view('main/mycart.php', $context);
         }
     ),
+
+    new Route(
+        '/checkout',
+        function ($context) {
+            return Viewer::view('main/mycheckout.php', $context);
+        }
+    ),
 ]);
 $router->launch();
