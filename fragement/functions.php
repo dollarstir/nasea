@@ -42,7 +42,7 @@ function begin($title)
         <!-- modernizr css -->
         
         <script src="main/js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="processor/processor.js"></script>
+        
     </head>';
 }
 
@@ -193,7 +193,9 @@ function scripts()
     <!-- plugins js -->
     <script src="main/js/plugins.js"></script>
     <!-- main js -->
-    <script src="main/js/main.js"></script>';
+    <script src="main/js/main.js"></script>
+    <script src="processor/processor.js"></script>
+    ';
 }
 
 function topbars()

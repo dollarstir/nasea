@@ -1,5 +1,7 @@
 
 $(function(){
+
+  alert('hi there');
    $('#socl').click(function(){
     swal({
         title: "Done!",
