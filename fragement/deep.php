@@ -27,7 +27,17 @@ function addtocart($id)
             $_SESSION['cart'][$count] = $cartitem;
 
             echo 'added to cart';
+        } else {
+            echo 'Item already in cart';
         }
     } else {
+        $cartitem = [
+            'bookid' => $id,
+            'bookname' => 'bookname',
+            'bookcover' => 'bookcover.png',
+            'bookprice' => 20,
+        ];
+
+        $_SESSION['cart'][0] = $cartitem;
     }
 }
