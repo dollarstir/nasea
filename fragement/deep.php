@@ -14,7 +14,20 @@ function addtocart($id)
 {
     initsession();
     if (isset($_SESSION['cart'])) {
-        $bookid = array_column($_SESSION['cart'])
+        $bookid = array_column($_SESSION['cart'], 'bookid');
+        if (!in_array($id, $bookid)) {
+            $count = count($_SESSION['cart']);
+            $cartitem = [
+                'bookid' => $id,
+                'bookname' => 'bookname',
+                'bookcover' => 'bookcover.png',
+                'bookprice' => 20,
+            ];
+
+            $_SESSION['cart'][$count] = $cartitem;
+
+            echo 'added to cart';
+        }
     } else {
     }
 }
