@@ -12,4 +12,9 @@
 
 function addtocart($id)
 {
+    initsession();
+    if (isset($_SESSION['cart'])) {
+        $bookid = array_column($_SESSION['cart'])
+    } else {
+    }
 }
