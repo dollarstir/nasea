@@ -41,3 +41,7 @@ function addtocart($id)
         $_SESSION['cart'][0] = $cartitem;
     }
 }
+
+function viewcartmain()
+{
+}
