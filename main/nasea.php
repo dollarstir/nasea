@@ -121,586 +121,1033 @@ begin('Welcome');
                     </div>
                 </div>
             </div>
-            <div class="tab-active owl-carousel">
-                <div class="tab-total">
-                    <!-- single-product-start -->
-                    <div class="product-wrapper mb-40">
-                        <div class="product-img">
-                            <a href="main/#">
-                                <img src="main/img/product/1.jpg" alt="book" class="primary" />
-                            </a>
-                            <div class="quick-view">
-                                <a class="action-view" href="main/#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </div>
-                            <div class="product-flag">
-                                <ul>
-                                    <li><span class="sale">new</span> </li>
-                                    <li><span class="discount-percentage">-5%</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-details text-center">
-                            <div class="product-rating">
-                                <ul>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4><a href="main/#">Joust Duffle Bag</a></h4>
-                            <div class="product-price">
-                                <ul>
-                                    <li>$60.00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-link">
-                            <div class="product-button">
-                                <a href="main/#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                            </div>
-                            <div class="add-to-link">
-                                <ul>
-                                    <li><a href="main/product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-product-end -->
-                    <!-- single-product-start -->
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <a href="main/#">
-                                <img src="main/img/product/18.jpg" alt="book" class="primary" />
-                            </a>
-                            <div class="quick-view">
-                                <a class="action-view" href="main/#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </div>
-                            <div class="product-flag">
-                                <ul>
-                                    <li><span class="sale">new</span> <br></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-details text-center">
-                            <div class="product-rating">
-                                <ul>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4><a href="main/#">Driven Backpack</a></h4>
-                            <div class="product-price">
-                                <ul>
-                                    <li>$34.00</li>
-                                    <li class="old-price">$36.00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-link">
-                            <div class="product-button">
-                                <a href="main/#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                            </div>
-                            <div class="add-to-link">
-                                <ul>
-                                    <li><a href="main/product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <!-- single-product-end -->
-                </div>
-                <div class="tab-total">
-                    <!-- single-product-start -->
-                    <div class="product-wrapper mb-40">
-                        <div class="product-img">
-                            <a href="main/#">
-                                <img src="main/img/product/3.jpg" alt="book" class="primary" />
-                            </a>
-                            <div class="quick-view">
-                                <a class="action-view" href="main/#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </div>
-                            <div class="product-flag">
-                                <ul>
-                                    <li><span class="sale">new</span> <br></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-details text-center">
-                            <div class="product-rating">
-                                <ul>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4><a href="main/#">Chaz Kangeroo Hoodie</a></h4>
-                            <div class="product-price">
-                                <ul>
-                                    <li>$52.00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-link">
-                            <div class="product-button">
-                                <a href="main/#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                            </div>
-                            <div class="add-to-link">
-                                <ul>
-                                    <li><a href="main/product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-product-end -->
-                    <!-- single-product-start -->
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <a href="main/#">
-                                <img src="main/img/product/10.jpg" alt="book" class="primary" />
-                            </a>
-                            <div class="quick-view">
-                                <a class="action-view" href="main/#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </div>
-                            <div class="product-flag">
-                                <ul>
-                                    <li><span class="sale">new</span> </li>
-                                    <li><span class="discount-percentage">-5%</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-details text-center">
-                            <div class="product-rating">
-                                <ul>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4><a href="main/#">Fusion Backpack</a></h4>
-                            <div class="product-price">
-                                <ul>
-                                    <li>$59.00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-link">
-                            <div class="product-button">
-                                <a href="main/#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                            </div>
-                            <div class="add-to-link">
-                                <ul>
-                                    <li><a href="main/product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-product-end -->
-                </div>
-                <div class="tab-total">
-                    <!-- single-product-start -->
-                    <div class="product-wrapper mb-40">
-                        <div class="product-img">
-                            <a href="main/#">
-                                <img src="main/img/product/5.jpg" alt="book" class="primary" />
-                            </a>
-                            <div class="quick-view">
-                                <a class="action-view" href="main/#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </div>
-                            <div class="product-flag">
-                                <ul>
-                                    <li><span class="sale">new</span> </li>
-                                    <li><span class="discount-percentage">-5%</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-details text-center">
-                            <div class="product-rating">
-                                <ul>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4><a href="main/#">Set of Sprite Yoga Straps</a></h4>
-                            <div class="product-price">
-                                <ul>
-                                    <li>$34.00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-link">
-                            <div class="product-button">
-                                <a href="main/#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                            </div>
-                            <div class="add-to-link">
-                                <ul>
-                                    <li><a href="main/product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-product-end -->
-                    <!-- single-product-start -->
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <a href="main/#">
-                                <img src="main/img/product/19.jpg" alt="book" class="primary" />
-                            </a>
-                            <div class="quick-view">
-                                <a class="action-view" href="main/#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </div>
-                            <div class="product-flag">
-                                <ul>
-                                    <li><span class="sale">new</span> </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-details text-center">
-                            <div class="product-rating">
-                                <ul>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4><a href="main/#">Compete Track Tote</a></h4>
-                            <div class="product-price">
-                                <ul>
-                                    <li>$32.00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-link">
-                            <div class="product-button">
-                                <a href="main/#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                            </div>
-                            <div class="add-to-link">
-                                <ul>
-                                    <li><a href="main/product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-product-end -->
-                </div>
-                <div class="tab-total">
-                    <!-- single-product-start -->
-                    <div class="product-wrapper mb-40">
-                        <div class="product-img">
-                            <a href="main/#">
-                                <img src="main/img/product/7.jpg" alt="book" class="primary" />
-                            </a>
-                            <div class="quick-view">
-                                <a class="action-view" href="main/#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </div>
-                            <div class="product-flag">
-                                <ul>
-                                    <li><span class="sale">new</span> <br></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-details text-center">
-                            <div class="product-rating">
-                                <ul>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4><a href="main/#">Strive Shoulder Pack</a></h4>
-                            <div class="product-price">
-                                <ul>
-                                    <li>$30.00</li>
-                                    <li class="old-price">$32.00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-link">
-                            <div class="product-button">
-                                <a href="main/#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                            </div>
-                            <div class="add-to-link">
-                                <ul>
-                                    <li><a href="main/product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-product-end -->
-                    <!-- single-product-start -->
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <a href="main/#">
-                                <img src="main/img/product/4.jpg" alt="book" class="primary" />
-                            </a>
-                            <div class="quick-view">
-                                <a class="action-view" href="main/#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </div>
-                            <div class="product-flag">
-                                <ul>
-                                    <li><span class="sale">new</span> </li>
-                                    <li><span class="discount-percentage">-5%</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-details text-center">
-                            <div class="product-rating">
-                                <ul>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4><a href="main/#">Chaz Kangeroo Hoodie</a></h4>
-                            <div class="product-price">
-                                <ul>
-                                    <li>$52.00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-link">
-                            <div class="product-button">
-                                <a href="main/#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                            </div>
-                            <div class="add-to-link">
-                                <ul>
-                                    <li><a href="main/product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-product-end -->
-                </div>
-                <div class="tab-total">
-                    <!-- single-product-start -->
-                    <div class="product-wrapper mb-40">
-                        <div class="product-img">
-                            <a href="main/#">
-                                <img src="main/img/product/9.jpg" alt="book" class="primary" />
-                            </a>
-                            <div class="quick-view">
-                                <a class="action-view" href="main/#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </div>
-                            <div class="product-flag">
-                                <ul>
-                                    <li><span class="discount-percentage">-5%</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-details text-center">
-                            <div class="product-rating">
-                                <ul>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4><a href="main/#">Wayfarer Messenger Bag</a></h4>
-                            <div class="product-price">
-                                <ul>
-                                    <li>$35.00</li>
-                                    <li class="old-price">$40.00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-link">
-                            <div class="product-button">
-                                <a href="main/#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                            </div>
-                            <div class="add-to-link">
-                                <ul>
-                                    <li><a href="main/product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-product-end -->
-                    <!-- single-product-start -->
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <a href="main/#">
-                                <img src="main/img/product/8.jpg" alt="book" class="primary" />
-                            </a>
-                            <div class="quick-view">
-                                <a class="action-view" href="main/#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </div>
-                            <div class="product-flag">
-                                <ul>
-                                    <li><span class="sale">new</span> </li>
-                                    <li><span class="discount-percentage">-5%</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-details text-center">
-                            <div class="product-rating">
-                                <ul>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4><a href="main/#">Rival Messenger</a></h4>
-                            <div class="product-price">
-                                <ul>
-                                    <li>$35.00</li>
-                                    <li class="old-price">$40.00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-link">
-                            <div class="product-button">
-                                <a href="main/#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                            </div>
-                            <div class="add-to-link">
-                                <ul>
-                                    <li><a href="main/product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-product-end -->
-                </div>
-                <div class="tab-total">
-                    <!-- single-product-start -->
-                    <div class="product-wrapper mb-40">
-                        <div class="product-img">
-                            <a href="main/#">
-                                <img src="main/img/product/11.jpg" alt="book" class="primary" />
-                            </a>
-                            <div class="quick-view">
-                                <a class="action-view" href="main/#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </div>
-                            <div class="product-flag">
-                                <ul>
-                                    <li><span class="sale">new</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-details text-center">
-                            <div class="product-rating">
-                                <ul>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4><a href="main/#">Impulse Duffle</a></h4>
-                            <div class="product-price">
-                                <ul>
-                                    <li>$74.00</li>
-                                    <li class="old-price">$78.00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-link">
-                            <div class="product-button">
-                                <a href="main/#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                            </div>
-                            <div class="add-to-link">
-                                <ul>
-                                    <li><a href="main/product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-product-end -->
-                    <!-- single-product-start -->
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <a href="main/#">
-                                <img src="main/img/product/3.jpg" alt="book" class="primary" />
-                            </a>
-                            <div class="quick-view">
-                                <a class="action-view" href="main/#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </div>
-                            <div class="product-flag">
-                                <ul>
-                                    <li><span class="sale">new</span> </li>
-                                    <li><span class="discount-percentage">-5%</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-details text-center">
-                            <div class="product-rating">
-                                <ul>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                    <li><a href="main/#"><i class="fa fa-star"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4><a href="main/#">Crown Summit</a></h4>
-                            <div class="product-price">
-                                <ul>
-                                    <li>$36.00</li>
-                                    <li class="old-price">$38.00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-link">
-                            <div class="product-button">
-                                <a href="main/#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                            </div>
-                            <div class="add-to-link">
-                                <ul>
-                                    <li><a href="main/product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-product-end -->
-                </div>
-            </div>
+            	<!-- tab-area-start -->
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="th">
+							<div class="row">
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/1.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="sale">new</span></li>
+													<li><span class="discount-percentage">-5%</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Joust Duffle Bag</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$60.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/18.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="sale">new</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Driven Backpack</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$34.00</li>
+													<li class="old-price">$36.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/3.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="discount-percentage">-5%</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Chaz Kangeroo Hoodie</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$52.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/10.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="sale">new</span></li>
+													<li><span class="discount-percentage">-5%</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Fusion Backpack</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$59.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/5.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="sale">new</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Set of Sprite Yoga Straps</a></h4>
+											<div class="product-price">
+												<ul>
+													<li> <span>Starting at</span>$34.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/19.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="sale">new</span></li>
+													<li><span class="discount-percentage">-5%</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Compete Track Tote</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$32.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/7.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="discount-percentage">-5%</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Strive Shoulder Pack</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$30.00</li>
+													<li class="old-price">$32.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/4.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="discount-percentage">-5%</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Chaz Kangeroo Hoodie</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$52.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/1.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="sale">new</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Joust Duffle Bag</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$60.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/18.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="sale">new</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Driven Backpack</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$34.00</li>
+													<li class="old-price">$36.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/3.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="sale">new</span></li>
+													<li><span class="discount-percentage">-5%</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Chaz Kangeroo Hoodie</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$52.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/10.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="discount-percentage">-5%</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Fusion Backpack</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$59.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/9.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="sale">new</span></li>
+													<li><span class="discount-percentage">-5%</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Wayfarer Messenger Bag</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$35.00</li>
+													<li class="old-price">$40.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/8.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="discount-percentage">-5%</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Rival Messenger</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$35.00</li>
+													<li class="old-price">$40.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40 hidden-sm">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/11.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="sale">new</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Impulse Duffle</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$74.00</li>
+													<li class="old-price">$78.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+								<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+									<!-- single-product-start -->
+									<div class="product-wrapper mb-40 hidden-md hidden-sm">
+										<div class="product-img">
+											<a href="#">
+												<img src="main/img/product/3.jpg" alt="book" class="primary" />
+											</a>
+											<div class="quick-view">
+												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
+													<i class="fa fa-search-plus"></i>
+												</a>
+											</div>
+											<div class="product-flag">
+												<ul>
+													<li><span class="sale">new</span></li>
+													<li><span class="discount-percentage">-5%</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-details text-center">
+											<div class="product-rating">
+												<ul>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+													<li><a href="#"><i class="fa fa-star"></i></a></li>
+												</ul>
+											</div>
+											<h4><a href="#">Crown Summit</a></h4>
+											<div class="product-price">
+												<ul>
+													<li>$36.00</li>
+													<li class="old-price">$38.00</li>
+												</ul>
+											</div>
+										</div>
+										<div class="product-link">
+											<div class="product-button">
+												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											<div class="add-to-link">
+												<ul>
+													<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- single-product-end -->
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="list">
+							<!-- single-shop-start -->
+							<div class="single-shop mb-30">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-12">
+										<div class="product-wrapper-2">
+											<div class="product-img">
+												<a href="#">
+													<img src="main/img/product/3.jpg" alt="book" class="primary" />
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-12">
+										<div class="product-wrapper-content">
+											<div class="product-details">
+												<div class="product-rating">
+													<ul>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+													</ul>
+												</div>
+												<h4><a href="#">Crown Summit</a></h4>
+												<div class="product-price">
+													<ul>
+														<li>$36.00</li>
+														<li class="old-price">$38.00</li>
+													</ul>
+												</div>
+												<p>The sporty Joust Duffle Bag can't be beat - not in the gym, not on the luggage carousel, not anywhere. Big enough to haul a basketball or soccer ball and some sneakers with plenty of room to spare,... </p>
+											</div>
+											<div class="product-link">
+												<div class="product-button">
+													<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												</div>
+												<div class="add-to-link">
+													<ul>
+														<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- single-shop-end -->
+							<!-- single-shop-start -->
+							<div class="single-shop mb-30">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-12">
+										<div class="product-wrapper-2">
+											<div class="product-img">
+												<a href="#">
+													<img src="main/img/product/18.jpg" alt="book" class="primary" />
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-12">
+										<div class="product-wrapper-content">
+											<div class="product-details">
+												<div class="product-rating">
+													<ul>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+													</ul>
+												</div>
+												<h4><a href="#">Driven Backpack</a></h4>
+												<div class="product-price">
+													<ul>
+														<li>$34.00</li>
+														<li class="old-price">$36.00</li>
+													</ul>
+												</div>
+												<p>The sporty Joust Duffle Bag can't be beat - not in the gym, not on the luggage carousel, not anywhere. Big enough to haul a basketball or soccer ball and some sneakers with plenty of room to spare,... </p>
+											</div>
+											<div class="product-link">
+												<div class="product-button">
+													<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												</div>
+												<div class="add-to-link">
+													<ul>
+														<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- single-shop-end -->
+							<!-- single-shop-start -->
+							<div class="single-shop mb-30">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-12">
+										<div class="product-wrapper-2">
+											<div class="product-img">
+												<a href="#">
+													<img src="main/img/product/10.jpg" alt="book" class="primary" />
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-12">
+										<div class="product-wrapper-content">
+											<div class="product-details">
+												<div class="product-rating">
+													<ul>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+													</ul>
+												</div>
+												<h4><a href="#">Fusion Backpack</a></h4>
+												<div class="product-price">
+													<ul>
+														<li>$59.00</li>
+													</ul>
+												</div>
+												<p>The sporty Joust Duffle Bag can't be beat - not in the gym, not on the luggage carousel, not anywhere. Big enough to haul a basketball or soccer ball and some sneakers with plenty of room to spare,... </p>
+											</div>
+											<div class="product-link">
+												<div class="product-button">
+													<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												</div>
+												<div class="add-to-link">
+													<ul>
+														<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- single-shop-end -->
+							<!-- single-shop-start -->
+							<div class="single-shop mb-30">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-12">
+										<div class="product-wrapper-2">
+											<div class="product-img">
+												<a href="#">
+													<img src="main/img/product/5.jpg" alt="book" class="primary" />
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-12">
+										<div class="product-wrapper-content">
+											<div class="product-details">
+												<div class="product-rating">
+													<ul>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+													</ul>
+												</div>
+												<h4><a href="#">Set of Sprite Yoga Straps</a></h4>
+												<div class="product-price">
+													<ul>
+														<li> <span>Starting at</span>$34.00</li>
+													</ul>
+												</div>
+												<p>The sporty Joust Duffle Bag can't be beat - not in the gym, not on the luggage carousel, not anywhere. Big enough to haul a basketball or soccer ball and some sneakers with plenty of room to spare,... </p>
+											</div>
+											<div class="product-link">
+												<div class="product-button">
+													<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												</div>
+												<div class="add-to-link">
+													<ul>
+														<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- single-shop-end -->
+							<!-- single-shop-start -->
+							<div class="single-shop">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-12">
+										<div class="product-wrapper-2">
+											<div class="product-img">
+												<a href="#">
+													<img src="main/img/product/19.jpg" alt="book" class="primary" />
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-8 col-md-8 col-12">
+										<div class="product-wrapper-content">
+											<div class="product-details">
+												<div class="product-rating">
+													<ul>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+														<li><a href="#"><i class="fa fa-star"></i></a></li>
+													</ul>
+												</div>
+												<h4><a href="#">Compete Track Tote</a></h4>
+												<div class="product-price">
+													<ul>
+														<li>$32.00</li>
+													</ul>
+												</div>
+												<p>The sporty Joust Duffle Bag can't be beat - not in the gym, not on the luggage carousel, not anywhere. Big enough to haul a basketball or soccer ball and some sneakers with plenty of room to spare,... </p>
+											</div>
+											<div class="product-link">
+												<div class="product-button">
+													<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												</div>
+												<div class="add-to-link">
+													<ul>
+														<li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- single-shop-end -->
+						</div>
+					</div>
+					<!-- tab-area-end -->
         </div>
     </div>
     <!-- new-book-area-start -->
