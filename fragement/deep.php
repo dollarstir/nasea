@@ -92,5 +92,9 @@ function minicart()
 
 function countcart()
 {
-    if()
+    if (!empty($_SESSION['cart'])) {
+        $total = 0;
+        foreach ($_SESSION['cart'] as $key => $value) {
+        }
+    }
 }
