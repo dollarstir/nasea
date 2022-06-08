@@ -287,7 +287,7 @@ function topbars()
                                     </div>
                                     <div class="cart-bottom">
                                         <a class="view-cart" href="cart">view cart</a>
-                                        <a href="main/checkout.html">Check out</a>
+                                        <a href="checkout">Check out</a>
                                     </div>
                                 </div>
                             </li>
