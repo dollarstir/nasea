@@ -23,6 +23,7 @@ function begin($title)
         <!-- bootstrap v3.3.6 css -->
         <link rel="stylesheet" href="main/css/bootstrap.min.css">
         <!-- animate css -->
+        '.Yolk::uicore('cssa').'
         <link rel="stylesheet" href="main/css/animate.css">
         <!-- meanmenu css -->
         <link rel="stylesheet" href="main/css/meanmenu.min.css">
@@ -164,6 +165,7 @@ function scripts()
 {
     echo '<!-- jquery latest version -->
     <script src="main/js/vendor/jquery-1.12.4.min.js"></script>
+    '.Yolk::uicore('jsa').'
     <!-- popper js -->
     <script src="main/js/popper.min.js"></script>
     <!-- bootstrap js -->
