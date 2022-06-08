@@ -40,7 +40,9 @@ function begin($title)
         <!-- responsive css -->
         <link rel="stylesheet" href="main/css/responsive.css">
         <!-- modernizr css -->
+        
         <script src="main/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="processor/processor.js"></script>
     </head>';
 }
 
