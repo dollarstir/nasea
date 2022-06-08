@@ -193,7 +193,7 @@ begin('Checkout');
                                             </div>
                                         </div>								
                                     </div>
-                                    <div class="different-address">
+                                    <!-- <div class="different-address">
                                             <div class="ship-different-title">
                                                 <h3>
                                                     <label>Ship to a different address?</label>
@@ -282,7 +282,7 @@ begin('Checkout');
                                                 <textarea placeholder="Notes about your order, e.g. special notes for delivery." rows="10" cols="30" id="checkout-mess"></textarea>
                                             </div>									
                                         </div>
-                                    </div>													
+                                    </div>													 -->
                                 </div>
                             </div>
                                 <div class="col-lg-6 col-md-12 col-12">
