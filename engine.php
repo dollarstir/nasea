@@ -15,5 +15,12 @@ $router = new Router([
             return Viewer::view('main/nasea.php', $context);
         }
     ),
+
+    new Route(
+        '/books',
+        function ($context) {
+            return Viewer::view('main/products.php', $context);
+        }
+    ),
 ]);
 $router->launch();

@@ -1412,34 +1412,7 @@ begin('Welcome');
 
 
     <!-- all js here -->
-    <!-- jquery latest version -->
-    <script src="main/js/vendor/jquery-1.12.4.min.js"></script>
-    <!-- popper js -->
-    <script src="main/js/popper.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="main/js/bootstrap.min.js"></script>
-    <!-- owl.carousel js -->
-    <script src="main/js/owl.carousel.min.js"></script>
-    <!-- meanmenu js -->
-    <script src="main/js/jquery.meanmenu.js"></script>
-    <!-- wow js -->
-    <script src="main/js/wow.min.js"></script>
-    <!-- jquery.parallax-1.1.3.js -->
-    <script src="main/js/jquery.parallax-1.1.3.js"></script>
-    <!-- jquery.countdown.min.js -->
-    <script src="main/js/jquery.countdown.min.js"></script>
-    <!-- jquery.flexslider.js -->
-    <script src="main/js/jquery.flexslider.js"></script>
-    <!-- chosen.jquery.min.js -->
-    <script src="main/js/chosen.jquery.min.js"></script>
-    <!-- jquery.counterup.min.js -->
-    <script src="main/js/jquery.counterup.min.js"></script>
-    <!-- waypoints.min.js -->
-    <script src="main/js/waypoints.min.js"></script>
-    <!-- plugins js -->
-    <script src="main/js/plugins.js"></script>
-    <!-- main js -->
-    <script src="main/js/main.js"></script>
+    <?php scripts(); ?>
 </body>
 
 </html>
