@@ -45,10 +45,8 @@ function addtocart($id)
 function viewcartmain()
 {
     if (!empty($_SESSION['cart'])) {
-        $total = 0;
-
         foreach ($_SESSION['cart'] as $key => $value) {
-            echo '<tr>
+            return '<tr>
             <td class="product-thumbnail"><a href="#"><img src="yolkassets/upload/'.$value['bookcover'].'" alt="man" /></a></td>
             <td class="product-name"><a href="#">'.$value['bookname'].'</a></td>
             <td class="product-price"><span class="amount">&#8373'.$value['price'].'</span></td>
@@ -57,6 +55,8 @@ function viewcartmain()
             <td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
         </tr>';
         }
+    } else {
+        return 'empty cart';
     }
 }
 
@@ -68,4 +68,29 @@ function deletefromcart($id)
             echo 'Item Removed';
         }
     }
+}
+
+function minicart()
+{
+    if (!empty($_SESSION['cart'])) {
+        foreach ($_SESSION['cart'] as $key => $value) {
+            return '<div class="single-cart">
+            <div class="cart-img">
+                <a href="main/#"><img src="yolkassets/upload/'.$value['bookcover'].'" alt="book" /></a>
+            </div>
+            <div class="cart-info">
+                <h5><a href="main/#">'.$value['bookname'].'</a></h5>
+                <p>&#8373'.$value['bookprice'].'</p>
+            </div>
+            <div class="cart-icon">
+                <a href=""><i class="fa fa-remove"></i></a>
+            </div>
+        </div>';
+        }
+    }
+}
+
+function countcart()
+{
+    if()
 }
