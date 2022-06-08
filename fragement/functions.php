@@ -286,7 +286,7 @@ function topbars()
                                         <h5>Total <span>£12.00</span></h5>
                                     </div>
                                     <div class="cart-bottom">
-                                        <a class="view-cart" href="main/cart.html">view cart</a>
+                                        <a class="view-cart" href="cart">view cart</a>
                                         <a href="main/checkout.html">Check out</a>
                                     </div>
                                 </div>
