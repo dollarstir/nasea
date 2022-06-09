@@ -74,8 +74,8 @@ function deletefromcart($id)
 
 function minicart()
 {
+    $tt = '';
     if (!empty($_SESSION['cart'])) {
-        $tt = '';
         foreach ($_SESSION['cart'] as $key => $value) {
             $tt .= '<div class="single-cart">
             <div class="cart-img">
@@ -94,7 +94,7 @@ function minicart()
         $tt .= '';
     }
 
-    return $tt;
+    var_dump($_SESSION['cart']);
 }
 
 function countcart()

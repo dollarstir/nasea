@@ -1,5 +1,7 @@
 <?php
 
+ initsession();
+
 // created on 4th June , 2022
 // Author : Frederick Ennin (Dollarstir)
 //
