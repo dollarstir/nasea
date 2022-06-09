@@ -175,4 +175,6 @@ function coupon($amount)
 {
     initsession();
     $_SESSION['coupon'] = $amount;
+
+    echo 'couponapplied';
 }
