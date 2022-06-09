@@ -302,16 +302,16 @@ begin('Checkout');
                                             <tfoot>
                                                 <tr class="cart-subtotal">
                                                     <th>Cart Subtotal</th>
-                                                    <td><span class="amount">£215.00</span></td>
+                                                    <td><span class="amount">&#8373;<span id="subt"><?php echo carttotal(); ?></span></span></td>
                                                 </tr>
                                                 <tr class="shipping">
-                                                    <th>Shipping</th>
-                                                    <!-- <td>
+                                                  
+                                                    <td>
                                                         <ul>
                                                             <li>
-                                                                <input type="radio">
+                                                               
                                                                 <label>
-                                                                    Flat Rate: <span class="amount">£7.00</span>
+                                                                    Discount <span class="amount">£7.00</span>
                                                                 </label>
                                                             </li>
                                                             <li>
@@ -320,7 +320,7 @@ begin('Checkout');
                                                             </li>
                                                             <li></li>
                                                         </ul>
-                                                    </td> -->
+                                                    </td>
                                                 </tr>
                                                 <tr class="order-total">
                                                     <th>Order Total</th>

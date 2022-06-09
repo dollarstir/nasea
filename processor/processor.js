@@ -77,6 +77,7 @@ $(function(){
               $("#minicart").load('processor/processor.php?action=viewcart');
               $("#cartot").load('processor/processor.php?action=carttotal');
               $("#vcart").load('processor/processor.php?action=viewmaincart');
+              $("#checkcart").load('processor/processor.php?action=checkoutcart');
               swal.close();
               
             });
