@@ -302,7 +302,7 @@ begin('Checkout');
                                             <tfoot>
                                                 <tr class="cart-subtotal">
                                                     <th>Cart Subtotal</th>
-                                                    <td><span class="amount">&#8373;<span id="subt"><?php echo carttotal(); ?></span></span></td>
+                                                    <td><span class="amount">&#8373;<span id="mku"><?php echo carttotal(); ?></span></span></td>
                                                 </tr>
                                                 <tr class="shipping">
                                                   

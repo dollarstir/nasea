@@ -151,7 +151,7 @@ function carttotal()
 
     if (!empty($_SESSION['coupon'])) {
         $coupon = $_SESSION['coupon'];
-        $percent = ($coupon / $total) * 100;
+        $percent = ($coupon / 100) * $total;
     } else {
         $percent = 0.00;
     }

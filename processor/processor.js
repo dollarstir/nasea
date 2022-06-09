@@ -104,8 +104,10 @@ $(function(){
             $("#cartot").load('processor/processor.php?action=carttotal');
             $("#vcart").load('processor/processor.php?action=viewmaincart');
             $("#checkcart").load('processor/processor.php?action=checkoutcart');
-            $("#subt").load('processor/processor.php?action=carttotal');
+            // $("#swee").load('processor/processor.php?action=carttotal1');
             $("#diskc").load('processor/processor.php?action=discount');
+
+            $("#mku").load('processor/processor.php?action=carttotal');
             swal.close();
             
           });
@@ -247,7 +249,7 @@ $('.addtocart').click(function(e){
 });
 
 // remove from cart
-$('.removefromcart').click(function(e){
+$(document).on('click','.removefromcart',function(e){
 
   e.preventDefault();
   // before();

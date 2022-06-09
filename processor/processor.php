@@ -29,6 +29,10 @@ require '../fragement/deep.php';
             initsession();
             echo carttotal();
             break;
+        case 'carttotal1':
+            initsession();
+            echo carttotal();
+            break;
         case 'viewmaincart':
             initsession();
             echo viewcartmain();
