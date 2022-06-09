@@ -163,7 +163,7 @@ begin('Welcome');
 										</div>
 										<div class="product-link">
 											<div class="product-button">
-												<button title="Add to cart" class ="btn btn-success" style="background-color: rgb(240, 124, 41) !important;border:none;"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+												<button title="Add to cart"  class ="btn btn-success addtocart" style="background-color: rgb(240, 124, 41) !important;border:none;"><i class="fa fa-shopping-cart"></i> Add to cart</button>
 											</div>
 											<div class="add-to-link">
 												<ul>
