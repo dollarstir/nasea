@@ -179,7 +179,7 @@ $('.removefromcart').click(function(e){
   // before();
   var id = $(this).attr('id');
   var staff = {
-      url: 'processor/processor.php?action=removefromcart',
+      url: 'processor/processor.php?action=removecart',
       type: 'post',
       data: {"id": id},
       // cache: false,
