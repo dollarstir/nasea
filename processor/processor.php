@@ -33,6 +33,11 @@ require '../fragement/deep.php';
             initsession();
             echo viewcartmain();
             break;
+
+        case 'checkoutcart':
+            initsession();
+            echo checkoutcart();
+            break;
         default:
 
         break;
