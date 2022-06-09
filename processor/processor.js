@@ -92,6 +92,7 @@ $(function(){
             }).then(function (result) {
               // window.location.reload();
               $("#cartcount").load('processor/processor.php?action=countcart');
+              $("#minicart").load('processor/processor.php?action=viewcart');
               swal.close();
             });
 
