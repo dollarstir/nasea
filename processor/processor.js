@@ -161,10 +161,10 @@ $('.addtocart').click(function(e){
   var staff = {
       url: 'processor/processor.php?action=addtocart&id=1',
       type: 'post',
-      data: {"myData":myVar},
-      cache: false,
-      contentType: false,
-      processData: false,
+      data: {"id": 1},
+      // cache: false,
+      // contentType: false,
+      // processData: false,
       beforeSend: before,
       success: resp
 

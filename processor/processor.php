@@ -1,15 +1,17 @@
 <?php
 
 require '../loader/autoloader.php';
-
-if (isset($_GET['action'])) {
-    switch ($_GET['action']) {
+require '../fragement/deep.php';
+ if (isset($_GET['action'])) {
+     switch ($_GET['action']) {
         case 'addtocart':
             extract($_POST);
-            echo $myData;
+            // echo $id;
+            addtocart($id);
+
             break;
         default:
 
         break;
     }
-}
+ }
