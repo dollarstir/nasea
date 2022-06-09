@@ -170,3 +170,9 @@ function discount()
 
     return $cp;
 }
+
+function coupon($amount)
+{
+    initsession();
+    $_SESSION['coupon'] = $amount;
+}
