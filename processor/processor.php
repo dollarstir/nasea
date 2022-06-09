@@ -17,6 +17,7 @@ require '../fragement/deep.php';
             break;
 
         case 'countcart':
+            initsession();
             echo countcart();
             break;
         default:

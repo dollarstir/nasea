@@ -91,7 +91,7 @@ $(function(){
               },
             }).then(function (result) {
               // window.location.reload();
-              $("#cartcount").load('processor.php?action=countcart');
+              $("#cartcount").load('processor/processor.php?action=countcart');
               swal.close();
             });
 
