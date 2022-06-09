@@ -82,7 +82,7 @@ begin('Checkout');
 							<h3>Have a coupon? <span id="showcoupon">Click here to enter your code</span></h3>
 							<div class="coupon-checkout-content" id="checkout_coupon">
 								<div class="coupon-info">
-									<form action="#">
+									<form action="#" id="applycoupon">
 										<p class="checkout-coupon">
 											<input type="text" placeholder="Coupon code">
 											<input type="submit" value="Apply Coupon">

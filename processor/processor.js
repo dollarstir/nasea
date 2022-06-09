@@ -243,18 +243,18 @@ $('.removefromcart').click(function(e){
 // apply coupon
 
 
-$('.addtocart').click(function(e){
+$('.applycoupon').submit(function(e){
 
   e.preventDefault();
   // before();
-  var id = $(this).attr('id');
+  // var id = $(this).attr('id');
   var staff = {
-      url: 'processor/processor.php?action=addtocart&id=1',
+      url: 'processor/processor.php?action=applycoupon',
       type: 'post',
-      data: {"id": id},
-      // cache: false,
-      // contentType: false,
-      // processData: false,
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
       beforeSend: before,
       success: resp
 
