@@ -7,7 +7,7 @@ require '../fragement/deep.php';
         case 'addtocart':
             extract($_POST);
             // echo $id;
-            addtocart($id);
+            echo addtocart($id);
 
             break;
         default:
