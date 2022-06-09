@@ -93,7 +93,7 @@ function minicart()
 
         $tt .= '';
     } else {
-        $tt .= 'Empty Cart';
+        $tt .= '<p style="text-align:center;font-weight:bold;">Empty Cart</p>';
     }
 
     return $tt;

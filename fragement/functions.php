@@ -266,7 +266,7 @@ function topbars()
                                 <div class="mini-cart-sub">
                                     <div class="cart-product">
                                         '.minicart().'
-                                        <div class="single-cart">
+                                        <!--<div class="single-cart">
                                             <div class="cart-img">
                                                 <a href="main/#"><img src="main/img/product/3.jpg" alt="book" /></a>
                                             </div>
@@ -277,7 +277,7 @@ function topbars()
                                             <div class="cart-icon">
                                                 <a href="main/#"><i class="fa fa-remove"></i></a>
                                             </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                     <div class="cart-totals">
                                         <h5>Total <span>&#8373;'.carttotal().'</span></h5>
