@@ -72,7 +72,12 @@ $(function(){
                 swal.showLoading();
               },
             }).then(function (result) {
-              window.location.reload();
+              // window.location.reload();
+              $("#cartcount").load('processor/processor.php?action=countcart');
+              $("#minicart").load('processor/processor.php?action=viewcart');
+              $("#cartot").load('processor/processor.php?action=carttotal');
+              $("#vcart").load('processor/processor.php?action=carttotal');
+              swal.close();
               
             });
 
