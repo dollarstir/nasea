@@ -66,22 +66,15 @@ begin('Cart');
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td class="product-thumbnail"><a href="#"><img src="https://htmldemo.net/koparion/koparion/img/cart/1.jpg" alt="man" /></a></td>
-											<td class="product-name"><a href="#">Vestibulum suscipit</a></td>
-											<td class="product-price"><span class="amount">£165.00</span></td>
-											<td class="product-quantity"><input type="number" value="1"></td>
-											<td class="product-subtotal">£165.00</td>
-											<td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
-										</tr>
-										<tr>
+										<?php echo viewcartmain(); ?>
+										<!-- <tr>
 											<td class="product-thumbnail"><a href="#"><img src="https://htmldemo.net/koparion/koparion/img/cart/2.jpg" alt="man" /></a></td>
 											<td class="product-name"><a href="#">Vestibulum dictum magna</a></td>
 											<td class="product-price"><span class="amount">£50.00</span></td>
 											<td class="product-quantity"><input type="number" value="1"></td>
 											<td class="product-subtotal">£50.00</td>
 											<td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
-										</tr>
+										</tr> -->
 									</tbody>
 								</table>
 							</div>

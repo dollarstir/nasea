@@ -46,20 +46,24 @@ function addtocart($id)
 
 function viewcartmain()
 {
+    $tc = '';
     if (!empty($_SESSION['cart'])) {
         foreach ($_SESSION['cart'] as $key => $value) {
-            return '<tr>
+            $tc .= '<tr>
             <td class="product-thumbnail"><a href="#"><img src="yolkassets/upload/'.$value['bookcover'].'" alt="man" /></a></td>
             <td class="product-name"><a href="#">'.$value['bookname'].'</a></td>
-            <td class="product-price"><span class="amount">&#8373'.$value['price'].'</span></td>
+            <td class="product-price"><span class="amount">&#8373'.$value['bookprice'].'</span></td>
             <!--<td class="product-quantity"><input type="number" value="1"></td>-->
             <!--<td class="product-subtotal">£165.00</td>-->
             <td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
         </tr>';
         }
     } else {
-        return 'empty cart';
+        $tc .= '<p style="text-align:center;font-weight:bold;">Empty Cart</p>';
     }
+    $tc .= '';
+
+    return $tc;
 }
 
 function deletefromcart($id)
