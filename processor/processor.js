@@ -157,10 +157,11 @@ $('.addtocart').click(function(e){
 
   e.preventDefault();
   // before();
+  var myVar = "test";
   var staff = {
       url: 'processor/processor.php?action=addtocart&id=1',
       type: 'post',
-      data: {'id' : 1},
+      data: {"myData":myVar},
       cache: false,
       contentType: false,
       processData: false,

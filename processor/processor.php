@@ -6,7 +6,7 @@ if (isset($_GET['action'])) {
     switch ($_GET['action']) {
         case 'addtocart':
             extract($_POST);
-            echo $id;
+            echo $myData;
             break;
         default:
 
