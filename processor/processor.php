@@ -10,6 +10,11 @@ require '../fragement/deep.php';
             addtocart($id);
 
             break;
+
+        case 'removecart':
+            extract($_POST);
+            deletefromcart($id);
+            break;
         default:
 
         break;
