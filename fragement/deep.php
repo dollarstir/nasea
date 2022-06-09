@@ -34,7 +34,7 @@ function addtocart($id)
         $cartitem = [
             'bookid' => $id,
             'bookname' => 'bookname',
-            'bookcover' => 'bookcover.png',
+            'bookcover' => 'bookcover.jpg',
             'bookprice' => 20,
         ];
 
