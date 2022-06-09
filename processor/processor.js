@@ -78,7 +78,7 @@ $(function(){
               $("#cartot").load('processor/processor.php?action=carttotal');
               $("#vcart").load('processor/processor.php?action=viewmaincart');
               $("#checkcart").load('processor/processor.php?action=checkoutcart');
-              $("#mku").load('processor/processor.php?action=carttotal');
+              $("#mku").load('processor/processor.php?action=cartsubtotal');
               $("#ordtt").load('processor/processor.php?action=carttotal');
               swal.close();
               
@@ -109,7 +109,7 @@ $(function(){
             // $("#swee").load('processor/processor.php?action=carttotal1');
             $("#diskc").load('processor/processor.php?action=discount');
 
-            $("#mku").load('processor/processor.php?action=carttotal');
+            $("#mku").load('processor/processor.php?action=cartsubtotal');
            
               $("#ordtt").load('processor/processor.php?action=carttotal');
             swal.close();

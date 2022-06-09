@@ -160,6 +160,20 @@ function carttotal()
     return $fin;
 }
 
+function cartsubtotal()
+{
+    if (!empty($_SESSION['cart'])) {
+        $total = 0.00;
+        foreach ($_SESSION['cart'] as $key => $value) {
+            $total = $total + $value['bookprice'];
+        }
+    } else {
+        $total = 0.00;
+    }
+
+    return $total;
+}
+
 function discount()
 {
     if (!empty($_SESSION['coupon'])) {
