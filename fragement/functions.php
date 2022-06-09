@@ -264,20 +264,9 @@ function topbars()
                             <li><a href="main/#"><i class="fa fa-shopping-cart"></i>My Cart</a>
                                 <span id ="cartcount">'.countcart().'</span>
                                 <div class="mini-cart-sub">
-                                    <div class="cart-product">
+                                    <div class="cart-product" id="minicart">
                                         '.minicart().'
-                                        <!--<div class="single-cart">
-                                            <div class="cart-img">
-                                                <a href="main/#"><img src="main/img/product/3.jpg" alt="book" /></a>
-                                            </div>
-                                            <div class="cart-info">
-                                                <h5><a href="main/#">Chaz Kangeroo Hoodie</a></h5>
-                                                <p>1 x £52.00</p>
-                                            </div>
-                                            <div class="cart-icon">
-                                                <a href="main/#"><i class="fa fa-remove"></i></a>
-                                            </div>
-                                        </div>-->
+                                        
                                     </div>
                                     <div class="cart-totals">
                                         <h5>Total <span>&#8373;'.carttotal().'</span></h5>
