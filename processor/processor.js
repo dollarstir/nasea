@@ -26,6 +26,7 @@ $(function(){
     
 
     function resp(response){
+        response = response.trim();
 
         if(response == "success"){
             swal.close();
@@ -58,6 +59,23 @@ $(function(){
               });
 
         }
+
+        else if(response == 'removedfromcart'){
+
+          swal({
+              title: "Done!",
+              text: "Item removed successfusly",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location.reload();
+            });
+
+      }
 
         else if(response == 'addedtocart'){
 
