@@ -269,7 +269,7 @@ function topbars()
                                         
                                     </div>
                                     <div class="cart-totals">
-                                        <h5>Total <span>&#8373;'.carttotal().'</span></h5>
+                                        <h5>Total <span id="cartot">&#8373;'.carttotal().'</span></h5>
                                     </div>
                                     <div class="cart-bottom">
                                         <a class="view-cart" href="cart">view cart</a>

@@ -93,6 +93,7 @@ $(function(){
               // window.location.reload();
               $("#cartcount").load('processor/processor.php?action=countcart');
               $("#minicart").load('processor/processor.php?action=viewcart');
+              $("#cartot").load('processor/processor.php?action=carttotal');
               swal.close();
             });
 
