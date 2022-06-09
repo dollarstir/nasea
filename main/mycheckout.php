@@ -311,7 +311,7 @@ begin('Checkout');
                                                             <li>
                                                                
                                                                 <label>
-                                                                    Discount <span class="amount"><?php echo discount(); ?>%</span>
+                                                                    Discount <span class="amount" id="diskc"><?php echo discount(); ?>%</span>
                                                                 </label>
                                                             </li>
                                                             <li>

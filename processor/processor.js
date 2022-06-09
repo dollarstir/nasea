@@ -105,6 +105,7 @@ $(function(){
             $("#vcart").load('processor/processor.php?action=viewmaincart');
             $("#checkcart").load('processor/processor.php?action=checkoutcart');
             $("#subt").load('processor/processor.php?action=carttotal');
+            $("#diskc").load('processor/processor.php?action=discount');
             swal.close();
             
           });

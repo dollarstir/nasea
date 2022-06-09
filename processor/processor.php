@@ -43,6 +43,11 @@ require '../fragement/deep.php';
             extract($_POST);
             coupon(3);
             break;
+
+        case 'discount':
+            initsession();
+            echo discount();
+            break;
         default:
 
         break;
