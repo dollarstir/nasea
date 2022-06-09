@@ -296,23 +296,8 @@ begin('Checkout');
                                                     <th class="product-total">Total</th>
                                                 </tr>							
                                             </thead>
-                                            <tbody>
-                                                <tr class="cart_item">
-                                                    <td class="product-name">
-                                                        Vestibulum suscipit <strong class="product-quantity"> × 1</strong>
-                                                    </td>
-                                                    <td class="product-total">
-                                                        <span class="amount">£165.00</span>
-                                                    </td>
-                                                </tr>
-                                                <tr class="cart_item">
-                                                    <td class="product-name">
-                                                        Vestibulum suscipit	<strong class="product-quantity"> × 1</strong>
-                                                    </td>
-                                                    <td class="product-total">
-                                                        <span class="amount">£50.00</span>
-                                                    </td>
-                                                </tr>
+                                            <tbody id="checkcart">
+                                                <?php echo checkoutcart(); ?>
                                             </tbody>
                                             <tfoot>
                                                 <tr class="cart-subtotal">
@@ -321,7 +306,7 @@ begin('Checkout');
                                                 </tr>
                                                 <tr class="shipping">
                                                     <th>Shipping</th>
-                                                    <td>
+                                                    <!-- <td>
                                                         <ul>
                                                             <li>
                                                                 <input type="radio">
@@ -335,7 +320,7 @@ begin('Checkout');
                                                             </li>
                                                             <li></li>
                                                         </ul>
-                                                    </td>
+                                                    </td> -->
                                                 </tr>
                                                 <tr class="order-total">
                                                     <th>Order Total</th>

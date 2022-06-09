@@ -109,23 +109,19 @@ function checkoutcart()
     $tt = '';
     if (!empty($_SESSION['cart'])) {
         foreach ($_SESSION['cart'] as $key => $value) {
-            $tt .= '<div class="single-cart">
-            <div class="cart-img">
-                <a href="main/#"><img src="yolkassets/upload/'.$value['bookcover'].'" alt="book" /></a>
-            </div>
-            <div class="cart-info">
-                <h5><a href="main/#">'.$value['bookname'].'</a></h5>
-                <p>&#8373;'.$value['bookprice'].'</p>
-            </div>
-            <div class="cart-icon">
-                <button id="'.$value['bookid'].'" class="removefromcart" style="border:none;background-color:transparent;"><i class="fa fa-remove" style="color:red;font-weight:bold;"></i></button>
-            </div>
-        </div>';
+            $tt .= '<tr class="cart_item">
+            <td class="product-name">
+                '.$value['bookname'].' <strong class="product-quantity"> × 1</strong>
+            </td>
+            <td class="product-total">
+                <span class="amount">&#8373;'.$value['bookprice'].'</span>
+            </td>
+        </tr>';
         }
 
         $tt .= '';
     } else {
-        $tt .= '<p style="text-align:center;font-weight:bold;">Empty Cart</p>';
+        $tt .= '';
     }
 
     return $tt;
