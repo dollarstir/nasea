@@ -20,6 +20,9 @@ require '../fragement/deep.php';
             initsession();
             echo countcart();
             break;
+
+        case 'viewcart':
+            break;
         default:
 
         break;
