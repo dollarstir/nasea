@@ -262,7 +262,7 @@ function topbars()
                     <div class="my-cart">
                         <ul>
                             <li><a href="main/#"><i class="fa fa-shopping-cart"></i>My Cart</a>
-                                <span>2</span>
+                                <span>'.countcart().'</span>
                                 <div class="mini-cart-sub">
                                     <div class="cart-product">
                                         '.minicart().'

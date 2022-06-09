@@ -94,7 +94,7 @@ function minicart()
         $tt .= '';
     }
 
-    var_dump($_SESSION['cart']);
+    return $tt;
 }
 
 function countcart()
