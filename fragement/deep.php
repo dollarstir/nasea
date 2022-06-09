@@ -92,6 +92,8 @@ function minicart()
         }
 
         $tt .= '';
+    } else {
+        $tt .= 'Empty Cart';
     }
 
     return $tt;
