@@ -22,6 +22,8 @@ require '../fragement/deep.php';
             break;
 
         case 'viewcart':
+            initsession();
+
             break;
         default:
 
