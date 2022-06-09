@@ -91,7 +91,7 @@ function minicart()
                 <p>&#8373;'.$value['bookprice'].'</p>
             </div>
             <div class="cart-icon">
-                <a href=""><i class="fa fa-remove"></i></a>
+                <button id="'.$value['bookid'].'" class="removefromcart" style="border:none;background-color:transparent;"><i class="fa fa-remove" style="color:red;font-weight:bold;"></i></button>
             </div>
         </div>';
         }
