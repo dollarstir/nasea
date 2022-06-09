@@ -72,7 +72,7 @@ function deletefromcart($id)
     foreach ($_SESSION['cart'] as $keys => $values) {
         if ($values['bookid'] == $id) {
             unset($_SESSION['cart'][$keys]);
-            echo 'Item Removed';
+            echo 'deleted';
         }
     }
 }
