@@ -59,6 +59,23 @@ $(function(){
 
         }
 
+        else if(response == 'addedtocart'){
+
+          swal({
+              title: "Done!",
+              text: "Item Added",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location.reload();
+            });
+
+      }
+
         else if(response == 'loginsuccess'){
 
             swal({

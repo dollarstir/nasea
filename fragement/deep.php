@@ -40,7 +40,7 @@ function addtocart($id)
 
         $_SESSION['cart'][0] = $cartitem;
 
-        echo 'added to cart';
+        echo 'addedtocart';
     }
 }
 
@@ -55,7 +55,7 @@ function viewcartmain()
             <td class="product-price"><span class="amount">&#8373;'.$value['bookprice'].'</span></td>
             <!--<td class="product-quantity"><input type="number" value="1"></td>-->
             <!--<td class="product-subtotal">£165.00</td>-->
-            <td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
+            <td class="product-remove"><button id="'.$value['bookid'].'" class="removefromcart" style="border:none;"><i class="fa fa-trash" style="color:red;"></i></button></td>
         </tr>';
         }
     } else {
@@ -68,8 +68,9 @@ function viewcartmain()
 
 function deletefromcart($id)
 {
+    session_start();
     foreach ($_SESSION['cart'] as $keys => $values) {
-        if ($values['item_id'] == $_GET['id']) {
+        if ($values['bookid'] == $id) {
             unset($_SESSION['cart'][$keys]);
             echo 'Item Removed';
         }
