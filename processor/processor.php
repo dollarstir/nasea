@@ -26,9 +26,13 @@ require '../fragement/deep.php';
             echo minicart();
             break;
         case 'carttotal':
-        initsession();
-        echo carttotal();
-        break;
+            initsession();
+            echo carttotal();
+            break;
+        case 'viewmaincart':
+            initsession();
+            echo viewcartmain();
+            break;
         default:
 
         break;
