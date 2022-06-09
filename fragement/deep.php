@@ -146,14 +146,14 @@ function carttotal()
             $total = $total + $value['bookprice'];
         }
     } else {
-        $total = '0.00';
+        $total = 0.00;
     }
 
     if (!empty($_SESSION['coupon'])) {
         $coupon = $_SESSION['coupon'];
         $percent = ($coupon / $total) * 100;
     } else {
-        $percent = 0;
+        $percent = 0.00;
     }
     $fin = ($total - $percent);
 
@@ -163,9 +163,9 @@ function carttotal()
 function discount()
 {
     if (!empty($_SESSION['coupon'])) {
-        $cp = 0;
-    } else {
         $cp = $_SESSION['coupon'];
+    } else {
+        $cp = 0.00;
     }
 
     return $cp;

@@ -311,7 +311,7 @@ begin('Checkout');
                                                             <li>
                                                                
                                                                 <label>
-                                                                    Discount <span class="amount">£7.00</span>
+                                                                    Discount <span class="amount"><?php echo discount(); ?>%</span>
                                                                 </label>
                                                             </li>
                                                             <li>
