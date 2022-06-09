@@ -39,6 +39,8 @@ function addtocart($id)
         ];
 
         $_SESSION['cart'][0] = $cartitem;
+
+        echo 'added to cart';
     }
 }
 
