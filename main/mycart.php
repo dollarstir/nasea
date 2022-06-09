@@ -92,8 +92,8 @@ begin('Cart');
                         <div class="coupon">
                             <h3>Coupon</h3>
                             <p>Enter your coupon code if you have one.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Coupon code">
+                            <form action="#" class="applycoupon">
+                                <input type="text" placeholder="Coupon code" name="code">
                                 <a href="#">Apply Coupon</a>
                             </form>
                         </div>
@@ -106,34 +106,18 @@ begin('Cart');
                                     <tr class="cart-subtotal">
                                         <th>Subtotal</th>
                                         <td>
-                                            <span class="amount">£215.00</span>
+                                            <span class="amount">&#8373;<span id="mku"><?php echo carttotal(); ?></span></span>
                                         </td>
                                     </tr>
                                     <tr class="shipping">
-                                        <th>Shipping</th>
-                                        <td>
-                                            <ul id="shipping_method">
-                                                <li>
-                                                    <input type="radio">
-                                                    <label>
-                                                        Flat Rate:
-                                                        <span class="amount">£7.00</span>
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <input type="radio">
-                                                    <label> Free Shipping </label>
-                                                </li>
-                                            </ul>
-                                            <a href="#">Calculate Shipping</a>
-                                        </td>
+                                        <td> <label>
+                                                                    Discount <span class="amount"><span id="diskc"><?php echo discount(); ?></span>%</span>
+                                                                </label></td>
                                     </tr>
                                     <tr class="order-total">
                                         <th>Total</th>
                                         <td>
-                                            <strong>
-                                                <span class="amount">£215.00</span>
-                                            </strong>
+                                        <strong><span class="amount">&#8373;<span id="ordtt"><?php echo carttotal(); ?></span></span></strong>
                                         </td>
                                     </tr>
                                 </tbody>
