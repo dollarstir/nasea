@@ -73,6 +73,7 @@ $(function(){
               },
             }).then(function (result) {
               window.location.reload();
+              
             });
 
       }
@@ -89,7 +90,8 @@ $(function(){
                 swal.showLoading();
               },
             }).then(function (result) {
-              window.location.reload();
+              // window.location.reload();
+              swal.close();
             });
 
       }
