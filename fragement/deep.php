@@ -26,7 +26,7 @@ function addtocart($id)
 
             $_SESSION['cart'][$count] = $cartitem;
 
-            echo 'added to cart';
+            echo 'addedtocart';
         } else {
             echo 'Item already in cart';
         }
