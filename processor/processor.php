@@ -23,7 +23,7 @@ require '../fragement/deep.php';
 
         case 'viewcart':
             initsession();
-
+            echo minicart();
             break;
         default:
 
