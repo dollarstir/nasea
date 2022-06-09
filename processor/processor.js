@@ -84,6 +84,33 @@ $(function(){
 
       }
 
+
+
+      else if(response == 'couponapplied'){
+
+        swal({
+            title: "Done!",
+            text: "Coupon applied Successfuly",
+            timer: 1000,
+            type: 'success',
+            padding: "2em",
+            onOpen: function () {
+              swal.showLoading();
+            },
+          }).then(function (result) {
+            // window.location.reload();
+            $("#cartcount").load('processor/processor.php?action=countcart');
+            $("#minicart").load('processor/processor.php?action=viewcart');
+            $("#cartot").load('processor/processor.php?action=carttotal');
+            $("#vcart").load('processor/processor.php?action=viewmaincart');
+            $("#checkcart").load('processor/processor.php?action=checkoutcart');
+            $("#subt").load('processor/processor.php?action=carttotal');
+            swal.close();
+            
+          });
+
+    }
+
         else if(response == 'addedtocart'){
 
           swal({
