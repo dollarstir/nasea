@@ -5,7 +5,8 @@ require '../loader/autoloader.php';
 if (isset($_GET['action'])) {
     switch ($_GET['action']) {
         case 'addtocart':
-            echo 'hi';
+            extract($_POST);
+            echo $id;
             break;
         default:
 
