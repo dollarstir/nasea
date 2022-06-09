@@ -163,7 +163,7 @@ begin('Welcome');
 										</div>
 										<div class="product-link">
 											<div class="product-button">
-												<button title="Add to cart"  class ="btn btn-success addtocart" style="background-color: rgb(240, 124, 41) !important;border:none;"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+												<button title="Add to cart" id="1"  class ="btn btn-success addtocart" style="background-color: rgb(240, 124, 41) !important;border:none;"><i class="fa fa-shopping-cart"></i> Add to cart</button>
 											</div>
 											<div class="add-to-link">
 												<ul>
@@ -179,7 +179,7 @@ begin('Welcome');
 									<div class="product-wrapper mb-40">
 										<div class="product-img">
 											<a href="#">
-												<img src="main/img/product/18.jpg" alt="book" class="primary" />
+												<img src="main/img/product/1.jpg" alt="book" class="primary" />
 											</a>
 											<div class="quick-view">
 												<a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
@@ -189,6 +189,7 @@ begin('Welcome');
 											<div class="product-flag">
 												<ul>
 													<li><span class="sale">new</span></li>
+													<li><span class="discount-percentage">-5%</span></li>
 												</ul>
 											</div>
 										</div>
@@ -202,17 +203,16 @@ begin('Welcome');
 													<li><a href="#"><i class="fa fa-star"></i></a></li>
 												</ul>
 											</div>
-											<h4><a href="#">Driven Backpack</a></h4>
+											<h4><a href="#">Joust Duffle Bag</a></h4>
 											<div class="product-price">
 												<ul>
-													<li>$34.00</li>
-													<li class="old-price">$36.00</li>
+													<li>$60.00</li>
 												</ul>
 											</div>
 										</div>
 										<div class="product-link">
 											<div class="product-button">
-												<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												<button title="Add to cart" id="2"  class ="btn btn-success addtocart" style="background-color: rgb(240, 124, 41) !important;border:none;"><i class="fa fa-shopping-cart"></i> Add to cart</button>
 											</div>
 											<div class="add-to-link">
 												<ul>
