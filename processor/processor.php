@@ -15,6 +15,10 @@ require '../fragement/deep.php';
             extract($_POST);
             deletefromcart($id);
             break;
+
+        case 'countcart':
+            echo countcart();
+            break;
         default:
 
         break;
