@@ -38,6 +38,11 @@ require '../fragement/deep.php';
             initsession();
             echo checkoutcart();
             break;
+
+        case 'applycoupon':
+            extract($_POST);
+            coupon(3);
+            break;
         default:
 
         break;
