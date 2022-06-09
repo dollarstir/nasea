@@ -149,5 +149,24 @@ function carttotal()
         $total = '0.00';
     }
 
-    return $total;
+    if (!empty($_SESSION['coupon'])) {
+        $coupon = $_SESSION['coupon'];
+        $percent = ($coupon / $total) * 100;
+    } else {
+        $percent = 0;
+    }
+    $fin = ($total - $percent);
+
+    return $fin;
+}
+
+function discount()
+{
+    if (!empty($_SESSION['coupon'])) {
+        $cp = 0;
+    } else {
+        $cp = $_SESSION['coupon'];
+    }
+
+    return $cp;
 }
