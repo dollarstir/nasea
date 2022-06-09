@@ -60,8 +60,8 @@ begin('Cart');
 											<th class="product-thumbnail">Image</th>
 											<th class="product-name">Product</th>
 											<th class="product-price">Price</th>
-											<th class="product-quantity">Quantity</th>
-											<th class="product-subtotal">Total</th>
+											<!-- <th class="product-quantity">Quantity</th> -->
+											<!-- <th class="product-subtotal">Total</th> -->
 											<th class="product-remove">Remove</th>
 										</tr>
 									</thead>
