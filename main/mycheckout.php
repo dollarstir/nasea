@@ -314,17 +314,17 @@ begin('Checkout');
                                                                     Discount <span class="amount"><span id="diskc"><?php echo discount(); ?></span>%</span>
                                                                 </label>
                                                             </li>
-                                                            <li>
+                                                            <!-- <li>
                                                                 <input type="radio">
                                                                 <label>Free Shipping:</label>
-                                                            </li>
-                                                            <li></li>
+                                                            </li> -->
+                                                            <!-- <li></li> -->
                                                         </ul>
                                                     </td>
                                                 </tr>
                                                 <tr class="order-total">
                                                     <th>Order Total</th>
-                                                    <td><strong><span class="amount">£215.00</span></strong>
+                                                    <td><strong><span class="amount">&#8373;<span id="ordtt"><?php echo carttotal(); ?></span></span></strong>
                                                     </td>
                                                 </tr>								
                                             </tfoot>

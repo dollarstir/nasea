@@ -79,6 +79,7 @@ $(function(){
               $("#vcart").load('processor/processor.php?action=viewmaincart');
               $("#checkcart").load('processor/processor.php?action=checkoutcart');
               $("#mku").load('processor/processor.php?action=carttotal');
+              $("#ordtt").load('processor/processor.php?action=carttotal');
               swal.close();
               
             });
@@ -109,6 +110,8 @@ $(function(){
             $("#diskc").load('processor/processor.php?action=discount');
 
             $("#mku").load('processor/processor.php?action=carttotal');
+           
+              $("#ordtt").load('processor/processor.php?action=carttotal');
             swal.close();
             
           });
