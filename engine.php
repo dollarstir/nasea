@@ -36,5 +36,12 @@ $router = new Router([
             return Viewer::view('main/mycheckout.php', $context);
         }
     ),
+
+    new Route(
+        '/contact',
+        function ($context) {
+            return Viewer::view('main/contactus.php', $context);
+        }
+    ),
 ]);
 $router->launch();
