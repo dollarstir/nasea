@@ -85,8 +85,8 @@ begin('Cart');
                     <div class="col-lg-8 col-md-6 col-12">
                         <div class="buttons-cart mb-30">
                             <ul>
-                                <li><a href="#">Update Cart</a></li>
-                                <li><a href="#">Continue Shopping</a></li>
+                                <!-- <li><a href="#">Update Cart</a></li> -->
+                                <li><a href="books">Continue Shopping</a></li>
                             </ul>
                         </div>
                         <div class="coupon">
