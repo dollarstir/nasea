@@ -50,5 +50,12 @@ $router = new Router([
             return Viewer::view('main/about.php', $context);
         }
     ),
+
+    new Route(
+        '/completeorder',
+        function ($context) {
+            return Viewer::view('main/pay.php', $context);
+        }
+    ),
 ]);
 $router->launch();

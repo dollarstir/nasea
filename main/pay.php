@@ -53,10 +53,10 @@ begin('Checkout');
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="coupon-accordion">
-							<?php  echo !isset($_SESSION['user']) ? '<h3>Returning customer? <span id="showlogin">Click here to login</span></h3>
+							<?php  echo (!isset($_SESSION['id'])) ? '<h3>Returning customer? <span id="showlogin">Click here to login</span></h3>
 							<div class="coupon-content" id="checkout-login">
 								<div class="coupon-info">
-									<!--<p class="coupon-text">Quisque gravida turpis sit amet nulla posuere lacinia. Cras sed est sit amet ipsum luctus.</p>-->
+									<p class="coupon-text">Quisque gravida turpis sit amet nulla posuere lacinia. Cras sed est sit amet ipsum luctus.</p>
 									<form action="#">
 										<p class="form-row-first">
 											<label>Username or email <span class="required">*</span></label>
