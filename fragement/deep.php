@@ -13,15 +13,18 @@
 function addtocart($id)
 {
     initsession();
+    $dt = customfetch('books', [['id', '=', $id]]);
+    $book = $dt[0];
+
     if (isset($_SESSION['cart'])) {
         $bookid = array_column($_SESSION['cart'], 'bookid');
         if (!in_array($id, $bookid)) {
             $count = count($_SESSION['cart']);
             $cartitem = [
                 'bookid' => $id,
-                'bookname' => 'bookname',
-                'bookcover' => 'bookcover.jpg',
-                'bookprice' => 20,
+                'bookname' => $book['title'],
+                'bookcover' => $book['front'],
+                'bookprice' => $book['price'],
             ];
 
             $_SESSION['cart'][$count] = $cartitem;
@@ -33,9 +36,9 @@ function addtocart($id)
     } else {
         $cartitem = [
             'bookid' => $id,
-            'bookname' => 'bookname',
-            'bookcover' => 'bookcover.jpg',
-            'bookprice' => 20,
+            'bookname' => $book['title'],
+            'bookcover' => $book['front'],
+            'bookprice' => $book['price'],
         ];
 
         $_SESSION['cart'][0] = $cartitem;

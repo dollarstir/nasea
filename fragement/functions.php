@@ -529,10 +529,10 @@ function books($limit = '')
                         <li><a href="#"><i class="fa fa-star"></i></a></li>
                     </ul>
                 </div>
-                <h4><a href="#">Joust Duffle Bag</a></h4>
+                <h4><a href="#">'.$row['title'].'</a></h4>
                 <div class="product-price">
                     <ul>
-                        <li>$60.00</li>
+                        <li>$'.$row['price'].'</li>
                     </ul>
                 </div>
             </div>
