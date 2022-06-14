@@ -45,7 +45,7 @@ $router = new Router([
     ),
 
     new Route(
-        '/about',
+        '/aboutus',
         function ($context) {
             return Viewer::view('main/about.php', $context);
         }
