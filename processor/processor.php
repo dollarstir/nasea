@@ -47,7 +47,7 @@ require '../fragement/deep.php';
 
         case 'applycoupon':
             extract($_POST);
-            coupon(3);
+            coupon($code);
             break;
 
         case 'discount':

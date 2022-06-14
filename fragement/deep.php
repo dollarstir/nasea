@@ -188,8 +188,10 @@ function discount()
     return $cp;
 }
 
-function coupon($amount)
+function coupon($code)
 {
+    $cp = customfetch('coupon', [['coupname', '=', $code], ['status', '=', 'active'],
+], 'AND');
     initsession();
     $_SESSION['coupon'] = $amount;
 
