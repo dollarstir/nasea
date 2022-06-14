@@ -53,7 +53,7 @@ begin('Checkout');
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="coupon-accordion">
-							<h3>Returning customer? <span id="showlogin">Click here to login</span></h3>
+							<?php  echo (!isset($_SESSION['id'])) ? '<h3>Returning customer? <span id="showlogin">Click here to login</span></h3>
 							<div class="coupon-content" id="checkout-login">
 								<div class="coupon-info">
 									<p class="coupon-text">Quisque gravida turpis sit amet nulla posuere lacinia. Cras sed est sit amet ipsum luctus.</p>
@@ -78,7 +78,7 @@ begin('Checkout');
 										</p>
 									</form>
 								</div>
-							</div>
+							</div>' : ''; ?>
 							<h3>Have a coupon? <span id="showcoupon">Click here to enter your code</span></h3>
 							<div class="coupon-checkout-content" id="checkout_coupon">
 								<div class="coupon-info">
@@ -101,7 +101,7 @@ begin('Checkout');
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-					    <form action="#">
+					    <form action="#" class="checkout">
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-12">
                                 <div class="checkbox-form">						
@@ -181,17 +181,17 @@ begin('Checkout');
                                                 <input type="text" placeholder="Postcode / Zip">
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-md-12 col-12">
+                                        <?php echo !isset($_SESSION['user']) ? '<div class="col-lg-12 col-md-12 col-12">
                                             <div class="checkout-form-list create-acc">	
                                                 <input type="checkbox" id="cbox">
                                                 <label>Create an account?</label>
                                             </div>
-                                            <div class="checkout-form-list create-account" id="cbox_info" style="display: none;">
+                                            <div class="checkout-form-list create-account" id="cbox_info" style="display: block;">
                                                 <p>Create an account by entering the information below. If you are a returning customer please login at the top of the page.</p>
                                                 <label>Account password  <span class="required">*</span></label>
                                                 <input type="password" placeholder="password">	
                                             </div>
-                                        </div>								
+                                        </div>' : ''; ?>								
                                     </div>
                                     <!-- <div class="different-address">
                                             <div class="ship-different-title">
@@ -334,7 +334,7 @@ begin('Checkout');
                                         <div class="payment-accordion">
                                             <div class="collapses-group">
                                                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                                    <div class="panel panel-default">
+                                                    <!-- <div class="panel panel-default">
                                                         <div class="panel-heading" role="tab" id="headingOne">
                                                             <h4 class="panel-title">
                                                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -361,12 +361,12 @@ begin('Checkout');
                                                                 <p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading" role="tab" id="headingThree">
                                                             <h4 class="panel-title">
                                                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                                 PayPal <img src="https://htmldemo.net/koparion/koparion/img/2.png" alt="payment" />
+                                                                 Momo <img src="main/img/momo.png" alt="payment" />
                                                                 </a>
                                                             </h4>
                                                         </div>
