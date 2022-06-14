@@ -54,6 +54,12 @@ require '../fragement/deep.php';
             initsession();
             echo discount();
             break;
+
+        case 'message':
+            extract($_POST);
+            sendmessage($name, $email, $subject, $message);
+            break;
+            // no
         default:
 
         break;

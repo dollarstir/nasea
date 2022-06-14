@@ -192,3 +192,15 @@ function coupon($amount)
 
     echo 'couponapplied';
 }
+
+// sending message form contact page
+function sendmessage($name, $email, $subject, $message)
+{
+    echo $res = insert('messages',
+     [
+         'name' => $name,
+         'email' => $email,
+         'subject' => $subject,
+        'message' => $message, ]
+);
+}
