@@ -476,3 +476,10 @@ function navbar($pid)
     echo mainmenu($pid);
     echo mobilemenu();
 }
+function contactdetials()
+{
+    $res = fetchAll('settings');
+    $row = $res[0];
+
+    return $row;
+}

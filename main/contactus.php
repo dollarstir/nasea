@@ -4,6 +4,8 @@ involve('functions');
 
 begin('Contact Us');
 
+$a = contactdetials();
+
  ?>
     <body class="contact">
         <!--[if lt IE 8]>
@@ -56,17 +58,17 @@ begin('Contact Us');
 								<li>
 									<i class="fa fa-map-marker"></i>
 									<span>Address: </span>
-									Your address goes here. 							
+									<?php echo $a['appaddress']; ?> 							
 								</li>
 								<li>
 									<i class="fa fa-envelope"></i>
 									<span>Phone: </span>
-									(800) 0123 4567 890 
+									<?php echo $a['appcontact']; ?> 	
 								</li>
 								<li>
 									<i class="fa fa-mobile"></i>
 									<span>Email: </span>
-									<a href="#">demo@example.com</a>
+									<a href="#"><?php echo $a['appemail']; ?> 	</a>
 								</li>
 							</ul>
 						</div>
@@ -74,7 +76,7 @@ begin('Contact Us');
 					<div class="col-lg-6 col-md-6 col-12">
 						<div class="contact-form">
 							<h3><i class="fa fa-envelope-o"></i>Leave a Message</h3>
-                            <form id="contact-form" action="https://htmldemo.net/koparion/koparion/mail.php" method="post">
+                            <form id="contact-form" action="" method="post" class="message">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="single-form-3">
