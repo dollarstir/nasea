@@ -43,5 +43,12 @@ $router = new Router([
             return Viewer::view('main/contactus.php', $context);
         }
     ),
+
+    new Route(
+        '/about',
+        function ($context) {
+            return Viewer::view('main/about.php', $context);
+        }
+    ),
 ]);
 $router->launch();
