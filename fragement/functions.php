@@ -483,3 +483,11 @@ function contactdetials()
 
     return $row;
 }
+
+function aboutpage()
+{
+    $res = fetchAll('aboutpage');
+    $res = $res[0];
+
+    return $res;
+}

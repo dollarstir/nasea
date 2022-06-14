@@ -31,7 +31,7 @@ begin('About Us');
 	</div>
 	<!-- breadcrumbs-area-end -->
 	<!-- about-main-area-start -->
-	<div class="about-main-area mb-70">
+	<!-- <div class="about-main-area mb-70">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7 col-md-6 col-12">
@@ -58,7 +58,7 @@ begin('About Us');
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- about-main-area-end -->
 	<!-- our-mission-area-start -->
 	<div class="our-mission-area mb-70">
@@ -66,7 +66,7 @@ begin('About Us');
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-12">
 					<div class="single-misson">
-						<h3>Why<span>We do?</span></h3>
+						<h3>Who<span>We are</span></h3>
 						<p>Huis nostrud exerci tation ullamcorper suscipites lobortis nisl ut aliquip ex ea commodo
 							consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius
 							claritas.</p>
@@ -93,7 +93,7 @@ begin('About Us');
 	</div>
 	<!-- our-mission-area-end -->
 	<!-- counter-area-start -->
-	<div class="counter-area pt-70 pb-40">
+	<!-- <div class="counter-area pt-70 pb-40">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
@@ -122,10 +122,10 @@ begin('About Us');
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- counter-area-end -->
 	<!-- team-area-start -->
-	<div class="team-area pt-70 pb-40">
+	<!-- <div class="team-area pt-70 pb-40">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -219,10 +219,10 @@ begin('About Us');
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- team-area-end -->
 	<!-- skill-area-start -->
-	<div class="skill-area mb-70">
+	<!-- <div class="skill-area mb-70">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-12">
@@ -265,7 +265,7 @@ begin('About Us');
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- skill-area-end -->
 	<!-- footer-area-start -->
 	<?php footer(); ?>
