@@ -491,3 +491,11 @@ function aboutpage()
 
     return $res;
 }
+function books($limit = '')
+{
+    if ($limit == '') {
+        $res = customfetch('books', [['status', '=', 'active']], '', ['id' => 'DESC']);
+    } else {
+        $res = customfetch('books', [['status', '=', 'active']], '', ['id' => 'DESC'], 8);
+    }
+}
