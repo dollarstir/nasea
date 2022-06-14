@@ -205,10 +205,10 @@ function coupon($code)
             echo 'couponapplied';
         }
     }
-    initsession();
-    $_SESSION['coupon'] = $amount;
+    // initsession();
+    // $_SESSION['coupon'] = $amount;
 
-    echo 'couponapplied';
+    // echo 'couponapplied';
 }
 
 // sending message form contact page
