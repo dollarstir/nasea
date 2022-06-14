@@ -94,7 +94,7 @@ begin('Cart');
                             <p>Enter your coupon code if you have one.</p>
                             <form action="#" class="applycoupon">
                                 <input type="text" placeholder="Coupon code" name="code">
-                                <a href="#">Apply Coupon</a>
+                                <input type="submit" value="Apply Coupon">
                             </form>
                         </div>
                     </div>

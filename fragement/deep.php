@@ -202,7 +202,11 @@ function coupon($code)
             $amount = $cp[0]['percentage'];
             $_SESSION['coupon'] = $amount;
 
-            echo 'couponapplied';
+            var_dump($up = update('coupon', ['status' => 'expired'], ['id' => 1]));
+
+            if ($up == 'success') {
+                echo 'couponapplied';
+            }
         }
     }
     // initsession();
