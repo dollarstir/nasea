@@ -190,8 +190,14 @@ function discount()
 
 function coupon($code)
 {
-    $cp = customfetch('coupon', [['coupname', '=', $code], ['status', '=', 'active'],
-], 'AND');
+    $cp = customfetch('coupon', [['coupname', '=', $code]]);
+    if (empty($cp)) {
+        echo 'Coupon code is incorrect';
+    } else {
+        $cp1 = customfetch('coupon', [['status', '=', 'active']]);
+        if (empty($cp1)) {
+        }
+    }
     initsession();
     $_SESSION['coupon'] = $amount;
 
