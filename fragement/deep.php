@@ -196,6 +196,13 @@ function coupon($code)
     } else {
         $cp1 = customfetch('coupon', [['status', '=', 'active']]);
         if (empty($cp1)) {
+            echo 'Coupon code already used';
+        } else {
+            initsession();
+            $amount = $cp[0]['percentage'];
+            $_SESSION['coupon'] = $amount;
+
+            echo 'couponapplied';
         }
     }
     initsession();
