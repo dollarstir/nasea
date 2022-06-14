@@ -123,7 +123,7 @@ begin('Cart');
                                 </tbody>
                             </table>
                             <div class="wc-proceed-to-checkout">
-                                <a href="#">Proceed to Checkout</a>
+                                <a href="checkout">Proceed to Checkout</a>
                             </div>
                         </div>
                     </div>
