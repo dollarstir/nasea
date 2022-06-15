@@ -40,7 +40,7 @@ begin('Checkout');
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="entry-header-title">
-							<h2>Checkout</h2>
+							<h2>Payment</h2>
 						</div>
 					</div>
 				</div>
@@ -79,7 +79,7 @@ begin('Checkout');
 									</form>
 								</div>
 							</div>' : ''; ?>
-							<h3>Have a coupon? <span id="showcoupon">Click here to enter your code</span></h3>
+							<!-- <h3>Have a coupon? <span id="showcoupon">Click here to enter your code</span></h3>
 							<div class="coupon-checkout-content" id="checkout_coupon">
 								<div class="coupon-info">
 									<form action="#" class="applycoupon">
@@ -88,7 +88,7 @@ begin('Checkout');
 											<input type="submit" value="Apply Coupon">
 										</p>
 									</form>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -185,13 +185,13 @@ begin('Checkout');
                                                             <div class="panel-heading" role="tab" id="headingThree">
                                                                 <h4 class="panel-title">
                                                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                                    Momo <img src="main/img/momo.png" alt="payment" />
+                                                                    MObile Money <img src="main/img/momo.png" alt="payment" />
                                                                     </a>
                                                                 </h4>
                                                             </div>
                                                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                                             <div class="panel-body">
-                                                                    <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                                                                    <p>Buy books with mobile money online</p>
                                                             </div>
                                                             </div>
                                                         </div>
