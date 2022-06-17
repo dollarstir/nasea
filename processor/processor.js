@@ -156,6 +156,26 @@ $(function(){
 
         }
 
+
+
+
+        else if(response == 'loginsuccess1'){
+
+          swal({
+              title: "Login Successfull!",
+              text: "will be redirected soon",
+              timer: 2000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location="checkout";
+            });
+
+      }
+
         else if(response == 'logout'){
 
           swal({
