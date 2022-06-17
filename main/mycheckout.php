@@ -57,14 +57,14 @@ begin('Checkout');
 							<div class="coupon-content" id="checkout-login">
 								<div class="coupon-info">
 									<!--<p class="coupon-text">Quisque gravida turpis sit amet nulla posuere lacinia. Cras sed est sit amet ipsum luctus.</p>-->
-									<form action="#">
+									<form action="#" class="login1">
 										<p class="form-row-first">
 											<label>Username or email <span class="required">*</span></label>
-											<input type="text">
+											<input type="text" name="login">
 										</p>
 										<p class="form-row-last">
 											<label>Password  <span class="required">*</span></label>
-											<input type="text">
+											<input type="text" name="password"> 
 										</p>
 										<p class="form-row">					
 											<input type="submit" value="Login">

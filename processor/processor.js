@@ -356,6 +356,28 @@ $('.login').submit(function(e){
 });
 
 
+// login 1
+
+$('.login1').submit(function(e){
+
+  e.preventDefault();
+  // before();
+  // var id = $(this).attr('id');
+  var staff = {
+      url: 'processor/processor.php?action=login1',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
 
 $(document).on('click','.logout',function(e){
 
