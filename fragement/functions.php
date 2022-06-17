@@ -233,7 +233,7 @@ function topbars()
                         <ul>
                             <li><a href="main/my-account.html">My Account</a></li>
                             <li><a href="main/checkout.html">Checkout</a></li>
-                            <li><a href="main/login.html">Sign in</a></li>
+                            '.(!isset($_SESSION['user'])) ? '<li><a href="login">Sign in</a></li>' : '<li><a href="logout">Logout</a></li>'.'
                         </ul>
                     </div>
                 </div>
