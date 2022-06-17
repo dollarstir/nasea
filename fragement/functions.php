@@ -202,6 +202,8 @@ function scripts()
 
 function topbars()
 {
+    $soday = (!isset($_SESSION['user'])) ? '<li><a href="main/login.html">Sign in</a></li>' : '<li><a href="logout">Logout</a></li>';
+
     return '<!-- header-top-area-start -->
     <div class="header-top-area">
         <div class="container">
@@ -217,23 +219,23 @@ function topbars()
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="main/#">USD $<i class="fa fa-angle-down"></i></a>
+                           <!-- <li><a href="main/#">USD $<i class="fa fa-angle-down"></i></a>
                                 <div class="header-sub dolor">
                                     <ul>
                                         <li><a href="main/#">EUR €</a></li>
                                         <li><a href="main/#">USD $</a></li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="account-area text-right">
                         <ul>
-                            <li><a href="main/my-account.html">My Account</a></li>
-                            <li><a href="main/checkout.html">Checkout</a></li>
-                            '.(!isset($_SESSION['user'])) ? '<li><a href="login">Sign in</a></li>' : '<li><a href="logout">Logout</a></li>'.'
+                            <li><a href="account">My Account</a></li>
+                            <li><a href="checkout">Checkout</a></li>
+                            '.$soday.'
                         </ul>
                     </div>
                 </div>
