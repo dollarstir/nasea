@@ -63,8 +63,8 @@ require '../fragement/deep.php';
         case 'login':
             extract($_POST);
             if (authenticate('users', [['email', '=', $login]]) == 'success' || authenticate('users', [['phone', '=', $login]]) == 'success') {
-                if (loginauth('users') == 'success') {
-                    echo 'login success';
+                if (loginauth('users', 'user', [['email', '=', $login], ['password', '=', $password]], 'AND') == 'success') {
+                    echo 'loginsuccess';
                 } else {
                     echo ' Invalid credentials';
                 }
