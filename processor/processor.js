@@ -156,7 +156,7 @@ $(function(){
 
         }
 
-        else if(response == 'logoutsuccess'){
+        else if(response == 'logout'){
 
           swal({
               title: "Logout Successfull!",
