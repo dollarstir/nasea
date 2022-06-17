@@ -57,5 +57,12 @@ $router = new Router([
             return Viewer::view('main/pay.php', $context);
         }
     ),
+
+    new Route(
+        '/login',
+        function ($context) {
+            return Viewer::view('main/auth.php', $context);
+        }
+    ),
 ]);
 $router->launch();
