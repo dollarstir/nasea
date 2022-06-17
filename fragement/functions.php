@@ -202,7 +202,7 @@ function scripts()
 
 function topbars()
 {
-    $soday = (!isset($_SESSION['user'])) ? '<li><a href="login">Sign in</a></li>' : '<li><button class="">Logout</button></li>';
+    $soday = (!isset($_SESSION['user'])) ? '<li><a href="login">Sign in</a></li>' : '<li><button class="logout">Logout</button></li>';
 
     return '<!-- header-top-area-start -->
     <div class="header-top-area">
