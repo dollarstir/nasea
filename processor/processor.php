@@ -73,6 +73,11 @@ require '../fragement/deep.php';
                 echo 'Login credentials does not exist';
             }
             break;
+        case 'logout':
+            if (logout('user') == 'success') {
+                echo 'logout';
+            }
+            break;
         default:
 
         break;

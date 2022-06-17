@@ -202,7 +202,7 @@ function scripts()
 
 function topbars()
 {
-    $soday = (!isset($_SESSION['user'])) ? '<li><a href="main/login.html">Sign in</a></li>' : '<li><a href="logout">Logout</a></li>';
+    $soday = (!isset($_SESSION['user'])) ? '<li><a href="login">Sign in</a></li>' : '<li><button class="">Logout</button></li>';
 
     return '<!-- header-top-area-start -->
     <div class="header-top-area">
@@ -211,14 +211,14 @@ function topbars()
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="language-area">
                         <ul>
-                            <li><img src="main/img/flag/1.jpg" alt="flag" /><a href="main/#">English<i class="fa fa-angle-down"></i></a>
+                           <!-- <li><img src="main/img/flag/1.jpg" alt="flag" /><a href="main/#">English<i class="fa fa-angle-down"></i></a>
                                 <div class="header-sub">
                                     <ul>
                                         <li><a href="main/#"><img src="main/img/flag/2.jpg" alt="flag" />france</a></li>
                                         <li><a href="main/#"><img src="main/img/flag/3.jpg" alt="flag" />croatia</a></li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li>-->
                            <!-- <li><a href="main/#">USD $<i class="fa fa-angle-down"></i></a>
                                 <div class="header-sub dolor">
                                     <ul>
