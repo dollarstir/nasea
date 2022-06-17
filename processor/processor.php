@@ -59,7 +59,19 @@ require '../fragement/deep.php';
             extract($_POST);
             sendmessage($name, $email, $subject, $message);
             break;
-            // no
+
+        case 'login':
+            extract($_POST);
+            if (authenticate('users', [['email', '=', $login]]) == 'success' || authenticate('users', [['phone', '=', $login]]) == 'success') {
+                if (loginauth('users') == 'success') {
+                    echo 'login success';
+                } else {
+                    echo ' Invalid credentials';
+                }
+            } else {
+                echo 'Login credentials does not exist';
+            }
+            break;
         default:
 
         break;

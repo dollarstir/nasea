@@ -36,22 +36,24 @@ $a = aboutpage();
 					</div>
 				</div>
 				<div class="offset-lg-3 col-lg-6 col-md-12 col-12">
-					<div class="login-form">
-						<div class="single-login">
-							<label>Phone Number or email<span>*</span></label>
-							<input type="text" name="login" />
-						</div>
-						<div class="single-login">
-							<label>Passwords <span>*</span></label>
-							<input type="password" />
-						</div>
-						<div class="single-login single-login-2">
-							<a href="#">login</a>
-							<input id="rememberme" type="checkbox" name="rememberme" value="forever">
-							<span>Remember me</span>
-						</div>
-						<a href="#">Lost your password?</a>
-					</div>
+                    <form class="login">
+                        <div class="login-form">
+                            <div class="single-login">
+                                <label>Phone Number or email<span>*</span></label>
+                                <input type="text" name="login" />
+                            </div>
+                            <div class="single-login">
+                                <label>Passwords <span>*</span></label>
+                                <input type="password"  name="password"/>
+                            </div>
+                            <div class="single-login single-login-2">
+                                <a href="#">login</a>
+                                <input id="rememberme" type="checkbox" name="rememberme" value="forever">
+                                <span>Remember me</span>
+                            </div>
+                            <a href="#">Lost your password?</a>
+                        </div>
+                    </form>
 				</div>
 			</div>
 		</div>
