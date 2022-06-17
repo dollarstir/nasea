@@ -62,6 +62,7 @@ require '../fragement/deep.php';
 
         case 'login':
             extract($_POST);
+            $password = md5($password);
             if (authenticate('users', [['email', '=', $login]]) == 'success' || authenticate('users', [['phone', '=', $login]]) == 'success') {
                 if (loginauth('users', 'user', [['email', '=', $login], ['password', '=', $password]], 'AND') == 'success') {
                     echo 'loginsuccess';

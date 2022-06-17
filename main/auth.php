@@ -47,9 +47,9 @@ $a = aboutpage();
                                 <input type="password"  name="password"/>
                             </div>
                             <div class="single-login single-login-2">
-                                <a href="#">login</a>
-                                <input id="rememberme" type="checkbox" name="rememberme" value="forever">
-                                <span>Remember me</span>
+                                <button class="btn btn-primary" type="submit">login</button>
+                                <!-- <input id="rememberme" type="checkbox" name="rememberme" value="forever">
+                                <span>Remember me</span> -->
                             </div>
                             <a href="#">Lost your password?</a>
                         </div>
