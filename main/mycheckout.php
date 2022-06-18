@@ -4,6 +4,9 @@ involve('functions');
 
 begin('Checkout');
 
+$user = user();
+echo $user;
+
  ?>
     <body class="checkout">
         <!--[if lt IE 8]>
