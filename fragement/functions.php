@@ -54,7 +54,7 @@ function footer()
     echo '  <footer>
     <!-- footer-top-start -->
     <div class="footer-top">
-        <div class="container">
+        <!--<div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-top-menu bb-2">
@@ -70,7 +70,7 @@ function footer()
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
     <!-- footer-top-start -->
     <!-- footer-mid-start -->
@@ -101,10 +101,10 @@ function footer()
                                 </div>
                                 <div class="footer-mid-menu">
                                     <ul>
-                                        <li><a href="main/contact.html">Contact us</a></li>
-                                        <li><a href="main/#">Sitemap</a></li>
-                                        <li><a href="main/#">Stores</a></li>
-                                        <li><a href="main/register.html">My account </a></li>
+                                        <li><a href="contact">Contact us</a></li>
+                                        <!--<li><a href="">Sitemap</a></li>-->
+                                        <li><a href="books">books</a></li>
+                                        <li><a href="account">My account </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -116,8 +116,8 @@ function footer()
                                 </div>
                                 <div class="footer-mid-menu">
                                     <ul>
-                                        <li><a href="main/contact.html">Addresses</a></li>
-                                        <li><a href="main/#">Credit slips </a></li>
+                                        <li><a href="contact">Addresses</a></li>
+                                        <!--<li><a href="">Credit slips </a></li>-->
                                         <li><a href="main/#"> Orders</a></li>
                                         <li><a href="main/#">Personal info</a></li>
                                     </ul>
