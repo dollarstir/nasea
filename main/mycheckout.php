@@ -162,13 +162,13 @@ $user = user();
                                         <div class="col-lg-12 col-md-12 col-12">
                                             <div class="checkout-form-list">
                                                 <label>Town / City <span class="required">*</span></label>
-                                                <input type="text" placeholder="Town / City" value="<?php echo isset($_SESSION['user']) ? $user['city'] : ''; ?>">
+                                                <input type="text" name="city" placeholder="Town / City" value="<?php echo isset($_SESSION['user']) ? $user['city'] : ''; ?>">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="checkout-form-list">
                                                 <label>State / County <span class="required">*</span></label>										
-                                                <input type="text" placeholder="" value="<?php echo isset($_SESSION['user']) ? $user['state'] : ''; ?>">
+                                                <input type="text" name="state" placeholder="" value="<?php echo isset($_SESSION['user']) ? $user['state'] : ''; ?>">
                                             </div>
                                         </div>
                                         <!-- <div class="col-lg-6 col-md-6 col-12">
@@ -180,13 +180,13 @@ $user = user();
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="checkout-form-list">
                                                 <label>Email Address <span class="required">*</span></label>										
-                                                <input type="email" placeholder="" value="<?php echo isset($_SESSION['user']) ? $user['email'] : ''; ?>">
+                                                <input type="email" name="email" placeholder="" value="<?php echo isset($_SESSION['user']) ? $user['email'] : ''; ?>">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="checkout-form-list">
                                                 <label>Phone  <span class="required">*</span></label>										
-                                                <input type="text" placeholder="Phone number" value="<?php echo isset($_SESSION['user']) ? $user['phone'] : ''; ?>">
+                                                <input type="text" name="phone" placeholder="Phone number" value="<?php echo isset($_SESSION['user']) ? $user['phone'] : ''; ?>">
                                             </div>
                                         </div>
                                         <?php echo !isset($_SESSION['user']) ? '<div class="col-lg-12 col-md-12 col-12">
