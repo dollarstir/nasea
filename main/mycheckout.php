@@ -186,7 +186,7 @@ $user = user();
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="checkout-form-list">
                                                 <label>Phone  <span class="required">*</span></label>										
-                                                <input type="text" placeholder="Postcode / Zip">
+                                                <input type="text" placeholder="Phone number" value="<?php echo isset($_SESSION['user']) ? $user['phone'] : ''; ?>">
                                             </div>
                                         </div>
                                         <?php echo !isset($_SESSION['user']) ? '<div class="col-lg-12 col-md-12 col-12">
