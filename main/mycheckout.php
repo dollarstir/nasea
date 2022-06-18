@@ -114,7 +114,7 @@ echo $user;
                                             <div class="country-select">
                                                 <label>Country <span class="required">*</span></label>
                                                 <select>
-                                                  <option value="<?php echo isset($_SESSION['user'])?  u; ?>">bangladesh</option>
+                                                  <option value="<?php echo isset($_SESSION['user']) ? $user['country'] : ''; ?>">bangladesh</option>
                                                   <option value="saab">Algeria</option>
                                                   <option value="mercedes">Afghanistan</option>
                                                   <option value="audi">Ghana</option>
