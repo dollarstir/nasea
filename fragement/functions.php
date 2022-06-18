@@ -50,6 +50,7 @@ function begin($title)
 
 function footer()
 {
+    $app = app();
     echo '  <footer>
     <!-- footer-top-start -->
     <div class="footer-top">
@@ -132,11 +133,11 @@ function footer()
                         </div>
                         <div class="footer-contact">
                             <p class="adress">
-                                <span>My Company</span>
-                                Your address goes here.
+                                <span>'.$app['appname'].'</span>
+                                '.$app['appaddress'].'
                             </p>
-                            <p><span>Call us now:</span> 0123456789</p>
-                            <p><span>Email:</span> demo@example.com</p>
+                            <p><span>Call us now:</span> '.$app['appcontact'].'</p>
+                            <p><span>Email:</span> '.$app['appemail'].'</p>
                         </div>
                     </div>
                 </div>
