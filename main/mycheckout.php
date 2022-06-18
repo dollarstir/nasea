@@ -197,7 +197,7 @@ $user = user();
                                             <div class="checkout-form-list create-account" id="cbox_info" style="display: block;">
                                                 <p>Create an account by entering the information below. If you are a returning customer please login at the top of the page.</p>
                                                 <label>Account password  <span class="required">*</span></label>
-                                                <input type="password" placeholder="password">	
+                                                <input type="password" placeholder="password" name="password">	
                                             </div>
                                         </div>' : ''; ?>								
                                     </div>
