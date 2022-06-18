@@ -380,7 +380,7 @@ $user = user();
                                                         </div>
                                                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                                           <div class="panel-body">
-                                                                <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                                                                <p>Pay via Mobile Money  </p>
                                                           </div>
                                                         </div>
                                                     </div>
