@@ -226,3 +226,7 @@ function sendmessage($name, $email, $subject, $message)
         'message' => $message, ]
 );
 }
+
+function user()
+{
+}
