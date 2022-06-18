@@ -853,7 +853,7 @@ begin('Welcome');
     </div>
     <!-- most-product-area-end -->
     <!-- testimonial-area-start -->
-    <div class="testimonial-area ptb-100 bg">
+    <!-- <div class="testimonial-area ptb-100 bg">
         <div class="container">
             <div class="row">
                 <div class="testimonial-active owl-carousel">
@@ -882,7 +882,7 @@ begin('Welcome');
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- testimonial-area-end -->
     <!-- recent-post-area-start -->
     <div class="recent-post-area pt-95 pb-100">
@@ -990,11 +990,11 @@ begin('Welcome');
                     <div class="link-follow">
                         <ul>
                             <li><a href="main/#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="main/#"><i class="fa fa-google-plus"></i></a></li>
+                            <!-- <li><a href="main/#"><i class="fa fa-google-plus"></i></a></li> -->
                             <li><a href="main/#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="main/#"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="main/#"><i class="fa fa-flickr"></i></a></li>
-                            <li><a href="main/#"><i class="fa fa-vimeo"></i></a></li>
+                            <!-- <li><a href="main/#"><i class="fa fa-flickr"></i></a></li> -->
+                            <!-- <li><a href="main/#"><i class="fa fa-vimeo"></i></a></li> -->
                             <li><a href="main/#"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
