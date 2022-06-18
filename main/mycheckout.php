@@ -5,7 +5,7 @@ involve('functions');
 begin('Checkout');
 
 $user = user();
-echo $user['name'];
+// echo $user['name'];
 
  ?>
     <body class="checkout">
@@ -114,7 +114,7 @@ echo $user['name'];
                                             <div class="country-select">
                                                 <label>Country <span class="required">*</span></label>
                                                 <select>
-                                                  <option value="<?php echo isset($_SESSION['user']) ? $user['country'] : ''; ?>">bangladesh</option>
+                                                  <option value="<?php echo isset($_SESSION['user']) ? $user['country'] : ''; ?>"><?php echo isset($_SESSION['user']) ? $user['country'] : 'Select Country'; ?></option>
                                                   <option value="saab">Algeria</option>
                                                   <option value="mercedes">Afghanistan</option>
                                                   <option value="audi">Ghana</option>
@@ -127,14 +127,19 @@ echo $user['name'];
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-12 ">
                                             <div class="checkout-form-list">
+                                                <?php
+                                                    if (isset($_SESSION['user'])) {
+                                                        $name = explode(' ', $user['name']);
+                                                    }
+                                                ?>
                                                 <label>First Name <span class="required">*</span></label>										
-                                                <input type="text" placeholder="">
+                                                <input type="text" placeholder="" value="<?php echo isset($_SESSION['user']) ? $name[0] : ''; ?>">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="checkout-form-list">
                                                 <label>Last Name <span class="required">*</span></label>										
-                                                <input type="text" placeholder="">
+                                                <input type="text" placeholder="" value="<?php echo isset($_SESSION['user']) ? $name[1] : ''; ?>">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-12">
