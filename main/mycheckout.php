@@ -5,7 +5,7 @@ involve('functions');
 begin('Checkout');
 
 $user = user();
-echo $user;
+echo $user['name'];
 
  ?>
     <body class="checkout">
