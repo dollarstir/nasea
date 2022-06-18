@@ -229,4 +229,11 @@ function sendmessage($name, $email, $subject, $message)
 
 function user()
 {
+    session_start();
+    $id = $_SESSION['user']['id'];
+
+    $res = customfetch('users', [['id', '=', $id]]);
+    $u = $res[0];
+
+    return $u;
 }
