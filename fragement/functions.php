@@ -151,12 +151,12 @@ function footer()
             <div class="row bt-2">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="copy-right-area">
-                        <p>&copy; 2021 <strong> Koparion </strong> Mede with ❤️ by <a href="https://github.com/dollarstir" target="_blank"><strong>Dollarsoft</strong></a></p>
+                        <p>&copy; '.date('Y').' <strong> '.$app['appname'].'</strong>  by <a href="https://github.com/dollarstir" target="_blank"><strong>Dollarsoft</strong></a></p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="payment-img text-right">
-                        <a href="main/#"><img src="main/img/1.png" alt="payment" /></a>
+                        <a href=""><img src="main/img/momo.png" alt="payment" /></a>
                     </div>
                 </div>
             </div>
