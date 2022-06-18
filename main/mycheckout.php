@@ -113,7 +113,7 @@ $user = user();
                                         <div class=" col-lg-12">
                                             <div class="country-select">
                                                 <label>Country <span class="required">*</span></label>
-                                                <select>
+                                                <select name="country">
                                                   <option value="<?php echo isset($_SESSION['user']) ? $user['country'] : ''; ?>"><?php echo isset($_SESSION['user']) ? $user['country'] : 'Select Country'; ?></option>
                                                   <option value="saab">Algeria</option>
                                                   <option value="mercedes">Afghanistan</option>
