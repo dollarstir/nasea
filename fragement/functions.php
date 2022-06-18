@@ -553,3 +553,10 @@ function books($limit = '')
     </div>';
     }
 }
+function app()
+{
+    $s = fetchAll('settings');
+    $ss = $s[0];
+
+    return $ss;
+}
