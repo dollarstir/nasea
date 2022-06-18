@@ -237,3 +237,7 @@ function user()
 
     return $u;
 }
+
+function order($token,)
+{
+}
