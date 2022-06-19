@@ -238,6 +238,7 @@ function user()
     return $u;
 }
 
-function order($token,)
+function order()
 {
+    $token = uniqid('NABK');
 }
