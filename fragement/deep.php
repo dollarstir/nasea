@@ -240,8 +240,12 @@ function user()
 
 function order()
 {
-
     session_start();
     $token = uniqid('NABK');
-    $
+    $discount = $_SESSION['coupon'];
+
+    $main = (100 - $discount) / 100;
+
+    foreach ($_SESSION['cart'] as $key => $value) {
+    }
 }
