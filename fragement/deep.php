@@ -247,5 +247,11 @@ function order()
     $main = (100 - $discount) / 100;
 
     foreach ($_SESSION['cart'] as $key => $value) {
+        $id = $value['bookid'];
+        $sel = customfetch('books', [['id', '=', $id]]);
+        $row = $sel[0];
+        $authorid = $sel[1];
+        $
+        
     }
 }
