@@ -240,5 +240,8 @@ function user()
 
 function order()
 {
+
+    session_start();
     $token = uniqid('NABK');
+    $
 }
