@@ -24,6 +24,7 @@ function addtocart($id)
                 'bookid' => $id,
                 'bookname' => $book['title'],
                 'bookcover' => $book['front'],
+                'bookback' => $book['back'],
                 'bookprice' => $book['price'],
             ];
 
@@ -35,10 +36,11 @@ function addtocart($id)
         }
     } else {
         $cartitem = [
-            'bookid' => $id,
-            'bookname' => $book['title'],
-            'bookcover' => $book['front'],
-            'bookprice' => $book['price'],
+                'bookid' => $id,
+                'bookname' => $book['title'],
+                'bookcover' => $book['front'],
+                'bookback' => $book['back'],
+                'bookprice' => $book['price'],
         ];
 
         $_SESSION['cart'][0] = $cartitem;
