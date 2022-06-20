@@ -240,7 +240,7 @@ function user()
     return $u;
 }
 
-function order()
+function orders()
 {
     session_start();
     $token = uniqid('NABK');
@@ -254,6 +254,7 @@ function order()
         $sel = customfetch('books', [['id', '=', $id]]);
         $row = $sel[0];
         // extract($row);
+        // getting author details
         $authorid = $row['id'];
         $cos = customfetch('authors', [['id', '=', $authorid]]);
         $ra = $cos[0];
