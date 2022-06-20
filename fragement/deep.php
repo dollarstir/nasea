@@ -255,5 +255,6 @@ function order()
         $authorid = $row['id'];
         $cos = customfetch('authors', [['id', '=', $authorid]]);
         $ra = $cos[0];
+        extract($ra);
     }
 }
