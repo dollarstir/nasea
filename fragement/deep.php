@@ -245,13 +245,18 @@ function order()
     $discount = $_SESSION['coupon'];
 
     $main = (100 - $discount) / 100;
+    $uid = $_SESSION['user']['id'];
 
     foreach ($_SESSION['cart'] as $key => $value) {
         $id = $value['bookid'];
         $sel = customfetch('books', [['id', '=', $id]]);
         $row = $sel[0];
-        $authorid = $sel[1];
+        // extract($row);
+        $authorid = $row['id'];
+        $cos = customfetch('authors')
+
+
         $
-        
+
     }
 }
