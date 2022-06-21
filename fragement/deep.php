@@ -270,5 +270,11 @@ function orders()
         extract($ra);
         // discountprice
         $discountprice = ($value['bookprice'] - $main);
+        $record = [
+            'token'=>$token,
+            
+
+        ]
+        insert('orders')
     }
 }
