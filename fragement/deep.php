@@ -245,7 +245,10 @@ function orderregister()
 {
     $name = $fnam.' '.$lname;
     $detail = [
-    ];
+    'name' => $name,
+    'email' => $email,
+    'phone',
+ ];
     insert('users');
 }
 
