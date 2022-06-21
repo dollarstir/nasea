@@ -249,6 +249,13 @@ function orders()
     $main = (100 - $discount) / 100;
     $uid = $_SESSION['user']['id'];
 
+    // todays date
+    $dateadded = date('jS F, Y');
+    // paystatus
+    $paystatus = 'unpaid';
+    // order status
+    $status = 'pending';
+
     foreach ($_SESSION['cart'] as $key => $value) {
         $id = $value['bookid'];
         $sel = customfetch('books', [['id', '=', $id]]);
@@ -259,11 +266,5 @@ function orders()
         $cos = customfetch('authors', [['id', '=', $authorid]]);
         $ra = $cos[0];
         extract($ra);
-        // todays date
-        $dateadded = date('jS F, Y');
-        // paystatus
-        $paystatus = 'unpaid';
-        // order status
-        $status = 'pending';
     }
 }
