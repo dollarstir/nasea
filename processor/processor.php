@@ -95,7 +95,7 @@ require '../fragement/deep.php';
 
         case 'order':
             extract($_POST);
-            order();
+            echo order();
 
             break;
         default:
