@@ -282,7 +282,11 @@ function orders()
             'back' => $value['bookback'],
             'price' => $value['bookprice'],
             'discountprice' => $discountprice,
+            'discount' => $discount,
+            'dateadded' => $dateadded,
+            'paystatus' => $paystatus,
+            'status' => $status,
      ];
-        insert('orders');
+        insert('orders', $record);
     }
 }
