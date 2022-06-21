@@ -259,5 +259,11 @@ function orders()
         $cos = customfetch('authors', [['id', '=', $authorid]]);
         $ra = $cos[0];
         extract($ra);
+        // todays date
+        $dateadded = date('jS F, Y');
+        // paystatus
+        $paystatus = 'unpaid';
+        // order status
+        $status = 'pending';
     }
 }
