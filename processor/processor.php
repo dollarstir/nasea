@@ -92,6 +92,12 @@ require '../fragement/deep.php';
                 echo 'logout';
             }
             break;
+
+        case 'order':
+            extract($_POST);
+            order();
+
+            break;
         default:
 
         break;
