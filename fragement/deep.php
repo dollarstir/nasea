@@ -272,7 +272,8 @@ function orders()
         $discountprice = ($value['bookprice'] - $main);
         $record = [
             'token'=>$token,
-            
+            'bid'=>$value['bookid'],
+
 
         ]
         insert('orders')
