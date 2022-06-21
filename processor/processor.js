@@ -176,6 +176,25 @@ $(function(){
 
       }
 
+
+
+      else if(response == 'ordersuccess'){
+
+        swal({
+            title: "Order Successfull!",
+            text: "will be redirected soon",
+            timer: 2000,
+            type: 'success',
+            padding: "2em",
+            onOpen: function () {
+              swal.showLoading();
+            },
+          }).then(function (result) {
+            window.location="completeorder";
+          });
+
+    }
+
         else if(response == 'logout'){
 
           swal({
@@ -411,6 +430,27 @@ $(document).on('click','.logout',function(e){
       // cache: false,
       // contentType: false,
       // processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+// order initiation
+
+$('.checkout').submit(function(e){
+
+  e.preventDefault();
+  // before();
+  // var id = $(this).attr('id');
+  var staff = {
+      url: 'processor/processor.php?action=order',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
       beforeSend: before,
       success: resp
 
