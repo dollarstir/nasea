@@ -258,6 +258,8 @@ function orders()
     // order status
     $status = 'pending';
 
+    $msg = '';
+
     foreach ($_SESSION['cart'] as $key => $value) {
         $id = $value['bookid'];
         $sel = customfetch('books', [['id', '=', $id]]);
@@ -287,7 +289,9 @@ function orders()
             'paystatus' => $paystatus,
             'status' => $status,
      ];
-        insert('orders', $record);
+        $msg .= insert('orders', $record);
     }
-    echo 'ordersuccess';
+    $msg .= '';
+
+    return $msg;
 }
