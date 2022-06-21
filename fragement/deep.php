@@ -244,9 +244,11 @@ function orders()
 {
     session_start();
     $token = uniqid('NABK');
+    // discount
     $discount = $_SESSION['coupon'];
 
     $main = (100 - $discount) / 100;
+    // userid
     $uid = $_SESSION['user']['id'];
 
     // todays date
@@ -266,5 +268,7 @@ function orders()
         $cos = customfetch('authors', [['id', '=', $authorid]]);
         $ra = $cos[0];
         extract($ra);
+        // discountprice
+        $discountprice = ($value['bookprice'] - $main);
     }
 }
