@@ -243,6 +243,8 @@ function user()
 // checking if users is logged in
 function orderregister()
 {
+
+    insert('users')
 }
 
 function orders()
