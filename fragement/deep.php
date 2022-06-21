@@ -278,8 +278,8 @@ function orders()
             'uid' => $uid,
             'bookname' => $value['bookname'],
             'authorid' => $authorid,
-            'authorname' => $authorname,
-            'authornumber' => $authornumber,
+            'authorname' => $authname,
+            'authornumber' => $authnumber,
             'front' => $value['bookcover'],
             'back' => $value['bookback'],
             'price' => $value['bookprice'],
@@ -293,5 +293,9 @@ function orders()
     }
     $msg .= '';
 
-    return $msg;
+    if (strpos($msg, 'success') !== false) {
+        return 'ordersuccess';
+    } else {
+        return 'Failed to order ';
+    }
 }
