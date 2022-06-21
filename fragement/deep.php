@@ -274,7 +274,10 @@ function orders()
             'token' => $token,
             'bid' => $value['bookid'],
             'uid' => $uid,
-        ];
+            'bookname' => $value['bookname'],
+            'authorid' => $authorid,
+        'authorname' => $authorname,
+     ];
         insert('orders');
     }
 }
