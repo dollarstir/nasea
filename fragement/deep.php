@@ -271,11 +271,10 @@ function orders()
         // discountprice
         $discountprice = ($value['bookprice'] - $main);
         $record = [
-            'token'=>$token,
-            'bid'=>$value['bookid'],
-
-
-        ]
-        insert('orders')
+            'token' => $token,
+            'bid' => $value['bookid'],
+            'uid' => $uid,
+        ];
+        insert('orders');
     }
 }
