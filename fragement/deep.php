@@ -240,6 +240,11 @@ function user()
     return $u;
 }
 
+// checking if users is logged in
+function orderregister()
+{
+}
+
 function orders()
 {
     session_start();
