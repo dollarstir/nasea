@@ -277,8 +277,11 @@ function orders()
             'bookname' => $value['bookname'],
             'authorid' => $authorid,
             'authorname' => $authorname,
-            'authornumber'=> $authornumber,
-            
+            'authornumber' => $authornumber,
+            'front' => $value['bookcover'],
+            'back' => $value['bookback'],
+            'price' => $value['bookprice'],
+            'discountprice' => $discountprice,
      ];
         insert('orders');
     }
