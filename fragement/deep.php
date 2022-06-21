@@ -289,4 +289,5 @@ function orders()
      ];
         insert('orders', $record);
     }
+    echo 'ordersuccess';
 }
