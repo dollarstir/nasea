@@ -276,7 +276,9 @@ function orders()
             'uid' => $uid,
             'bookname' => $value['bookname'],
             'authorid' => $authorid,
-        'authorname' => $authorname,
+            'authorname' => $authorname,
+            'authornumber'=> $authornumber,
+            
      ];
         insert('orders');
     }
