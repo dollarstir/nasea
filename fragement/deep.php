@@ -132,6 +132,24 @@ function checkoutcart()
     return $tt;
 }
 
+function paycart()
+{
+    $tt = '';
+    $cart = customfetch('orders', [['token', '=', $context['token']]]);
+    foreach ($cart as $key => $value) {
+        $tt .= '<tr class="cart_item">
+        <td class="product-name">
+            '.$value['bookname'].' <strong class="product-quantity"> × 1</strong>
+        </td>
+        <td class="product-total">
+            <span class="amount">&#8373;'.$value['discountprice'].'</span>
+        </td>
+    </tr>';
+    }
+
+    return $tt;
+}
+
 function countcart()
 {
     if (!empty($_SESSION['cart'])) {

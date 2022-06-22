@@ -50,7 +50,7 @@ echo '<!doctype html>
 		<!-- header-area-start -->
         <header>
 			<!-- header-top-area-start -->
-            <?php navbar(0); ?>
+            <?php navbar1(0); ?>
 			<!-- mobile-menu-area-end -->
 		</header>
 		<!-- header-area-end -->
@@ -152,7 +152,7 @@ echo '<!doctype html>
                                                     </tr>							
                                                 </thead>
                                                 <tbody id="checkcart">
-                                                    <?php echo checkoutcart(); ?>
+                                                    <?php echo paycart()(); ?>
                                                 </tbody>
                                                 <tfoot>
                                                     <tr class="cart-subtotal">
@@ -221,7 +221,7 @@ echo '<!doctype html>
                                                             <div class="panel-heading" role="tab" id="headingThree">
                                                                 <h4 class="panel-title">
                                                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                                    MObile Money <img src="main/img/momo.png" alt="payment" />
+                                                                    MObile Money <img src="../main/img/momo.png" alt="payment" />
                                                                     </a>
                                                                 </h4>
                                                             </div>
