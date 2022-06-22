@@ -52,7 +52,7 @@ $router = new Router([
     ),
 
     new Route(
-        '/completeorder',
+        '/completeorder/{token}',
         function ($context) {
             return Viewer::view('main/pay.php', $context);
         }

@@ -178,7 +178,7 @@ $(function(){
 
 
 
-      else if(response.startsWith('NABK')){
+      else if(response.startsWith("NABK") == true){
 
         swal({
             title: "Order Successfull!",
@@ -190,7 +190,7 @@ $(function(){
               swal.showLoading();
             },
           }).then(function (result) {
-            window.location="completeorder";
+            window.location="completeorder/"+response;
           });
 
     }
