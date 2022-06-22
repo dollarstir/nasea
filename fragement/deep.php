@@ -273,6 +273,8 @@ function orderregister($fname, $lname, $email, $phone, $country, $address, $city
                     echo 'Failed to Create Account';
                 }
             }
+        } else {
+            orders();
         }
     }
 }
@@ -282,8 +284,11 @@ function orders()
     session_start();
     $token = uniqid('NABK');
     // discount
-    $discount = $_SESSION['coupon'];
-
+    if (!isset($_SESSION['coupon'])) {
+        $discount = 0;
+    } else {
+        $discount = $_SESSION['coupon'];
+    }
     $main = (100 - $discount) / 100;
     // userid
     $uid = $_SESSION['user']['id'];
@@ -330,7 +335,7 @@ function orders()
             $msg .= insert('orders', $record);
         }
     } else {
-        $msg .= 'Your cart id empty';
+        $msg .= 'emptycart';
     }
 
     $msg .= '';
@@ -339,6 +344,8 @@ function orders()
         unset($_SESSION['cart']);
         unset($_SESSION['coupon']);
         echo 'ordersuccess';
+    } elseif ($msg == 'emptycart') {
+        echo 'Your cart is empty';
     } else {
         echo 'Failed to order ';
     }

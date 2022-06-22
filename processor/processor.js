@@ -178,7 +178,7 @@ $(function(){
 
 
 
-      else if(response == 'ordersuccess'){
+      else if(response.startsWith('NABK')){
 
         swal({
             title: "Order Successfull!",
