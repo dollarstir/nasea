@@ -241,15 +241,20 @@ function user()
 }
 
 // checking if users is logged in
-function orderregister()
+function orderregister($fname, $lname, $email, $phone, $country, $address, $city, $password)
 {
     $name = $fnam.' '.$lname;
     $detail = [
     'name' => $name,
     'email' => $email,
-    'phone',
+    'phone' => $phone,
+    'country' => $country,
+    'address' => $address,
+    'çity' => $city,
+    'password' => md5($password),
  ];
-    insert('users');
+
+    $add = insert('users', $detail);
 }
 
 function orders()
