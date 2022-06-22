@@ -137,7 +137,7 @@ echo '<!doctype html>
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-					    <form action="#" class="checkout">
+					    <!-- <form action="#" class="checkout"> -->
                             <div class="row">
                                 
                                 <div class="col-lg-12 col-md-12 col-12">
@@ -216,17 +216,19 @@ echo '<!doctype html>
                                             <div class="order-button-payment">
                                                 <?php echo Yolkpay::handler();
                                                     $d = user();
-                                                    $name = implode(' ', $d['name']);
+                                                    $name = explode(' ', $d['name']);
                                                     $fname = $name[0];
                                                     $lname = $name[1];
 
-                                                echo Yolkpay::payscript($fname, $lname, $d['email'], $d['phone']); ?>
+                                                echo Yolkpay::payscript($fname, $lname, $d['email'], $d['phone'], paytotal($context['token']));
+                                                echo Yolkpay::pay('Pay Now');
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        <!-- </form> -->
 					</div>
 				</div>
 			</div>
