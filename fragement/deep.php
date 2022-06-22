@@ -243,18 +243,21 @@ function user()
 // checking if users is logged in
 function orderregister($fname, $lname, $email, $phone, $country, $address, $city, $password)
 {
-    $name = $fnam.' '.$lname;
-    $detail = [
-    'name' => $name,
-    'email' => $email,
-    'phone' => $phone,
-    'country' => $country,
-    'address' => $address,
-    'çity' => $city,
-    'password' => md5($password),
- ];
+    if ($fname == '' || $lname == '' || $email == '' || $phone == '' || $country == '' || $address == '' || $city == '') {
+        echo 'Áll fields are required';
+    }
 
-    $add = insert('users', $detail);
+    // $name = $fnam.' '.$lname;
+    // $detail = [
+    // 'name' => $name,
+    // 'email' => $email,
+    // 'phone' => $phone,
+    // 'country' => $country,
+    // 'address' => $address,
+    // 'çity' => $city,
+    // 'password' => md5($password),
+    //  ];
+    // $add = insert('users', $detail);
 }
 
 function orders()
