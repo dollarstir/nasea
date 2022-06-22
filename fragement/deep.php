@@ -249,23 +249,32 @@ function orderregister($fname, $lname, $email, $phone, $country, $address, $city
         if (trim($password, '') != '') {
             $ck = authenticate('users', [['email', '=', $email]]);
             if ($ck == 'success') {
-                echo 'Úser Account Already exit .login instead';
+                echo 'User Account Already exit .login instead';
             } else {
-                $ins = insert('');
+                $name = $fnam.' '.$lname;
+                $detail = [
+                'name' => $name,
+                'email' => $email,
+                'phone' => $phone,
+                'country' => $country,
+                'address' => $address,
+                'çity' => $city,
+                'password' => md5($password),
+                ];
+                $add = insert('users', $detail);
+
+                if ($add == 'success') {
+                    if (loginauth('users', 'user', [['email', '=', $login], ['password', '=', md5($password)]], 'AND') == 'success') {
+                        orders();
+                    } else {
+                        echo 'Failed to login';
+                    }
+                } else {
+                    echo 'Failed to Create Account';
+                }
             }
         }
     }
-    // $name = $fnam.' '.$lname;
-    // $detail = [
-    // 'name' => $name,
-    // 'email' => $email,
-    // 'phone' => $phone,
-    // 'country' => $country,
-    // 'address' => $address,
-    // 'çity' => $city,
-    // 'password' => md5($password),
-    //  ];
-    // $add = insert('users', $detail);
 }
 
 function orders()
@@ -322,8 +331,10 @@ function orders()
     $msg .= '';
 
     if (strpos($msg, 'success') !== false) {
-        return 'ordersuccess';
+        unset($_SESSION['cart']);
+        unset(_SESSION['coupon']);
+        echo 'ordersuccess';
     } else {
-        return 'Failed to order ';
+        echo 'Failed to order ';
     }
 }
