@@ -156,7 +156,9 @@ function paytotal($toekn)
     $total = 0;
 
     foreach ($t as $key){
-        
+
+        $total .= ($total + $key['discountprice']);
+
     }
 
 
