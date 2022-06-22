@@ -4,7 +4,10 @@ involve('functions');
 
 begin('Checkout');
 
-$user = user();
+if (isset($_SESSION['user'])) {
+    $user = user();
+}
+
 // echo $user['name'];
 
  ?>

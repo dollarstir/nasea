@@ -297,37 +297,42 @@ function orders()
 
     $msg = '';
 
-    foreach ($_SESSION['cart'] as $key => $value) {
-        $id = $value['bookid'];
-        $sel = customfetch('books', [['id', '=', $id]]);
-        $row = $sel[0];
-        // extract($row);
-        // getting author details
-        $authorid = $row['id'];
-        $cos = customfetch('authors', [['id', '=', $authorid]]);
-        $ra = $cos[0];
-        extract($ra);
-        // discountprice
-        $discountprice = ($value['bookprice'] - $main);
-        $record = [
-            'token' => $token,
-            'bid' => $value['bookid'],
-            'uid' => $uid,
-            'bookname' => $value['bookname'],
-            'authorid' => $authorid,
-            'authorname' => $authname,
-            'authornumber' => $authnumber,
-            'front' => $value['bookcover'],
-            'back' => $value['bookback'],
-            'price' => $value['bookprice'],
-            'discountprice' => $discountprice,
-            'discount' => $discount,
-            'dateadded' => $dateadded,
-            'paystatus' => $paystatus,
-            'status' => $status,
-     ];
-        $msg .= insert('orders', $record);
+    if (!isset($_SESSION['cart'])) {
+        foreach ($_SESSION['cart'] as $key => $value) {
+            $id = $value['bookid'];
+            $sel = customfetch('books', [['id', '=', $id]]);
+            $row = $sel[0];
+            // extract($row);
+            // getting author details
+            $authorid = $row['id'];
+            $cos = customfetch('authors', [['id', '=', $authorid]]);
+            $ra = $cos[0];
+            extract($ra);
+            // discountprice
+            $discountprice = ($value['bookprice'] - $main);
+            $record = [
+                'token' => $token,
+                'bid' => $value['bookid'],
+                'uid' => $uid,
+                'bookname' => $value['bookname'],
+                'authorid' => $authorid,
+                'authorname' => $authname,
+                'authornumber' => $authnumber,
+                'front' => $value['bookcover'],
+                'back' => $value['bookback'],
+                'price' => $value['bookprice'],
+                'discountprice' => $discountprice,
+                'discount' => $discount,
+                'dateadded' => $dateadded,
+                'paystatus' => $paystatus,
+                'status' => $status,
+         ];
+            $msg .= insert('orders', $record);
+        }
+    } else {
+        $msg = 'Your cart id empty';
     }
+
     $msg .= '';
 
     if (strpos($msg, 'success') !== false) {
