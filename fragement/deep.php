@@ -150,19 +150,17 @@ function paycart($token)
     return $tt;
 }
 
-function paytotal($toekn)
+function paytotal($token)
 {
     $t = customfetch('orders', [['token', '=', $token]]);
     $total = 0;
 
-    foreach ($t as $key){
-
-        $total .= ($total + $key['discountprice']);
-
+    foreach ($t as $key) {
+        $total += $key['discountprice'];
     }
+    // $total .= '';
 
     return $total;
-
 }
 function countcart()
 {

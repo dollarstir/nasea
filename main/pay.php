@@ -158,7 +158,7 @@ echo '<!doctype html>
                                                     
                                                     <tr class="order-total">
                                                         <th>Order Total</th>
-                                                        <td><strong><span class="amount">&#8373;<span id="ordtt"><?php echo carttotal(); ?></span></span></strong>
+                                                        <td><strong><span class="amount">&#8373;<span id="ordtt"><?php echo paytotal($context['token']); ?></span></span></strong>
                                                         </td>
                                                     </tr>								
                                                 </tfoot>
