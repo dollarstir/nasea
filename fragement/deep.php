@@ -343,7 +343,7 @@ function orders()
     if (strpos($msg, 'success') !== false) {
         unset($_SESSION['cart']);
         unset($_SESSION['coupon']);
-        echo 'ordersuccess';
+        echo $token;
     } elseif ($msg == 'emptycart') {
         echo 'Your cart is empty';
     } else {
