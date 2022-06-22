@@ -245,8 +245,11 @@ function orderregister($fname, $lname, $email, $phone, $country, $address, $city
 {
     if ($fname == '' || $lname == '' || $email == '' || $phone == '' || $country == '' || $address == '' || $city == '') {
         echo 'Áll fields are required';
+    } else {
+        if (trim($password, '') != '') {
+            $ck = authenticate('users', [['email', '=', $email]]);
+        }
     }
-
     // $name = $fnam.' '.$lname;
     // $detail = [
     // 'name' => $name,
