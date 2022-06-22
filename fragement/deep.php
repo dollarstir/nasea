@@ -332,7 +332,7 @@ function orders()
 
     if (strpos($msg, 'success') !== false) {
         unset($_SESSION['cart']);
-        unset(_SESSION['coupon']);
+        unset($_SESSION['coupon']);
         echo 'ordersuccess';
     } else {
         echo 'Failed to order ';

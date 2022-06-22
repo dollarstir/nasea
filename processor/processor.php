@@ -95,7 +95,7 @@ require '../fragement/deep.php';
 
         case 'order':
             extract($_POST);
-            echo orders();
+            orderregister($fname, $lname, $email, $phone, $country, $address, $city, $password);
 
             break;
         default:
