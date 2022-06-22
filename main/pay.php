@@ -152,31 +152,10 @@ echo '<!doctype html>
                                                     </tr>							
                                                 </thead>
                                                 <tbody id="checkcart">
-                                                    <?php echo paycart()(); ?>
+                                                    <?php echo paycart($context['token']); ?>
                                                 </tbody>
                                                 <tfoot>
-                                                    <tr class="cart-subtotal">
-                                                        <th>Cart Subtotal</th>
-                                                        <td><span class="amount">&#8373;<span id="mku"><?php echo cartsubtotal(); ?></span></span></td>
-                                                    </tr>
-                                                    <tr class="shipping">
                                                     
-                                                        <td>
-                                                            <ul>
-                                                                <li>
-                                                                
-                                                                    <label>
-                                                                        Discount <span class="amount"><span id="diskc"><?php echo discount(); ?></span>%</span>
-                                                                    </label>
-                                                                </li>
-                                                                <!-- <li>
-                                                                    <input type="radio">
-                                                                    <label>Free Shipping:</label>
-                                                                </li> -->
-                                                                <!-- <li></li> -->
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
                                                     <tr class="order-total">
                                                         <th>Order Total</th>
                                                         <td><strong><span class="amount">&#8373;<span id="ordtt"><?php echo carttotal(); ?></span></span></strong>

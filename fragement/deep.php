@@ -132,10 +132,10 @@ function checkoutcart()
     return $tt;
 }
 
-function paycart()
+function paycart($token)
 {
     $tt = '';
-    $cart = customfetch('orders', [['token', '=', $context['token']]]);
+    $cart = customfetch('orders', [['token', '=', $token]]);
     foreach ($cart as $key => $value) {
         $tt .= '<tr class="cart_item">
         <td class="product-name">
@@ -148,6 +148,10 @@ function paycart()
     }
 
     return $tt;
+}
+
+function paytotal($toekn)
+{
 }
 
 function countcart()
