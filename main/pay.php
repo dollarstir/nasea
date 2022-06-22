@@ -2,7 +2,43 @@
 
 involve('functions');
 
-begin('Checkout');
+echo '<!doctype html>
+    <html class="no-js" lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Nasea Book - '.$title.'</title>
+        <meta name="description" content="Nasea books is one of the Best E-book stores in the world">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="main/img/favicon.png">
+    
+        <!-- all css here -->
+        <!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="main/css/bootstrap.min.css">
+        <!-- animate css -->
+        '.Yolk::uicore('cssa').'
+        <link rel="stylesheet" href="main/css/animate.css">
+        <!-- meanmenu css -->
+        <link rel="stylesheet" href="main/css/meanmenu.min.css">
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" href="main/css/owl.carousel.css">
+        <!-- font-awesome css -->
+        <link rel="stylesheet" href="main/css/font-awesome.min.css">
+        <!-- flexslider.css-->
+        <link rel="stylesheet" href="main/css/flexslider.css">
+        <!-- chosen.min.css-->
+        <link rel="stylesheet" href="main/css/chosen.min.css">
+        <!-- style css -->
+        <link rel="stylesheet" href="main/style.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="main/css/responsive.css">
+        <!-- modernizr css -->
+        
+        <script src="main/js/vendor/modernizr-2.8.3.min.js"></script>
+        
+    </head>';
 
  ?>
     <body class="checkout">
