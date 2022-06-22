@@ -561,3 +561,282 @@ function app()
 
     return $ss;
 }
+
+function topbars1()
+{
+    $soday = (!isset($_SESSION['user'])) ? '<li><a href="login">Sign in</a></li>' : '<li><button class="logout">Logout</button></li>';
+
+    return '<!-- header-top-area-start -->
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="language-area">
+                        <ul>
+                           <!-- <li><img src="main/img/flag/1.jpg" alt="flag" /><a href="main/#">English<i class="fa fa-angle-down"></i></a>
+                                <div class="header-sub">
+                                    <ul>
+                                        <li><a href="main/#"><img src="main/img/flag/2.jpg" alt="flag" />france</a></li>
+                                        <li><a href="main/#"><img src="main/img/flag/3.jpg" alt="flag" />croatia</a></li>
+                                    </ul>
+                                </div>
+                            </li>-->
+                           <!-- <li><a href="main/#">USD $<i class="fa fa-angle-down"></i></a>
+                                <div class="header-sub dolor">
+                                    <ul>
+                                        <li><a href="main/#">EUR €</a></li>
+                                        <li><a href="main/#">USD $</a></li>
+                                    </ul>
+                                </div>
+                            </li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="account-area text-right">
+                        <ul>
+                            <li><a href="account">My Account</a></li>
+                            <li><a href="checkout">Checkout</a></li>
+                            '.$soday.'
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-top-area-end -->
+    <!-- header-mid-area-start -->
+    <div class="header-mid-area ptb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-5 col-12">
+                    <div class="header-search">
+                        <form action="#">
+                            <input type="text" placeholder="Search entire store here..." />
+                            <a href="main/#"><i class="fa fa-search"></i></a>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-4 col-12">
+                    <div class="logo-area text-center logo-xs-mrg">
+                        <a href="main/index.html"><img src="main/img/logo/logo.png" alt="logo" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12">
+                    <div class="my-cart">
+                        <ul>
+                            <li><a href="main/#"><i class="fa fa-shopping-cart"></i>My Cart</a>
+                                <span id ="cartcount">'.countcart().'</span>
+                                <div class="mini-cart-sub">
+                                    <div class="cart-product" id="minicart">
+                                        '.minicart().'
+                                        
+                                    </div>
+                                    <div class="cart-totals">
+                                        <h5>Total <span id="cartot">&#8373;'.carttotal().'</span></h5>
+                                    </div>
+                                    <div class="cart-bottom">
+                                        <a class="view-cart" href="cart">view cart</a>
+                                        <a href="checkout">Check out</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-mid-area-end -->';
+}
+
+function mainmenu1($pid)
+{
+    $pages = [
+        'Home' => 'home',
+        'Books' => 'books',
+        'Categories' => [
+            'Poem' => 'poem',
+            'History' => 'history',
+            'Romance' => 'romance',
+        ],
+        'About' => 'aboutus',
+        'Contact' => 'contact',
+        'Free Peoms' => 'poems',
+        'View Cart' => 'cart',
+    ];
+
+    $tt = '<!-- main-menu-area-start -->
+    <div class="main-menu-area d-md-none d-none d-lg-block sticky-header-1" id="header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu-area">
+                        <nav>
+                            <ul>';
+    $num = 0;
+    foreach ($pages as $key => $value) {
+        ++$num;
+
+        if (is_array($value)) {
+            $tt .= ($pid == $num) ? ' <li class="active"><a href="#">'.$key.'<i class="fa fa-angle-down"></i></a>
+            <div class="sub-menu sub-menu-2">
+                <ul>' : '<li><a href="#">'.$key.'<i class="fa fa-angle-down"></i></a>
+                <div class="sub-menu sub-menu-2">
+                    <ul>';
+            foreach ($value as $key1 => $value1) {
+                $tt .= '<li><a href="'.$value1.'">'.$key1.'</a></li>';
+            }
+
+            $tt .= '  </ul>
+            </div>
+        </li>';
+        } else {
+            $tt .= ($pid == $num) ? '<li class="active">
+            <a href="'.$value.'">'.$key.'</i></a>
+                
+            </li>' : '<li>
+            <a href="'.$value.'">'.$key.'</i></a>
+                
+            </li>';
+        }
+    }
+    $tt .= '</ul>
+                        </nav>
+                    </div>
+                   <!-- <div class="safe-area">
+                        <a href="main/product-details.html">sales off</a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main-menu-area-end -->';
+
+    return $tt;
+}
+
+function mobilemenu1()
+{
+    return '<!-- mobile-menu-area-start -->
+    <div class="mobile-menu-area d-lg-none d-block fix">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mobile-menu">
+                        <nav id="mobile-menu-active">
+                            <ul id="nav">
+                                <li><a href="main/index.html">Home</a>
+                                    <ul>
+                                        <li><a href="main/index.html">Home-1</a></li>
+                                        <li><a href="main/index-2.html">Home-2</a></li>
+                                        <li><a href="main/index-3.html">Home-3</a></li>
+                                        <li><a href="main/index-4.html">Home-4</a></li>
+                                        <li><a href="main/index-5.html">Home-5</a></li>
+                                        <li><a href="main/index-6.html">Home-6</a></li>
+                                        <li><a href="main/index-7.html">Home-7</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="main/product-details.html">Book</a>
+                                    <ul>
+                                        <li><a href="main/shop.html">Tops & Tees</a></li>
+                                        <li><a href="main/shop.html">Polo Short Sleeve</a></li>
+                                        <li><a href="main/shop.html">Graphic T-Shirts</a></li>
+                                        <li><a href="main/shop.html">Jackets & Coats</a></li>
+                                        <li><a href="main/shop.html">Fashion Jackets</a></li>
+                                        <li><a href="main/shop.html">Crochet</a></li>
+                                        <li><a href="main/shop.html">Sleeveless</a></li>
+                                        <li><a href="main/shop.html">Stripes</a></li>
+                                        <li><a href="main/shop.html">Sweaters</a></li>
+                                        <li><a href="main/shop.html">hoodies</a></li>
+                                        <li><a href="main/shop.html">Heeled sandals</a></li>
+                                        <li><a href="main/shop.html">Polo Short Sleeve</a></li>
+                                        <li><a href="main/shop.html">Flat sandals</a></li>
+                                        <li><a href="main/shop.html">Short Sleeve</a></li>
+                                        <li><a href="main/shop.html">Long Sleeve</a></li>
+                                        <li><a href="main/shop.html">Polo Short Sleeve</a></li>
+                                        <li><a href="main/shop.html">Sleeveless</a></li>
+                                        <li><a href="main/shop.html">Graphic T-Shirts</a></li>
+                                        <li><a href="main/shop.html">Hoodies</a></li>
+                                        <li><a href="main/shop.html">Jackets</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="main/product-details.html">Audio books</a>
+                                    <ul>
+                                        <li><a href="main/shop.html">Tops & Tees</a></li>
+                                        <li><a href="main/shop.html">Sweaters</a></li>
+                                        <li><a href="main/shop.html">Hoodies</a></li>
+                                        <li><a href="main/shop.html">Jackets & Coats</a></li>
+                                        <li><a href="main/shop.html">Long Sleeve</a></li>
+                                        <li><a href="main/shop.html">Short Sleeve</a></li>
+                                        <li><a href="main/shop.html">Polo Short Sleeve</a></li>
+                                        <li><a href="main/shop.html">Sleeveless</a></li>
+                                        <li><a href="main/shop.html">Sweaters</a></li>
+                                        <li><a href="main/shop.html">Hoodies</a></li>
+                                        <li><a href="main/shop.html">Wedges</a></li>
+                                        <li><a href="main/shop.html">Vests</a></li>
+                                        <li><a href="main/shop.html">Polo Short Sleeve</a></li>
+                                        <li><a href="main/shop.html">Sleeveless</a></li>
+                                        <li><a href="main/shop.html">Graphic T-Shirts</a></li>
+                                        <li><a href="main/shop.html">Hoodies</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="main/product-details.html">children’s books</a>
+                                    <ul>
+                                        <li><a href="main/shop.html">Shirts</a></li>
+                                        <li><a href="main/shop.html">Florals</a></li>
+                                        <li><a href="main/shop.html">Crochet</a></li>
+                                        <li><a href="main/shop.html">Stripes</a></li>
+                                        <li><a href="main/shop.html">Shorts</a></li>
+                                        <li><a href="main/shop.html">Dresses</a></li>
+                                        <li><a href="main/shop.html">Trousers</a></li>
+                                        <li><a href="main/shop.html">Jeans</a></li>
+                                        <li><a href="main/shop.html">Heeled sandals</a></li>
+                                        <li><a href="main/shop.html">Flat sandals</a></li>
+                                        <li><a href="main/shop.html">Wedges</a></li>
+                                        <li><a href="main/shop.html">Ankle boots</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="main/#">blog</a>
+                                    <ul>
+                                        <li><a href="main/blog.html">Blog</a></li>
+                                        <li><a href="main/blog-details.html">blog-details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="main/product-details.html">Page</a>
+                                    <ul>
+                                        <li><a href="main/shop.html">shop</a></li>
+                                        <li><a href="main/shop-list.html">shop list view</a></li>
+                                        <li><a href="main/product-details.html">product-details</a></li>
+                                        <li><a href="main/product-details-affiliate.html">product-affiliate</a></li>
+                                        <li><a href="main/blog.html">blog</a></li>
+                                        <li><a href="main/blog-details.html">blog-details</a></li>
+                                        <li><a href="main/contact.html">contact</a></li>
+                                        <li><a href="main/about.html">about</a></li>
+                                        <li><a href="main/login.html">login</a></li>
+                                        <li><a href="main/register.html">register</a></li>
+                                        <li><a href="main/my-account.html">my-account</a></li>
+                                        <li><a href="main/cart.html">cart</a></li>
+                                        <li><a href="main/compare.html">compare</a></li>
+                                        <li><a href="main/checkout.html">checkout</a></li>
+                                        <li><a href="main/wishlist.html">wishlist</a></li>
+                                        <li><a href="main/404.html">404 Page</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile-menu-area-end -->';
+}
+
+// logical navbar by dollarstir
+function navbar1($pid)
+{
+    echo topbars1();
+    echo mainmenu1($pid);
+    echo mobilemenu1();
+}
