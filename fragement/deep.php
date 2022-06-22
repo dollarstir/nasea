@@ -248,6 +248,11 @@ function orderregister($fname, $lname, $email, $phone, $country, $address, $city
     } else {
         if (trim($password, '') != '') {
             $ck = authenticate('users', [['email', '=', $email]]);
+            if ($ck == 'success') {
+                echo 'Úser Account Already exit .login instead';
+            } else {
+                $ins = insert('');
+            }
         }
     }
     // $name = $fnam.' '.$lname;
