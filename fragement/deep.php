@@ -249,7 +249,7 @@ function orderregister($fname, $lname, $email, $phone, $country, $address, $city
         if (trim($password, '') != '') {
             $ck = authenticate('users', [['email', '=', $email]]);
             if ($ck == 'success') {
-                echo 'User Account Already exit .login instead';
+                echo 'User Account Already exist . login instead';
             } else {
                 $name = $fnam.' '.$lname;
                 $detail = [
@@ -297,7 +297,7 @@ function orders()
 
     $msg = '';
 
-    if (!isset($_SESSION['cart'])) {
+    if (isset($_SESSION['cart'])) {
         foreach ($_SESSION['cart'] as $key => $value) {
             $id = $value['bookid'];
             $sel = customfetch('books', [['id', '=', $id]]);
@@ -330,7 +330,7 @@ function orders()
             $msg .= insert('orders', $record);
         }
     } else {
-        $msg = 'Your cart id empty';
+        $msg .= 'Your cart id empty';
     }
 
     $msg .= '';
