@@ -152,7 +152,13 @@ function paycart($token)
 
 function paytotal($toekn)
 {
-}
+    $t = customfetch('orders', [['token', '=', $token]]);
+    $total = 0;
+
+    foreach ($t as $key){
+        
+    }
+
 
 function countcart()
 {
