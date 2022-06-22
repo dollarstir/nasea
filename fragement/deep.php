@@ -161,7 +161,9 @@ function paytotal($toekn)
 
     }
 
+    return $total;
 
+}
 function countcart()
 {
     if (!empty($_SESSION['cart'])) {
