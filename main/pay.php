@@ -214,9 +214,13 @@ echo '<!doctype html>
                                                 </div>
                                             </div>
                                             <div class="order-button-payment">
-                                                <?php Yolkpay::handler();
+                                                <?php echo Yolkpay::handler();
+                                                    $d = user();
+                                                    $name = implode(' ', $d['name']);
+                                                    $fname = $name[0];
+                                                    $lname = $name[1];
 
-                                                Yolkpay::payscript(); ?>
+                                                echo Yolkpay::payscript($fname, $lname, $d['email'], $d['phone']); ?>
                                             </div>
                                         </div>
                                     </div>
