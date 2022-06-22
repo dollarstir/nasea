@@ -214,7 +214,9 @@ echo '<!doctype html>
                                                 </div>
                                             </div>
                                             <div class="order-button-payment">
-                                                <input type="submit" value="Place order">
+                                                <?php Yolkpay::handler();
+
+                                                Yolkpay::payscript(); ?>
                                             </div>
                                         </div>
                                     </div>
