@@ -95,6 +95,10 @@ require '../fragement/deep.php';
 
         case 'order':
             extract($_POST);
+
+            if (!isset($password)) {
+                $password = '';
+            }
             orderregister($fname, $lname, $email, $phone, $country, $address, $city, $password);
 
             break;
