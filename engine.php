@@ -64,5 +64,12 @@ $router = new Router([
             return Viewer::view('main/auth.php', $context);
         }
     ),
+
+    new Route(
+        '/ignitor',
+        function ($context) {
+            return Viewer::view('main/paypros.php', $context);
+        }
+    ),
 ]);
 $router->launch();

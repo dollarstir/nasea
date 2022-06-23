@@ -258,7 +258,7 @@ function topbars()
                 </div>
                 <div class="col-lg-6 col-md-4 col-12">
                     <div class="logo-area text-center logo-xs-mrg">
-                        <a href="main/index.html"><img src="main/img/logo/logo.png" alt="logo" /></a>
+                        <a href="home"><img src="main/img/logo/logo.png" alt="logo" /></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-12">

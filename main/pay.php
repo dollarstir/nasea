@@ -220,7 +220,7 @@ echo '<!doctype html>
                                                     $fname = $name[0];
                                                     $lname = $name[1];
 
-                                                echo Yolkpay::payscript($fname, $lname, $d['email'], $d['phone'], paytotal($context['token']));
+                                                echo Yolkpay::payscript($fname, $lname, $d['email'], $d['phone'], paytotal($context['token']), '', $context['token']);
                                                 echo Yolkpay::pay('Pay Now');
                                                 ?>
                                             </div>

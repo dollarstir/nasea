@@ -18,7 +18,7 @@ class Yolkpay
 
     public static function pay($text = 'Pay')
     {
-        return '<button class="btn btn-success" type="submit" onclick="payWithPaystack()"> '.$text.' </button>';
+        return '<button class="btn btn-primary" type="submit" onclick="payWithPaystack()"> '.$text.' </button>';
     }
 
     public static function handler()
@@ -26,7 +26,7 @@ class Yolkpay
         return ' <script src="https://js.paystack.co/v1/inline.js"></script>';
     }
 
-    public function payscript($fname, $lname, $email, $phone, $amount, $ref = '')
+    public function payscript($fname, $lname, $email, $phone, $amount, $ref = '', $token)
     {
         if ($ref == '') {
             $r1 = 'YP';
@@ -82,11 +82,47 @@ function payWithPaystack() {
        
 
       //alert("Payment complete! Reference: " + reference);
-    window.location="payhandler.php?ref='.$ref.'&amount='.$amount.'" ;
+   // window.location="payhandler.php?ref=" ;
       
       // Make an AJAX call to your server with the reference to verify the transaction
       
-                   
+      if(response.status == "success"){
+        
+    
+        var opt = {
+            url : "processo.php?action=paysuccess",
+            type: "post",
+            data:{"ref":'.$ref.',"token":'.$token.' } ,
+            contentType: false, // NEEDED, DON\'T OMIT THIS (requires jQuery 1.6+)
+            processData: false,
+            cache:false, // NEEDED, DON\'T OMIT THIS
+
+            success: function(rep){
+            setTimeout(function () { 
+
+              swal({
+                title: "Order completed!",
+                text: "will be redirected soon",
+                timer: 2000,
+                type: "success",
+                padding: "2em",
+                onOpen: function () {
+                  swal.showLoading();
+                },
+              }).then(function (result) {
+                window.location="home";
+              });
+                 }, 1000);
+            }
+            
+        }
+        $.ajax(opt);
+    
+        
+
+            
+    
+    }       
     },
 
     onClose: function() {
