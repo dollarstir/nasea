@@ -102,6 +102,13 @@ require '../fragement/deep.php';
             orderregister($fname, $lname, $email, $phone, $country, $address, $city, $password);
 
             break;
+
+        case 'paysuccess':
+            extract($_POST);
+
+            echo $toekn;
+
+            break;
         default:
 
         break;

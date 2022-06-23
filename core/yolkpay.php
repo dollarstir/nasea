@@ -16,25 +16,29 @@ class Yolkpay
     public $amount;
     public $orderid;
 
-    public static function pay()
+    public static function pay($text = 'Pay')
     {
-        echo '<button class="btn btn-primary" type="submit" onclick="payWithPaystack()"> Pay </button>';
+        return '<button class="btn btn-primary" type="submit" onclick="payWithPaystack()"> '.$text.' </button>';
     }
 
     public static function handler()
     {
-        echo ' <script src="https://js.paystack.co/v1/inline.js"></script>';
+        return ' <script src="https://js.paystack.co/v1/inline.js"></script>';
     }
 
-    public function payscript($fname, $lname, $email, $phone, $amount, $ref = '')
+    public function payscript($fname, $lname, $email, $phone, $amount, $ref = '', $token)
     {
         if ($ref == '') {
             $r1 = 'YP';
             $r2 = uniqid('AdfSXD');
             $r3 = time();
             $ref = $r1.''.$r2.''.$r3;
+            session_start();
+            $_SESSION['token'] = $token;
+            $_SESSION['ref'] = $ref;
         }
-        echo '<script>
+
+        return '<script>
        // var paymentForm = document.getElementById("paymentForm");
 
        // paymentForm.addEventListener("submit", payWithPaystack, false);
@@ -43,13 +47,13 @@ function payWithPaystack() {
 
   var handler = PaystackPop.setup({
 
-    key:"'.Config::get('PUBLIC_KEY').'", 
+    key:"pk_test_c926323c83d4fc2c66232aee6997271fd75167d4", 
 
     email: "'.$email.'",
 
     amount: '.$amount.' * 100, // the amount value is multiplied by 100 to convert to the lowest currency unit
 
-    currency: "'.Config::get('CURRENCY_CODE').'", // Use GHS for Ghana Cedis or USD for US Dollars
+    currency: "GHS", // Use GHS for Ghana Cedis or USD for US Dollars
 
     firstname: "'.$fname.'",
 
@@ -81,11 +85,47 @@ function payWithPaystack() {
        
 
       //alert("Payment complete! Reference: " + reference);
-    window.location="'.Config::get('CALLBACK_URL').'/'.$fname.' '.$lname.'/'.$email.'/'.$phone.'/'.$amount.'/'.$ref.'" ;
+    window.location="ignitor" ;
       
       // Make an AJAX call to your server with the reference to verify the transaction
       
-                   
+      if(response.status == "success"){
+        
+    
+        var opt = {
+            url : "processor.php?action=paysuccess",
+            type: "post",
+            data:{"ref":'.$ref.',"token":'.$token.' } ,
+            contentType: false, // NEEDED, DON\'T OMIT THIS (requires jQuery 1.6+)
+            processData: false,
+            cache:false, // NEEDED, DON\'T OMIT THIS
+
+            success: function(rep){
+            setTimeout(function () { 
+
+              swal({
+                title: "Order completed!",
+                text: "will be redirected soon",
+                timer: 2000,
+                type: "success",
+                padding: "2em",
+                onOpen: function () {
+                  swal.showLoading();
+                },
+              }).then(function (result) {
+                window.location="home";
+              });
+                 }, 1000);
+            }
+            
+        }
+        $.ajax(opt);
+    
+        
+
+            
+    
+    }       
     },
 
     onClose: function() {

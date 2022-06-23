@@ -382,7 +382,7 @@ function mobilemenu()
                     <div class="mobile-menu">
                         <nav id="mobile-menu-active">
                             <ul id="nav">
-                                <li><a href="main/index.html">Home</a>
+                                <li><a href="home">Home</a>
                                     <ul>
                                         <li><a href="main/index.html">Home-1</a></li>
                                         <li><a href="main/index-2.html">Home-2</a></li>
