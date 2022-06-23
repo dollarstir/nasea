@@ -33,9 +33,10 @@ class Yolkpay
             $r2 = uniqid('AdfSXD');
             $r3 = time();
             $ref = $r1.''.$r2.''.$r3;
-            session_start();
+            // session_start();
             $_SESSION['token'] = $token;
             $_SESSION['ref'] = $ref;
+            $_SESSION['amount'] = $amount;
         }
 
         return '<script>
@@ -85,47 +86,11 @@ function payWithPaystack() {
        
 
       //alert("Payment complete! Reference: " + reference);
-    window.location="ignitor" ;
+    window.location="../ignitor" ;
       
       // Make an AJAX call to your server with the reference to verify the transaction
       
-      if(response.status == "success"){
-        
-    
-        var opt = {
-            url : "processor.php?action=paysuccess",
-            type: "post",
-            data:{"ref":'.$ref.',"token":'.$token.' } ,
-            contentType: false, // NEEDED, DON\'T OMIT THIS (requires jQuery 1.6+)
-            processData: false,
-            cache:false, // NEEDED, DON\'T OMIT THIS
-
-            success: function(rep){
-            setTimeout(function () { 
-
-              swal({
-                title: "Order completed!",
-                text: "will be redirected soon",
-                timer: 2000,
-                type: "success",
-                padding: "2em",
-                onOpen: function () {
-                  swal.showLoading();
-                },
-              }).then(function (result) {
-                window.location="home";
-              });
-                 }, 1000);
-            }
             
-        }
-        $.ajax(opt);
-    
-        
-
-            
-    
-    }       
     },
 
     onClose: function() {
