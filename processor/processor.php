@@ -109,6 +109,11 @@ require '../fragement/deep.php';
             echo $toekn;
 
             break;
+
+        case 'prodpreview':
+            extract($_POST);
+            previewproduct($id);
+            break;
         default:
 
         break;
