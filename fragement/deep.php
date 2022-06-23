@@ -344,7 +344,7 @@ function orders()
             $ra = $cos[0];
             extract($ra);
             // discountprice
-            $discountprice = ($value['bookprice'] - $main);
+            $discountprice = ($value['bookprice'] * $main);
             $record = [
                 'token' => $token,
                 'bid' => $value['bookid'],

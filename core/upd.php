@@ -40,7 +40,7 @@ class Upd extends Database
                 $coco = '';
                 if ($target != []) {
                     foreach ($target as $key => $value) {
-                        $coco .= "WHERE  $key = $value";
+                        $coco .= "WHERE  $key = '".$value."'";
                     }
                 } else {
                     $coco = '';

@@ -71,5 +71,12 @@ $router = new Router([
             return Viewer::view('main/paypros.php', $context);
         }
     ),
+
+    new Route(
+        '/account',
+        function ($context) {
+            return Viewer::view('main/myaccount.php', $context);
+        }
+    ),
 ]);
 $router->launch();

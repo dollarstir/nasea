@@ -218,6 +218,160 @@ function scripts()
     ';
 }
 
+// footer2
+
+function footer2()
+{
+    $app = app();
+    echo '  <footer>
+    <!-- footer-top-start -->
+    <div class="footer-top">
+        <!--<div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-top-menu bb-2">
+                        <nav>
+                            <ul>
+                                <li><a href="main/#">home</a></li>
+                                <li><a href="main/#">Enable Cookies</a></li>
+                                <li><a href="main/#">Privacy and Cookie Policy</a></li>
+                                <li><a href="main/#">contact us</a></li>
+                                <li><a href="main/#">blog</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </div>
+    <!-- footer-top-start -->
+    <!-- footer-mid-start -->
+    <div class="footer-mid ptb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-footer br-2 xs-mb">
+                                <div class="footer-title mb-20">
+                                    <h3>Products</h3>
+                                </div>
+                                <div class="footer-mid-menu">
+                                    <ul>
+                                        <li><a href="main/about.html">About us</a></li>
+                                        <li><a href="main/#">Prices drop </a></li>
+                                        <li><a href="main/#">New products</a></li>
+                                        <li><a href="main/#">Best sales</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-footer br-2 xs-mb">
+                                <div class="footer-title mb-20">
+                                    <h3>Our company</h3>
+                                </div>
+                                <div class="footer-mid-menu">
+                                    <ul>
+                                        <li><a href="contact">Contact us</a></li>
+                                        <!--<li><a href="">Sitemap</a></li>-->
+                                        <li><a href="books">books</a></li>
+                                        <li><a href="account">My account </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-footer br-2 xs-mb">
+                                <div class="footer-title mb-20">
+                                    <h3>Your account</h3>
+                                </div>
+                                <div class="footer-mid-menu">
+                                    <ul>
+                                        <li><a href="contact">Addresses</a></li>
+                                        <!--<li><a href="">Credit slips </a></li>-->
+                                        <li><a href="main/#"> Orders</a></li>
+                                        <li><a href="main/#">Personal info</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="single-footer mrg-sm">
+                        <div class="footer-title mb-20">
+                            <h3>STORE INFORMATION</h3>
+                        </div>
+                        <div class="footer-contact">
+                            <p class="adress">
+                                <span>'.$app['appname'].'</span>
+                                '.$app['appaddress'].'
+                            </p>
+                            <p><span>Call us now:</span> '.$app['appcontact'].'</p>
+                            <p><span>Email:</span> '.$app['appemail'].'</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-mid-end -->
+    <!-- footer-bottom-start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row bt-2">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="copy-right-area">
+                        <p>&copy; '.date('Y').' <strong> '.$app['appname'].'</strong>  by <a href="https://github.com/dollarstir" target="_blank"><strong>Dollarsoft</strong></a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="payment-img text-right">
+                        <a href=""><img src="../main/img/momo.png" alt="payment" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-bottom-end -->
+</footer>';
+}
+
+function scripts2()
+{
+    echo '<!-- jquery latest version -->
+    <script src="../main/js/vendor/jquery-1.12.4.min.js"></script>
+    '.Yolk::uicore('jsa').'
+    <!-- popper js -->
+    <script src="../main/js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../main/js/bootstrap.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="../main/js/owl.carousel.min.js"></script>
+    <!-- meanmenu js -->
+    <script src="../main/js/jquery.meanmenu.js"></script>
+    <!-- wow js -->
+    <script src="../main/js/wow.min.js"></script>
+    <!-- jquery.parallax-1.1.3.js -->
+    <script src="../main/js/jquery.parallax-1.1.3.js"></script>
+    <!-- jquery.countdown.min.js -->
+    <script src="../main/js/jquery.countdown.min.js"></script>
+    <!-- jquery.flexslider.js -->
+    <script src="../main/js/jquery.flexslider.js"></script>
+    <!-- chosen.jquery.min.js -->
+    <script src="../main/js/chosen.jquery.min.js"></script>
+    <!-- jquery.counterup.min.js -->
+    <script src="../main/js/jquery.counterup.min.js"></script>
+    <!-- waypoints.min.js -->
+    <script src="../main/js/waypoints.min.js"></script>
+    <!-- plugins js -->
+    <script src="../main/js/plugins.js"></script>
+    <!-- main js -->
+    <script src="../main/js/main.js"></script>
+    <script src="../processor/processor.js"></script>
+    ';
+}
 function topbars()
 {
     $soday = (!isset($_SESSION['user'])) ? '<li><a href="login">Sign in</a></li>' : '<li><button class="logout">Logout</button></li>';

@@ -235,11 +235,11 @@ echo '<!doctype html>
 		</div>
 		<!-- checkout-area-end -->
 		<!-- footer-area-start -->
-		<?php footer(); ?>
+		<?php footer2(); ?>
 		<!-- footer-area-end -->
 		
 		
 		<!-- all js here -->
-		<?php scripts(); ?>
+		<?php scripts2(); ?>
     </body>
 </html>

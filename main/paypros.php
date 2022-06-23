@@ -17,5 +17,9 @@ if ($amount == '' || $token == '' || $ref == '') {
         'dateadded' => $dateadded,
         'timepaid' => $timepaid,
     ];
-    insert('transactions', );
+    insert('transactions', $rec);
+    echo update('orders', ['paystatus' => 'paid', 'status' => 'complete'], ['token' => $token]);
+    unset($_SESSION['ref']);
+    unset($_SESSION['amount']);
+    unset($_SESSION['token']);
 }
