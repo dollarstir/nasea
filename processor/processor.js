@@ -289,7 +289,8 @@ $('.welcome').submit(function(e){
 
 
 // add to cart
-$('.addtocart').click(function(e){
+// $('.addtocart').click(function(e){
+$(document).on('click','.addtocart',function(e){
 
   e.preventDefault();
   // before();
