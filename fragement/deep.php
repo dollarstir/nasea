@@ -415,7 +415,7 @@ function previewproduct($id)
         <div class="price">
             <span>GH&#8373; '.$book['price'].'</span>
         </div>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+        <p>'.$book['description'].'</p>
         <!--<div class="quick-view-select">
             <div class="select-option-part">
                 <label>Size*</label>
