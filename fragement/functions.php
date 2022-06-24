@@ -706,7 +706,7 @@ function books($limit = '')
                 <h4><a href="#">'.$row['title'].'</a></h4>
                 <div class="product-price">
                     <ul>
-                        <li>$'.$row['price'].'</li>
+                        <li>&#8373; '.$row['price'].'</li>
                     </ul>
                 </div>
             </div>
