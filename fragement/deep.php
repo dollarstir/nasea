@@ -413,7 +413,7 @@ function previewproduct($id)
     <div class="modal-pro-content">
         <h3>Chaz Kangeroo Hoodie3</h3>
         <div class="price">
-            <span>$70.00</span>
+            <span>&#8373; '.$book['price'].'</span>
         </div>
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
         <!--<div class="quick-view-select">
