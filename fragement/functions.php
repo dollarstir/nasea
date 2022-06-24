@@ -682,7 +682,7 @@ function books($limit = '')
                     <img src="yolkassets/upload/'.$row['front'].'" alt="book" class="primary" />
                 </a>
                 <div class="quick-view">
-                    <button id="'.$row['id'].'" class="btn btn-success" style="background-color: rgb(240, 124, 41) !important;border:none;"  data-target="#productModal" data-toggle="modal" title="Quick View">
+                    <button id="'.$row['id'].'" class="btn btn-success previewbtn" style="background-color: rgb(240, 124, 41) !important;border:none;"  data-target="#productModal" data-toggle="modal" title="Quick View">
                         <i class="fa fa-search-plus"></i>
                     </button>
                 </div>
