@@ -385,6 +385,9 @@ function previewproduct($id)
 {
     $re = customfetch('books', [['id', '=', $id]]);
     $book = $re[0];
+    $authorid = $book['author'];
+    $ot = customfetch('authors', [['id', '=', $authorid]]);
+    $au = $ot[0];
     echo'<div class="col-md-5 col-sm-5 col-xs-12">
     <div class="modal-tab">
         <div class="product-details-large tab-content">
@@ -411,10 +414,13 @@ function previewproduct($id)
 </div>
 <div class="col-md-7 col-sm-7 col-xs-12">
     <div class="modal-pro-content">
-        <h3>Chaz Kangeroo Hoodie3</h3>
-        <div class="price">
+        <h3>'.$book['title'].'</h3>
+        <p>Author: <small>'.$au['authname'].'</small></p><br>
+        <p><div class="price">
             <span>GH&#8373; '.$book['price'].'</span>
-        </div>
+        </div></p>
+
+        
         <p>'.$book['description'].'</p>
         <!--<div class="quick-view-select">
             <div class="select-option-part">
