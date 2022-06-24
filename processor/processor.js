@@ -476,8 +476,8 @@ $(document).on('click','.previewbtn',function(e){
       // contentType: false,
       // processData: false,
       // beforeSend: before,
-      success: function(resp){
-        $('#')
+      success: function(result){
+        $('#prodpreview').html(result);
 
       }
 

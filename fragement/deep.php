@@ -416,7 +416,7 @@ function previewproduct($id)
             <span>$70.00</span>
         </div>
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
-        <div class="quick-view-select">
+        <!--<div class="quick-view-select">
             <div class="select-option-part">
                 <label>Size*</label>
                 <select class="select">
@@ -435,11 +435,11 @@ function previewproduct($id)
                     </ul>
                 </div>
             </div>
-        </div>
-        <form action="#">
-            <input type="number" value="1" />
-            <button>Add to cart</button>
-        </form>
+        </div>-->
+        
+           
+            <button class="btn btn-primary addtocart" id="'.$id.'"  style="background-color: rgb(240, 124, 41) !important;border:none; margin :10px!important;">Add to cart</button>
+        
         <span><i class="fa fa-check"></i> In stock</span>
     </div>
 </div>';
