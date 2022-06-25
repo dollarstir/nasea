@@ -504,3 +504,10 @@ function updateuser($id, $fname, $lname, $email, $password, $newpass, $repass)
         }
     }
 }
+
+function download()
+{
+    session_start();
+    $id = $_SESSION['user']['id'];
+    $d = customfetch('orders', [['id', '=', $id]],)
+}

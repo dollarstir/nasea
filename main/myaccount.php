@@ -174,14 +174,7 @@ $user = user();
 																			class="fa fa-cloud-download"></i>
 																		Download File</a></td>
 															</tr>
-															<tr>
-																<td>HasTech - Profolio Business Template</td>
-																<td>Sep 12, 2018</td>
-																<td>Never</td>
-																<td><a href="#" class="btn btn-sqr"><i
-																			class="fa fa-cloud-download"></i>
-																		Download File</a></td>
-															</tr>
+															
 														</tbody>
 													</table>
 												</div>
