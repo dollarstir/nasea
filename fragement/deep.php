@@ -511,6 +511,15 @@ function download()
     }
 }
 
-function downloadlink()
+function downloadlink($id)
 {
+    if (authenticatie('orders', [['id', '=', $id], ['status', '=', 'complete']], 'AND') == 'success') {
+        $c = customfetch('books', [['id', '=', $id]]);
+        $cc = $c[0];
+
+        echo 'downloading';
+        echo '<script>window.location="yolkassets/upload/'.$cc['link'].'"</script>';
+    } else {
+        echo 'Have no permission to download this file';
+    }
 }
