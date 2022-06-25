@@ -142,7 +142,7 @@ echo '<!doctype html>
                                 
                                 <div class="col-lg-12 col-md-12 col-12">
                                     <div class="your-order">
-                                        <h3>Your order</h3>
+                                        <h3>Your order #<?php echo ordernumber($context['token']); ?></h3>
                                         <div class="your-order-table table-responsive">
                                             <table>
                                                 <thead>
