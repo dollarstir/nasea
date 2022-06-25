@@ -122,6 +122,10 @@ require '../fragement/deep.php';
             updateuser($id, $fname, $lname, $email, $password, $newpass, $repass);
 
             break;
+        case 'downloadbook':
+            extract($_POST);
+            downloadlink($id);
+            break;
         default:
 
         break;
