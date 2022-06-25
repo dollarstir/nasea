@@ -19,7 +19,7 @@ function begin($title)
         <meta name="description" content="Nasea books is one of the Best E-book stores in the world">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="main/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="main/favicon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="main/favicon/apple-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="76x76" href="main/favicon/apple-icon-76x76.png">
@@ -32,9 +32,9 @@ function begin($title)
 <link rel="icon" type="image/png" sizes="32x32" href="main/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="main/favicon/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="main/favicon/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="main/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="main/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
     

@@ -114,6 +114,12 @@ require '../fragement/deep.php';
             extract($_POST);
             previewproduct($id);
             break;
+
+        case 'updateuser':
+            extract($_POST);
+            updateuser($id, $fname, $lname, $email, $password, $newpass, $repass);
+
+            break;
         default:
 
         break;

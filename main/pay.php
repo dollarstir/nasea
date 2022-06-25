@@ -12,7 +12,24 @@ echo '<!doctype html>
         <meta name="description" content="Nasea books is one of the Best E-book stores in the world">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="../main/img/favicon.png">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../main/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../main/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../main/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../main/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../main/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../main/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../main/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../main/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../main/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../main/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../main/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../main/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../main/favicon/favicon-16x16.png">
+<link rel="manifest" href="../main/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="../main/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
     
         <!-- all css here -->
         <!-- bootstrap v3.3.6 css -->
