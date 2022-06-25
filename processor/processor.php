@@ -117,6 +117,8 @@ require '../fragement/deep.php';
 
         case 'updateuser':
             extract($_POST);
+            session_start();
+            $id = $_SESSION['user']['id'];
             updateuser($id, $fname, $lname, $email, $password, $newpass, $repass);
 
             break;
