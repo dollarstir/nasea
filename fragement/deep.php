@@ -312,6 +312,8 @@ function orderregister($fname, $lname, $email, $phone, $country, $address, $city
 function orders()
 {
     session_start();
+    $cos = countall('orders');
+    $orderno = 'NASBK'.($cso + 1);
     $token = uniqid('NABK');
     // discount
     if (!isset($_SESSION['coupon'])) {
@@ -347,6 +349,7 @@ function orders()
             $discountprice = ($value['bookprice'] * $main);
             $record = [
                 'token' => $token,
+                'orderno' => $orderno,
                 'bid' => $value['bookid'],
                 'uid' => $uid,
                 'bookname' => $value['bookname'],
