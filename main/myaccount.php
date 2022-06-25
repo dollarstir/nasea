@@ -272,7 +272,7 @@ $user = user();
 																			class="required">Confirm
 																			Password</label>
 																		<input type="password" id="confirm-pwd"
-																			placeholder="Confirm Password" name="cpass" />
+																			placeholder="Confirm Password" name="repass" />
 																	</div>
 																</div>
 															</div>
