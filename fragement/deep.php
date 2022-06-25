@@ -321,7 +321,9 @@ function orders()
 {
     session_start();
     $cos = countall('orders');
-    $orderno = 'NASBK'.($cos + 1);
+    // var_dump(cos);
+    $nn = ($cos + 1);
+    $orderno = 'NASBK'.$nn;
     $token = uniqid('NABK');
     // discount
     if (!isset($_SESSION['coupon'])) {
