@@ -463,3 +463,28 @@ function previewproduct($id)
     </div>
 </div>';
 }
+
+function updateuser($id, $fname, $lname, $email, $password, $newpass, $repass)
+{
+    if ($fnam == '' || $lname == '' || $email == '') {
+        echo 'this field cannot be empty';
+    } else {
+        if ($password == '' && $newpass != '' && $cpass != '') {
+            echo 'please enter current password';
+        } elseif ($password != '' && $newpass == '' && $cpass == '') {
+            echo 'New password cannot be empty';
+        } elseif ($password != '' && $newpass != '' && $cpass != '') {
+            if (authenticate('users', [['password', '=', md5($password)]]) == 'success') {
+                if ($newpass == $repass) {
+                    if (update('users', ['id' => $id]) == 'success') {
+                        echo 'Updated Successfully';
+                    } else {
+                        echo 'Failed to update user';
+                    }
+                } else {
+                    echo 'Password do not match';
+                }
+            }
+        }
+    }
+}
