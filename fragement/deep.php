@@ -503,7 +503,7 @@ function download()
             <td>'.$key['bookname'].'</td>
             <td>'.$key['dateadded'].'</td>
             <td>'.$e.'</td>
-            <td><button class="btn btn-sqr" id="'.$key['id'].'"><i
+            <td><button class="btn btn-sqr dbook" id="'.$key['id'].'"><i
                         class="fa fa-cloud-download"></i>
                     Download File</button></td>
         </tr>';
@@ -514,8 +514,10 @@ function download()
 function downloadlink($id)
 {
     if (authenticatie('orders', [['id', '=', $id], ['status', '=', 'complete']], 'AND') == 'success') {
-        $c = customfetch('books', [['id', '=', $id]]);
-        $cc = $c[0];
+        $c = customfetch('orders', [['id', '=', $id]]);
+        $coo = $c[0];
+        $c1 = customfetch('books', [['id', '=', $coo['bid']]]);
+        $cc = $c1[0];
 
         echo 'downloading';
         echo '<script>window.location="yolkassets/upload/'.$cc['link'].'"</script>';

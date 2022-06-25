@@ -512,23 +512,20 @@ $('.upduser').submit(function(e){
 
 // download book
 
-$(document).on('click','.previewbtn',function(e){
+$(document).on('click','.dbook',function(e){
 
   e.preventDefault();
   // before();
   var id = $(this).attr('id');
   var staff = {
-      url: 'processor/processor.php?action=prodpreview',
+      url: 'processor/processor.php?action=downloadbook',
       type: 'post',
       data: {"id": id},
       // cache: false,
       // contentType: false,
       // processData: false,
       // beforeSend: before,
-      success: function(result){
-        $('#prodpreview').html(result);
-
-      }
+      success: resp
 
   };
   $.ajax(staff);
