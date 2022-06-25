@@ -229,6 +229,25 @@ $(function(){
         }
 
 
+
+        else if(response == 'downloading'){
+
+          swal({
+              title: "Downloading",
+              text: "book downloading ......",
+              timer: 9000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location="account";
+            });
+
+      }
+
+
         else if(response == 'loginfailed'){
 
             swal({
