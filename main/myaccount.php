@@ -219,14 +219,14 @@ $user = user();
 											<div class="myaccount-content">
 												<h5>Account Details</h5>
 												<div class="account-details-form">
-													<form action="#">
+													<form action="#" class="upduser">
 														<div class="row">
 															<div class="col-lg-6">
 																<div class="single-input-item">
 																	<label for="first-name" class="required">First
 																		Name</label>
 																	<input type="text" id="first-name"
-																		placeholder="First Name" />
+																		placeholder="First Name" name="fname" value="<?php echo $name[0]; ?>"/>
 																</div>
 															</div>
 															<div class="col-lg-6">
@@ -234,20 +234,20 @@ $user = user();
 																	<label for="last-name" class="required">Last
 																		Name</label>
 																	<input type="text" id="last-name"
-																		placeholder="Last Name" />
+																		placeholder="Last Name" name="lname" value="<?php echo $name[1]; ?>" />
 																</div>
 															</div>
 														</div>
-														<div class="single-input-item">
+														<!-- <div class="single-input-item">
 															<label for="display-name" class="required">Display
 																Name</label>
 															<input type="text" id="display-name"
 																placeholder="Display Name" />
-														</div>
+														</div> -->
 														<div class="single-input-item">
 															<label for="email" class="required">Email Addres</label>
 															<input type="email" id="email"
-																placeholder="Email Address" />
+																placeholder="Email Address" name="email" value="<?php echo $user['email']; ?>"/>
 														</div>
 														<fieldset>
 															<legend>Password change</legend>
@@ -255,7 +255,7 @@ $user = user();
 																<label for="current-pwd" class="required">Current
 																	Password</label>
 																<input type="password" id="current-pwd"
-																	placeholder="Current Password" />
+																	placeholder="Current Password" name="password" />
 															</div>
 															<div class="row">
 																<div class="col-lg-6">
@@ -263,7 +263,7 @@ $user = user();
 																		<label for="new-pwd" class="required">New
 																			Password</label>
 																		<input type="password" id="new-pwd"
-																			placeholder="New Password" />
+																			placeholder="New Password" name="newpass" />
 																	</div>
 																</div>
 																<div class="col-lg-6">
@@ -272,13 +272,13 @@ $user = user();
 																			class="required">Confirm
 																			Password</label>
 																		<input type="password" id="confirm-pwd"
-																			placeholder="Confirm Password" />
+																			placeholder="Confirm Password" name="cpass" />
 																	</div>
 																</div>
 															</div>
 														</fieldset>
 														<div class="single-input-item">
-															<button class="btn btn-sqr">Save Changes</button>
+															<button type="submit" class="btn btn-sqr">Save Changes</button>
 														</div>
 													</form>
 												</div>
