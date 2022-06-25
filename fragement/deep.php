@@ -336,7 +336,7 @@ function orders()
     $uid = $_SESSION['user']['id'];
 
     // todays date
-    $dateadded = date('jS F, Y');
+    $myorderdate = date('jS F, Y');
     // paystatus
     $paystatus = 'unpaid';
     // order status
@@ -345,37 +345,17 @@ function orders()
     $msg = '';
 
     if (isset($_SESSION['cart'])) {
+        // var_dump($value)
         foreach ($_SESSION['cart'] as $key => $value) {
             $id = $value['bookid'];
             $sel = customfetch('books', [['id', '=', $id]]);
             $row = $sel[0];
             // extract($row);
             // getting author details
-            $authorid = $row['id'];
-            $cos = customfetch('authors', [['id', '=', $authorid]]);
-            $ra = $cos[0];
-            extract($ra);
-            // discountprice
-            $discountprice = ($value['bookprice'] * $main);
-            $record = [
-                'token' => $token,
-                'orderno' => $orderno,
-                'bid' => $value['bookid'],
-                'uid' => $uid,
-                'bookname' => $value['bookname'],
-                'authorid' => $authorid,
-                'authorname' => $authname,
-                'authornumber' => $authnumber,
-                'front' => $value['bookcover'],
-                'back' => $value['bookback'],
-                'price' => $value['bookprice'],
-                'discountprice' => $discountprice,
-                'discount' => $discount,
-                'dateadded' => $dateadded,
-                'paystatus' => $paystatus,
-                'status' => $status,
-         ];
-            $msg .= insert('orders', $record);
+            $authorid = $row['author'];
+            //     var_dump($authorid);
+
+            // $msg .= $authorid;
         }
     } else {
         $msg .= 'emptycart';
@@ -509,20 +489,24 @@ function download()
 {
     // session_start();
     $id = $_SESSION['user']['id'];
-    $d = customfetch('orders', [['uid', '=', $id]], '', ['id' => 'DESC']);
-    foreach ($d as $key) {
-        if (strtotime($key['dateadded']) < strtotime(date('jS F, Y')) == true) {
-            $e = 'Yes';
-        } else {
-            $e = 'No';
+    $d = customfetch('orders', [['uid', '=', $id], ['status', '=', 'complete']], 'AND', ['id' => 'DESC']);
+    if (is_null($d)) {
+        echo 'Nothing Download yet';
+    } else {
+        foreach ($d as $key) {
+            if (strtotime($key['dateadded']) < strtotime(date('jS F, Y')) == true) {
+                $e = 'Yes';
+            } else {
+                $e = 'No';
+            }
+            echo '<tr>
+            <td>'.$key['bookname'].'</td>
+            <td>'.$key['dateadded'].'</td>
+            <td>'.$e.'</td>
+            <td><button class="btn btn-sqr" id="'.$key['id'].'"><i
+                        class="fa fa-cloud-download"></i>
+                    Download File</button></td>
+        </tr>';
         }
-        echo '<tr>
-        <td>'.$key['bookname'].'</td>
-        <td>'.$key['dateadded'].'</td>
-        <td>'.$e.'</td>
-        <td><button class="btn btn-sqr"><i
-                    class="fa fa-cloud-download"></i>
-                Download File</button></td>
-    </tr>';
     }
 }
