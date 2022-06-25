@@ -309,6 +309,14 @@ function orderregister($fname, $lname, $email, $phone, $country, $address, $city
     }
 }
 
+function ordernumber($token)
+{
+    $c = customfetch('orders', [['token', '=', $token]]);
+    $cc = $c[0];
+
+    return $cc['orderno'];
+}
+
 function orders()
 {
     session_start();
