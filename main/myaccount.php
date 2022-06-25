@@ -94,7 +94,7 @@ $user = user();
 
                                                     ?>
 															!</strong><a
-															href="https://htmldemo.net/koparion/koparion/login-register.html"
+															href="logout"
 															class="logout"> Logout</a>)</p>
 												</div>
 												<p class="mb-0">From your account dashboard. you can easily check &
