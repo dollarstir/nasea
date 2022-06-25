@@ -507,17 +507,22 @@ function updateuser($id, $fname, $lname, $email, $password, $newpass, $repass)
 
 function download()
 {
-    session_start();
+    // session_start();
     $id = $_SESSION['user']['id'];
-    $d = customfetch('orders', [['id', '=', $id]], '', ['id' => 'DESC']);
+    $d = customfetch('orders', [['uid', '=', $id]], '', ['id' => 'DESC']);
     foreach ($d as $key) {
+        if (strtotime($key['dateadded']) < strtotime(date('jS F, Y')) == true) {
+            $e = 'Yes';
+        } else {
+            $e = 'No';
+        }
         echo '<tr>
         <td>'.$key['bookname'].'</td>
-        <td>'.$key['dateadde'].'</td>
-        <td>'.(strtotime($key['dateadded']) > strtotime(date('jS F, Y'))) ? 'Yes' : 'No'.'</td>
-        <td><a href="#" class="btn btn-sqr"><i
+        <td>'.$key['dateadded'].'</td>
+        <td>'.$e.'</td>
+        <td><button class="btn btn-sqr"><i
                     class="fa fa-cloud-download"></i>
-                Download File</a></td>
+                Download File</button></td>
     </tr>';
     }
 }

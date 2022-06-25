@@ -166,14 +166,7 @@ $user = user();
 															</tr>
 														</thead>
 														<tbody>
-															<tr>
-																<td>Haven - Free Real Estate PSD Template</td>
-																<td>Aug 22, 2018</td>
-																<td>Yes</td>
-																<td><a href="#" class="btn btn-sqr"><i
-																			class="fa fa-cloud-download"></i>
-																		Download File</a></td>
-															</tr>
+															<?php download(); ?>
 															
 														</tbody>
 													</table>
