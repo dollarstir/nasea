@@ -510,3 +510,7 @@ function download()
         }
     }
 }
+
+function downloadlink()
+{
+}
