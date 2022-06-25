@@ -474,9 +474,13 @@ function updateuser($id, $fname, $lname, $email, $password, $newpass, $repass)
         } elseif ($password != '' && $newpass == '' && $cpass == '') {
             echo 'New password cannot be empty';
         } elseif ($password != '' && $newpass != '' && $cpass != '') {
+            $record = ['name' => $fname.''.$lname,
+                        'email' => $email,
+                        'password' => md5($newpass),
+                ];
             if (authenticate('users', [['password', '=', md5($password)]]) == 'success') {
                 if ($newpass == $repass) {
-                    if (update('users', ['id' => $id]) == 'success') {
+                    if (update('users', $record, ['id' => $id]) == 'success') {
                         echo 'Updated Successfully';
                     } else {
                         echo 'Failed to update user';
@@ -484,6 +488,16 @@ function updateuser($id, $fname, $lname, $email, $password, $newpass, $repass)
                 } else {
                     echo 'Password do not match';
                 }
+            }
+        } else {
+            $record = ['name' => $fname.''.$lname,
+                        'email' => $email,
+                ];
+
+            if (update('users', $record, ['id' => $id]) == 'success') {
+                echo 'Updated Successfully';
+            } else {
+                echo 'Failed to update user';
             }
         }
     }
