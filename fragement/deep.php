@@ -509,5 +509,15 @@ function download()
 {
     session_start();
     $id = $_SESSION['user']['id'];
-    $d = customfetch('orders', [['id', '=', $id]],)
+    $d = customfetch('orders', [['id', '=', $id]], '', ['id' => 'DESC']);
+    foreach ($d as $key) {
+        echo '<tr>
+        <td>'.$key['bookname'].'</td>
+        <td>'.$key['dateadde'].'</td>
+        <td>'.(strtotime($key['dateadded']) > strtotime(date('jS F, Y'))) ? 'Yes' : 'No'.'</td>
+        <td><a href="#" class="btn btn-sqr"><i
+                    class="fa fa-cloud-download"></i>
+                Download File</a></td>
+    </tr>';
+    }
 }
