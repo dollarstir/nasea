@@ -466,15 +466,15 @@ function previewproduct($id)
 
 function updateuser($id, $fname, $lname, $email, $password, $newpass, $repass)
 {
-    if ($fnam == '' || $lname == '' || $email == '') {
+    if ($fname == '' || $lname == '' || $email == '') {
         echo 'this field cannot be empty';
     } else {
-        if ($password == '' && $newpass != '' && $cpass != '') {
+        if ($password == '' && $newpass != '' && $repass != '') {
             echo 'please enter current password';
-        } elseif ($password != '' && $newpass == '' && $cpass == '') {
+        } elseif ($password != '' && $newpass == '' && $repass == '') {
             echo 'New password cannot be empty';
-        } elseif ($password != '' && $newpass != '' && $cpass != '') {
-            $record = ['name' => $fname.''.$lname,
+        } elseif ($password != '' && $newpass != '' && $repass != '') {
+            $record = ['name' => $fname.' '.$lname,
                         'email' => $email,
                         'password' => md5($newpass),
                 ];
@@ -488,9 +488,11 @@ function updateuser($id, $fname, $lname, $email, $password, $newpass, $repass)
                 } else {
                     echo 'Password do not match';
                 }
+            } else {
+                echo 'Incorerct password';
             }
         } else {
-            $record = ['name' => $fname.''.$lname,
+            $record = ['name' => $fname.' '.$lname,
                         'email' => $email,
                 ];
 
