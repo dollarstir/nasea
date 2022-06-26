@@ -566,7 +566,7 @@ $('.updbill').submit(function(e){
   // before();
   // var id = $(this).attr('id');
   var staff = {
-      url: 'processor/processor.php?action=updateuser',
+      url: 'processor/processor.php?action=updatebill',
       type: 'post',
       data: new FormData(this),
       cache: false,

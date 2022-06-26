@@ -126,6 +126,13 @@ require '../fragement/deep.php';
             extract($_POST);
             downloadlink($id);
             break;
+
+        case 'updatebill':
+            extract($_POST);
+            session_start();
+            $id = $_SESSION['user']['id'];
+            updateuser($id, $fname, $lname, $email, $password, $newpass, $repass);
+            break;
         default:
 
         break;
