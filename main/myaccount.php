@@ -190,12 +190,52 @@ $user = user();
 												<h5>Billing Address</h5>
 												<address>
 													<p><strong><?php echo $user['name']; ?></strong></p>
-													<p>1355 Market St, Suite 900 <br>
-														San Francisco, CA 94103</p>
-													<p>Mobile: (123) 456-7890</p>
+													<p><?php echo $user['address']; ?> <br>
+													<?php echo $user['city'].', '; ?> <?php echo $user['state']; ?></p>
+													<p><?php echo $user['phone']; ?></p>
 												</address>
-												<a href="#" class="btn btn-sqr"><i class="fa fa-edit"></i>
-													Edit Address</a>
+												<button  class="btn btn-sqr"><i class="fa fa-edit"></i>
+													Edit Address</button>
+
+
+													<h5>Edit Billing Address</h5>
+												<div class="account-details-form">
+													<form action="#" class="upduser">
+														<div class="row">
+															<div class="col-lg-6">
+																<div class="single-input-item">
+																	<label for="first-name" class="required">First
+																		Name</label>
+																	<input type="text" id="first-name"
+																		placeholder="First Name" name="fname" value="<?php echo $name[0]; ?>"/>
+																</div>
+															</div>
+															<div class="col-lg-6">
+																<div class="single-input-item">
+																	<label for="last-name" class="required">Last
+																		Name</label>
+																	<input type="text" id="last-name"
+																		placeholder="Last Name" name="lname" value="<?php echo $name[1]; ?>" />
+																</div>
+															</div>
+														</div>
+														<!-- <div class="single-input-item">
+															<label for="display-name" class="required">Display
+																Name</label>
+															<input type="text" id="display-name"
+																placeholder="Display Name" />
+														</div> -->
+														<div class="single-input-item">
+															<label for="email" class="required">Email Addres</label>
+															<input type="email" id="email"
+																placeholder="Email Address" name="email" value="<?php echo $user['email']; ?>"/>
+														</div>
+														
+														<div class="single-input-item">
+															<button type="submit" class="btn btn-sqr">Save Changes</button>
+														</div>
+													</form>
+												</div>
 											</div>
 										</div>
 										<!-- Single Tab Content End -->
