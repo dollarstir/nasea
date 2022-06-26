@@ -131,7 +131,7 @@ require '../fragement/deep.php';
             extract($_POST);
             session_start();
             $id = $_SESSION['user']['id'];
-            updatebill($id, $city, $state, $country, $address);
+            updatebill($id, $phone, $city, $state, $country, $address);
             break;
         default:
 

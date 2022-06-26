@@ -529,7 +529,19 @@ function downloadlink($id)
 function updatebill($id, $phone, $city, $state, $country, $address)
 {
     if ($phone == '') {
-
         echo ' Phone Number cannot be empty';
+    } else {
+        $record = [
+            'phone' => $phone,
+            'city' => $city,
+            'state' => $city,
+            'country' => $country,
+            'address' => $address,
+        ];
+        if (update('users', $record, ['id' => $id]) == 'success') {
+            echo 'Updated Successfully';
+        } else {
+            echo 'Failed to update address';
+        }
     }
 }
