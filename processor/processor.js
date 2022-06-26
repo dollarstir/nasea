@@ -1,5 +1,12 @@
 
 $(function(){
+  $('.mybill').hide();
+
+  $(document).on('click','.showbill',function(e){
+
+    $('.mybill').show();
+
+  })
 
   // alert('hi there');
    $('#socl').click(function(){
