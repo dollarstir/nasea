@@ -233,9 +233,9 @@ $user = user();
 															</select> 										
 														</div>
 														<div class="single-input-item">
-															<label for="email" class="required">Address</label>
-															<input type="email" id="email"
-																placeholder="Email Address" name="email" value="<?php echo $user['email']; ?>"/>
+															<label for="address" class="required">Address</label>
+															<input type="text" id="address"
+																placeholder="Email Address" name="address" value="<?php echo $user['address']; ?>"/>
 														</div>
 														
 														<div class="single-input-item">
