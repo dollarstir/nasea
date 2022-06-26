@@ -68,9 +68,9 @@ $user = user();
 											Orders</a>
 										<a href="#download" data-toggle="tab"><i class="fa fa-cloud-download"></i>
 											Download</a>
-										<a href="#payment-method" data-toggle="tab"><i class="fa fa-credit-card"></i>
+										<!-- <a href="#payment-method" data-toggle="tab"><i class="fa fa-credit-card"></i>
 											Payment
-											Method</a>
+											Method</a> -->
 										<a href="#address-edit" data-toggle="tab"><i class="fa fa-map-marker"></i>
 											address</a>
 										<a href="#account-info" data-toggle="tab"><i class="fa fa-user"></i> Account
@@ -176,12 +176,12 @@ $user = user();
 										<!-- Single Tab Content End -->
 
 										<!-- Single Tab Content Start -->
-										<div class="tab-pane fade" id="payment-method" role="tabpanel">
+										<!-- <div class="tab-pane fade" id="payment-method" role="tabpanel">
 											<div class="myaccount-content">
 												<h5>Payment Method</h5>
 												<p class="saved-message">You Can't Saved Your Payment Method yet.</p>
 											</div>
-										</div>
+										</div> -->
 										<!-- Single Tab Content End -->
 
 										<!-- Single Tab Content Start -->
@@ -189,7 +189,7 @@ $user = user();
 											<div class="myaccount-content">
 												<h5>Billing Address</h5>
 												<address>
-													<p><strong>Erik Jhonson</strong></p>
+													<p><strong><?php echo $user['name']; ?></strong></p>
 													<p>1355 Market St, Suite 900 <br>
 														San Francisco, CA 94103</p>
 													<p>Mobile: (123) 456-7890</p>
