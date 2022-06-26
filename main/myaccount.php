@@ -194,10 +194,10 @@ $user = user();
 													<?php echo $user['city'].', '; ?> <?php echo $user['state']; ?></p>
 													<p><?php echo $user['phone']; ?></p>
 												</address>
-												<button  class="btn btn-sqr"><i class="fa fa-edit"></i>
+												<button  class="btn btn-sqr showbill"><i class="fa fa-edit"></i>
 													Edit Address</button>
 
-
+												<div class="mybill">
 													<h5>Edit Billing Address</h5>
 												<div class="account-details-form">
 													<form action="#" class="upduser">
@@ -235,6 +235,7 @@ $user = user();
 															<button type="submit" class="btn btn-sqr">Save Changes</button>
 														</div>
 													</form>
+												</div>
 												</div>
 											</div>
 										</div>
