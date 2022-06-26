@@ -567,3 +567,8 @@ function updatebill($id, $phone, $city, $state, $country, $address)
         }
     }
 }
+
+function orderlist()
+{
+    $id = $_SESSION['user']['id'];
+}
