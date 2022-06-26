@@ -347,6 +347,7 @@ function orders()
     if (isset($_SESSION['cart'])) {
         // var_dump($value)
         foreach ($_SESSION['cart'] as $key => $value) {
+            $discountprice = $value['bookprice'] * $main;
             $id = $value['bookid'];
             $sel = customfetch('books', [['id', '=', $id]]);
             $row = $sel[0];
@@ -356,8 +357,27 @@ function orders()
             //     var_dump($authorid);
             $ot = customfetch('authors', [['id' => $authorid]]);
             $raut = $ot[0];
+            extract($raut);
+            $record = [
+                'token' => $token,
+                'orderno' => $orderno,
+                'bid' => $value['bookid'],
+                'uid' => $uid,
+                'bookname' => $value['bookname'],
+                'authorid' => $authorid,
+                'authorname' => $authname,
+                'authornumber' => $authnumber,
+                'front' => $value['bookcover'],
+                'back' => $value['bookback'],
+                'price' => $value['bookprice'],
+                'discountprice' => $discountprice,
+                'discount' => $discount,
+                'dateadded' => $myorderdate,
+                'paystatus' => $paystatus,
+                'status' => $status,
+            ];
 
-            // $msg .= $authorid;
+            $msg .= insert('orders', $record);
         }
     } else {
         $msg .= 'emptycart';
