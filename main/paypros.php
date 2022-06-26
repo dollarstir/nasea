@@ -18,8 +18,9 @@ if ($amount == '' || $token == '' || $ref == '') {
         'timepaid' => $timepaid,
     ];
     insert('transactions', $rec);
-    echo update('orders', ['paystatus' => 'paid', 'status' => 'complete'], ['token' => $token]);
+    update('orders', ['paystatus' => 'paid', 'status' => 'complete'], ['token' => $token]);
     unset($_SESSION['ref']);
     unset($_SESSION['amount']);
     unset($_SESSION['token']);
+    echo '<script>window.location="account"</script>';
 }
