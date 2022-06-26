@@ -525,3 +525,11 @@ function downloadlink($id)
         echo 'Have no permission to download this file';
     }
 }
+
+function updatebill($id, $phone, $city, $state, $country, $address)
+{
+    if ($phone == '') {
+
+        echo ' Phone Number cannot be empty';
+    }
+}
