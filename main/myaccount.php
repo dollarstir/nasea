@@ -200,33 +200,40 @@ $user = user();
 												<div class="mybill">
 													<h5>Edit Billing Address</h5>
 												<div class="account-details-form">
-													<form action="#" class="upduser">
+													<form action="#" class="updbill">
 														<div class="row">
 															<div class="col-lg-6">
 																<div class="single-input-item">
-																	<label for="first-name" class="required">First
-																		Name</label>
+																	<label for="first-name" class="required">
+																		City</label>
 																	<input type="text" id="first-name"
-																		placeholder="First Name" name="fname" value="<?php echo $name[0]; ?>"/>
+																		placeholder="First Name" name="city" value="<?php echo $user['city']; ?>"/>
 																</div>
 															</div>
 															<div class="col-lg-6">
 																<div class="single-input-item">
-																	<label for="last-name" class="required">Last
-																		Name</label>
+																	<label for="last-name" class="required">
+																		State</label>
 																	<input type="text" id="last-name"
-																		placeholder="Last Name" name="lname" value="<?php echo $name[1]; ?>" />
+																		placeholder="Last Name" name="state" value="<?php echo $name[1]; ?>" />
 																</div>
 															</div>
 														</div>
-														<!-- <div class="single-input-item">
-															<label for="display-name" class="required">Display
-																Name</label>
-															<input type="text" id="display-name"
-																placeholder="Display Name" />
-														</div> -->
+														<div class="country-select">
+															<label>Country <span class="required">*</span></label>
+															<select name="country">
+															<option value="<?php echo isset($_SESSION['user']) ? $user['country'] : ''; ?>"><?php echo isset($_SESSION['user']) ? $user['country'] : 'Select Country'; ?></option>
+															<option value="saab">Algeria</option>
+															<option value="mercedes">Afghanistan</option>
+															<option value="audi">Ghana</option>
+															<option value="audi2">Albania</option>
+															<option value="audi3">Bahrain</option>
+															<option value="audi4">Colombia</option>
+															<option value="audi5">Dominican Republic</option>
+															</select> 										
+														</div>
 														<div class="single-input-item">
-															<label for="email" class="required">Email Addres</label>
+															<label for="email" class="required">Address</label>
 															<input type="email" id="email"
 																placeholder="Email Address" name="email" value="<?php echo $user['email']; ?>"/>
 														</div>
