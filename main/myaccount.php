@@ -16,7 +16,7 @@ $user = user();
 	<!-- header-area-start -->
 	<header>
 		<!-- header-top-area-start -->
-		<?php navbar(1); ?>
+		<?php navbar(0); ?>
 		<!-- mobile-menu-area-end -->
 	</header>
 	<!-- header-area-end -->
@@ -201,6 +201,13 @@ $user = user();
 													<h5>Edit Billing Address</h5>
 												<div class="account-details-form">
 													<form action="#" class="updbill">
+
+
+														<div class="single-input-item">
+															<label for="phone" class="required">Phone</label>
+															<input type="text" id="phone"
+																placeholder="Phone" name="phone" value="<?php echo $user['phone']; ?>"/>
+														</div>
 														<div class="row">
 															<div class="col-lg-6">
 																<div class="single-input-item">

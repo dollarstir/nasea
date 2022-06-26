@@ -281,7 +281,7 @@ function orderregister($fname, $lname, $email, $phone, $country, $address, $city
             if ($ck == 'success') {
                 echo 'User Account Already exist . login instead';
             } else {
-                $name = $fnam.' '.$lname;
+                $name = $fname.' '.$lname;
                 $detail = [
                 'name' => $name,
                 'email' => $email,
@@ -370,7 +370,7 @@ function orders()
     } elseif ($msg == 'emptycart') {
         echo 'Your cart is empty';
     } else {
-        echo 'Failed to order ';
+        echo $msg;
     }
 }
 
