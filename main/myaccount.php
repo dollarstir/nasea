@@ -207,7 +207,7 @@ $user = user();
 																	<label for="first-name" class="required">
 																		City</label>
 																	<input type="text" id="first-name"
-																		placeholder="First Name" name="city" value="<?php echo $user['city']; ?>"/>
+																		placeholder="City" name="city" value="<?php echo $user['city']; ?>"/>
 																</div>
 															</div>
 															<div class="col-lg-6">
@@ -215,7 +215,7 @@ $user = user();
 																	<label for="last-name" class="required">
 																		State</label>
 																	<input type="text" id="last-name"
-																		placeholder="Last Name" name="state" value="<?php echo $name[1]; ?>" />
+																		placeholder="State" name="state" value="<?php echo $user['state']; ?>" />
 																</div>
 															</div>
 														</div>
@@ -235,7 +235,7 @@ $user = user();
 														<div class="single-input-item">
 															<label for="address" class="required">Address</label>
 															<input type="text" id="address"
-																placeholder="Email Address" name="address" value="<?php echo $user['address']; ?>"/>
+																placeholder="Address" name="address" value="<?php echo $user['address']; ?>"/>
 														</div>
 														
 														<div class="single-input-item">
