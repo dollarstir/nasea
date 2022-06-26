@@ -513,14 +513,14 @@ function download()
 
 function downloadlink($id)
 {
-    if (authenticatie('orders', [['id', '=', $id], ['status', '=', 'complete']], 'AND') == 'success') {
+    if (authenticate('orders', [['id', '=', $id], ['status', '=', 'complete']], 'AND') == 'success') {
         $c = customfetch('orders', [['id', '=', $id]]);
         $coo = $c[0];
         $c1 = customfetch('books', [['id', '=', $coo['bid']]]);
         $cc = $c1[0];
 
         echo 'downloading';
-        echo '<script>window.location="yolkassets/upload/'.$cc['link'].'"</script>';
+    // echo '<script>window.location="yolkassets/upload/'.$cc['link'].'"</script>';
     } else {
         echo 'Have no permission to download this file';
     }

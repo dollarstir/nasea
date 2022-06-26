@@ -242,7 +242,7 @@ $(function(){
                 swal.showLoading();
               },
             }).then(function (result) {
-              window.location="account";
+              window.location="mylink";
             });
 
       }
