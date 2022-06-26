@@ -354,6 +354,8 @@ function orders()
             // getting author details
             $authorid = $row['author'];
             //     var_dump($authorid);
+            $ot = customfetch('authors', [['id' => $authorid]]);
+            $raut = $ot[0];
 
             // $msg .= $authorid;
         }
