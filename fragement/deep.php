@@ -571,4 +571,16 @@ function updatebill($id, $phone, $city, $state, $country, $address)
 function orderlist()
 {
     $id = $_SESSION['user']['id'];
+    $c = customfetch('orders', [['uid', '=', $id]]);
+
+    foreach ($c as $key) {
+        echo '<tr>
+        <td>'.$key['orderno'].'</td>
+        <td>'.$key['dateadded'].'</td>
+        <td>'.$key['status'].'</td>
+        <td>&#8373;'.$key['discountprice'].'</td>
+        <td><a href="cart.html" class="btn btn-sqr">View</a>
+        </td>
+    </tr>';
+    }
 }
