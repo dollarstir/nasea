@@ -75,7 +75,7 @@ $user = user();
 											address</a>
 										<a href="#account-info" data-toggle="tab"><i class="fa fa-user"></i> Account
 											Details</a>
-										<a href="logout"><i class="fa fa-sign-out"></i> Logout</a>
+										<button style="text-align:left;padding:10px;padding-left:20px;background-color:transparent;border:1px solid #F7F5F2;" class="logout"><i class="fa fa-sign-out"></i> Logout</button>
 									</div>
 								</div>
 								<!-- My Account Tab Menu End -->
