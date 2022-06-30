@@ -101,13 +101,13 @@ echo '<!doctype html>
 											<?php
 
                                             $bokid = $context['id'];
-                                            $roster = customfetch('books', [['id', '=', $id]]);
+                                            $roster = customfetch('books', [['id', '=', $bokid]]);
                                             $bk = $roster[0];
-                                            echo'<li data-thumb="yolkassets/upload'.$bk['front'].'">
+                                            echo'<li data-thumb="../yolkassets/upload/'.$bk['front'].'">
                                             <img src="../yolkassets/upload/'.$bk['front'].'" alt="woman" />
                                           </li>
-                                          <li data-thumb="yolkassets/upload/'.$bk['back'].'">
-                                            <img src="yolkassets/upload/'.$bk['back'].'" alt="woman" />
+                                          <li data-thumb="../yolkassets/upload/'.$bk['back'].'">
+                                            <img src="../yolkassets/upload/'.$bk['back'].'" alt="woman" />
                                           </li>';
 
                                             ?>
@@ -118,7 +118,7 @@ echo '<!doctype html>
 								<div class="col-lg-7 col-md-6 col-12">
 									<div class="product-info-main">
 										<div class="page-title">
-											<h1>Savvy Shoulder Tote</h1>
+											<h1><?php echo $bk['title']; ?></h1>
 										</div>
 										<div class="product-info-stock-sku">
 											<span>In stock</span>
