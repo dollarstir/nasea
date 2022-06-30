@@ -98,18 +98,14 @@ echo '<!doctype html>
 								<div class="col-lg-5 col-md-6 col-12">
 									<div class="flexslider">
 										<ul class="slides">
-											<li data-thumb="img/thum-2/1.jpg">
-											  <img src="https://htmldemo.net/koparion/koparion/img/flex/1.jpg" alt="woman" />
-											</li>
-											<li data-thumb="img/thum-2/4.jpg">
-											  <img src="https://htmldemo.net/koparion/koparion/img/flex/5.jpg" alt="woman" />
-											</li>
-											<li data-thumb="img/thum-2/2.jpg">
-											  <img src="https://htmldemo.net/koparion/koparion/img/flex/2.jpg" alt="woman" />
-											</li>
-											<li data-thumb="img/thum-2/5.jpg">
-											  <img src="https://htmldemo.net/koparion/koparion/img/flex/5.jpg" alt="woman" />
-											</li>
+											<?php
+
+                                            $bokid = $context['id'];
+                                            $roster = customfetch('books', [['id', '=', $id]]);
+                                            $bk = $roster[0];
+
+                                            ?>
+											
 										</ul>
 									</div>
 								</div>
