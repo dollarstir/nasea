@@ -103,6 +103,9 @@ echo '<!doctype html>
                                             $bokid = $context['id'];
                                             $roster = customfetch('books', [['id', '=', $bokid]]);
                                             $bk = $roster[0];
+                                            $authorid = $bk['author'];
+                                            $cp = customfetch('authors', [['id', '=', $authorid]]);
+                                            $cons = $cp[0];
                                             echo'<li data-thumb="../yolkassets/upload/'.$bk['front'].'">
                                             <img src="../yolkassets/upload/'.$bk['front'].'" alt="woman" />
                                           </li>
@@ -121,13 +124,10 @@ echo '<!doctype html>
 											<h1><?php echo $bk['title']; ?></h1>
 										</div>
 										<div class="product-info-stock-sku">
-											<span>In stock</span>
-											<div class="product-attribute">
-												<span>SKU</span>
-												<span class="value">24-WB05</span>
-											</div>
+											<span><?php echo $cons['authname']; ?></span>
+											
 										</div>
-										<div class="product-reviews-summary">
+										<!-- <div class="product-reviews-summary">
 											<div class="rating-summary">
 												<a href="#"><i class="fa fa-star"></i></a>
 												<a href="#"><i class="fa fa-star"></i></a>
@@ -139,11 +139,11 @@ echo '<!doctype html>
 												<a href="#">3 Reviews</a>
 												<a href="#" class="view">Add Your Review</a>
 											</div>
-										</div>
+										</div> -->
 										<div class="product-info-price">
 											<div class="price-final">
-												<span>$34.00</span>
-												<span class="old-price">$40.00</span>
+												<span>&#8373;<?php echo $bk['price']; ?></span>
+												<!-- <span class="old-price">$40.00</span> -->
 											</div>
 										</div>
 										<div class="product-add-form">

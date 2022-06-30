@@ -620,7 +620,7 @@ function books($limit = '')
         <!-- single-product-start -->
         <div class="product-wrapper mb-40">
             <div class="product-img">
-                <a href="#">
+                <a href="product/'.$row['id'].'">
                     <img src="yolkassets/upload/'.$row['front'].'" alt="book" class="primary" />
                 </a>
                 <div class="quick-view">
