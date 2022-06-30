@@ -81,13 +81,13 @@ $(function(){
               },
             }).then(function (result) {
               // window.location.reload();
-              $("#cartcount").load('processor/processor.php?action=countcart');
-              $("#minicart").load('processor/processor.php?action=viewcart');
-              $("#cartot").load('processor/processor.php?action=carttotal');
-              $("#vcart").load('processor/processor.php?action=viewmaincart');
-              $("#checkcart").load('processor/processor.php?action=checkoutcart');
-              $("#mku").load('processor/processor.php?action=cartsubtotal');
-              $("#ordtt").load('processor/processor.php?action=carttotal');
+              $("#cartcount").load('processor/processor2.php?action=countcart');
+              $("#minicart").load('processor/processor2.php?action=viewcart');
+              $("#cartot").load('processor/processor2.php?action=carttotal');
+              $("#vcart").load('processor/processor2.php?action=viewmaincart');
+              $("#checkcart").load('processor/processor2.php?action=checkoutcart');
+              $("#mku").load('processor/processor2.php?action=cartsubtotal');
+              $("#ordtt").load('processor/processor2.php?action=carttotal');
               swal.close();
               
             });
@@ -139,9 +139,9 @@ $(function(){
               },
             }).then(function (result) {
               // window.location.reload();
-              $("#cartcount").load('processor/processor.php?action=countcart');
-              $("#minicart").load('processor/processor.php?action=viewcart');
-              $("#cartot").load('processor/processor.php?action=carttotal');
+              $("#cartcount").load('processor/processor2.php?action=countcart');
+              $("#minicart").load('processor/processor2.php?action=viewcart');
+              $("#cartot").load('processor/processor2.php?action=carttotal');
               swal.close();
             });
 
@@ -323,7 +323,7 @@ $(document).on('click','.addtocart',function(e){
   // before();
   var id = $(this).attr('id');
   var staff = {
-      url: 'processor/processor.php?action=addtocart&id=1',
+      url: 'processor/processor2.php?action=addtocart&id=1',
       type: 'post',
       data: {"id": id},
       // cache: false,
@@ -343,7 +343,7 @@ $(document).on('click','.removefromcart',function(e){
   // before();
   var id = $(this).attr('id');
   var staff = {
-      url: 'processor/processor.php?action=removecart',
+      url: 'processor/processor2.php?action=removecart',
       type: 'post',
       data: {"id": id},
       // cache: false,

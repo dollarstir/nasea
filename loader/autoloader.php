@@ -13,17 +13,17 @@ spl_autoload_register(function ($class) {
     require $path;
 });
 
-function bolt($loaction)
-{
-    echo  '<script>window.location="'.$loaction.'"</script>';
-}
+// function bolt($loaction)
+// {
+//     echo  '<script>window.location="'.$loaction.'"</script>';
+// }
 
-function say($something)
-{
-    echo $something;
-}
+// function say($something)
+// {
+//     echo $something;
+// }
 
-function ext()
-{
-    return  extract($_POST);
-}
+// function ext()
+// {
+//     return  extract($_POST);
+// }

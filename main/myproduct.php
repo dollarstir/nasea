@@ -155,13 +155,13 @@ echo '<!doctype html>
 											
 										</div>
 										<div class="product-social-links">
-											<div class="product-addto-links">
+											<!-- <div class="product-addto-links">
 												<a href="#"><i class="fa fa-heart"></i></a>
 												<a href="#"><i class="fa fa-pie-chart"></i></a>
 												<a href="#"><i class="fa fa-envelope-o"></i></a>
-											</div>
+											</div> -->
 											<div class="product-addto-links-text">
-												<p><?php echo $bk['description']; ?></p>
+												<p><?php echo substr($bk['description'], 0, 100).'....'; ?></p>
 											</div>
 										</div>
 									</div>
@@ -179,13 +179,13 @@ echo '<!doctype html>
 							<div class="tab-content">
                                 <div class="tab-pane fade show active" id="Details">
                                     <div class="valu">
-                                      <p>The sporty Joust Duffle Bag can't be beat - not in the gym, not on the luggage carousel, not anywhere. Big enough to haul a basketball or soccer ball and some sneakers with plenty of room to spare, it's ideal for athletes with places to go.</p>
-                                      <ul>
+                                      <p><?php echo $bk['description']; ?></p>
+                                      <!-- <ul>
                                         <li><i class="fa fa-circle"></i>Dual top handles.</li>
                                         <li><i class="fa fa-circle"></i>Adjustable shoulder strap.</li>
                                         <li><i class="fa fa-circle"></i>Full-length zipper.</li>
                                         <li><i class="fa fa-circle"></i>L 29" x W 13" x H 11".</li>
-                                      </ul>
+                                      </ul> -->
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="Reviews">
@@ -194,52 +194,28 @@ echo '<!doctype html>
                                             <h2>Customer Reviews</h2>
                                         </div>
                                         <ul>
-                                            <li>
-                                                <div class="review-title">
-                                                    <h3>themes</h3>
-                                                </div>
-                                                <div class="review-left">
-                                                    <div class="review-rating">
-                                                        <span>Price</span>
-                                                        <div class="rating-result">
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <?php
+                                                $res = fetchAll('reviews', ['id' => 'DESC']);
+                                                    foreach ($res as $row) {
+                                                        $fu = customfetch('users', [['id', '=', $row['uid']]]);
+                                                        echo '<li>
+                                                
+                                                        <div class="review-left">
+                                                            <div class="review-content">
+                                                                <h4>'.$row['feedback'].'</h4>
+                                                            </div>
+                                                            <div class="review-details">
+                                                                <p class="review-author">Review by<a href="#">Dollar</a></p>
+                                                                <p class="review-date">Posted on <span>12/9/16</span></p>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="review-rating">
-                                                        <span>Value</span>
-                                                        <div class="rating-result">
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="review-rating">
-                                                        <span>Quality</span>
-                                                        <div class="rating-result">
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                            <a href="#"><i class="fa fa-star"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="review-right">
-                                                    <div class="review-content">
-                                                        <h4>themes </h4>
-                                                    </div>
-                                                    <div class="review-details">
-                                                        <p class="review-author">Review by<a href="#">plaza</a></p>
-                                                        <p class="review-date">Posted on <span>12/9/16</span></p>
-                                                    </div>
-                                                </div>
-                                            </li>
+        
+                                                        
+                                                    </li>';
+                                                    }
+                                                        ?>
+
+                                           
                                         </ul>
                                         <div class="review-add">
                                             <h3>You're reviewing:</h3>
@@ -309,200 +285,7 @@ echo '<!doctype html>
 						</div>
 						<!-- product-info-area-end -->
 						<!-- new-book-area-start -->
-						<div class="new-book-area mt-60">
-							<div class="section-title text-center mb-30">
-								<h3>upsell products</h3>
-							</div>
-							<div class="tab-active-2 owl-carousel">
-								<!-- single-product-start -->
-								<div class="product-wrapper">
-									<div class="product-img">
-										<a href="#">
-											<img src="img/product/1.jpg" alt="book" class="primary" />
-										</a>
-										<div class="quick-view">
-                                            <a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                                <i class="fa fa-search-plus"></i>
-                                            </a>
-                                        </div>
-                                        <div class="product-flag">
-                                            <ul>
-                                                <li><span class="sale">new</span></li>
-                                                <li><span class="discount-percentage">-5%</span></li>
-                                            </ul>
-                                        </div>
-									</div>
-									<div class="product-details text-center">
-										<div class="product-rating">
-											<ul>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-											</ul>
-										</div>
-										<h4><a href="#">Joust Duffle Bag</a></h4>
-										<div class="product-price">
-											<ul>
-												<li>$60.00</li>
-											</ul>
-										</div>
-									</div>
-									<div class="product-link">
-										<div class="product-button">
-											<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-										<div class="add-to-link">
-                                            <ul>
-                                                <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                            </ul>
-                                        </div>
-									</div>	
-								</div>
-								<!-- single-product-end -->
-								<!-- single-product-start -->
-								<div class="product-wrapper">
-									<div class="product-img">
-										<a href="#">
-											<img src="img/product/3.jpg" alt="book" class="primary" />
-										</a>
-										<div class="quick-view">
-                                            <a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                                <i class="fa fa-search-plus"></i>
-                                            </a>
-                                        </div>
-                                        <div class="product-flag">
-                                            <ul>
-                                                <li><span class="sale">new</span></li>
-                                            </ul>
-                                        </div>
-									</div>
-									<div class="product-details text-center">
-										<div class="product-rating">
-											<ul>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-											</ul>
-										</div>
-										<h4><a href="#">Chaz Kangeroo Hoodie</a></h4>
-										<div class="product-price">
-											<ul>
-												<li>$52.00</li>
-											</ul>
-										</div>
-									</div>
-									<div class="product-link">
-										<div class="product-button">
-											<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-										<div class="add-to-link">
-                                            <ul>
-                                                <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                            </ul>
-                                        </div>
-									</div>	
-								</div>
-								<!-- single-product-end -->
-								<!-- single-product-start -->
-								<div class="product-wrapper">
-									<div class="product-img">
-										<a href="#">
-											<img src="img/product/5.jpg" alt="book" class="primary" />
-										</a>
-										<div class="quick-view">
-                                            <a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                                <i class="fa fa-search-plus"></i>
-                                            </a>
-                                        </div>
-                                        <div class="product-flag">
-                                            <ul>
-                                                <li><span class="discount-percentage">-5%</span></li>
-                                            </ul>
-                                        </div>
-									</div>
-									<div class="product-details text-center">
-										<div class="product-rating">
-											<ul>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-											</ul>
-										</div>
-										<h4><a href="#">Set of Sprite Yoga Straps</a></h4>
-										<div class="product-price">
-											<ul>
-												<li> <span>Starting at</span>$34.00</li>
-											</ul>
-										</div>
-									</div>
-									<div class="product-link">
-										<div class="product-button">
-											<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-										<div class="add-to-link">
-                                            <ul>
-                                                <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                            </ul>
-                                        </div>
-									</div>	
-								</div>
-								<!-- single-product-end -->
-								<!-- single-product-start -->
-								<div class="product-wrapper">
-									<div class="product-img">
-										<a href="#">
-											<img src="img/product/7.jpg" alt="book" class="primary" />
-										</a>
-										<div class="quick-view">
-                                            <a class="action-view" href="#" data-target="#productModal" data-toggle="modal" title="Quick View">
-                                                <i class="fa fa-search-plus"></i>
-                                            </a>
-                                        </div>
-                                        <div class="product-flag">
-                                            <ul>
-                                                <li><span class="sale">new</span></li>
-                                                <li><span class="discount-percentage">-5%</span></li>
-                                            </ul>
-                                        </div>
-									</div>
-									<div class="product-details text-center">
-										<div class="product-rating">
-											<ul>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-												<li><a href="#"><i class="fa fa-star"></i></a></li>
-											</ul>
-										</div>
-										<h4><a href="#">Strive Shoulder Pack</a></h4>
-										<div class="product-price">
-											<ul>
-												<li>$30.00</li>
-												<li class="old-price">$32.00</li>
-											</ul>
-										</div>
-									</div>
-									<div class="product-link">
-										<div class="product-button">
-											<a href="#" title="Add to cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-										<div class="add-to-link">
-                                            <ul>
-                                                <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
-                                            </ul>
-                                        </div>
-									</div>	
-								</div>
-								<!-- single-product-end -->	
-							</div>
-						</div>
+						
 						<!-- new-book-area-start -->
 					</div>
 					<div class="col-lg-3 col-md-12 col-12 order-lg-2 order-2">
