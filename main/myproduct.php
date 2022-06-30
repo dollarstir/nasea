@@ -147,12 +147,12 @@ echo '<!doctype html>
 											</div>
 										</div>
 										<div class="product-add-form">
-											<form action="#">
-												<div class="quality-button">
+											
+												<!-- <div class="quality-button">
 													<input class="qty" type="number" value="1">
-												</div>
-												<a href="#">Add to cart</a>
-											</form>
+												</div> -->
+												<button class="btn btn-primary addtocart" id="<?php echo $bk['id']; ?>"  style="background-color: rgb(240, 124, 41) !important;border:none; margin :10px!important;">Add to cart</button>
+											
 										</div>
 										<div class="product-social-links">
 											<div class="product-addto-links">
@@ -161,7 +161,7 @@ echo '<!doctype html>
 												<a href="#"><i class="fa fa-envelope-o"></i></a>
 											</div>
 											<div class="product-addto-links-text">
-												<p>Powerwalking to the gym or strolling to the local coffeehouse, the Savvy Shoulder Tote lets you stash your essentials in sporty style! A top-loading compartment provides quick and easy access to larger items, while zippered pockets on the front and side hold cash, credit cards and phone.</p>
+												<p><?php echo $bk['description']; ?></p>
 											</div>
 										</div>
 									</div>
