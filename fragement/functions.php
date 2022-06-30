@@ -766,8 +766,8 @@ function topbars1()
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="account-area text-right">
                         <ul>
-                            <li><a href="account">My Account</a></li>
-                            <li><a href="checkout">Checkout</a></li>
+                            <li><a href="../account">My Account</a></li>
+                            <li><a href="../checkout">Checkout</a></li>
                             '.$soday.'
                         </ul>
                     </div>
@@ -790,13 +790,13 @@ function topbars1()
                 </div>
                 <div class="col-lg-6 col-md-4 col-12">
                     <div class="logo-area text-center logo-xs-mrg">
-                        <a href="main/index.html"><img src="../main/img/logo/logo.png" alt="logo" /></a>
+                        <a href="../home"><img src="../main/img/logo/logo.png" alt="logo" /></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-12">
                     <div class="my-cart">
                         <ul>
-                            <li><a href="main/#"><i class="fa fa-shopping-cart"></i>My Cart</a>
+                            <li><a href="../cart"><i class="fa fa-shopping-cart"></i>My Cart</a>
                                 <span id ="cartcount">'.countcart().'</span>
                                 <div class="mini-cart-sub">
                                     <div class="cart-product" id="minicart">
@@ -856,7 +856,7 @@ function mainmenu1($pid)
                 <div class="sub-menu sub-menu-2">
                     <ul>';
             foreach ($value as $key1 => $value1) {
-                $tt .= '<li><a href="'.$value1.'">'.$key1.'</a></li>';
+                $tt .= '<li><a href="../'.$value1.'">'.$key1.'</a></li>';
             }
 
             $tt .= '  </ul>
@@ -864,10 +864,10 @@ function mainmenu1($pid)
         </li>';
         } else {
             $tt .= ($pid == $num) ? '<li class="active">
-            <a href="'.$value.'">'.$key.'</i></a>
+            <a href="../'.$value.'">'.$key.'</i></a>
                 
             </li>' : '<li>
-            <a href="'.$value.'">'.$key.'</i></a>
+            <a href="../'.$value.'">'.$key.'</i></a>
                 
             </li>';
         }
@@ -889,6 +889,20 @@ function mainmenu1($pid)
 
 function mobilemenu1()
 {
+    $pages = [
+        'Home' => 'home',
+        'Books' => 'books',
+        'Categories' => [
+            'Poem' => 'poem',
+            'History' => 'history',
+            'Romance' => 'romance',
+        ],
+        'About' => 'aboutus',
+        'Contact' => 'contact',
+        'Free Peoms' => 'poems',
+        'View Cart' => 'cart',
+    ];
+
     return '<!-- mobile-menu-area-start -->
     <div class="mobile-menu-area d-lg-none d-block fix">
         <div class="container">
@@ -897,18 +911,9 @@ function mobilemenu1()
                     <div class="mobile-menu">
                         <nav id="mobile-menu-active">
                             <ul id="nav">
-                                <li><a href="main/index.html">Home</a>
-                                    <ul>
-                                        <li><a href="main/index.html">Home-1</a></li>
-                                        <li><a href="main/index-2.html">Home-2</a></li>
-                                        <li><a href="main/index-3.html">Home-3</a></li>
-                                        <li><a href="main/index-4.html">Home-4</a></li>
-                                        <li><a href="main/index-5.html">Home-5</a></li>
-                                        <li><a href="main/index-6.html">Home-6</a></li>
-                                        <li><a href="main/index-7.html">Home-7</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="main/product-details.html">Book</a>
+                                <li><a href="../home">Home</a></li>
+                                <li><a href="../books">Books</a></li>
+                                <li><a href="#">Categories</a>
                                     <ul>
                                         <li><a href="main/shop.html">Tops & Tees</a></li>
                                         <li><a href="main/shop.html">Polo Short Sleeve</a></li>
