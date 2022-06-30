@@ -85,5 +85,12 @@ $router = new Router([
             return Viewer::view('yolkassets/upload/book2.pdf', $context);
         }
     ),
+
+    new Route(
+        '/product/{id}',
+        function ($context) {
+            return Viewer::view('main/myproduct.php', $context);
+        }
+    ),
 ]);
 $router->launch();
