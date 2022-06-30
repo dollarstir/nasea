@@ -103,6 +103,12 @@ echo '<!doctype html>
                                             $bokid = $context['id'];
                                             $roster = customfetch('books', [['id', '=', $id]]);
                                             $bk = $roster[0];
+                                            echo'<li data-thumb="yolkassets/upload'.$bk['front'].'">
+                                            <img src="../yolkassets/upload/'.$bk['front'].'" alt="woman" />
+                                          </li>
+                                          <li data-thumb="yolkassets/upload/'.$bk['back'].'">
+                                            <img src="yolkassets/upload/'.$bk['back'].'" alt="woman" />
+                                          </li>';
 
                                             ?>
 											
