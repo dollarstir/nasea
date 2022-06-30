@@ -579,7 +579,7 @@ function orderlist()
         <td>'.$key['dateadded'].'</td>
         <td>'.$key['status'].'</td>
         <td>&#8373;'.$key['discountprice'].'</td>
-        <td><a href="cart.html" class="btn btn-sqr">View</a>
+        <td><a href="" class="btn btn-sqr">View</a>
         </td>
     </tr>';
     }
