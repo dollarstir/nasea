@@ -903,39 +903,24 @@ function mobilemenu1()
         'View Cart' => 'cart',
     ];
 
-    return '<!-- mobile-menu-area-start -->
+    $mb = '<!-- mobile-menu-area-start -->
     <div class="mobile-menu-area d-lg-none d-block fix">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="mobile-menu">
                         <nav id="mobile-menu-active">
-                            <ul id="nav">
+             
+                        <ul id="nav">
                                 <li><a href="../home">Home</a></li>
                                 <li><a href="../books">Books</a></li>
                                 <li><a href="#">Categories</a>
-                                    <ul>
-                                        <li><a href="main/shop.html">Tops & Tees</a></li>
-                                        <li><a href="main/shop.html">Polo Short Sleeve</a></li>
-                                        <li><a href="main/shop.html">Graphic T-Shirts</a></li>
-                                        <li><a href="main/shop.html">Jackets & Coats</a></li>
-                                        <li><a href="main/shop.html">Fashion Jackets</a></li>
-                                        <li><a href="main/shop.html">Crochet</a></li>
-                                        <li><a href="main/shop.html">Sleeveless</a></li>
-                                        <li><a href="main/shop.html">Stripes</a></li>
-                                        <li><a href="main/shop.html">Sweaters</a></li>
-                                        <li><a href="main/shop.html">hoodies</a></li>
-                                        <li><a href="main/shop.html">Heeled sandals</a></li>
-                                        <li><a href="main/shop.html">Polo Short Sleeve</a></li>
-                                        <li><a href="main/shop.html">Flat sandals</a></li>
-                                        <li><a href="main/shop.html">Short Sleeve</a></li>
-                                        <li><a href="main/shop.html">Long Sleeve</a></li>
-                                        <li><a href="main/shop.html">Polo Short Sleeve</a></li>
-                                        <li><a href="main/shop.html">Sleeveless</a></li>
-                                        <li><a href="main/shop.html">Graphic T-Shirts</a></li>
-                                        <li><a href="main/shop.html">Hoodies</a></li>
-                                        <li><a href="main/shop.html">Jackets</a></li>
-                                    </ul>
+                                    <ul>';
+    $res = fetchAll('category');
+    foreach ($res as $row) {
+        $mb .= '<li><a href="../'.strtolower($row['catname']).'">'.$row['catname'].'</a></li>';
+    }
+    $mb .= ' </ul>
                                 </li>
                                 <li><a href="main/product-details.html">Audio books</a>
                                     <ul>
