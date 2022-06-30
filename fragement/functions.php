@@ -922,67 +922,17 @@ function mobilemenu1()
     }
     $mb .= ' </ul>
                                 </li>
-                                <li><a href="main/product-details.html">Audio books</a>
-                                    <ul>
-                                        <li><a href="main/shop.html">Tops & Tees</a></li>
-                                        <li><a href="main/shop.html">Sweaters</a></li>
-                                        <li><a href="main/shop.html">Hoodies</a></li>
-                                        <li><a href="main/shop.html">Jackets & Coats</a></li>
-                                        <li><a href="main/shop.html">Long Sleeve</a></li>
-                                        <li><a href="main/shop.html">Short Sleeve</a></li>
-                                        <li><a href="main/shop.html">Polo Short Sleeve</a></li>
-                                        <li><a href="main/shop.html">Sleeveless</a></li>
-                                        <li><a href="main/shop.html">Sweaters</a></li>
-                                        <li><a href="main/shop.html">Hoodies</a></li>
-                                        <li><a href="main/shop.html">Wedges</a></li>
-                                        <li><a href="main/shop.html">Vests</a></li>
-                                        <li><a href="main/shop.html">Polo Short Sleeve</a></li>
-                                        <li><a href="main/shop.html">Sleeveless</a></li>
-                                        <li><a href="main/shop.html">Graphic T-Shirts</a></li>
-                                        <li><a href="main/shop.html">Hoodies</a></li>
-                                    </ul>
+                                <li><a href="../aboutus">About</a>
+                                    
                                 </li>
-                                <li><a href="main/product-details.html">children’s books</a>
-                                    <ul>
-                                        <li><a href="main/shop.html">Shirts</a></li>
-                                        <li><a href="main/shop.html">Florals</a></li>
-                                        <li><a href="main/shop.html">Crochet</a></li>
-                                        <li><a href="main/shop.html">Stripes</a></li>
-                                        <li><a href="main/shop.html">Shorts</a></li>
-                                        <li><a href="main/shop.html">Dresses</a></li>
-                                        <li><a href="main/shop.html">Trousers</a></li>
-                                        <li><a href="main/shop.html">Jeans</a></li>
-                                        <li><a href="main/shop.html">Heeled sandals</a></li>
-                                        <li><a href="main/shop.html">Flat sandals</a></li>
-                                        <li><a href="main/shop.html">Wedges</a></li>
-                                        <li><a href="main/shop.html">Ankle boots</a></li>
-                                    </ul>
+                                <li><a href="../contact">Contact</a>
+                                    
                                 </li>
-                                <li><a href="main/#">blog</a>
-                                    <ul>
-                                        <li><a href="main/blog.html">Blog</a></li>
-                                        <li><a href="main/blog-details.html">blog-details</a></li>
-                                    </ul>
+                                <li><a href="../poems">Free Peoms</a>
+                                    
                                 </li>
-                                <li><a href="main/product-details.html">Page</a>
-                                    <ul>
-                                        <li><a href="main/shop.html">shop</a></li>
-                                        <li><a href="main/shop-list.html">shop list view</a></li>
-                                        <li><a href="main/product-details.html">product-details</a></li>
-                                        <li><a href="main/product-details-affiliate.html">product-affiliate</a></li>
-                                        <li><a href="main/blog.html">blog</a></li>
-                                        <li><a href="main/blog-details.html">blog-details</a></li>
-                                        <li><a href="main/contact.html">contact</a></li>
-                                        <li><a href="main/about.html">about</a></li>
-                                        <li><a href="main/login.html">login</a></li>
-                                        <li><a href="main/register.html">register</a></li>
-                                        <li><a href="main/my-account.html">my-account</a></li>
-                                        <li><a href="main/cart.html">cart</a></li>
-                                        <li><a href="main/compare.html">compare</a></li>
-                                        <li><a href="main/checkout.html">checkout</a></li>
-                                        <li><a href="main/wishlist.html">wishlist</a></li>
-                                        <li><a href="main/404.html">404 Page</a></li>
-                                    </ul>
+                                <li><a href="../cart">View Cart</a>
+                                   
                                 </li>
                             </ul>
                         </nav>
@@ -992,6 +942,8 @@ function mobilemenu1()
         </div>
     </div>
     <!-- mobile-menu-area-end -->';
+
+    return $mb;
 }
 
 // logical navbar by dollarstir
