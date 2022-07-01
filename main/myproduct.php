@@ -220,6 +220,13 @@ echo '<!doctype html>
                                         </ul>
                                         <div class="review-add">
                                             <h3>You're reviewing:</h3>
+                                            <?php
+                                                $so = customfetch('books', [['id', '=', $context['id']]]);
+
+                                                $s = $so[0];
+                                                $authorid = $s['author'];
+
+                                             ?>
                                             <h4>Joust Duffle Bag</h4>
                                         </div>
                                         <div class="review-field-ratings">
