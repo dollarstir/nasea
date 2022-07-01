@@ -195,9 +195,10 @@ echo '<!doctype html>
                                         </div>
                                         <ul>
                                             <?php
-                                                $res = fetchAll('reviews', ['id' => 'DESC']);
+                                                $res = customfetch('reviews', [['id', '=', $context['id']]]);
                                                     foreach ($res as $row) {
                                                         $fu = customfetch('users', [['id', '=', $row['uid']]]);
+                                                        $fufo = $fu[0];
                                                         echo '<li>
                                                 
                                                         <div class="review-left">
@@ -205,8 +206,8 @@ echo '<!doctype html>
                                                                 <h4>'.$row['feedback'].'</h4>
                                                             </div>
                                                             <div class="review-details">
-                                                                <p class="review-author">Review by<a href="#">Dollar</a></p>
-                                                                <p class="review-date">Posted on <span>12/9/16</span></p>
+                                                                <p class="review-author">Review by<a href="#">'.$fufo['name'].'</a></p>
+                                                                <p class="review-date">Posted on <span>'.$row['dateadded'].'</span></p>
                                                             </div>
                                                         </div>
         
