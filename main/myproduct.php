@@ -225,11 +225,13 @@ echo '<!doctype html>
 
                                                 $s = $so[0];
                                                 $authorid = $s['author'];
+                                                $at = customfetch('authors', [['id', '=', $authorid]]);
+                                                $att = $at[0];
 
                                              ?>
-                                            <h4>Joust Duffle Bag</h4>
+                                            <h4><?php echo $att['authname']; ?> Book</h4>
                                         </div>
-                                        <div class="review-field-ratings">
+                                        <!-- <div class="review-field-ratings">
                                             <span>Your Rating <sup>*</sup></span>
                                             <div class="control">
                                                 <div class="single-control">
@@ -263,29 +265,24 @@ echo '<!doctype html>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="review-form">
+                                            <form action="#" class="review">
                                             <div class="single-form">
-                                                <label>Nickname <sup>*</sup></label>
-                                                <form action="#">
-                                                    <input type="text" />
+                                                <label>Name <sup>*</sup></label>
+                                                    <input type="text" name="name" value="<?php echo isset($_SESSION['user']) ? $_SESSION['user']['name'] : ''; ?>" readonly/>
                                                 </form>
                                             </div>
-                                            <div class="single-form single-form-2">
-                                                <label>Summary <sup>*</sup></label>
-                                                <form action="#">
-                                                    <input type="text" />
-                                                </form>
-                                            </div>
+                                            
                                             <div class="single-form">
                                                 <label>Review <sup>*</sup></label>
-                                                <form action="#">
-                                                    <textarea name="massage" cols="10" rows="4"></textarea>
-                                                </form>
+                                                
+                                                    <textarea name="feedback" cols="10" rows="4" ></textarea>
                                             </div>
+                                            </form>
                                         </div>
                                         <div class="review-form-button">
-                                            <a href="#">Submit Review</a>
+                                            <button class="btn btn-primary" style="background-color:rgb(240, 124, 41)! important;border:none;" type="submit">Submit Review</button>
                                         </div>
                                     </div>
                                 </div>
