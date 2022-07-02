@@ -24,6 +24,14 @@ function randomfetch($table, $target, $conjunction = '', $limit = '')
     return $response;
 }
 
+function allrandom($table, $limit = '')
+{
+    $init = new Sel();
+    $response = $init->allrandom($table, $limit);
+
+    return $response;
+}
+
 function sms($senderid, $recipient, $message)
 {
     $send = new Yolksms();

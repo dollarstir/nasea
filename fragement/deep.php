@@ -617,3 +617,11 @@ function adverts($type, $limit)
         }
     }
 }
+
+function randomads()
+{
+    $adt = allrandom('category', 3);
+    foreach ($adt as $cat) {
+        echo'';
+    }
+}
