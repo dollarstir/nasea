@@ -398,7 +398,7 @@ begin('Welcome');
                     <div class="block-newsletter">
                         <h2>Sign up for send newsletter</h2>
                         <p>You can be always up to date with our company new!</p>
-                        <form action="#">
+                        <form action="#" class="newsletter">
                             <input type="text" placeholder="Enter your email address" />
                         </form>
                         <a href="main/#">Send Email</a>
