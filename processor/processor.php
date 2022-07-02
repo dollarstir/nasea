@@ -133,6 +133,11 @@ require '../fragement/deep.php';
             $id = $_SESSION['user']['id'];
             updatebill($id, $phone, $city, $state, $country, $address);
             break;
+
+        case 'newsletter':
+            extract($_POST);
+            newsletter($email);
+            break;
         default:
 
         break;

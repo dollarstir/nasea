@@ -661,3 +661,18 @@ function randomads()
     </div>';
     }
 }
+
+function newsletter($email)
+{
+    if ($email == '') {
+        'email cannot be empty';
+    } elseif (authenticate('newsletter', [['emails', '=', $email]]) == 'success') {
+        echo 'Email already on the list';
+    } else {
+        if (insert('newsletter', ['emails' => $email]) == 'success') {
+            echo 'newslettersuccess';
+        } else {
+            echo 'failed to join the list try again';
+        }
+    }
+}

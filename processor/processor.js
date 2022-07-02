@@ -236,6 +236,23 @@ $(function(){
 
         }
 
+        else if(response == 'newslettersuccess'){
+
+          swal({
+              title: "Success",
+              text: "Email added to list",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location.reload();
+            });
+
+      }
+
 
 
         else if(response == 'downloading'){
@@ -567,6 +584,27 @@ $('.updbill').submit(function(e){
   // var id = $(this).attr('id');
   var staff = {
       url: 'processor/processor.php?action=updatebill',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
+
+$('.newsletter').submit(function(e){
+
+  e.preventDefault();
+  // before();
+  // var id = $(this).attr('id');
+  var staff = {
+      url: 'processor/processor.php?action=newsletter',
       type: 'post',
       data: new FormData(this),
       cache: false,
