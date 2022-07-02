@@ -606,7 +606,7 @@ function review($uid, $bid, $feedback)
 
 function adverts($type, $limit)
 {
-    $ad = customfetch('ads', [['type', '=', $type], '', ['id' => 'DESC'], $limit]);
+    $ad = customfetch('ads', [['type', '=', $type], ['status', '=', 'active']], 'AND', ['id' => 'DESC'], $limit);
     foreach ($ad as $row) {
         if ($type == 'double') {
             echo '<div class="col-lg-6 col-md-6 col-12">
