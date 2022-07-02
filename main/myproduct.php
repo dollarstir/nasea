@@ -195,7 +195,7 @@ echo '<!doctype html>
                                         </div>
                                         <ul>
                                             <?php
-                                                $res = customfetch('reviews', [['id', '=', $context['id']]]);
+                                                $res = customfetch('reviews', [['bid', '=', $context['id']]], );
                                                     foreach ($res as $row) {
                                                         $fu = customfetch('users', [['id', '=', $row['uid']]]);
                                                         $fufo = $fu[0];
@@ -273,7 +273,7 @@ echo '<!doctype html>
                                                     <input type="text" name="name" value="<?php echo isset($_SESSION['user']) ? $_SESSION['user']['name'] : ''; ?>" readonly/>
                                                     <input type="hidden" name="uid" value="<?php echo isset($_SESSION['user']) ? $_SESSION['user']['id'] : ''; ?>"/>
                                                     <input type="hidden" name="bid" value="<?php echo $context['id']; ?>">
-                                                </form>
+                                                
                                             </div>
                                             
                                             <div class="single-form">
@@ -281,11 +281,12 @@ echo '<!doctype html>
                                                 
                                                     <textarea name="feedback" cols="10" rows="4" ></textarea>
                                             </div>
-                                            </form>
+                                            
                                         </div>
                                         <div class="review-form-button">
                                             <button class="btn btn-primary" style="background-color:rgb(240, 124, 41)! important;border:none;" type="submit">Submit Review</button>
                                         </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>	
