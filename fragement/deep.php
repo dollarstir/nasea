@@ -603,3 +603,17 @@ function review($uid, $bid, $feedback)
         }
     }
 }
+
+function adverts($type, $limit)
+{
+    $ad = customfetch('ads', [['type', '=', $type], '', ['id' => 'DESC'], $limit]);
+    foreach ($ad as $row) {
+        if ($type == 'double') {
+            echo '<div class="col-lg-6 col-md-6 col-12">
+            <div class="banner-shadow-hover xs-mb">
+                <a href="main/#"><img src="main/img/banner/8.jpg" alt="banner" /></a>
+            </div>
+        </div>';
+        }
+    }
+}

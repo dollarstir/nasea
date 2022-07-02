@@ -383,11 +383,11 @@ begin('Welcome');
                         <a href="main/#"><img src="main/img/banner/8.jpg" alt="banner" /></a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-12">
+                <!-- <div class="col-lg-6 col-md-6 col-12">
                     <div class="banner-shadow-hover">
                         <a href="main/#"><img src="main/img/banner/9.jpg" alt="banner" /></a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
