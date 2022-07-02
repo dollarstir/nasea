@@ -611,7 +611,7 @@ function adverts($type, $limit)
         if ($type == 'double') {
             echo '<div class="col-lg-6 col-md-6 col-12">
             <div class="banner-shadow-hover xs-mb">
-                <a href="main/#"><img src="main/img/banner/8.jpg" alt="banner" /></a>
+                <a href="'.$row['link'].'" target="blank"><img src="yolkassets/upload/'.$row['adimage'].'" alt="banner" /></a>
             </div>
         </div>';
         }
