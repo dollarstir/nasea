@@ -860,7 +860,7 @@ function mobilemenu1()
                                     <ul>';
     $res = fetchAll('category');
     foreach ($res as $row) {
-        $mb .= '<li><a href="../'.strtolower($row['catname']).'">'.$row['catname'].'</a></li>';
+        $mb .= '<li><a href="../category/'.strtolower($row['catname']).'">'.$row['catname'].'</a></li>';
     }
     $mb .= ' </ul>
                                 </li>
