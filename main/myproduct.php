@@ -271,6 +271,8 @@ echo '<!doctype html>
                                             <div class="single-form">
                                                 <label>Name <sup>*</sup></label>
                                                     <input type="text" name="name" value="<?php echo isset($_SESSION['user']) ? $_SESSION['user']['name'] : ''; ?>" readonly/>
+                                                    <input type="hidden" name="uid" value="<?php echo isset($_SESSION['user']) ? $_SESSION['user']['id'] : ''; ?>"/>
+                                                    <input type="hidden" name="bid" value="<?php echo $context['id']; ?>">
                                                 </form>
                                             </div>
                                             
