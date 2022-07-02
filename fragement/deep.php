@@ -676,3 +676,26 @@ function newsletter($email)
         }
     }
 }
+
+function recentpoem()
+{
+    $add = fetchAll('blog', ['id' => 'DESC'], 10);
+    foreach ($add as $key) {
+        echo '<div class="col-lg-12">
+        <div class="single-post">
+            <div class="post-img">
+                <a href="yolkassets/upload/'.$key['image'].'" alt="post" /></a>
+               <!-- <div class="blog-date-time">
+                    <span class="day-time">06</span>
+                    <span class="moth-time">Dec</span>
+                </div>-->
+            </div>
+            <div class="post-content">
+                <h3><a href="">'.$key['title'].'</a></h3>
+               <!-- <span class="meta-author"> Demo koparion </span>-->
+                <p>'.substr($key['description'], 0, 100).'....</p>
+            </div>
+        </div>
+    </div>';
+    }
+}
