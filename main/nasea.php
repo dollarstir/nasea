@@ -399,9 +399,10 @@ begin('Welcome');
                         <h2>Sign up for send newsletter</h2>
                         <p>You can be always up to date with our company new!</p>
                         <form action="#" class="newsletter">
-                            <input type="text" placeholder="Enter your email address" />
+                            <input type="email" name="email" placeholder="Enter your email address" /><br><br>
+                            <button class="btn btn-primary" style="background-color: gray !important;border:none;" type="submit">Send Email</button>
                         </form>
-                        <a href="main/#">Send Email</a>
+                        
                     </div>
                 </div>
             </div>
