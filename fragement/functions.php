@@ -7,6 +7,12 @@
 //
 // Email: kpin463@gmail.com
 include 'deep.php';
+
+function logiccategory()
+{
+    $cot = fetchAll('category');
+    $c = '';
+}
 function begin($title)
 {
     echo '<!doctype html>
