@@ -296,12 +296,12 @@ echo '<!doctype html>
 						
 						<!-- new-book-area-start -->
 					</div>
-					<div class="col-lg-3 col-md-12 col-12 order-lg-2 order-2">
-						<div class="shop-left">
-							<div class="left-title mb-20">
+					<!-- <div class="col-lg-3 col-md-12 col-12 order-lg-2 order-2">
+						<div class="shop-left"> -->
+							<!-- <div class="left-title mb-20">
 								<h4>Related Products</h4>
-							</div>
-							<div class="random-area mb-30">
+							</div> -->
+							<!-- <div class="random-area mb-30">
 								<div class="product-active-2 owl-carousel">
 									<div class="product-total-2">
 										<div class="single-most-product bd mb-18">
@@ -444,22 +444,22 @@ echo '<!doctype html>
 										</div>
 									</div>	
 								</div>
-							</div>
-							<div class="banner-area mb-30">
+							</div> -->
+							<!-- <div class="banner-area mb-30">
 								<div class="banner-img-2">
 									<a href="#"><img src="https://htmldemo.net/koparion/koparion/img/banner/33.jpg" alt="banner" /></a>
 								</div>
-							</div>
-							<div class="left-title-2 mb-30">
+							</div> -->
+							<!-- <div class="left-title-2 mb-30">
 								<h2>Compare Products</h2>
 								<p>You have no items to compare.</p>
-							</div>
-							<div class="left-title-2">
+							</div> -->
+							<!-- <div class="left-title-2">
 								<h2>My Wish List</h2>
 								<p>You have no items in your wish list.</p>
-							</div>
-						</div>
-					</div>
+							</div> -->
+						<!-- </div>
+					</div> -->
 				</div>
 			</div>
 		</div>
