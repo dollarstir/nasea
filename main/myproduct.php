@@ -195,7 +195,7 @@ echo '<!doctype html>
                                         </div>
                                         <ul>
                                             <?php
-                                                $res = customfetch('reviews', [['bid', '=', $context['id']]], );
+                                                $res = customfetch('reviews', [['bid', '=', $context['id']]], '', ['id' => 'DESC']);
                                                     foreach ($res as $row) {
                                                         $fu = customfetch('users', [['id', '=', $row['uid']]]);
                                                         $fufo = $fu[0];
