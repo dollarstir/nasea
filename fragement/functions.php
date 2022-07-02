@@ -11,7 +11,12 @@ include 'deep.php';
 function logiccategory()
 {
     $cot = fetchAll('category');
-    $c = '';
+    $c = [];
+    foreach ($cot as $key) {
+        $c .= ''.$key.'';
+    }
+
+    return $c;
 }
 function begin($title)
 {
