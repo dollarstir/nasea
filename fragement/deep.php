@@ -584,3 +584,22 @@ function orderlist()
     </tr>';
     }
 }
+
+function review($uid, $bid, $feedback)
+{
+    if ($uid == '') {
+        echo 'You need to login before review';
+    } else {
+        if ($feedback == '') {
+            echo 'You cannot post empty review';
+        } else {
+            $dataa = date('jS F, Y');
+            $dd = ['bid' => $bid, 'uid' => $uid, 'feedback' => $feedback, 'dateadded' => $dataa];
+            if (insert('reviews', $dd) == 'success') {
+                echo 'reviewed';
+            } else {
+                echo 'something went wrong';
+            }
+        }
+    }
+}

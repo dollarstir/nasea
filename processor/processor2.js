@@ -237,6 +237,24 @@ $(function(){
         }
 
 
+        else if(response == 'reviewed'){
+
+          swal({
+              title: "Success",
+              text: "Review added Successfuly",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location.reload();
+            });
+
+      }
+
+
 
         else if(response == 'downloading'){
 
