@@ -473,14 +473,17 @@ function topbars()
 
 function mainmenu($pid)
 {
+    $cato = fetchAll('category');
+    $cats = [];
+
+    foreach ($cato as $cat) {
+        $cats[$cat['catname']] = strtolower($cat['catname']);
+    }
+
     $pages = [
         'Home' => 'home',
         'Books' => 'books',
-        'Categories' => [
-            'Poem' => 'poem',
-            'History' => 'history',
-            'Romance' => 'romance',
-        ],
+        'Categories' => $cats,
         'About' => 'aboutus',
         'Contact' => 'contact',
         'Free Peoms' => 'poems',
@@ -776,14 +779,16 @@ function topbars1()
 
 function mainmenu1($pid)
 {
+    $cato = fetchAll('category');
+    $cats = [];
+
+    foreach ($cato as $cat) {
+        $cats[$cat['catname']] = strtolower($cat['catname']);
+    }
     $pages = [
         'Home' => 'home',
         'Books' => 'books',
-        'Categories' => [
-            'Poem' => 'poem',
-            'History' => 'history',
-            'Romance' => 'romance',
-        ],
+        'Categories' => $cats,
         'About' => 'aboutus',
         'Contact' => 'contact',
         'Free Peoms' => 'poems',

@@ -684,7 +684,7 @@ function recentpoem()
         echo '<div class="col-lg-12">
         <div class="single-post">
             <div class="post-img">
-                <a href="yolkassets/upload/'.$key['image'].'" alt="post" /></a>
+                <a href=""><img src="yolkassets/upload/'.$key['image'].'" alt="post" /></a>
                <!-- <div class="blog-date-time">
                     <span class="day-time">06</span>
                     <span class="moth-time">Dec</span>
