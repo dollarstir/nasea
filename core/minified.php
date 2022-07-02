@@ -16,6 +16,14 @@ function customfetch($table, $target, $conjunction = '', $order = [], $limit = '
     return $response;
 }
 
+function randomfetch($table, $target, $conjunction = '', $limit = '')
+{
+    $init = new Sel();
+    $response = $init->randomfetch($table, $target, $conjunction, $limit);
+
+    return $response;
+}
+
 function sms($senderid, $recipient, $message)
 {
     $send = new Yolksms();
