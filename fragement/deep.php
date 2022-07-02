@@ -622,6 +622,42 @@ function randomads()
 {
     $adt = allrandom('category', 3);
     foreach ($adt as $cat) {
-        echo'';
+        $at = randomfetch('books', [['category', '=', $cat['id']]], '', 5);
+        echo'<div class="col-lg-3 col-md-4 col-12">
+        <div class="section-title-2 mb-30">
+            <h3>'.$cat['catname'].'</h3>
+        </div>
+        <div class="product-active-2 owl-carousel">
+            <div class="product-total-2">';
+        foreach ($at as $row) {
+            echo '<div class="single-most-product bd mb-18">
+            <div class="most-product-img">
+            <a href="product/'.$row['id'].'"><img src="yolkassets/upload/'.$row['front'].'" alt="book" /></a>
+            </div>
+            <div class="most-product-content">
+                <div class="product-rating">
+                    <ul>
+                        <li><a href=""><i class="fa fa-star"></i></a></li>
+                        <li><a href=""><i class="fa fa-star"></i></a></li>
+                        <li><a href=""><i class="fa fa-star"></i></a></li>
+                        <li><a href=""><i class="fa fa-star"></i></a></li>
+                        <li><a href=""><i class="fa fa-star"></i></a></li>
+                    </ul>
+                </div>
+                <h4><a href="product/'.$row['id'].'">'.$row['title'].'</a></h4>
+                <div class="product-price">
+                    <ul>
+                        <li>'.$row['price'].'</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>';
+        }
+
+        echo' </div>
+           
+        </div>
+    </div>';
     }
 }
