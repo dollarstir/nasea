@@ -255,13 +255,13 @@ begin('Books');
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-12 col-12 order-lg-2 order-1">
-					<div class="category-image mb-30">
+					<!-- <div class="category-image mb-30">
 						<a href="#"><img src="https://htmldemo.net/koparion/koparion/img/banner/32.jpg" alt="banner" /></a>
-					</div>
+					</div> -->
 					<div class="section-title-5 mb-30">
 						<h2>Book</h2>
 					</div>
-					<div class="toolbar mb-30">
+					<!-- <div class="toolbar mb-30">
 						<div class="shop-tab">
 							<div class="tab-3">
 								<ul class="nav">
@@ -276,14 +276,14 @@ begin('Books');
 						<div class="field-limiter">
 							<div class="control">
 								<span>Show</span>
-								<!-- chosen-start -->
+								
 								<select data-placeholder="Default Sorting" style="width:50px;" class="chosen-select" tabindex="1">
 									<option value="Sorting">1</option>
 									<option value="popularity">2</option>
 									<option value="rating">3</option>
 									<option value="date">4</option>
 								</select>
-								<!-- chosen-end -->
+								
 							</div>
 						</div>
 						<div class="toolbar-sorter">
@@ -295,7 +295,7 @@ begin('Books');
 							</select>
 							<a href="#"><i class="fa fa-arrow-up"></i></a>
 						</div>
-					</div>
+					</div> -->
 					<!-- tab-area-start -->
 					<div class="tab-content">
 						<div class="tab-pane fade show active" id="th">
