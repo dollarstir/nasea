@@ -53,19 +53,9 @@ begin('Books');
 								
 							</ul>
 						</div>
+						
 						<div class="left-title mb-20">
-							<h4>Color</h4>
-						</div>
-						<div class="color-menu mb-30">
-							<ul class="color">
-								<li><a href="#"></a></li>
-								<li><a href="#" class="bg-2"></a></li>
-								<li><a href="#" class="bg-3"></a></li>
-								<li><a href="#" class="bg-4"></a></li>
-							</ul>
-						</div>
-						<div class="left-title mb-20">
-							<h4>Manufacturer</h4>
+							<h4>Authors</h4>
 						</div>
 						<div class="left-menu mb-30">
 							<ul>
