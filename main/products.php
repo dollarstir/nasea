@@ -49,7 +49,7 @@ begin('Books');
 						</div>
 						<div class="left-menu mb-30">
 							<ul>
-								<?php categorypluscount(); ?>
+								<?php categorypluscount('main'); ?>
 								
 							</ul>
 						</div>
@@ -59,7 +59,7 @@ begin('Books');
 						</div>
 						<div class="left-menu mb-30">
 							<ul>
-								<?php authorpluscount(); ?>
+								<?php authorpluscount('main'); ?>
 								
 							</ul>
 						</div>

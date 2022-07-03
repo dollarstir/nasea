@@ -710,7 +710,7 @@ function categorypluscount($type)
 
         if ($type == 'main') {
             $mb .= '<li><a href="category/'.$cat['id'].'">'.$cat['catname'].'<span>('.$cc.')</span></a></li>';
-        } else {
+        } elseif ($type == 'sub') {
             $mb .= '<li><a href="../category/'.$cat['id'].'">'.$cat['catname'].'<span>('.$cc.')</span></a></li>';
         }
     }
@@ -729,7 +729,7 @@ function authorpluscount($type)
 
         if ($type == 'main') {
             $mb .= '<li><a href="authors/'.$cat['id'].'">'.$cat['authname'].'<span>('.$cc.')</span></a></li>';
-        } else {
+        } elseif ($type == 'sub') {
             $mb .= '<li><a href="../authors/'.$cat['id'].'">'.$cat['authname'].'<span>('.$cc.')</span></a></li>';
         }
     }
