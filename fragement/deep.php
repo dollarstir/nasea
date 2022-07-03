@@ -700,7 +700,7 @@ function recentpoem()
     }
 }
 
-function categorypluscount()
+function categorypluscount($type)
 {
     $c = fetchAll('category');
     $mb = '';
@@ -708,14 +708,18 @@ function categorypluscount()
     foreach ($c as $cat) {
         $cc = customcount('books', [['category', '=', $cat['id']]]);
 
-        $mb .= '<li><a href="category/'.$cat['id'].'">'.$cat['catname'].'<span>('.$cc.')</span></a></li>';
+        if ($type == 'main') {
+            $mb .= '<li><a href="category/'.$cat['id'].'">'.$cat['catname'].'<span>('.$cc.')</span></a></li>';
+        } else {
+            $mb .= '<li><a href="../category/'.$cat['id'].'">'.$cat['catname'].'<span>('.$cc.')</span></a></li>';
+        }
     }
     $mb .= '';
 
     echo $mb;
 }
 
-function authorpluscount()
+function authorpluscount($type)
 {
     $c = fetchAll('authors');
     $mb = '';
@@ -723,7 +727,11 @@ function authorpluscount()
     foreach ($c as $cat) {
         $cc = customcount('books', [['author', '=', $cat['id']]]);
 
-        $mb .= '<li><a href="authors/'.$cat['id'].'">'.$cat['authname'].'<span>('.$cc.')</span></a></li>';
+        if ($type == 'main') {
+            $mb .= '<li><a href="authors/'.$cat['id'].'">'.$cat['authname'].'<span>('.$cc.')</span></a></li>';
+        } else {
+            $mb .= '<li><a href="../authors/'.$cat['id'].'">'.$cat['authname'].'<span>('.$cc.')</span></a></li>';
+        }
     }
     $mb .= '';
 

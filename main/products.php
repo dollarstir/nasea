@@ -59,7 +59,7 @@ begin('Books');
 						</div>
 						<div class="left-menu mb-30">
 							<ul>
-								<li><a href="#">Adidas<span>(4)</span></a></li>
+								<?php authorpluscount(); ?>
 								
 							</ul>
 						</div>
