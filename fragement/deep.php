@@ -615,8 +615,9 @@ function adverts($type, $limit)
             </div>
         </div>';
         } elseif ($type == 'side') {
-
-            echo'';
+            echo'<div class="banner-img-2">
+            <a href="'.$row['link'].'"><img src="yolkassets/upload/'.$row['adimage'].'" alt="banner" /></a>
+        </div>';
         }
     }
 }
