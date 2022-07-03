@@ -699,3 +699,18 @@ function recentpoem()
     </div>';
     }
 }
+
+function categorypluscount()
+{
+    $c = fetchAll('category');
+    $mb = '';
+
+    foreach ($c as $cat) {
+        $cc = customcount('books', [['category', '=', $cat['id']]]);
+
+        $mb .= '<li><a href="category/'.$cat['id'].'">'.$cat['catname'].'<span>('.$cc.')</span></a></li>';
+    }
+    $mb .= '';
+
+    echo $mb;
+}

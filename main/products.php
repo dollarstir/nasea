@@ -49,10 +49,8 @@ begin('Books');
 						</div>
 						<div class="left-menu mb-30">
 							<ul>
-								<li><a href="#">Jackets<span>(15)</span></a></li>
-								<li><a href="#">weaters<span>(9)</span></a></li>
-								<li><a href="#">Bottoms<span>(12)</span></a></li>
-								<li><a href="#">Jeans Pants<span>(6)</span></a></li>
+								<?php categorypluscount(); ?>
+								
 							</ul>
 						</div>
 						<div class="left-title mb-20">
