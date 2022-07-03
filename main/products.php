@@ -60,12 +60,7 @@ begin('Books');
 						<div class="left-menu mb-30">
 							<ul>
 								<li><a href="#">Adidas<span>(4)</span></a></li>
-								<li><a href="#">Chanel<span>(7)</span></a></li>
-								<li><a href="#">DKNY <span>(3)</span></a></li>
-								<li><a href="#">Dolce<span>(3)</span></a></li>
-								<li><a href="#">Gabbana<span>(2)</span></a></li>
-								<li><a href="#">Nike<span>(3)</span></a></li>
-								<li><a href="#">Other <span>(1)</span></a></li>
+								
 							</ul>
 						</div>
 						<div class="left-title mb-20">
