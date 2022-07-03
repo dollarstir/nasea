@@ -714,3 +714,18 @@ function categorypluscount()
 
     echo $mb;
 }
+
+function authorpluscount()
+{
+    $c = fetchAll('authors');
+    $mb = '';
+
+    foreach ($c as $cat) {
+        $cc = customcount('books', [['author', '=', $cat['id']]]);
+
+        $mb .= '<li><a href="authors/'.$cat['id'].'">'.$cat['authname'].'<span>('.$cc.')</span></a></li>';
+    }
+    $mb .= '';
+
+    echo $mb;
+}
