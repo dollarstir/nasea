@@ -92,5 +92,12 @@ $router = new Router([
             return Viewer::view('main/myproduct.php', $context);
         }
     ),
+
+    new Route(
+        '/poems',
+        function ($context) {
+            return Viewer::view('main/mypeoms.php', $context);
+        }
+    ),
 ]);
 $router->launch();
