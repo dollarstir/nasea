@@ -509,7 +509,7 @@ function mainmenu($pid)
                 <div class="sub-menu sub-menu-2">
                     <ul>';
             foreach ($value as $key1 => $value1) {
-                $tt .= '<li><a href="'.$value1.'">'.$key1.'</a></li>';
+                $tt .= '<li><a href="category/'.$value1.'">'.$key1.'</a></li>';
             }
 
             $tt .= '  </ul>
@@ -814,7 +814,7 @@ function mainmenu1($pid)
                 <div class="sub-menu sub-menu-2">
                     <ul>';
             foreach ($value as $key1 => $value1) {
-                $tt .= '<li><a href="../'.$value1.'">'.$key1.'</a></li>';
+                $tt .= '<li><a href="../category/'.$value1.'">'.$key1.'</a></li>';
             }
 
             $tt .= '  </ul>
