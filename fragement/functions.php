@@ -681,6 +681,67 @@ function books($limit = '')
     </div>';
     }
 }
+
+function bookspage($limit = '')
+{
+    if ($limit == '') {
+        $res = customfetch('books', [['status', '=', 'active']], '', ['id' => 'DESC']);
+    } else {
+        $res = customfetch('books', [['status', '=', 'active']], '', ['id' => 'DESC'], 8);
+    }
+
+    foreach ($res as $row) {
+        echo '<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <!-- single-product-start -->
+        <div class="product-wrapper mb-40">
+            <div class="product-img">
+                <a href="product/'.$row['id'].'">
+                    <img src="yolkassets/upload/'.$row['front'].'" alt="book" class="primary" />
+                </a>
+                <div class="quick-view">
+                    <button id="'.$row['id'].'" class="btn btn-success previewbtn" style="background-color: rgb(240, 124, 41) !important;border:none;"  data-target="#productModal" data-toggle="modal" title="Quick View">
+                        <i class="fa fa-search-plus"></i>
+                    </button>
+                </div>
+                <div class="product-flag">
+                    <ul>
+                        <li><span class="sale">new</span></li>
+                        <li><span class="discount-percentage">-5%</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-details text-center">
+                <div class="product-rating">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        <li><a href="#"><i class="fa fa-star"></i></a></li>
+                        <li><a href="#"><i class="fa fa-star"></i></a></li>
+                    </ul>
+                </div>
+                <h4><a href="product/'.$row['id'].'">'.$row['title'].'</a></h4>
+                <div class="product-price">
+                    <ul>
+                        <li>&#8373; '.$row['price'].'</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-link">
+                <div class="product-button">
+                    <button title="Add to cart" id="'.$row['id'].'"  class ="btn btn-success addtocart" style="background-color: rgb(240, 124, 41) !important;border:none;"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                </div>
+                <div class="add-to-link">
+                    <ul>
+                        <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- single-product-end -->
+    </div>';
+    }
+}
 function app()
 {
     $s = fetchAll('settings');

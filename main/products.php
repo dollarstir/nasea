@@ -118,7 +118,7 @@ begin('Books');
 							<div class="row">
 								
 								
-							<?php books();
+							<?php bookspage();
 
 ?>
 							</div>
