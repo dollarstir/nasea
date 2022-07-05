@@ -367,7 +367,7 @@ begin('Books');
 					<!-- pagination-area-start -->
 					<div class="pagination-area mt-50">
 						<div class="list-page-2">
-							<p>Items 1-9 of 11</p>
+							<!-- <p>Items 1-9 of 11</p> -->
 						</div>
 						<div class="page-number">
 							<ul>
