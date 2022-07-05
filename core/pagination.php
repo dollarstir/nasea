@@ -73,9 +73,20 @@ class pagination extends database
             $sel = $this->conn->prepare("SELECT * FROM $table $vs $kof  LIMIT $starting_limit,$limit");
         }
 
-        $sel->execute();
+        foreach ($target as $value) {
+            if (is_array($value)) {
+                if (count($value) == 3) {
+                    $sel->bindValue(':'.$value[0], $value[2]);
+                }
+            }
+        }
+        try {
+            $sel->execute();
 
-        return $sel->fetchAll(PDO::FETCH_ASSOC);
+            return $sel->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            echo $e;
+        }
     }
 
     public function pagecount($table, $perpage, $ct)
@@ -86,27 +97,16 @@ class pagination extends database
             $co->execute();
             $cc = $co->fetchColumn();
             $total_pages = ceil($cc / $perpage);
-            $result = '<nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item '.($ct == 1 ? 'disabled' : '').'">
-                <a class="page-link" href="'.($ct - 1).'" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>';
+            $result = '';
             for ($page = 1; $page <= $total_pages; ++$page) {
+                $combo = ($ct == $page) ? 'active' : '';
                 $result .= '
-                  <li class="page-item '.($ct == $page ? 'active' : '').'"><a class="page-link" href="'.$page.'">'.$page.'</a></li>
+                <li><a href="books?page='.$page.'" class="'.$combo.'">'.$page.'</a></li>
                   
                   
               ';
             }
-            $result .= '<li class="page-item '.($ct == $total_pages ? 'disabled' : '').'">
-            <a class="page-link" href="'.($ct + 1).'" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-                </a>
-             </li>
-                </ul>
-             </nav>';
+            $result .= '';
         } catch (PDOException $e) {
             $result = $e;
         }

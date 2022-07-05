@@ -118,7 +118,13 @@ begin('Books');
 							<div class="row">
 								
 								
-							<?php bookspage();
+							<?php
+
+                            if (isset($_GET['page'])) {
+                                bookspage(10, $_GET['page']);
+                            } else {
+                                bookspage(10, 1);
+                            }
 
 ?>
 							</div>
@@ -370,11 +376,16 @@ begin('Books');
 							<!-- <p>Items 1-9 of 11</p> -->
 						</div>
 						<div class="page-number">
+								
 							<ul>
-								<li><a href="#" class="active">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
+							
+							<?php
+
+                            if (isset($_GET['page'])) {
+                                echo   pagecount('books', 10, $_GET['page']);
+                            } else {
+                                echo pagecount('books', 10, 1);
+                            } ?>
 								<li><a href="#" class="angle"><i class="fa fa-angle-right"></i></a></li>
 							</ul>
 						</div>

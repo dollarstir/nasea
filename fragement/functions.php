@@ -685,11 +685,11 @@ function books($limit = '')
 function bookspage($limit = '', $page = 1)
 {
     if ($limit == '') {
-        $res = customepaginate('books', [['status', '=', 'active']], '', ['id' => 'DESC']);
+        $res = paginate('books', ['id' => 'DESC']);
     } else {
-        $res = customepaginate('books', [['status', '=', 'active']], '', ['id' => 'DESC'], $limit, $page);
+        $res = paginate('books', ['id' => 'DESC'], $limit, $page);
     }
-
+    // var_dump($res);
     foreach ($res as $row) {
         echo '<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
         <!-- single-product-start -->
