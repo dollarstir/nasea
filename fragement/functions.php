@@ -742,6 +742,29 @@ function bookspage($limit = '', $page = 1)
     </div>';
     }
 }
+
+function mypagecount($perpage, $ct)
+{
+    $res = pagecount('books', $perpage, $ct);
+    $total_pages = $res;
+
+    $canto = $ct - 1;
+    $mimi = ($ct == 1) ? '' : '<li><a href="books?page='.$canto.'" class="angle"><i class="fa fa-angle-left"></i></a></li>';
+    $result = $mimi;
+    for ($page = 1; $page <= $total_pages; ++$page) {
+        $conto = $ct + 1;
+        $combo = ($ct == $page) ? 'active' : '';
+        $combo2 = ($ct == $total_pages) ? '' : '<li><a href="books?page='.$conto.'" class="angle"><i class="fa fa-angle-right"></i></a></li>';
+        $result .= '
+                <li><a href="books?page='.$page.'" class="'.$combo.'">'.$page.'</a></li>
+                  
+                  
+              ';
+    }
+    $result .= $combo2;
+
+    return $result;
+}
 function app()
 {
     $s = fetchAll('settings');
