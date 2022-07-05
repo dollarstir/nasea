@@ -114,12 +114,22 @@ function customepaginate($table, $target, $conjunction = '', $order = [], $limit
 {
     $init = new Pagination();
     $response = $init->customepaginate($table, $target, $conjunction, $order, $limit, $ct);
+
+    return $response;
 }
 
 function pagecount($table, $perpage, $ct)
 {
     $init = new Pagination();
     $response = $init->pagecount($table, $perpage, $ct);
+
+    return $response;
+}
+
+function custompagecount($table, $target, $conjunction = '', $perpage, $ct)
+{
+    $init = new Pagination();
+    $response = $init->custompagecount($table, $target, $conjunction, $perpage, $ct);
 
     return $response;
 }

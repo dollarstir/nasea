@@ -175,9 +175,9 @@ echo '<!doctype html>
 							<?php
 
                             if (isset($_GET['page'])) {
-                                bookspage('sub', 10, $_GET['page']);
+                                bookspage('sub', 1, $_GET['page']);
                             } else {
-                                bookspage('sub', 10, 1);
+                                bycatpage($context['id'], 'sub', 1, 1);
                             }
 
 ?>
@@ -436,9 +436,9 @@ echo '<!doctype html>
 							<?php
 
                             if (isset($_GET['page'])) {
-                                echo   mypagecount('sub', 10, $_GET['page']);
+                                echo   mycustomepagecount($context['id'], 'sub', 1, $_GET['page']);
                             } else {
-                                echo mypagecount('sub', 10, 1);
+                                echo mycustomepagecount($context['id'], 'sub', 1, 1);
                             } ?>
 								
 							</ul>
