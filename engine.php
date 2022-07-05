@@ -101,6 +101,13 @@ $router = new Router([
     ),
 
     new Route(
+        '/category/{id}',
+        function ($context) {
+            return Viewer::view('main/bycategory.php', $context);
+        }
+    ),
+
+    new Route(
         '/poems',
         function ($context) {
             return Viewer::view('main/mypeoms.php', $context);
