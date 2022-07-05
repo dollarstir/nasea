@@ -108,6 +108,13 @@ $router = new Router([
     ),
 
     new Route(
+        '/poem/{id}',
+        function ($context) {
+            return Viewer::view('main/peomd.php', $context);
+        }
+    ),
+
+    new Route(
         '/poems',
         function ($context) {
             return Viewer::view('main/mypeoms.php', $context);
