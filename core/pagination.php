@@ -32,7 +32,7 @@ class pagination extends database
     }
 
     // custome pagenate
-    public function customepaginate($table, $order = [], $limit, $ct)
+    public function customepaginate($table, $target, $conjunction = '', $order = [], $limit, $ct)
     {
         // var_dump($ct);
         $ct;
@@ -50,10 +50,27 @@ class pagination extends database
         } else {
             $kof = '';
         }
+
+        $vs = '';
+        // $allval = []
+        foreach ($target as $value) {
+            if (is_array($value)) {
+                if (count($value) == 3) {
+                    $colunmname = $value[0];
+                    $operator = $value[1];
+                    $colunmvalue = $value[2];
+                    if ($vs == '') {
+                        $vs .= 'WHERE '.$colunmname.' '.$operator.' :'.$colunmname;
+                    } else {
+                        $vs .= " $conjunction $colunmname $operator :$colunmname";
+                    }
+                }
+            }
+        }
         if ($limit == '') {
-            $sel = $this->conn->prepare("SELECT * FROM $table $kof");
+            $sel = $this->conn->prepare("SELECT * FROM $table $vs $kof");
         } else {
-            $sel = $this->conn->prepare("SELECT * FROM $table $kof  LIMIT $starting_limit,$limit");
+            $sel = $this->conn->prepare("SELECT * FROM $table $vs $kof  LIMIT $starting_limit,$limit");
         }
 
         $sel->execute();
