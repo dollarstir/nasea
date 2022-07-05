@@ -854,3 +854,56 @@ function bycatpage($id, $type, $limit = '', $page = 1)
         }
     }
 }
+
+function poem()
+{
+    $re = fetchAll('blog', ['id' => 'DESC']);
+
+    foreach ($re as $row) {
+        echo '<div class="single-blog-post">
+        <div class="author-destils mb-30">
+            <div class="author-left">
+                <div class="author-img">
+                    <a href="#"><img src="yolkassets/upload/'.$row['image'].'" alt="man" /></a>
+                </div>
+                <div class="author-description">
+                    <p>Posted by: 
+                        <a href="#"><span>Admin</span>in</a>
+                        
+                    </p>
+                    <span>'.$row['dateadded'].'</span>
+                </div>
+            </div>
+            <div class="author-right">
+                <span>Share this:</span>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog-img mb-30">
+            <a href="#"><img src="yolkassets/upload/'.$row['image'].'" alt="blog"  style="width:100%;height:400px"/></a>
+        </div>
+        <div class="single-blog-content">
+            <div class="single-blog-title">
+                <h3><a href="#">'.$row['title'].'</a></h3>
+            </div>
+            <div class="blog-single-content">
+                <p>'.substr($row['description'], 0, 100).'...</p>
+            </div>
+        </div>
+        <div class="blog-comment-readmore">
+            <div class="blog-readmore">
+                <a href="poem/'.$row['id'].'">Read more<i class="fa fa-long-arrow-right"></i></a>
+            </div>
+            <div class="blog-com">
+                <a href="#">3 comments</a>
+            </div>
+        </div>
+    </div>';
+    }
+}

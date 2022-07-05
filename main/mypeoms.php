@@ -37,51 +37,7 @@ begin('Poems');
 					
 					<div class="col-lg-12 col-md-12 col-12 order-lg-2 order-1">
 						<div class="blog-main-wrapper">
-							<div class="single-blog-post">
-								<div class="author-destils mb-30">
-									<div class="author-left">
-										<div class="author-img">
-											<a href="#"><img src="https://htmldemo.net/koparion/koparion/img/author/1.jpg" alt="man" /></a>
-										</div>
-										<div class="author-description">
-											<p>Posted by: 
-												<a href="#"><span>Admin</span>in</a>
-												
-											</p>
-											<span>May 15 2017</span>
-										</div>
-									</div>
-									<div class="author-right">
-										<span>Share this:</span>
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-											<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-											<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="blog-img mb-30">
-									<a href="#"><img src="https://htmldemo.net/koparion/koparion/img/blog/1.jpg" alt="blog" /></a>
-								</div>
-								<div class="single-blog-content">
-									<div class="single-blog-title">
-										<h3><a href="#">Blog image post</a></h3>
-									</div>
-									<div class="blog-single-content">
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-									</div>
-								</div>
-								<div class="blog-comment-readmore">
-									<div class="blog-readmore">
-										<a href="#">Read more<i class="fa fa-long-arrow-right"></i></a>
-									</div>
-									<div class="blog-com">
-										<a href="#">3 comments</a>
-									</div>
-								</div>
-							</div>
+							<?php poem(); ?>
 								
 						</div>
 					</div>
