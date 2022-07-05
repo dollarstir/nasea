@@ -386,7 +386,7 @@ begin('Books');
                             } else {
                                 echo pagecount('books', 10, 1);
                             } ?>
-								<li><a href="#" class="angle"><i class="fa fa-angle-right"></i></a></li>
+								
 							</ul>
 						</div>
 					</div>
