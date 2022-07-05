@@ -94,6 +94,13 @@ $router = new Router([
     ),
 
     new Route(
+        '/author/{id}',
+        function ($context) {
+            return Viewer::view('main/byauthor.php', $context);
+        }
+    ),
+
+    new Route(
         '/poems',
         function ($context) {
             return Viewer::view('main/mypeoms.php', $context);

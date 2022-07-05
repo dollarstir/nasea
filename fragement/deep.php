@@ -732,9 +732,9 @@ function authorpluscount($type)
         $cc = customcount('books', [['author', '=', $cat['id']]]);
 
         if ($type == 'main') {
-            $mb .= '<li><a href="authors/'.$cat['id'].'">'.$cat['authname'].'<span>('.$cc.')</span></a></li>';
+            $mb .= '<li><a href="author/'.$cat['id'].'">'.$cat['authname'].'<span>('.$cc.')</span></a></li>';
         } elseif ($type == 'sub') {
-            $mb .= '<li><a href="../authors/'.$cat['id'].'">'.$cat['authname'].'<span>('.$cc.')</span></a></li>';
+            $mb .= '<li><a href="../author/'.$cat['id'].'">'.$cat['authname'].'<span>('.$cc.')</span></a></li>';
         }
     }
     $mb .= '';

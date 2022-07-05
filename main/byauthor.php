@@ -1,8 +1,62 @@
 <?php
 
 involve('functions');
+$autod = customfetch('authors', [['id', '=', $context['id']]]);
 
-begin('Books');
+echo '<!doctype html>
+    <html class="no-js" lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title> Book by '.$autod[0]['authname'].' </title>
+        <meta name="description" content="Nasea books is one of the Best E-book stores in the world">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../main/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../main/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../main/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../main/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../main/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../main/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../main/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../main/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../main/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../main/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../main/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../main/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../main/favicon/favicon-16x16.png">
+<link rel="manifest" href="../main/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="../main/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+        <!-- all css here -->
+        <!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="../main/css/bootstrap.min.css">
+        <!-- animate css -->
+        '.Yolk::uicore('cssa').'
+        <link rel="stylesheet" href="../main/css/animate.css">
+        <!-- meanmenu css -->
+        <link rel="stylesheet" href="../main/css/meanmenu.min.css">
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" href="../main/css/owl.carousel.css">
+        <!-- font-awesome css -->
+        <link rel="stylesheet" href="../main/css/font-awesome.min.css">
+        <!-- flexslider.css-->
+        <link rel="stylesheet" href="../main/css/flexslider.css">
+        <!-- chosen.min.css-->
+        <link rel="stylesheet" href="../main/css/chosen.min.css">
+        <!-- style css -->
+        <link rel="stylesheet" href="../main/style.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="../main/css/responsive.css">
+        <!-- modernizr css -->
+        
+        <script src="../main/js/vendor/modernizr-2.8.3.min.js"></script>
+        
+    </head>';
 
  ?>
 
@@ -15,7 +69,7 @@ begin('Books');
 	<!-- header-area-start -->
 	<header>
 		<!-- header-top-area-start -->
-        <?php navbar(2); ?>
+        <?php navbar1(2); ?>
 		<!-- mobile-menu-area-end -->
 	</header>
 	<!-- header-area-end -->
@@ -49,7 +103,7 @@ begin('Books');
 						</div>
 						<div class="left-menu mb-30">
 							<ul>
-								<?php categorypluscount('main'); ?>
+								<?php categorypluscount('sub'); ?>
 								
 							</ul>
 						</div>
@@ -59,7 +113,7 @@ begin('Books');
 						</div>
 						<div class="left-menu mb-30">
 							<ul>
-								<?php authorpluscount('main'); ?>
+								<?php authorpluscount('sub'); ?>
 								
 							</ul>
 						</div>
@@ -75,7 +129,7 @@ begin('Books');
 						<a href="#"><img src="https://htmldemo.net/koparion/koparion/img/banner/32.jpg" alt="banner" /></a>
 					</div> -->
 					<div class="section-title-5 mb-30">
-						<h2>Book</h2>
+						<h2>Book By <?php echo $autod[0]['authname']; ?></h2>
 					</div>
 					<!-- <div class="toolbar mb-30">
 						<div class="shop-tab">
@@ -121,9 +175,9 @@ begin('Books');
 							<?php
 
                             if (isset($_GET['page'])) {
-                                bookspage('main', 10, $_GET['page']);
+                                bookspage('sub', 10, $_GET['page']);
                             } else {
-                                bookspage('main', 10, 1);
+                                bookspage('sub', 10, 1);
                             }
 
 ?>
@@ -382,9 +436,9 @@ begin('Books');
 							<?php
 
                             if (isset($_GET['page'])) {
-                                echo   mypagecount('main', 10, $_GET['page']);
+                                echo   mypagecount('sub', 10, $_GET['page']);
                             } else {
-                                echo mypagecount('main', 10, 1);
+                                echo mypagecount('sub', 10, 1);
                             } ?>
 								
 							</ul>
@@ -397,7 +451,7 @@ begin('Books');
 	</div>
 	<!-- shop-main-area-end -->
 	<!-- footer-area-start -->
-	<?php footer(); ?>
+	<?php footer2(); ?>
 	<!-- footer-area-end -->
 	<!-- Modal -->
 	<div class="modal fade" id="productModal" tabindex="-1" role="dialog">
@@ -422,7 +476,7 @@ begin('Books');
 
 
 	<!-- all js here -->
-    <?php scripts(); ?>
+    <?php scripts2(); ?>
 </body>
 
 </html>
