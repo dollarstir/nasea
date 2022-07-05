@@ -743,7 +743,7 @@ function bookspage($limit = '', $page = 1)
     }
 }
 
-function mypagecount($perpage, $ct)
+function mypagecount($type, $perpage, $ct)
 {
     $res = pagecount('books', $perpage, $ct);
     $total_pages = $res;

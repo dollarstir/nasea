@@ -382,9 +382,9 @@ begin('Books');
 							<?php
 
                             if (isset($_GET['page'])) {
-                                echo   mypagecount(10, $_GET['page']);
+                                echo   mypagecount('main', 10, $_GET['page']);
                             } else {
-                                echo mypagecount(10, 1);
+                                echo mypagecount('main', 10, 1);
                             } ?>
 								
 							</ul>
