@@ -109,6 +109,13 @@ function paginate($table, $order = [], $numperpage, $ct)
 
     return $response;
 }
+
+function customepaginate($table, $target, $conjunction = '', $order = [], $limit, $ct)
+{
+    $init = new Pagination();
+    $response = $init->customepaginate($table, $target, $conjunction, $order, $limit, $ct);
+}
+
 function pagecount($table, $perpage, $ct)
 {
     $init = new Pagination();

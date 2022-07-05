@@ -682,12 +682,12 @@ function books($limit = '')
     }
 }
 
-function bookspage($limit = '')
+function bookspage($limit = '', $page = 1)
 {
     if ($limit == '') {
-        $res = customfetch('books', [['status', '=', 'active']], '', ['id' => 'DESC']);
+        $res = customepaginate('books', [['status', '=', 'active']], '', ['id' => 'DESC']);
     } else {
-        $res = customfetch('books', [['status', '=', 'active']], '', ['id' => 'DESC'], 8);
+        $res = customepaginate('books', [['status', '=', 'active']], '', ['id' => 'DESC'], $limit, $page);
     }
 
     foreach ($res as $row) {
