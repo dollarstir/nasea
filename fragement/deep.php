@@ -908,3 +908,24 @@ function poem()
     </div>';
     }
 }
+
+function poemcomment($id)
+{
+    $ccom = customfetch('comments', [['postid', '=', $id]]);
+    foreach ($ccom as $row) {
+        echo '<li>
+    <div class="public-comment">
+        <div class="comment-img">
+            <a href="#"><img src="../yolkassets/upload/back1.jpg" alt="man" /></a>
+        </div>
+        <div class="public-text">
+            <div class="single-comm-top">
+                <a href="">'.$row['cname'].'</a>
+                <p>'.$row['addedon'].'<a href="#">Reply</a></p>
+            </div>
+            <p>'.$row['message'].'</p>
+        </div>
+    </div>
+</li>';
+    }
+}
