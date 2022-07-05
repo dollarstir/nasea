@@ -31,6 +31,36 @@ class pagination extends database
         return $sel->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    // custome pagenate
+    public function customepaginate($table, $order = [], $limit, $ct)
+    {
+        // var_dump($ct);
+        $ct;
+        $page = ($ct != '') ? $ct : 1;
+        $starting_limit = ($page - 1) * $limit;
+        if (is_array($order)) {
+        } else {
+            $order = [$order];
+        }
+        $kof = '';
+        if ($order != []) {
+            foreach ($order as $key => $value) {
+                $kof .= "ORDER BY $key $value";
+            }
+        } else {
+            $kof = '';
+        }
+        if ($limit == '') {
+            $sel = $this->conn->prepare("SELECT * FROM $table $kof");
+        } else {
+            $sel = $this->conn->prepare("SELECT * FROM $table $kof  LIMIT $starting_limit,$limit");
+        }
+
+        $sel->execute();
+
+        return $sel->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function pagecount($table, $perpage, $ct)
     {
         try {
