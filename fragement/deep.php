@@ -921,7 +921,7 @@ function poemcomment($id)
         <div class="public-text">
             <div class="single-comm-top">
                 <a href="">'.$row['cname'].'</a>
-                <p>'.$row['addedon'].'<a href="#">Reply</a></p>
+                <p>'.$row['addedon'].'</p>
             </div>
             <p>'.$row['message'].'</p>
         </div>
