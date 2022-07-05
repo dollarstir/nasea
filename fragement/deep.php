@@ -860,6 +860,7 @@ function poem()
     $re = fetchAll('blog', ['id' => 'DESC']);
 
     foreach ($re as $row) {
+        $c = customcount('comments', [['postid', '=', $row['id']]]);
         echo '<div class="single-blog-post">
         <div class="author-destils mb-30">
             <div class="author-left">
@@ -901,7 +902,7 @@ function poem()
                 <a href="poem/'.$row['id'].'">Read more<i class="fa fa-long-arrow-right"></i></a>
             </div>
             <div class="blog-com">
-                <a href="#">3 comments</a>
+                <a href="#">'.$c.' comments</a>
             </div>
         </div>
     </div>';
