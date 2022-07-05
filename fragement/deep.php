@@ -902,7 +902,7 @@ function poem()
                 <a href="poem/'.$row['id'].'">Read more<i class="fa fa-long-arrow-right"></i></a>
             </div>
             <div class="blog-com">
-                <a href="#">'.$c.' comments</a>
+                <a href="#">'.$c.' comment(s)</a>
             </div>
         </div>
     </div>';
