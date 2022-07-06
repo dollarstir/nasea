@@ -29,6 +29,24 @@ function begin($title)
         <title>Nasea Book - '.$title.'</title>
         <meta name="description" content="Nasea books is one of the Best E-book stores in the world">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://naseabooks.com/">
+        <meta property="og:title" content="Nasea Books">
+        <meta property="og:description"
+            content="Nasea books is one of the Best E-book stores in the world">
+        <meta property="og:image" content="yolkassets/upload/logo.png">
+    
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://naseabooks.com/">
+        <meta property="twitter:title" content="Nasea Books ">
+        <meta property="twitter:description"
+            content="Nasea books is one of the Best E-book stores in the world">
+        <meta property="twitter:image" content="yolkassets/upload/logo.png">
+
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="57x57" href="main/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="main/favicon/apple-icon-60x60.png">

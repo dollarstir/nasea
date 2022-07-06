@@ -120,5 +120,21 @@ $router = new Router([
             return Viewer::view('main/mypeoms.php', $context);
         }
     ),
+
+    // admin routes
+
+    new Route(
+        '/auth',
+        function ($context) {
+            return Viewer::view('backend/authorization.php', $context);
+        }
+    ),
+
+    new Route(
+        '/dashboard',
+        function ($context) {
+            return Viewer::view('backend/nadmin.php', $context);
+        }
+    ),
 ]);
 $router->launch();
