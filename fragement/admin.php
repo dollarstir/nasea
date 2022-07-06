@@ -129,3 +129,16 @@ function customers()
     </tr>';
     }
 }
+
+function addcategory($catname)
+{
+    if (empty(trim($catname))) {
+        echo 'Category name cannot be empty';
+    } else {
+        if (insert('category', ['catname' => $catname]) == 'success') {
+            echo 'success';
+        } else {
+            echo 'Failed to Add Category';
+        }
+    }
+}
