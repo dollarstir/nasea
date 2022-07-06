@@ -136,5 +136,19 @@ $router = new Router([
             return Viewer::view('backend/nadmin.php', $context);
         }
     ),
+
+    new Route(
+        '/users',
+        function ($context) {
+            return Viewer::view('backend/viewUsers.php', $context);
+        }
+    ),
+
+    new Route(
+        '/newcategory',
+        function ($context) {
+            return Viewer::view('backend/addCategory.php', $context);
+        }
+    ),
 ]);
 $router->launch();

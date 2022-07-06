@@ -108,3 +108,19 @@ function adminscript()
     <script src="https://demo.dashboardpack.com/sales-html/js/dashboard_init.js"></script>
     <script src="backend/js/custom.js"></script>';
 }
+
+function customers()
+{
+    $res = fetchAll('users');
+    foreach ($res as $row) {
+        echo '<tr>
+        <th scope="row"> <a href="" class="question_content"> '.$row['name'].'</a></th>
+        <td>'.$row['email'].'</td>
+        <td>'.$row['phone'].'</td>
+        <td>'.$row['country'].'</td>
+        <td>'.$row['address'].'</td>
+        <td>'.$row['city'].'</td>
+        <!-- <td><a href="backend/#" class="status_btn">Active</a></td> -->
+    </tr>';
+    }
+}
