@@ -13,6 +13,8 @@ function adminhead($title)
     
     
         <link rel="stylesheet" href="backend/css/bootstrap1.min.css" />
+
+        '.Yolk::uicore('cssa').'
     
         <link rel="stylesheet" href="backend/vendors/themefy_icon/themify-icons.css" />
     
@@ -106,7 +108,10 @@ function adminscript()
     <script src="backend/vendors/chart_am/chart-custom.js"></script>
 
     <script src="https://demo.dashboardpack.com/sales-html/js/dashboard_init.js"></script>
-    <script src="backend/js/custom.js"></script>';
+    <script src="backend/js/custom.js"></script>
+    '.Yolk::uicore('jsa').'
+    <script src="processor/processor.js"></script>
+    ';
 }
 
 function customers()
