@@ -945,3 +945,7 @@ function commentpoem($postid, $cname, $cmail, $message)
         }
     }
 }
+
+function blogrecent()
+{
+}
