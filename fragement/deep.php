@@ -948,4 +948,7 @@ function commentpoem($postid, $cname, $cmail, $message)
 
 function blogrecent()
 {
+    $bg = fetchAll('blog', ['id' => 'DESC'], 6);
+    foreach ($bg as $row) {
+    }
 }
