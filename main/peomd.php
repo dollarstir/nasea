@@ -215,7 +215,7 @@ echo '<!doctype html>
 							<div class="comment-input-textarea mb-30">
 								<form action="#" class="poemcomment">
 									<label>Comment</label>
-									<textarea name="massage" cols="30" rows="10" placeholder="Write your comment here"></textarea>
+									<textarea name="message" cols="30" rows="10" placeholder="Write your comment here"></textarea>
 								
 							</div>
 							<div class="row">

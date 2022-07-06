@@ -911,12 +911,14 @@ function poem()
 
 function poemcomment($id)
 {
-    $ccom = customfetch('comments', [['postid', '=', $id]]);
+    $cpost = customfetch('blog', [['id', '=', $id]]);
+    $cmost = $cpost[0];
+    $ccom = customfetch('comments', [['postid', '=', $id]], '', ['id' => 'DESC']);
     foreach ($ccom as $row) {
         echo '<li>
     <div class="public-comment">
         <div class="comment-img">
-            <a href="#"><img src="../yolkassets/upload/back1.jpg" alt="man" /></a>
+            <a href="#"><img src="../yolkassets/upload/'.$cmost['image'].'" alt="man" /></a>
         </div>
         <div class="public-text">
             <div class="single-comm-top">
@@ -935,7 +937,8 @@ function commentpoem($postid, $cname, $cmail, $message)
     if ($cname == '' || $cmail == '' || $message == '') {
         echo 'All field must be filled';
     } else {
-        if (insert('comments', ['postid' => $postid, 'cname' => $cname, 'cmail' => $cmail, 'message' => $message]) == 'success') {
+        $addedon = date('jS F, Y');
+        if (insert('comments', ['postid' => $postid, 'cname' => $cname, 'cmail' => $cmail, 'message' => $message, 'addedon' => $addedon]) == 'success') {
             echo 'commentsuccess';
         } else {
             echo 'Failed to post comment';
