@@ -150,5 +150,12 @@ $router = new Router([
             return Viewer::view('backend/addCategory.php', $context);
         }
     ),
+
+    new Route(
+        '/viewcategories',
+        function ($context) {
+            return Viewer::view('backend/viewCategory.php', $context);
+        }
+    ),
 ]);
 $router->launch();

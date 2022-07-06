@@ -142,3 +142,25 @@ function addcategory($catname)
         }
     }
 }
+
+function categories()
+{
+    $res = fetchAll('category');
+    foreach ($res as $row) {
+        echo '<tr>
+        <th scope="row"> <a href="" class="question_content"> '.$row['id'].'</a></th>
+        <td>'.$row['catname'].'</td>
+       
+         <td><button id="'.$row['id'].'"  class="btn btn-danger delcategory"><i class="fa fa-trash"></i></td> 
+    </tr>';
+    }
+}
+
+function deletecategory($id)
+{
+    if ($del = delete('category', [['id', '=', $id]]) == 'deleted') {
+        echo 'deleted';
+    } else {
+        echo 'Failed to delete Category';
+    }
+}

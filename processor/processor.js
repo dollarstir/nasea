@@ -621,7 +621,7 @@ $('.newsletter').submit(function(e){
 
 // ############admin functions ###########
 
-
+// add category
 $('.addcategory').submit(function(e){
 
   e.preventDefault();
@@ -634,6 +634,27 @@ $('.addcategory').submit(function(e){
       cache: false,
       contentType: false,
       processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
+// delete category
+$(document).on('click','.delcategory',function(e){
+
+  e.preventDefault();
+  // before();
+  var id = $(this).attr('id');
+  var staff = {
+      url: 'processor/processor.php?action=deletecategory',
+      type: 'post',
+      data: {"id": id},
+      // cache: false,
+      // contentType: false,
+      // processData: false,
       beforeSend: before,
       success: resp
 

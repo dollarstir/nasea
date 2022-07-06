@@ -144,6 +144,13 @@ require '../fragement/admin.php';
             extract($_POST);
             addcategory($catname);
             break;
+
+        case 'deletecategory':
+            extract($_POST);
+
+            deletecategory($id);
+
+            break;
         default:
 
         break;
