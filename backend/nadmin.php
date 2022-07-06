@@ -1,4 +1,4 @@
-<?php involve('addmin');
+<?php involve('admin');
 
 adminhead('Dashborad');
 
@@ -9,7 +9,7 @@ adminhead('Dashborad');
 
     <nav class="sidebar vertical-scroll  ps-container ps-theme-default ps-active-y">
         <div class="logo d-flex justify-content-between">
-            <a href="index.php"><img src="img/logo.png" alt=""></a>
+            <a href="backend/index.php"><img src="backend/img/logo.png" alt=""></a>
             <div class="sidebar_close_icon d-lg-none">
                 <i class="ti-close"></i>
             </div>
@@ -33,7 +33,7 @@ adminhead('Dashborad');
                                     <div class="search_field">
                                         <input type="text" placeholder="Search here...">
                                     </div>
-                                    <button type="submit"> <img src="img/icon/icon_search.svg" alt=""> </button>
+                                    <button type="submit"> <img src="backend/img/icon/icon_search.svg" alt=""> </button>
                                 </form>
                             </div>
                             <span class="f_s_14 f_w_400 ml_25 white_text text_white">Apps</span>
@@ -41,8 +41,8 @@ adminhead('Dashborad');
                         <div class="header_right d-flex justify-content-between align-items-center">
                             <div class="header_notification_warp d-flex align-items-center">
                                 <li>
-                                    <a class="bell_notification_clicker nav-link-notify" href="#"> <img
-                                            src="img/icon/bell.svg" alt="">
+                                    <a class="bell_notification_clicker nav-link-notify" href="backend/#"> <img
+                                            src="backend/img/icon/bell.svg" alt="">
                                     </a>
 
                                     <div class="Menu_NOtification_Wrap">
@@ -53,10 +53,10 @@ adminhead('Dashborad');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/2.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/2.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Cool Marketing </h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -65,10 +65,10 @@ adminhead('Dashborad');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/4.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/4.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Awesome packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -77,10 +77,10 @@ adminhead('Dashborad');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/3.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/3.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>what a packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -89,10 +89,10 @@ adminhead('Dashborad');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/2.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/2.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Cool Marketing </h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -101,10 +101,10 @@ adminhead('Dashborad');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/4.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/4.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Awesome packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -113,10 +113,10 @@ adminhead('Dashborad');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/3.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/3.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>what a packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -125,28 +125,28 @@ adminhead('Dashborad');
                                         </div>
                                         <div class="nofity_footer">
                                             <div class="submit_button text-center pt_20">
-                                                <a href="#" class="btn_1">See More</a>
+                                                <a href="backend/#" class="btn_1">See More</a>
                                             </div>
                                         </div>
                                     </div>
 
                                 </li>
                                 <li>
-                                    <a class="CHATBOX_open nav-link-notify" href="#"> <img src="img/icon/msg.svg"
+                                    <a class="CHATBOX_open nav-link-notify" href="backend/#"> <img src="backend/img/icon/msg.svg"
                                             alt=""> </a>
                                 </li>
                             </div>
                             <div class="profile_info">
-                                <img src="img/client_img.png" alt="#">
+                                <img src="backend/img/client_img.png" alt="#">
                                 <div class="profile_info_iner">
                                     <div class="profile_author_name">
                                         <p>Neurologist </p>
                                         <h5>Dr. Robar Smith</h5>
                                     </div>
                                     <div class="profile_info_details">
-                                        <a href="#">My Profile </a>
-                                        <a href="#">Settings</a>
-                                        <a href="#">Log Out </a>
+                                        <a href="backend/#">My Profile </a>
+                                        <a href="backend/#">Settings</a>
+                                        <a href="backend/#">Log Out </a>
                                     </div>
                                 </div>
                             </div>
@@ -165,12 +165,12 @@ adminhead('Dashborad');
                             <div class="page_title_left">
                                 <h3 class="f_s_30 f_w_700 text_white">Dashboard</h3>
                                 <ol class="breadcrumb page_bradcam mb-0">
-                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Salessa </a></li>
-                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
+                                    <li class="breadcrumb-item"><a href="backend/javascript:void(0);">Salessa </a></li>
+                                    <li class="breadcrumb-item"><a href="backend/javascript:void(0);">Dashboard</a></li>
                                     <li class="breadcrumb-item active">Sales</li>
                                 </ol>
                             </div>
-                            <a href="#" class="white_btn3">Create Report</a>
+                            <a href="backend/#" class="white_btn3">Create Report</a>
                         </div>
                     </div>
                 </div>
@@ -195,11 +195,11 @@ adminhead('Dashborad');
                                             </span>
                                             <div class="dropdown-menu dropdown-menu-right"
                                                 aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"> <i class="ti-eye"></i> Action</a>
-                                                <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Delete</a>
-                                                <a class="dropdown-item" href="#"> <i class="fas fa-edit"></i> Edit</a>
-                                                <a class="dropdown-item" href="#"> <i class="ti-printer"></i> Print</a>
-                                                <a class="dropdown-item" href="#"> <i class="fa fa-download"></i>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-eye"></i> Action</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-trash"></i> Delete</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="fas fa-edit"></i> Edit</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-printer"></i> Print</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="fa fa-download"></i>
                                                     Download</a>
                                             </div>
                                         </div>
@@ -212,7 +212,7 @@ adminhead('Dashborad');
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <img class="byder_thumb wh_56" src="img/Payment/1.png" alt="">
+                                                    <img class="byder_thumb wh_56" src="backend/img/Payment/1.png" alt="">
                                                 </td>
                                                 <td>
                                                     <div class="payment_gatway">
@@ -230,7 +230,7 @@ adminhead('Dashborad');
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img class="byder_thumb wh_56" src="img/Payment/1.png" alt="">
+                                                    <img class="byder_thumb wh_56" src="backend/img/Payment/1.png" alt="">
                                                 </td>
                                                 <td>
                                                     <div class="payment_gatway">
@@ -248,7 +248,7 @@ adminhead('Dashborad');
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img class="byder_thumb wh_56" src="img/Payment/1.png" alt="">
+                                                    <img class="byder_thumb wh_56" src="backend/img/Payment/1.png" alt="">
                                                 </td>
                                                 <td>
                                                     <div class="payment_gatway">
@@ -266,7 +266,7 @@ adminhead('Dashborad');
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img class="byder_thumb wh_56" src="img/Payment/1.png" alt="">
+                                                    <img class="byder_thumb wh_56" src="backend/img/Payment/1.png" alt="">
                                                 </td>
                                                 <td>
                                                     <div class="payment_gatway">
@@ -323,7 +323,7 @@ adminhead('Dashborad');
                                 </div>
                                 <div class="load_more_button text-center mt_30">
                                     <a class="theme_text_btn d-flex align-items-center justify-content-center"
-                                        href="#">Load more <i class="ti-angle-down f_s_12 ms-2"></i> </a>
+                                        href="backend/#">Load more <i class="ti-angle-down f_s_12 ms-2"></i> </a>
                                 </div>
                             </div>
                         </div>
@@ -343,11 +343,11 @@ adminhead('Dashborad');
                                             </span>
                                             <div class="dropdown-menu dropdown-menu-right"
                                                 aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"> <i class="ti-eye"></i> Action</a>
-                                                <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Delete</a>
-                                                <a class="dropdown-item" href="#"> <i class="fas fa-edit"></i> Edit</a>
-                                                <a class="dropdown-item" href="#"> <i class="ti-printer"></i> Print</a>
-                                                <a class="dropdown-item" href="#"> <i class="fa fa-download"></i>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-eye"></i> Action</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-trash"></i> Delete</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="fas fa-edit"></i> Edit</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-printer"></i> Print</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="fa fa-download"></i>
                                                     Download</a>
                                             </div>
                                         </div>
@@ -378,11 +378,11 @@ adminhead('Dashborad');
                                             class="total_blance_inner d-flex align-items-center flex-wrap justify-content-between">
                                             <div>
                                                 <span class="f_s_40 f_w_700 color_text_3 d-block">$3650</span>
-                                                <a class="badge_btn_5" href="#">+1235</a>
+                                                <a class="badge_btn_5" href="backend/#">+1235</a>
                                             </div>
                                             <div>
-                                                <div><a class="badge_btn_6 mb_15" href="#">Today</a></div>
-                                                <div><a class="badge_btn_7" href="#">This week</a></div>
+                                                <div><a class="badge_btn_6 mb_15" href="backend/#">Today</a></div>
+                                                <div><a class="badge_btn_7" href="backend/#">This week</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -415,11 +415,11 @@ adminhead('Dashborad');
                                             </span>
                                             <div class="dropdown-menu dropdown-menu-right"
                                                 aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"> <i class="ti-eye"></i> Action</a>
-                                                <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Delete</a>
-                                                <a class="dropdown-item" href="#"> <i class="fas fa-edit"></i> Edit</a>
-                                                <a class="dropdown-item" href="#"> <i class="ti-printer"></i> Print</a>
-                                                <a class="dropdown-item" href="#"> <i class="fa fa-download"></i>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-eye"></i> Action</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-trash"></i> Delete</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="fas fa-edit"></i> Edit</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-printer"></i> Print</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="fa fa-download"></i>
                                                     Download</a>
                                             </div>
                                         </div>
@@ -444,7 +444,7 @@ adminhead('Dashborad');
                                                 <td>
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_34 mr_15 mt-0"><img
-                                                                class="img-fluid radius_50" src="img/customers/1.png"
+                                                                class="img-fluid radius_50" src="backend/img/customers/1.png"
                                                                 alt=""></div>
                                                         <span class="f_s_14 f_w_400 color_text_1">Customer</span>
                                                     </div>
@@ -452,14 +452,14 @@ adminhead('Dashborad');
                                                 <td class="f_s_14 f_w_400 color_text_2">Sunglass</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_4">$350</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#"
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#"
                                                         class="badge_btn_1">Pending</a></td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_34 mr_15 mt-0"><img
-                                                                class="img-fluid radius_50" src="img/customers/2.png"
+                                                                class="img-fluid radius_50" src="backend/img/customers/2.png"
                                                                 alt=""></div>
                                                         <span class="f_s_14 f_w_400 color_text_1">Customer</span>
                                                     </div>
@@ -467,14 +467,14 @@ adminhead('Dashborad');
                                                 <td class="f_s_14 f_w_400 color_text_2">Sunglass</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_4">$350</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#"
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#"
                                                         class="badge_btn_2">Paid</a></td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_34 mr_15 mt-0"><img
-                                                                class="img-fluid radius_50" src="img/customers/3.png"
+                                                                class="img-fluid radius_50" src="backend/img/customers/3.png"
                                                                 alt=""></div>
                                                         <span class="f_s_14 f_w_400 color_text_1">Customer</span>
                                                     </div>
@@ -482,14 +482,14 @@ adminhead('Dashborad');
                                                 <td class="f_s_14 f_w_400 color_text_2">Sunglass</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_4">$350</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#"
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#"
                                                         class="badge_btn_3">Shipped</a></td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_34 mr_15 mt-0"><img
-                                                                class="img-fluid radius_50" src="img/customers/4.png"
+                                                                class="img-fluid radius_50" src="backend/img/customers/4.png"
                                                                 alt=""></div>
                                                         <span class="f_s_14 f_w_400 color_text_1">Customer</span>
                                                     </div>
@@ -497,14 +497,14 @@ adminhead('Dashborad');
                                                 <td class="f_s_14 f_w_400 color_text_2">Sunglass</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_4">$350</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#"
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#"
                                                         class="badge_btn_3">Shipped</a></td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_34 mr_15 mt-0"><img
-                                                                class="img-fluid radius_50" src="img/customers/5.png"
+                                                                class="img-fluid radius_50" src="backend/img/customers/5.png"
                                                                 alt=""></div>
                                                         <span class="f_s_14 f_w_400 color_text_1">Customer</span>
                                                     </div>
@@ -512,14 +512,14 @@ adminhead('Dashborad');
                                                 <td class="f_s_14 f_w_400 color_text_2">Sunglass</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_4">$350</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#"
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#"
                                                         class="badge_btn_2">Paid</a></td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_34 mr_15 mt-0"><img
-                                                                class="img-fluid radius_50" src="img/customers/6.png"
+                                                                class="img-fluid radius_50" src="backend/img/customers/6.png"
                                                                 alt=""></div>
                                                         <span class="f_s_14 f_w_400 color_text_1">Customer</span>
                                                     </div>
@@ -527,7 +527,7 @@ adminhead('Dashborad');
                                                 <td class="f_s_14 f_w_400 color_text_2">Sunglass</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_4">$350</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#"
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#"
                                                         class="badge_btn_4 ">Delivered</a></td>
                                             </tr>
                                         </tbody>
@@ -551,11 +551,11 @@ adminhead('Dashborad');
                                             </span>
                                             <div class="dropdown-menu dropdown-menu-right"
                                                 aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"> <i class="ti-eye"></i> Action</a>
-                                                <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Delete</a>
-                                                <a class="dropdown-item" href="#"> <i class="fas fa-edit"></i> Edit</a>
-                                                <a class="dropdown-item" href="#"> <i class="ti-printer"></i> Print</a>
-                                                <a class="dropdown-item" href="#"> <i class="fa fa-download"></i>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-eye"></i> Action</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-trash"></i> Delete</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="fas fa-edit"></i> Edit</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-printer"></i> Print</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="fa fa-download"></i>
                                                     Download</a>
                                             </div>
                                         </div>
@@ -581,14 +581,14 @@ adminhead('Dashborad');
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_34 mr_15 mt-0"><img
                                                                 class="img-fluid radius_50"
-                                                                src="img/customers/pro_1.png" alt=""></div>
+                                                                src="backend/img/customers/pro_1.png" alt=""></div>
                                                         <span class="f_s_14 f_w_400 color_text_1">Product 1</span>
                                                     </div>
                                                 </td>
                                                 <td class="f_s_14 f_w_400 color_text_2">$564</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_4">60</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#"
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#"
                                                         class="text_color_1">Google</a></td>
                                             </tr>
                                             <tr>
@@ -596,14 +596,14 @@ adminhead('Dashborad');
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_34 mr_15 mt-0"><img
                                                                 class="img-fluid radius_50"
-                                                                src="img/customers/pro_2.png" alt=""></div>
+                                                                src="backend/img/customers/pro_2.png" alt=""></div>
                                                         <span class="f_s_14 f_w_400 color_text_1">Product 1</span>
                                                     </div>
                                                 </td>
                                                 <td class="f_s_14 f_w_400 color_text_2">$564</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_4">60</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#"
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#"
                                                         class="text_color_2">Direct</a></td>
                                             </tr>
                                             <tr>
@@ -611,14 +611,14 @@ adminhead('Dashborad');
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_34 mr_15 mt-0"><img
                                                                 class="img-fluid radius_50"
-                                                                src="img/customers/pro_3.png" alt=""></div>
+                                                                src="backend/img/customers/pro_3.png" alt=""></div>
                                                         <span class="f_s_14 f_w_400 color_text_1">Product 1</span>
                                                     </div>
                                                 </td>
                                                 <td class="f_s_14 f_w_400 color_text_2">$564</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_4">60</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#"
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#"
                                                         class="text_color_1">Email</a></td>
                                             </tr>
                                             <tr>
@@ -626,14 +626,14 @@ adminhead('Dashborad');
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_34 mr_15 mt-0"><img
                                                                 class="img-fluid radius_50"
-                                                                src="img/customers/pro_4.png" alt=""></div>
+                                                                src="backend/img/customers/pro_4.png" alt=""></div>
                                                         <span class="f_s_14 f_w_400 color_text_1">Product 1</span>
                                                     </div>
                                                 </td>
                                                 <td class="f_s_14 f_w_400 color_text_2">$564</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_4">60</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#"
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#"
                                                         class="text_color_3">Refferal</a></td>
                                             </tr>
                                             <tr>
@@ -641,14 +641,14 @@ adminhead('Dashborad');
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_34 mr_15 mt-0"><img
                                                                 class="img-fluid radius_50"
-                                                                src="img/customers/pro_5.png" alt=""></div>
+                                                                src="backend/img/customers/pro_5.png" alt=""></div>
                                                         <span class="f_s_14 f_w_400 color_text_1">Product 1</span>
                                                     </div>
                                                 </td>
                                                 <td class="f_s_14 f_w_400 color_text_2">$564</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_4">60</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#"
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#"
                                                         class="text_color_2">Direct</a></td>
                                             </tr>
                                             <tr>
@@ -656,7 +656,7 @@ adminhead('Dashborad');
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_34 mr_15 mt-0"><img
                                                                 class="img-fluid radius_50"
-                                                                src="https://demo.dashboardpack.com/sales-html/img/customers/pro_6.png"
+                                                                src="backend/https://demo.dashboardpack.com/sales-html/img/customers/pro_6.png"
                                                                 alt=""></div>
                                                         <span class="f_s_14 f_w_400 color_text_1">Product 1</span>
                                                     </div>
@@ -664,7 +664,7 @@ adminhead('Dashborad');
                                                 <td class="f_s_14 f_w_400 color_text_2">$564</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_4">60</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#"
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#"
                                                         class="text_color_3">Refferal</a></td>
                                             </tr>
                                         </tbody>
@@ -688,11 +688,11 @@ adminhead('Dashborad');
                                             </span>
                                             <div class="dropdown-menu dropdown-menu-right"
                                                 aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"> <i class="ti-eye"></i> Action</a>
-                                                <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Delete</a>
-                                                <a class="dropdown-item" href="#"> <i class="fas fa-edit"></i> Edit</a>
-                                                <a class="dropdown-item" href="#"> <i class="ti-printer"></i> Print</a>
-                                                <a class="dropdown-item" href="#"> <i class="fa fa-download"></i>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-eye"></i> Action</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-trash"></i> Delete</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="fas fa-edit"></i> Edit</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="ti-printer"></i> Print</a>
+                                                <a class="dropdown-item" href="backend/#"> <i class="fa fa-download"></i>
                                                     Download</a>
                                             </div>
                                         </div>
@@ -717,13 +717,13 @@ adminhead('Dashborad');
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_62 mr_15 mt-0"><img
                                                                 class="img-fluid radius_50"
-                                                                src="img/customers/pro_big.png" alt=""></div>
+                                                                src="backend/img/customers/pro_big.png" alt=""></div>
                                                         <span class="f_s_20 f_w_400 color_text_3">Unique Watch</span>
                                                     </div>
                                                 </td>
                                                 <td class="f_s_14 f_w_400 color_text_4">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">$99.00</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#" class="badge_btn_1">354
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#" class="badge_btn_1">354
                                                         sold</a></td>
                                             </tr>
                                             <tr>
@@ -731,7 +731,7 @@ adminhead('Dashborad');
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_62 mr_15 mt-0"><img
                                                                 class="img-fluid radius_50"
-                                                                src="https://demo.dashboardpack.com/sales-html/img/customers/pro_big_1.png"
+                                                                src="backend/https://demo.dashboardpack.com/sales-html/img/customers/pro_big_1.png"
                                                                 alt=""></div>
                                                         <span class="f_s_20 f_w_400 color_text_3">Wireless
                                                             Headphone</span>
@@ -739,7 +739,7 @@ adminhead('Dashborad');
                                                 </td>
                                                 <td class="f_s_14 f_w_400 color_text_4">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">$99.00</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#" class="badge_btn_1">354
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#" class="badge_btn_1">354
                                                         sold</a></td>
                                             </tr>
                                             <tr>
@@ -747,19 +747,19 @@ adminhead('Dashborad');
                                                     <div class="customer d-flex align-items-center">
                                                         <div class="thumb_62 mr_15 mt-0"><img
                                                                 class="img-fluid radius_50"
-                                                                src="https://demo.dashboardpack.com/sales-html/img/customers/pro_big_2.png"
+                                                                src="backend/https://demo.dashboardpack.com/sales-html/img/customers/pro_big_2.png"
                                                                 alt=""></div>
                                                         <span class="f_s_20 f_w_400 color_text_3">Sport Shoe</span>
                                                     </div>
                                                 </td>
                                                 <td class="f_s_14 f_w_400 color_text_4">#DE2548</td>
                                                 <td class="f_s_14 f_w_400 color_text_3">$99.00</td>
-                                                <td class="f_s_14 f_w_400 text-end"><a href="#" class="badge_btn_1">354
+                                                <td class="f_s_14 f_w_400 text-end"><a href="backend/#" class="badge_btn_1">354
                                                         sold</a></td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <a href="#" class="badge_btn_semi mt_30 ml_15">View All</a>
+                                    <a href="backend/#" class="badge_btn_semi mt_30 ml_15">View All</a>
                                 </div>
                             </div>
                         </div>
@@ -796,7 +796,7 @@ adminhead('Dashborad');
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer_iner text-center">
-                            <p>2020 © Influence - Designed by <a href="#"> <i class="ti-heart"></i> </a><a href="#">
+                            <p>2020 © Influence - Designed by <a href="backend/#"> <i class="ti-heart"></i> </a><a href="backend/#">
                                     Dashboard</a></p>
                         </div>
                     </div>
@@ -819,42 +819,42 @@ adminhead('Dashborad');
             <div class="Chat_Listed_member">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/1.png" alt="">
+                                <img src="backend/img/staf/1.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/2.png" alt="">
+                                <img src="backend/img/staf/2.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/3.png" alt="">
+                                <img src="backend/img/staf/3.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/4.png" alt="">
+                                <img src="backend/img/staf/4.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/5.png" alt="">
+                                <img src="backend/img/staf/5.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
                                 <div class="more_member_count">
                                     <span>90+</span>
@@ -871,7 +871,7 @@ adminhead('Dashborad');
             </p>
             <div class="CHATING_SENDER">
                 <div class="SMS_thumb">
-                    <img src="img/staf/1.png" alt="">
+                    <img src="backend/img/staf/1.png" alt="">
                 </div>
                 <div class="SEND_SMS_VIEW">
                     <P>Hi! Welcome .
@@ -883,7 +883,7 @@ adminhead('Dashborad');
                     <P>Hello</P>
                 </div>
                 <div class="SMS_thumb">
-                    <img src="img/staf/1.png" alt="">
+                    <img src="backend/img/staf/1.png" alt="">
                 </div>
             </div>
         </div>
@@ -921,69 +921,12 @@ adminhead('Dashborad');
     </div>
 
     <div id="back-top" style="display: none;">
-        <a title="Go to Top" href="#">
+        <a title="Go to Top" href="backend/#">
             <i class="ti-angle-up"></i>
         </a>
     </div>
 
-    <script src="js/jquery1-3.4.1.min.js"></script>
-
-    <script src="js/popper1.min.js"></script>
-
-    <script src="js/bootstrap.min.js.php"></script>
-
-    <script src="js/metisMenu.js"></script>
-
-    <script src="vendors/count_up/jquery.waypoints.min.js"></script>
-
-    <script src="vendors/chartlist/Chart.min.js"></script>
-
-    <script src="vendors/count_up/jquery.counterup.min.js"></script>
-
-    <script src="vendors/niceselect/js/jquery.nice-select.min.js"></script>
-
-    <script src="vendors/owl_carousel/js/owl.carousel.min.js"></script>
-
-    <script src="vendors/datatable/js/jquery.dataTables.min.js"></script>
-    <script src="vendors/datatable/js/dataTables.responsive.min.js"></script>
-    <script src="vendors/datatable/js/dataTables.buttons.min.js"></script>
-    <script src="vendors/datatable/js/buttons.flash.min.js"></script>
-    <script src="vendors/datatable/js/jszip.min.js"></script>
-    <script src="vendors/datatable/js/pdfmake.min.js"></script>
-    <script src="vendors/datatable/js/vfs_fonts.js"></script>
-    <script src="vendors/datatable/js/buttons.php5.min.js"></script>
-    <script src="vendors/datatable/js/buttons.print.min.js"></script>
-
-    <script src="https://demo.dashboardpack.com/sales-html/vendors/datepicker/datepicker.js"></script>
-    <script src="vendors/datepicker/datepicker.en.js"></script>
-    <script src="vendors/datepicker/datepicker.custom.js"></script>
-    <script src="js/chart.min.js"></script>
-    <script src="https://demo.dashboardpack.com/sales-html/vendors/chartjs/roundedBar.min.js"></script>
-
-    <script src="vendors/progressbar/jquery.barfiller.js"></script>
-
-    <script src="vendors/tagsinput/tagsinput.js"></script>
-
-    <script src="vendors/text_editor/summernote-bs4.js"></script>
-    <script src="vendors/am_chart/amcharts.js"></script>
-
-    <script src="vendors/scroll/perfect-scrollbar.min.js"></script>
-    <script src="vendors/scroll/scrollable-custom.js"></script>
-
-    <script src="https://demo.dashboardpack.com/sales-html/vendors/vectormap-home/vectormap-2.0.2.min.js"></script>
-    <script src="https://demo.dashboardpack.com/sales-html/vendors/vectormap-home/vectormap-world-mill-en.js"></script>
-
-    <script src="https://demo.dashboardpack.com/sales-html/vendors/apex_chart/apex-chart2.js"></script>
-    <script src="https://demo.dashboardpack.com/sales-html/vendors/apex_chart/apex_dashboard.js"></script>
-    <script src="https://demo.dashboardpack.com/sales-html/vendors/echart/echarts.min.js"></script>
-    <script src="vendors/chart_am/core.js"></script>
-    <script src="vendors/chart_am/charts.js"></script>
-    <script src="vendors/chart_am/animated.js"></script>
-    <script src="vendors/chart_am/kelly.js"></script>
-    <script src="vendors/chart_am/chart-custom.js"></script>
-
-    <script src="https://demo.dashboardpack.com/sales-html/js/dashboard_init.js"></script>
-    <script src="js/custom.js"></script>
+    <?php adminscript(); ?>
 </body>
 
 </html>
