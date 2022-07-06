@@ -950,5 +950,6 @@ function blogrecent()
 {
     $bg = fetchAll('blog', ['id' => 'DESC'], 6);
     foreach ($bg as $row) {
+        echo '<li><a href="../poem/'.$row['id'].'">'.$row['title'].'</a></li>';
     }
 }

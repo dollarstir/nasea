@@ -126,11 +126,8 @@ echo '<!doctype html>
 						</div>
 						<div class="blog-side-menu">
 							<ul>
-								<li><a href="#">Blog image post</a></li>
-								<li><a href="#">Post with Gallery</a></li>
-								<li><a href="#">Post with audio</a></li>
-								<li><a href="#">Post with vedio</a></li>
-								<li><a href="#">Post with image</a></li>
+								<?php blogrecent(); ?>
+								
 							</ul>
 						</div>
 					</div>
