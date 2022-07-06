@@ -929,3 +929,16 @@ function poemcomment($id)
 </li>';
     }
 }
+
+function commentpoem($postid, $cname, $cmail, $message)
+{
+    if ($cname == '' || $cmail == '' || $message == '') {
+        echo 'All field must be filled';
+    } else {
+        if (insert('comments', ['postid' => $postid, 'cname' => $cname, 'cmail' => $cmail, 'message' => $message]) == 'success') {
+            echo 'commentsuccess';
+        } else {
+            echo 'Failed to post comment';
+        }
+    }
+}

@@ -137,6 +137,11 @@ require 'fragement/deep.php';
             extract($_POST);
             review($uid, $bid, $feedback);
             break;
+
+        case 'commnetpoem':
+            extract($_POST);
+            commentpoem($postid, $cname, $cmail, $message);
+            break;
         default:
 
         break;

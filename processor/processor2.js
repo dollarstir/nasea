@@ -621,6 +621,27 @@ $('.review').submit(function(e){
 });
 
 
+// comment on poem
+$('.poemcomment').submit(function(e){
+
+  e.preventDefault();
+  // before();
+  // var id = $(this).attr('id');
+  var staff = {
+      url: 'processor/processor2.php?action=commnetpoem',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
 
     
 })
