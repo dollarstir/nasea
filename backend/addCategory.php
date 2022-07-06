@@ -161,17 +161,17 @@ adminhead('Dashborad');
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h3 class="m-0">Basic Form</h3>
+                                        <h3 class="m-0">ADD CATEGORY</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="white_card_body">
                                 <!-- <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</h6> -->
-                                <form>
+                                <form  class="addcategory">
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleInputEmail1">Name of Category</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name of category">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        <input type="text" name="catname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name of category">
+                                        
                                     </div>
                                     <!-- <div class="mb-3">
                                         <label class="form-label" for="exampleInputPassword1">Password</label>

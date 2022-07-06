@@ -2,6 +2,7 @@
 
 require '../loader/autoloader.php';
 require '../fragement/deep.php';
+require '../fragement/admin.php';
  if (isset($_GET['action'])) {
      switch ($_GET['action']) {
         case 'addtocart':
@@ -137,6 +138,11 @@ require '../fragement/deep.php';
         case 'newsletter':
             extract($_POST);
             newsletter($email);
+            break;
+
+        case 'addcategory':
+            extract($_POST);
+            addcategory($catname);
             break;
         default:
 
