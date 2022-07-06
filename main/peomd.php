@@ -213,41 +213,37 @@ echo '<!doctype html>
 						<div class="comment-input mt-40">
 							<p>We will not publish your email address. Required fields are marked*</p>
 							<div class="comment-input-textarea mb-30">
-								<form action="#">
+								<form action="#" class="poemcomment">
 									<label>Comment</label>
 									<textarea name="massage" cols="30" rows="10" placeholder="Write your comment here"></textarea>
-								</form>
+								
 							</div>
 							<div class="row">
 								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 									<div class="single-comment-input mb-30">
-										<form action="#">
+										
 											<label>Name*</label>
-											<input type="text" placeholder="Name" />
-										</form>
+											<input type="text" placeholder="Name" name="cname" />
+										
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 									<div class="single-comment-input mb-30">
-										<form action="#">
+										
 											<label>Email*</label>
-											<input type="text" placeholder="Email" />
-										</form>
+											<input type="text" placeholder="Email" name="cmail" />
+                                            <input type="hidden" name="postid" value="<?php echo $context['id']; ?>" />
+										
 									</div>
 								</div>
-								<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-									<div class="single-comment-input mb-30">
-										<form action="#">
-											<label>Web</label>
-											<input type="text" placeholder="Put your web address" />
-										</form>
-									</div>
-								</div>
+								
 							</div>
 						</div>
 						<div class="single-post-button">
 							<a href="#">Post Comment</a>
 						</div>
+
+                        </form>
 					</div>
 				</div>
 			</div>
