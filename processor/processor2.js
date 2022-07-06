@@ -236,6 +236,23 @@ $(function(){
 
         }
 
+        else if(response == 'commentsuccess'){
+
+          swal({
+              title: "Success",
+              text: "Comment posted successfuly",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location.reload();
+            });
+
+      }
+
 
         else if(response == 'reviewed'){
 
