@@ -875,7 +875,7 @@ function poem()
                     <span>'.$row['dateadded'].'</span>
                 </div>
             </div>
-            <div class="author-right">
+            <!--<div class="author-right">
                 <span>Share this:</span>
                 <ul>
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -884,14 +884,14 @@ function poem()
                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                     <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 </ul>
-            </div>
+            </div>-->
         </div>
         <div class="blog-img mb-30">
-            <a href="#"><img src="yolkassets/upload/'.$row['image'].'" alt="blog"  style="width:100%;height:400px"/></a>
+            <a href="poem/'.$row['id'].'"><img src="yolkassets/upload/'.$row['image'].'" alt="blog"  style="width:100%;height:400px"/></a>
         </div>
         <div class="single-blog-content">
             <div class="single-blog-title">
-                <h3><a href="#">'.$row['title'].'</a></h3>
+                <h3><a href="poem/'.$row['id'].'">'.$row['title'].'</a></h3>
             </div>
             <div class="blog-single-content">
                 <p>'.substr($row['description'], 0, 100).'...</p>
@@ -902,7 +902,7 @@ function poem()
                 <a href="poem/'.$row['id'].'">Read more<i class="fa fa-long-arrow-right"></i></a>
             </div>
             <div class="blog-com">
-                <a href="#">'.$c.' comment(s)</a>
+                <a href="poem/'.$row['id'].'">'.$c.' comment(s)</a>
             </div>
         </div>
     </div>';

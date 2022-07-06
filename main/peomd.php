@@ -240,7 +240,7 @@ echo '<!doctype html>
 							</div>
 						</div>
 						<div class="single-post-button">
-							<a href="#">Post Comment</a>
+							<button class="btn btn-primary" style="background-color:black;color:#ffff;"  type="submit">Post Comment</button>
 						</div>
 
                         </form>
