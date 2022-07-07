@@ -8,7 +8,7 @@
         </a>
         <ul>
             <!-- <li><a class="active" href="index.php">Add users</a></li> -->
-            <li><a href="viewUsers.php">view Users</a></li>
+            <li><a href="users">view Users</a></li>
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>
@@ -20,8 +20,8 @@
             <span>Category</span>
         </a>
         <ul>
-            <li><a class="active" href="addCategory.php">Add Category</a></li>
-            <li><a href="viewCategory.php">view Category</a></li>
+            <li><a class="active" href="newcategory">Add Category</a></li>
+            <li><a href="viewcategories">view Category</a></li>
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>

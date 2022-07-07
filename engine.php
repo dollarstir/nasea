@@ -157,5 +157,12 @@ $router = new Router([
             return Viewer::view('backend/viewCategory.php', $context);
         }
     ),
+
+    new Route(
+        '/newauthor',
+        function ($context) {
+            return Viewer::view('backend/addAuthor.php', $context);
+        }
+    ),
 ]);
 $router->launch();
