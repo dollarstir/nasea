@@ -167,7 +167,7 @@ adminhead(' Add books');
                             </div>
                             <div class="white_card_body">
                                 <!-- <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</h6> -->
-                                <form>
+                                <form class="addbook">
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleInputEmail1">Title</label>
                                         <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Title">
@@ -178,7 +178,7 @@ adminhead(' Add books');
                                         <div class="input-group mb-3">
                                             <label class="input-group-text" for="inputGroupSelect01">Options</label>
                                             <select class="form-select" name="author" id="inputGroupSelect01">
-                                                <option value="">Choose...</option>
+                                                <option value="">Choose Author</option>
                                                 <?php selectauthors(); ?>
                                             </select>
                                         </div>
@@ -191,30 +191,30 @@ adminhead(' Add books');
                                             <h6 class="card-subtitle mb-2">Select Categories</h6>
                                             <div class="input-group mb-3">
                                                 <label class="input-group-text" for="inputGroupSelect01">Options</label>
-                                                <select class="form-select" id="inputGroupSelect01">
-                                                    <option value="">Choose...</option>
+                                                <select class="form-select" name="category" id="inputGroupSelect01">
+                                                    <option value="">Choose category</option>
                                                    <?php selectcategory(); ?>
                                                     
                                                 </select>
                                             </div>
                                             <div class="mb-3">
                                                 <label class="form-label" for="exampleInputEmail1">price</label>
-                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Price">
+                                                <input type="number" name="price" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Price">
                                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                             </div>
                                             <h6 class="card-subtitle mb-2">Book Couver Picture</h6>
                                             <div class="input-group mb-3">
-                                                <input type="file" class="form-control" id="inputGroupFile02">
+                                                <input type="file" name="front" class="form-control" id="inputGroupFile02">
                                                 <label class="input-group-text" for="inputGroupFile02">Upload</label>
                                             </div>
                                             <h6 class="card-subtitle mb-2">Book Back Cover</h6>
                                             <div class="input-group mb-3">
-                                                <input type="file" class="form-control" id="inputGroupFile02">
+                                                <input type="file" name="back" class="form-control" id="inputGroupFile02">
                                                 <label class="input-group-text" for="inputGroupFile02">Upload</label>
                                             </div>
                                             <h6 class="card-subtitle mb-2">Book File</h6>
                                             <div class="input-group mb-3">
-                                                <input type="file" class="form-control" id="inputGroupFile02">
+                                                <input type="file" name="link" class="form-control" id="inputGroupFile02">
                                                 <label class="input-group-text" for="inputGroupFile02">Upload</label>
                                             </div>
                                             

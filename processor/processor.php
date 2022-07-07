@@ -163,6 +163,11 @@ require '../fragement/admin.php';
             deleteauthor($id);
 
             break;
+
+        case 'addbook':
+            extract($_POST);
+            addbook($title, $author, $description, $category, $price);
+            break;
         default:
 
         break;
