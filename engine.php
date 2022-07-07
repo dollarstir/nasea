@@ -185,5 +185,12 @@ $router = new Router([
             return Viewer::view('backend/viewBooks.php', $context);
         }
     ),
+
+    new Route(
+        '/vieworders',
+        function ($context) {
+            return Viewer::view('backend/viewOrders.php', $context);
+        }
+    ),
 ]);
 $router->launch();

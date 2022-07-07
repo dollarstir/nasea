@@ -61,7 +61,7 @@
         </a>
         <ul>
             <!-- <li><a class="active" href="addOrders.php">Add Orders</a></li> -->
-            <li><a href="viewOrders.php">view Orders</a></li>
+            <li><a href="vieworders">view Orders</a></li>
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>
