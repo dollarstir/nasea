@@ -280,3 +280,12 @@ function booklist()
     </tr>';
     }
 }
+
+function deletebook($id)
+{
+    if ($del = delete('books', [['id', '=', $id]]) == 'deleted') {
+        echo 'deleted';
+    } else {
+        echo 'Failed to delete book';
+    }
+}
