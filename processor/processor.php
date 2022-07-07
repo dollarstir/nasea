@@ -156,6 +156,13 @@ require '../fragement/admin.php';
             extract($_POST);
             addauthor($authname, $authnumner, $authemail);
             break;
+
+        case 'deleteauthor':
+            extract($_POST);
+
+            deleteauthor($id);
+
+            break;
         default:
 
         break;

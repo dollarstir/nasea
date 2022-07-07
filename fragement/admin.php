@@ -204,3 +204,12 @@ function authors()
     </tr>';
     }
 }
+
+function deleteauthor($id)
+{
+    if ($del = delete('authors', [['id', '=', $id]]) == 'deleted') {
+        echo 'deleted';
+    } else {
+        echo 'Failed to delete Author';
+    }
+}
