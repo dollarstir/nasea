@@ -1,6 +1,6 @@
 <?php involve('admin');
 
-adminhead('Dashborad');
+adminhead('View Category');
 
 ?>
 
