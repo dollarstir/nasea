@@ -171,7 +171,7 @@ function addauthor($authname, $authnumber, $authemail)
     if (empty(trim($authname)) || empty(trim($authnumber)) || empty(trim($authemail))) {
         echo 'All filed must be field';
     } else {
-        if (authenticate('authors', [['authnumber', '=', $authnumber]]) == 'success') {
+        if (authenticate('authors', [['authnumber', '=', $authnumber], ['authemail', '=', $authemail]], 'OR') == 'success') {
             echo 'Author already added';
         } else {
             $record = [

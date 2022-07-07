@@ -154,7 +154,7 @@ require '../fragement/admin.php';
 
         case 'addauthor':
             extract($_POST);
-            addauthor($authname, $authnumber, $authemail);
+            addauthor($authname, $authnumner, $authemail);
             break;
         default:
 
