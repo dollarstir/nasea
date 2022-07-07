@@ -224,3 +224,11 @@ function selectauthors()
         ';
     }
 }
+
+function selectcategory()
+{
+    $res = fetchAll('category');
+    foreach ($res as $row) {
+        echo ' <option value="'.$row['id'].'">'.$row['catname'].'</option>';
+    }
+}

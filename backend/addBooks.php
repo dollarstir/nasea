@@ -193,7 +193,7 @@ adminhead(' Add books');
                                                 <label class="input-group-text" for="inputGroupSelect01">Options</label>
                                                 <select class="form-select" id="inputGroupSelect01">
                                                     <option value="">Choose...</option>
-                                                   
+                                                   <?php selectcategory(); ?>
                                                     
                                                 </select>
                                             </div>
