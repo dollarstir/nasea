@@ -47,8 +47,8 @@
             <span>Books</span>
         </a>
         <ul>
-            <li><a class="active" href="addBooks.php">Add Books</a></li>
-            <li><a href="viewBooks.php">view Books</a></li>
+            <li><a class="active" href="newbook">Add Books</a></li>
+            <li><a href="viewbooks">view Books</a></li>
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>
