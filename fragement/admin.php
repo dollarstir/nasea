@@ -198,7 +198,7 @@ function authors()
         echo '<tr>
         <th scope="row"> <a href="" class="question_content"> '.$row['authname'].'</a></th>
         <td>'.$row['authnumber'].'</td>
-        <td>'.$authemail.'</td>
+        <td>'.$row['authemail'].'</td>
         
          <td><button id="'.$row['id'].'"  class="btn btn-danger delauthor"><i class="fa fa-trash"></i></a></button></td>
     </tr>';
