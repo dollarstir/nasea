@@ -663,6 +663,25 @@ $(document).on('click','.delcategory',function(e){
 });
 
 
+// add authors
+$('.addauthor').submit(function(e){
+
+  e.preventDefault();
+  var staff = {
+      url: 'processor/processor.php?action=addauthor',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
 
     
 })

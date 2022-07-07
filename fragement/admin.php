@@ -164,3 +164,27 @@ function deletecategory($id)
         echo 'Failed to delete Category';
     }
 }
+
+// add author
+function addauthor($authname, $authnumber, $authemail)
+{
+    if (empty(trim($authname)) || empty(trim($authnumber)) || empty(trim($authemail))) {
+        echo 'All filed must be field';
+    } else {
+        if (authenticate('authors', [['authnumber', '=', $authnumber]]) == 'success') {
+            echo 'Author already added';
+        } else {
+            $record = [
+                'authname' => $authname,
+                'authnumber' => $authnumber,
+                'authemail' => $authemail,
+                'dateadded' => date('jS F, Y'),
+            ];
+            if (insert('authors', $record) == 'success') {
+                echo 'success';
+            } else {
+                'Failed to add Author';
+            }
+        }
+    }
+}

@@ -151,6 +151,11 @@ require '../fragement/admin.php';
             deletecategory($id);
 
             break;
+
+        case 'addauthor':
+            extract($_POST);
+            addauthor($authname, $authnumber, $authemail);
+            break;
         default:
 
         break;
