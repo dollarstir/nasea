@@ -34,8 +34,8 @@
             <span>Author</span>
         </a>
         <ul>
-            <li><a class="active" href="addAuthor.php">Add Author</a></li>
-            <li><a href="viewAuthor.php">view Author</a></li>
+            <li><a class="active" href="newauthor">Add Author</a></li>
+            <li><a href="viewauthors">view Author</a></li>
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>
