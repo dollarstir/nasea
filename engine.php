@@ -171,5 +171,19 @@ $router = new Router([
             return Viewer::view('backend/viewAuthor.php', $context);
         }
     ),
+
+    new Route(
+        '/newbook',
+        function ($context) {
+            return Viewer::view('backend/addBooks.php', $context);
+        }
+    ),
+
+    new Route(
+        '/viewbooks',
+        function ($context) {
+            return Viewer::view('backend/viewBooks.php', $context);
+        }
+    ),
 ]);
 $router->launch();
