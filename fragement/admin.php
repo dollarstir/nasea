@@ -213,3 +213,14 @@ function deleteauthor($id)
         echo 'Failed to delete Author';
     }
 }
+
+// select authors
+function selectauthors()
+{
+    $re = fetchAll('authors');
+    foreach ($re as $row) {
+        echo '
+        <option value="'.$row['id'].'">'.$row['authname'].'('.$row['authnumber'].')</option>
+        ';
+    }
+}

@@ -1,45 +1,8 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<?php involve('admin');
 
-<head>
+adminhead(' Add books');
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Sales</title>
-    <link rel="icon" href="img/logo.png" type="image/png">
-
-    <link rel="stylesheet" href="css/bootstrap1.min.css" />
-
-    <link rel="stylesheet" href="vendors/themefy_icon/themify-icons.css" />
-
-    <link rel="stylesheet" href="vendors/niceselect/css/nice-select.css" />
-
-    <link rel="stylesheet" href="vendors/owl_carousel/css/owl.carousel.css" />
-
-    <link rel="stylesheet" href="vendors/gijgo/gijgo.min.css" />
-
-    <link rel="stylesheet" href="vendors/font_awesome/css/all.min.css" />
-    <link rel="stylesheet" href="vendors/tagsinput/tagsinput.css" />
-
-    <link rel="stylesheet" href="vendors/datepicker/date-picker.css" />
-
-    <link rel="stylesheet" href="vendors/scroll/scrollable.css" />
-
-    <link rel="stylesheet" href="vendors/datatable/css/jquery.dataTables.min.css" />
-    <link rel="stylesheet" href="vendors/datatable/css/responsive.dataTables.min.css" />
-    <link rel="stylesheet" href="vendors/datatable/css/buttons.dataTables.min.css" />
-
-    <link rel="stylesheet" href="vendors/text_editor/summernote-bs4.css" />
-
-    <link rel="stylesheet" href="vendors/morris/morris.css">
-
-    <link rel="stylesheet" href="vendors/material_icon/material-icons.css" />
-
-    <link rel="stylesheet" href="css/metisMenu.css">
-
-    <link rel="stylesheet" href="css/style1.css" />
-    <link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS">
-</head>
+?>
 
 <body class="crm_body_bg">
 
@@ -51,7 +14,7 @@
                 <i class="ti-close"></i>
             </div>
         </div>
-        <?php include "sidebar.php"; ?>
+        <?php include 'sidebar.php'; ?>
     </nav>
 
     <section class="main_content dashboard_part large_header_bg">
@@ -198,7 +161,7 @@
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h3 class="m-0">Basic Form</h3>
+                                        <h3 class="m-0">Add Book</h3>
                                     </div>
                                 </div>
                             </div>
@@ -207,34 +170,31 @@
                                 <form>
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleInputEmail1">Title</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Title">
+                                        <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Title">
                                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                     </div>
                                     <div class="white_card_body">
-                                        <h6 class="card-subtitle mb-2">List of Authors</h6>
+                                        <h6 class="card-subtitle mb-2">Select  Author</h6>
                                         <div class="input-group mb-3">
                                             <label class="input-group-text" for="inputGroupSelect01">Options</label>
-                                            <select class="form-select" id="inputGroupSelect01">
-                                                <option selected="">Choose...</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
+                                            <select class="form-select" name="author" id="inputGroupSelect01">
+                                                <option value="">Choose...</option>
+                                                <?php selectauthors(); ?>
                                             </select>
                                         </div>
                                         <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Description</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Description">
+                                            <label class="form-label" for="exampleInputEmail1">Book Description</label>
+                                            <input type="text" name="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Description">
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
                                         <div class="white_card_body">
-                                            <h6 class="card-subtitle mb-2">List of Categories</h6>
+                                            <h6 class="card-subtitle mb-2">Select Categories</h6>
                                             <div class="input-group mb-3">
                                                 <label class="input-group-text" for="inputGroupSelect01">Options</label>
                                                 <select class="form-select" id="inputGroupSelect01">
-                                                    <option selected="">Choose...</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
+                                                    <option value="">Choose...</option>
+                                                   
+                                                    
                                                 </select>
                                             </div>
                                             <div class="mb-3">
@@ -402,51 +362,7 @@
         </a>
     </div>
 
-    <script src="js/jquery1-3.4.1.min.js"></script>
-
-    <script src="js/popper1.min.js"></script>
-
-    <script src="js/bootstrap.min.js.php"></script>
-
-    <script src="js/metisMenu.js"></script>
-
-    <script src="vendors/count_up/jquery.waypoints.min.js"></script>
-
-    <script src="vendors/chartlist/Chart.min.js"></script>
-
-    <script src="vendors/count_up/jquery.counterup.min.js"></script>
-
-    <script src="vendors/niceselect/js/jquery.nice-select.min.js"></script>
-
-    <script src="vendors/owl_carousel/js/owl.carousel.min.js"></script>
-
-    <script src="vendors/datatable/js/jquery.dataTables.min.js"></script>
-    <script src="vendors/datatable/js/dataTables.responsive.min.js"></script>
-    <script src="vendors/datatable/js/dataTables.buttons.min.js"></script>
-    <script src="vendors/datatable/js/buttons.flash.min.js"></script>
-    <script src="vendors/datatable/js/jszip.min.js"></script>
-    <script src="vendors/datatable/js/pdfmake.min.js"></script>
-    <script src="vendors/datatable/js/vfs_fonts.js"></script>
-    <script src="vendors/datatable/js/buttons.php5.min.js"></script>
-    <script src="vendors/datatable/js/buttons.print.min.js"></script>
-    <script src="js/chart.min.js"></script>
-
-    <script src="vendors/progressbar/jquery.barfiller.js"></script>
-
-    <script src="vendors/tagsinput/tagsinput.js"></script>
-
-    <script src="vendors/text_editor/summernote-bs4.js"></script>
-    <script src="vendors/am_chart/amcharts.js"></script>
-
-    <script src="vendors/scroll/perfect-scrollbar.min.js"></script>
-    <script src="vendors/scroll/scrollable-custom.js"></script>
-    <script src="vendors/chart_am/core.js"></script>
-    <script src="vendors/chart_am/charts.js"></script>
-    <script src="vendors/chart_am/animated.js"></script>
-    <script src="vendors/chart_am/kelly.js"></script>
-    <script src="vendors/chart_am/chart-custom.js"></script>
-
-    <script src="js/custom.js"></script>
+    <?php adminscript(); ?>
 </body>
 
 </html>
