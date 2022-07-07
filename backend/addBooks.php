@@ -204,18 +204,18 @@ adminhead(' Add books');
                                             </div>
                                             <h6 class="card-subtitle mb-2">Book Couver Picture</h6>
                                             <div class="input-group mb-3">
-                                                <input type="file" name="front" class="form-control" id="inputGroupFile02">
-                                                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                                <input type="file" name="front" class="form-control" id="inputGroupFile03">
+                                                <label class="input-group-text" for="inputGroupFile03">Upload</label>
                                             </div>
                                             <h6 class="card-subtitle mb-2">Book Back Cover</h6>
                                             <div class="input-group mb-3">
-                                                <input type="file" name="back" class="form-control" id="inputGroupFile02">
-                                                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                                <input type="file" name="back" class="form-control" id="inputGroupFile04">
+                                                <label class="input-group-text" for="inputGroupFile04">Upload</label>
                                             </div>
                                             <h6 class="card-subtitle mb-2">Book File</h6>
                                             <div class="input-group mb-3">
-                                                <input type="file" name="link" class="form-control" id="inputGroupFile02">
-                                                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                                <input type="file" name="link" class="form-control" id="inputGroupFile05">
+                                                <label class="input-group-text" for="inputGroupFile05">Upload</label>
                                             </div>
                                             
                                             <!-- <div class="mb-3">
