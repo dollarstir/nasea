@@ -241,7 +241,42 @@ function addbook($title, $author, $description, $category, $price)
         if (empty($_FILES['front']['name']) || empty($_FILES['back']['name']) || empty($_FILES['link']['name'])) {
             echo 'All documents must be uploaded';
         } else {
-            echo 'there is file';
+            $record = [
+                'title' => $title,
+                'author' => $author,
+                'description' => $description,
+                'category' => $category,
+                'price' => $price,
+                'dateadded' => date('jS F, Y'),
+                'status' => 'active',
+            ];
+            if (insert('books', $record, $_FILES, '../yolkassets/upload') == 'success') {
+                echo 'success';
+            } else {
+                echo 'Failed to add book';
+            }
         }
+    }
+}
+
+function booklist()
+{
+    $res = fetchAll('books');
+    foreach ($res as $row) {
+        $s = customfetch('authors', [['id', '=', $row['author']]]);
+        $ss = $s[0];
+        $y = customfetch('category', [['id', '=', $row['category']]]);
+        $yy = $y[0];
+        echo '<tr>
+        <th scope="row"> <a href="" class="question_content"> '.$row['title'].'</a></th>
+        <td>'.$ss['authname'].'</td>
+        <td>'.$row['description'].'</td>
+        <td>'.$row['price'].'</td>
+        <td>'.$yy['catname'].'</td>
+        <td><img src="yolkassets/upload/'.$row['front'].'"  style="width:100px;height:150px;"/></td>
+        <td><img src="yolkassets/upload/'.$row['back'].'"  style="width:100px;height:150px;"/></td>
+
+        <td><button id="'.$row['id'].'"  class="btn btn-danger delbook"><i class="fa fa-trash"></i></a></button></td>
+    </tr>';
     }
 }

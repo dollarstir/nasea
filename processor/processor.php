@@ -168,6 +168,12 @@ require '../fragement/admin.php';
             extract($_POST);
             addbook($title, $author, $description, $category, $price);
             break;
+
+        case 'deletebook':
+            extract($_POST);
+            deletebook($id);
+            break;
+
         default:
 
         break;

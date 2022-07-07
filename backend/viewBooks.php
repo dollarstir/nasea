@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<?php involve('admin');
 
-<head>
+adminhead(' View books');
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Sales</title>
-
-
-    <link rel="stylesheet" href="css/bootstrap1.min.css" />
-
-    <link rel="stylesheet" href="vendors/themefy_icon/themify-icons.css" />
-
-    <link rel="stylesheet" href="vendors/scroll/scrollable.css" />
-
-    <link rel="stylesheet" href="vendors/font_awesome/css/all.min.css" />
-
-    <link rel="stylesheet" href="vendors/datatable/css/jquery.dataTables.min.css" />
-    <link rel="stylesheet" href="vendors/datatable/css/responsive.dataTables.min.css" />
-    <link rel="stylesheet" href="vendors/datatable/css/buttons.dataTables.min.css" />
-
-
-    <link rel="stylesheet" href="css/metisMenu.css">
-
-    <link rel="stylesheet" href="css/style1.css" />
-</head>
+?>
 
 <body class="crm_body_bg">
 
@@ -35,7 +13,7 @@
                 <i class="ti-close"></i>
             </div>
         </div>
-        <?php include "sidebar.php"; ?>
+        <?php include 'sidebar.php'; ?>
     </nav>
 
     <section class="main_content dashboard_part large_header_bg">
@@ -182,18 +160,18 @@
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h3 class="m-0">Data table</h3>
+                                        <h3 class="m-0">View Book</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="white_card_body">
                                 <div class="QA_section">
                                     <div class="white_box_tittle list_header">
-                                        <h4>Table</h4>
+                                        <h4>View Book</h4>
                                         <div class="box_right d-flex lms_block">
                                             <div class="serach_field_2">
                                                 <div class="search_inner">
-                                                    <form Active="#">
+                                                    <form Active="#" class="">
                                                         <div class="search_field">
                                                             <input type="text" placeholder="Search content here...">
                                                         </div>
@@ -223,17 +201,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <th scope="row"> <a href="#" class="question_content"> title here 1</a></th>
-                                                    <td>Category name</td>
-                                                    <td>Teacher James</td>
-                                                    <td>Lessons name</td>
-                                                    <td>16</td>
-                                                    <td>$25.00</td>
-                                                    <td><a href="#" class="status_btn">cover</a></td>
-
-                                                    <td><a href="#" class="status_btn">Active</a></td>
-                                                </tr>
+                                                <?php booklist(); ?>
                                                 
                                             </tbody>
                                         </table>
@@ -375,28 +343,7 @@
 
 
 
-    <script src="js/jquery1-3.4.1.min.js"></script>
-
-    <script src="js/popper1.min.js"></script>
-
-    <script src="js/bootstrap.min.js.php"></script>
-
-    <script src="js/metisMenu.js"></script>
-
-    <script src="vendors/datatable/js/jquery.dataTables.min.js"></script>
-    <script src="vendors/datatable/js/dataTables.responsive.min.js"></script>
-    <script src="vendors/datatable/js/dataTables.buttons.min.js"></script>
-    <script src="vendors/datatable/js/buttons.flash.min.js"></script>
-    <script src="vendors/datatable/js/jszip.min.js"></script>
-    <script src="vendors/datatable/js/pdfmake.min.js"></script>
-    <script src="vendors/datatable/js/vfs_fonts.js"></script>
-    <script src="vendors/datatable/js/buttons.php5.min.js"></script>
-    <script src="vendors/datatable/js/buttons.print.min.js"></script>
-
-    <script src="vendors/scroll/perfect-scrollbar.min.js"></script>
-    <script src="vendors/scroll/scrollable-custom.js"></script>
-
-    <script src="js/custom.js"></script>
+    <?php adminscript(); ?>
 </body>
 
 </html>
