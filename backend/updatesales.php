@@ -4,6 +4,14 @@ adminhead('Edit Sales');
 
 $authorid = $_GET['token'];
 
+$at = customfetch('authors', [['id', '=', $authorid]]);
+$att = $at[0];
+$cs = customfetch('orders', [['authorid', '=', $authorid]]);
+$total = 0;
+foreach ($cs as $dd) {
+    $total += $dd['discountprice'];
+}
+
 ?>
 
 <body class="crm_body_bg">

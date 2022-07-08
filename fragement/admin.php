@@ -326,7 +326,7 @@ function authorsales()
         <td>'.$tt.'</td>
         <td>'.$row['withdrawal'].'</td>
         <td>'.$balance.'</td>
-        <td><a id="'.$row['id'].'"  class="btn btn-primary "><i class="fa fa-edit"></i></a></a></td>
+        <td><a id="'.$row['id'].'"  class="btn btn-primary " href="editsales?token='.$row['id'].'"><i class="fa fa-edit"></i></a></a></td>
        
         
     </tr>';
