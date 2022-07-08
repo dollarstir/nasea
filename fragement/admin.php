@@ -309,3 +309,19 @@ function orders()
     </tr>';
     }
 }
+
+function authorsales()
+{
+    $a = fetchAll('authors');
+    foreach ($a as $row) {
+        echo '<tr>
+        <th scope="row"> <a href="backend/#" class="question_content"> title here 1</a></th>
+        <td>Category name</td>
+        <td>Teacher James</td>
+        <td>Teacher James</td>
+        <td>Teacher James</td>
+       
+        
+    </tr>';
+    }
+}

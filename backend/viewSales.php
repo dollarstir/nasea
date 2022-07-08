@@ -1,6 +1,6 @@
 <?php involve('admin');
 
-adminhead(' View Sales');
+adminhead(' View  Customer Sales');
 
 ?>
 
@@ -189,28 +189,19 @@ adminhead(' View Sales');
                                             <thead>
                                                 <tr>
                                                     <th scope="col">Author</th>
-                                                    <th scope="col">Book Name</th>
-                                                    <th scope="col">Discount Price</th>
-                                                    <th scope="col">Price</th>
-                                                    <th scope="col">Discount</th>
-                                                    <th scope="col">Date Added</th>
+                                                    
+                                                    <th scope="col">Total Sales</th>
+                                                    <th scope="col">Total Withdrawal</th>
+                                                    <th scope="col">Balance</th>
+                                                    <th scope="col">Action</th>
+                                                   
                                                     <!-- <th scope="col">Back Cover</th>
                                                     <th scope="col">Status</th> -->
 
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <th scope="row"> <a href="backend/#" class="question_content"> title here 1</a></th>
-                                                    <td>Category name</td>
-                                                    <td>Teacher James</td>
-                                                    <td>Lessons name</td>
-                                                    <td>16</td>
-                                                    <td>$25.00</td>
-                                                    <!-- <td><a href="backend/#" class="status_btn">cover</a></td>
-
-                                                    <td><a href="backend/#" class="status_btn">Active</a></td> -->
-                                                </tr>
+                                                <?php authorsales(); ?>
                                                 
                                             </tbody>
                                         </table>

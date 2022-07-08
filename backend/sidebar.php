@@ -74,7 +74,7 @@
         </a>
         <ul>
             <!-- <li><a class="active" href="index.php">Add Sales</a></li> -->
-            <li><a href="viewsales">view Customer Sales</a></li>
+            <li><a href="viewsales">view Author Sales</a></li>
             <li><a href="viewallsales">View All Sales</a></li>
         </ul>
     </li>
