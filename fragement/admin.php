@@ -342,7 +342,7 @@ function editsale($id, $totalavl, $amw, $amtw)
             echo 'insufficent balance';
         } else {
             $newbal = $amw + $amtw;
-            if (update('authors', ['widthdrawal' => $newbal], ['id' => $id]) == 'success') {
+            if (update('authors', ['withdrawal' => $newbal], ['id' => $id]) == 'success') {
                 echo 'Updated Successfully';
             } else {
                 echo 'failed to withdraw';
