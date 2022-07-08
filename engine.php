@@ -205,5 +205,11 @@ $router = new Router([
             return Viewer::view('backend/viewAlls.php', $context);
         }
     ),
+    new Route(
+        '/editsales',
+        function ($context) {
+            return Viewer::view('backend/updatesales.php', $context);
+        }
+    ),
 ]);
 $router->launch();

@@ -179,6 +179,7 @@ function addauthor($authname, $authnumber, $authemail)
                 'authnumber' => $authnumber,
                 'authemail' => $authemail,
                 'dateadded' => date('jS F, Y'),
+                'withdrawal' => 0,
             ];
             if (insert('authors', $record) == 'success') {
                 echo 'success';
@@ -290,7 +291,7 @@ function deletebook($id)
     }
 }
 
-function orders()
+function orderslist()
 {
     $res = fetchAll('orders');
     foreach ($res as $row) {
@@ -314,12 +315,18 @@ function authorsales()
 {
     $a = fetchAll('authors');
     foreach ($a as $row) {
+        $c = customfetch('orders', [['authorid', '=', $row['id']], ['status', '=', 'complete']], 'AND');
+        $tt = 0;
+        foreach ($c as $am) {
+            $tt += $am['discountprice'];
+        }
+        $balance = $tt - $row['withdrawal'];
         echo '<tr>
-        <th scope="row"> <a href="backend/#" class="question_content"> title here 1</a></th>
-        <td>Category name</td>
-        <td>Teacher James</td>
-        <td>Teacher James</td>
-        <td>Teacher James</td>
+        <th scope="row"> <a href="" class="question_content"> '.$row['authname'].'</a></th>
+        <td>'.$tt.'</td>
+        <td>'.$row['withdrawal'].'</td>
+        <td>'.$balance.'</td>
+        <td><a id="'.$row['id'].'"  class="btn btn-primary "><i class="fa fa-edit"></i></a></a></td>
        
         
     </tr>';

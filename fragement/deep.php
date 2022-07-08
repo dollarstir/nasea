@@ -365,7 +365,7 @@ function orders()
                 'uid' => $uid,
                 'bookname' => $value['bookname'],
                 'authorid' => $authorid,
-                'authorname' => $authname,
+                'authorname' => $raut['authname'],
                 'authornumber' => $authnumber,
                 'front' => $value['bookcover'],
                 'back' => $value['bookback'],
