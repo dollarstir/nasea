@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<?php involve('admin');
 
-<head>
+adminhead('Orders');
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Sales</title>
-
-
-    <link rel="stylesheet" href="css/bootstrap1.min.css" />
-
-    <link rel="stylesheet" href="vendors/themefy_icon/themify-icons.css" />
-
-    <link rel="stylesheet" href="vendors/scroll/scrollable.css" />
-
-    <link rel="stylesheet" href="vendors/font_awesome/css/all.min.css" />
-
-    <link rel="stylesheet" href="vendors/datatable/css/jquery.dataTables.min.css" />
-    <link rel="stylesheet" href="vendors/datatable/css/responsive.dataTables.min.css" />
-    <link rel="stylesheet" href="vendors/datatable/css/buttons.dataTables.min.css" />
-
-
-    <link rel="stylesheet" href="css/metisMenu.css">
-
-    <link rel="stylesheet" href="css/style1.css" />
-</head>
+?>
 
 <body class="crm_body_bg">
 
@@ -35,7 +13,7 @@
                 <i class="ti-close"></i>
             </div>
         </div>
-        <?php include "sidebar.php"; ?>
+        <?php include 'sidebar.php'; ?>
     </nav>
 
     <section class="main_content dashboard_part large_header_bg">
@@ -213,9 +191,10 @@
                                                 <tr>
                                                     <th scope="col">Order No</th>
                                                     <th scope="col">Book Name</th>
-                                                    <th scope="col">Discount Price</th>
-                                                    <th scope="col">Price</th>
-                                                    <th scope="col">Discount</th>
+                                                    <th scope="col">Customer Name</th>
+                                                    <th scope="col">Discount Price (Gh&#8373;)</th>
+                                                    <th scope="col">Price (Gh&#8373;)</th>
+                                                    <th scope="col">Discount (%)</th>
                                                     <th scope="col">Date Added</th>
                                                     <!-- <th scope="col">Back Cover</th>
                                                     <th scope="col">Status</th> -->
@@ -223,17 +202,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <th scope="row"> <a href="#" class="question_content"> title here 1</a></th>
-                                                    <td>Category name</td>
-                                                    <td>Teacher James</td>
-                                                    <td>Lessons name</td>
-                                                    <td>16</td>
-                                                    <td>$25.00</td>
-                                                    <!-- <td><a href="#" class="status_btn">cover</a></td>
-
-                                                    <td><a href="#" class="status_btn">Active</a></td> -->
-                                                </tr>
+                                                <?php  orders(); ?>
                                                 
                                             </tbody>
                                         </table>
@@ -375,28 +344,7 @@
 
 
 
-    <script src="js/jquery1-3.4.1.min.js"></script>
-
-    <script src="js/popper1.min.js"></script>
-
-    <script src="js/bootstrap.min.js.php"></script>
-
-    <script src="js/metisMenu.js"></script>
-
-    <script src="vendors/datatable/js/jquery.dataTables.min.js"></script>
-    <script src="vendors/datatable/js/dataTables.responsive.min.js"></script>
-    <script src="vendors/datatable/js/dataTables.buttons.min.js"></script>
-    <script src="vendors/datatable/js/buttons.flash.min.js"></script>
-    <script src="vendors/datatable/js/jszip.min.js"></script>
-    <script src="vendors/datatable/js/pdfmake.min.js"></script>
-    <script src="vendors/datatable/js/vfs_fonts.js"></script>
-    <script src="vendors/datatable/js/buttons.php5.min.js"></script>
-    <script src="vendors/datatable/js/buttons.print.min.js"></script>
-
-    <script src="vendors/scroll/perfect-scrollbar.min.js"></script>
-    <script src="vendors/scroll/scrollable-custom.js"></script>
-
-    <script src="js/custom.js"></script>
+    <?php adminscript(); ?>
 </body>
 
 </html>

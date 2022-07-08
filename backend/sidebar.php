@@ -73,8 +73,8 @@
             <span>Sales</span>
         </a>
         <ul>
-            <li><a class="active" href="index.php">Add Sales</a></li>
-            <li><a href="viewSales.php">view Sales</a></li>
+            <!-- <li><a class="active" href="index.php">Add Sales</a></li> -->
+            <li><a href="viewsales">view Sales</a></li>
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>

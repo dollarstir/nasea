@@ -289,3 +289,23 @@ function deletebook($id)
         echo 'Failed to delete book';
     }
 }
+
+function orders()
+{
+    $res = fetchAll('orders');
+    foreach ($res as $row) {
+        $c = customfetch('users', [['id', '=', $row['uid']]]);
+        echo '<tr>
+        <th scope="row"> <a href="#" class="question_content"> '.$row['orderno'].'</a></th>
+        <td>'.$row['bookname'].'</td>
+        <td>'.$c[0]['name'].'</td>
+        <td>'.$row['discountprice'].'</td>
+        <td>'.$row['price'].'</td>
+        <td>'.$row['discount'].'</td>
+        <td>'.$row['dateadded'].'</td>
+        <!-- <td><a href="#" class="status_btn">cover</a></td>
+
+        <td><a href="#" class="status_btn">Active</a></td> -->
+    </tr>';
+    }
+}
