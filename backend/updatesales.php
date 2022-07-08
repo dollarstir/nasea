@@ -171,27 +171,58 @@ foreach ($cs as $dd) {
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h3 class="m-0">Add Author</h3>
+                                        <h3 class="m-0">Edit <?php echo $att['authname']; ?> Sales record</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="white_card_body">
                                 <!-- <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</h6> -->
-                                <form class="addauthor">
+                                <form class="editsale">
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleInputEmail1">Name of Author</label>
-                                        <input type="text" name="authname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name of Author">
+                                        <input type="text" name="authname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name of Author" value="<?php echo $att['authname']; ?>" readonly>
                                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleInputEmail1">Author's Phone Number</label>
-                                        <input type="number" name="authnumner" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="contact of Author">
+                                        <input type="number" name="authnumner" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="contact of Author" value="<?php echo $att['authnumber']; ?>" readonly>
                                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleInputEmail1">Email</label>
-                                        <input type="email" name="authemail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        <input type="email" name="authemail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="<?php echo $att['authemail']; ?>" readonly>
+                                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                    </div>
+
+
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleInputEmail1">Total Balance (Gh&#x20B5;)</label>
+                                        <input type="number" name="totalamount" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="<?php echo $total; ?>"  readonly>
+                                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                    </div>
+
+                                    <div class="mb-3">  
+                                        <label class="form-label" for="exampleInputEmail1">Amount  Withdrawn (Gh&#x20B5;)</label>
+                                        <input type="text" name="amw" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="<?php echo $att['withdrawal'] == '0' ? '0' : $att['withdrawal']; ?>"  readonly>
+                                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                    </div>
+
+
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleInputEmail1">Available Balance (Gh&#x20B5;)</label>
+                                        <input type="number" name="totalavl" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="<?php echo $total - $att['withdrawal']; ?>"  readonly>
+                                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                    </div>
+
+
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleInputEmail1">Enter Amount to withdraw (Gh&#x20B5;)</label>
+                                        <input type="number" name="amtw" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="amount to withdraw" >
+                                        <input type="hidden" name="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="amount to withdraw" value="<?php echo $authorid; ?>">
+                                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                     </div>
                                     <!-- <div class="mb-3">
                                         <label class="form-label" for="exampleInputPassword1">Password</label>

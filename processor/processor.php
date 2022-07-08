@@ -174,6 +174,11 @@ require '../fragement/admin.php';
             deletebook($id);
             break;
 
+        case 'editsale':
+            extract($_POST);
+            editsale($id, $totalavl, $amw, $amtw);
+            break;
+
         default:
 
         break;

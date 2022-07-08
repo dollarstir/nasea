@@ -332,3 +332,21 @@ function authorsales()
     </tr>';
     }
 }
+
+function editsale($id, $totalavl, $amw, $amtw)
+{
+    if (empty(trim($amtw))) {
+        echo 'Enter valid amount to withdraw';
+    } else {
+        if ($totalavl < $amtw) {
+            echo 'insufficent balance';
+        } else {
+            $newbal = $amw + $amtw;
+            if (update('authors', ['widthdrawal' => $newbal], ['id' => $id]) == 'success') {
+                echo 'Updated Successfully';
+            } else {
+                echo 'failed to withdraw';
+            }
+        }
+    }
+}
