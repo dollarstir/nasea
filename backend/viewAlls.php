@@ -1,6 +1,6 @@
 <?php involve('admin');
 
-adminhead('Orders');
+adminhead(' View All  Sales');
 
 ?>
 
@@ -8,14 +8,13 @@ adminhead('Orders');
 
 <nav class="sidebar vertical-scroll  ps-container ps-theme-default ps-active-y">
         <div class="logo d-flex justify-content-between">
-            <a href="index.php"><img src="backend/img/logo.png" alt=""></a>
+            <a href="backend/index.php"><img src="backend/img/logo.png" alt=""></a>
             <div class="sidebar_close_icon d-lg-none">
                 <i class="ti-close"></i>
             </div>
         </div>
         <?php include 'sidebar.php'; ?>
     </nav>
-
     <section class="main_content dashboard_part large_header_bg">
 
         <div class="container-fluid g-0">
@@ -39,7 +38,7 @@ adminhead('Orders');
                         <div class="header_right d-flex justify-content-between align-items-center">
                             <div class="header_notification_warp d-flex align-items-center">
                                 <li>
-                                    <a class="bell_notification_clicker nav-link-notify" href="#"> <img src="backend/img/icon/bell.svg" alt="">
+                                    <a class="bell_notification_clicker nav-link-notify" href="backend/#"> <img src="backend/img/icon/bell.svg" alt="">
                                     </a>
 
                                     <div class="Menu_NOtification_Wrap">
@@ -50,10 +49,10 @@ adminhead('Orders');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="backend/img/staf/2.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/2.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Cool Marketing </h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -62,10 +61,10 @@ adminhead('Orders');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="backend/img/staf/4.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/4.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Awesome packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -74,10 +73,10 @@ adminhead('Orders');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="backend/img/staf/3.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/3.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>what a packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -86,10 +85,10 @@ adminhead('Orders');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="backend/img/staf/2.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/2.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Cool Marketing </h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -98,10 +97,10 @@ adminhead('Orders');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="backend/img/staf/4.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/4.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Awesome packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -110,10 +109,10 @@ adminhead('Orders');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="backend/img/staf/3.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/3.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>what a packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -122,14 +121,14 @@ adminhead('Orders');
                                         </div>
                                         <div class="nofity_footer">
                                             <div class="submit_button text-center pt_20">
-                                                <a href="#" class="btn_1">See More</a>
+                                                <a href="backend/#" class="btn_1">See More</a>
                                             </div>
                                         </div>
                                     </div>
 
                                 </li>
                                 <li>
-                                    <a class="CHATBOX_open nav-link-notify" href="#"> <img src="backend/img/icon/msg.svg" alt=""> </a>
+                                    <a class="CHATBOX_open nav-link-notify" href="backend/#"> <img src="backend/img/icon/msg.svg" alt=""> </a>
                                 </li>
                             </div>
                             <div class="profile_info">
@@ -140,9 +139,9 @@ adminhead('Orders');
                                         <h5>Dr. Robar Smith</h5>
                                     </div>
                                     <div class="profile_info_details">
-                                        <a href="#">My Profile </a>
-                                        <a href="#">Settings</a>
-                                        <a href="#">Log Out </a>
+                                        <a href="backend/#">My Profile </a>
+                                        <a href="backend/#">Settings</a>
+                                        <a href="backend/#">Log Out </a>
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +179,7 @@ adminhead('Orders');
                                                 </div>
                                             </div>
                                             <div class="add_button ms-2">
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#addcategory" class="btn_1">Add New</a>
+                                                <a href="backend/#" data-bs-toggle="modal" data-bs-target="#addcategory" class="btn_1">Add New</a>
                                             </div>
                                         </div>
                                     </div>
@@ -189,12 +188,11 @@ adminhead('Orders');
                                         <table class="table lms_table_active ">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col">Order No</th>
+                                                    <th scope="col">Author</th>
                                                     <th scope="col">Book Name</th>
-                                                    <th scope="col">Customer Name</th>
-                                                    <th scope="col">Discount Price (Gh&#8373;)</th>
-                                                    <th scope="col">Price (Gh&#8373;)</th>
-                                                    <th scope="col">Discount (%)</th>
+                                                    <th scope="col">Discount Price</th>
+                                                    <th scope="col">Price</th>
+                                                    <th scope="col">Discount</th>
                                                     <th scope="col">Date Added</th>
                                                     <!-- <th scope="col">Back Cover</th>
                                                     <th scope="col">Status</th> -->
@@ -202,7 +200,17 @@ adminhead('Orders');
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <?php  orders(); ?>
+                                                <tr>
+                                                    <th scope="row"> <a href="backend/#" class="question_content"> title here 1</a></th>
+                                                    <td>Category name</td>
+                                                    <td>Teacher James</td>
+                                                    <td>Lessons name</td>
+                                                    <td>16</td>
+                                                    <td>$25.00</td>
+                                                    <!-- <td><a href="backend/#" class="status_btn">cover</a></td>
+
+                                                    <td><a href="backend/#" class="status_btn">Active</a></td> -->
+                                                </tr>
                                                 
                                             </tbody>
                                         </table>
@@ -222,7 +230,7 @@ adminhead('Orders');
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer_iner text-center">
-                            <p>2020 © Influence - Designed by <a href="#"> <i class="ti-heart"></i> </a><a href="#"> Dashboard</a></p>
+                            <p>2020 © Influence - Designed by <a href="backend/#"> <i class="ti-heart"></i> </a><a href="backend/#"> Dashboard</a></p>
                         </div>
                     </div>
                 </div>
@@ -242,42 +250,42 @@ adminhead('Orders');
             <div class="Chat_Listed_member">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
                                 <img src="backend/img/staf/1.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
                                 <img src="backend/img/staf/2.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
                                 <img src="backend/img/staf/3.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
                                 <img src="backend/img/staf/4.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
                                 <img src="backend/img/staf/5.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
                                 <div class="more_member_count">
                                     <span>90+</span>
@@ -337,7 +345,7 @@ adminhead('Orders');
     </div>
 
     <div id="back-top" style="display: none;">
-        <a title="Go to Top" href="#">
+        <a title="Go to Top" href="backend/#">
             <i class="ti-angle-up"></i>
         </a>
     </div>

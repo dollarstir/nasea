@@ -192,5 +192,18 @@ $router = new Router([
             return Viewer::view('backend/viewOrders.php', $context);
         }
     ),
+
+    new Route(
+        '/viewsales',
+        function ($context) {
+            return Viewer::view('backend/viewSales.php', $context);
+        }
+    ),
+    new Route(
+        '/viewallsales',
+        function ($context) {
+            return Viewer::view('backend/viewAlls.php', $context);
+        }
+    ),
 ]);
 $router->launch();
