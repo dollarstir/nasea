@@ -432,3 +432,8 @@ function couponlist()
     </tr>';
     }
 }
+
+// delete coupon
+function deletecoupon($id)
+{
+}
