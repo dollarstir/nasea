@@ -239,5 +239,12 @@ $router = new Router([
             return Viewer::view('backend/viewReview.php', $context);
         }
     ),
+
+    new Route(
+        '/newads',
+        function ($context) {
+            return Viewer::view('backend/addAds.php', $context);
+        }
+    ),
 ]);
 $router->launch();

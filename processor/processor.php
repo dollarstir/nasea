@@ -188,6 +188,10 @@ require '../fragement/admin.php';
             extract($_POST);
             deletecoupon($id);
             break;
+        case 'deletereview':
+            extract($_POST);
+            deletereview($id);
+            break;
         default:
 
         break;
