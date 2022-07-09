@@ -7,7 +7,7 @@ adminhead('Coupons');
 <body class="crm_body_bg">
 <nav class="sidebar vertical-scroll  ps-container ps-theme-default ps-active-y">
         <div class="logo d-flex justify-content-between">
-            <a href="index.php"><img src="img/logo.png" alt=""></a>
+            <a href="backend/index.php"><img src="backend/img/logo.png" alt=""></a>
             <div class="sidebar_close_icon d-lg-none">
                 <i class="ti-close"></i>
             </div>
@@ -30,7 +30,7 @@ adminhead('Coupons');
                                     <div class="search_field">
                                         <input type="text" placeholder="Search here...">
                                     </div>
-                                    <button type="submit"> <img src="img/icon/icon_search.svg" alt=""> </button>
+                                    <button type="submit"> <img src="backend/img/icon/icon_search.svg" alt=""> </button>
                                 </form>
                             </div>
                             <span class="f_s_14 f_w_400 ml_25 white_text text_white">Apps</span>
@@ -38,7 +38,7 @@ adminhead('Coupons');
                         <div class="header_right d-flex justify-content-between align-items-center">
                             <div class="header_notification_warp d-flex align-items-center">
                                 <li>
-                                    <a class="bell_notification_clicker nav-link-notify" href="#"> <img src="img/icon/bell.svg" alt="">
+                                    <a class="bell_notification_clicker nav-link-notify" href="backend/#"> <img src="backend/img/icon/bell.svg" alt="">
                                     </a>
 
                                     <div class="Menu_NOtification_Wrap">
@@ -49,10 +49,10 @@ adminhead('Coupons');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/2.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/2.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Cool Marketing </h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -61,10 +61,10 @@ adminhead('Coupons');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/4.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/4.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Awesome packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -73,10 +73,10 @@ adminhead('Coupons');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/3.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/3.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>what a packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -85,10 +85,10 @@ adminhead('Coupons');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/2.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/2.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Cool Marketing </h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -97,10 +97,10 @@ adminhead('Coupons');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/4.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/4.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Awesome packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -109,10 +109,10 @@ adminhead('Coupons');
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/3.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/3.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>what a packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -121,27 +121,27 @@ adminhead('Coupons');
                                         </div>
                                         <div class="nofity_footer">
                                             <div class="submit_button text-center pt_20">
-                                                <a href="#" class="btn_1">See More</a>
+                                                <a href="backend/#" class="btn_1">See More</a>
                                             </div>
                                         </div>
                                     </div>
 
                                 </li>
                                 <li>
-                                    <a class="CHATBOX_open nav-link-notify" href="#"> <img src="img/icon/msg.svg" alt=""> </a>
+                                    <a class="CHATBOX_open nav-link-notify" href="backend/#"> <img src="backend/img/icon/msg.svg" alt=""> </a>
                                 </li>
                             </div>
                             <div class="profile_info">
-                                <img src="img/client_img.png" alt="#">
+                                <img src="backend/img/client_img.png" alt="#">
                                 <div class="profile_info_iner">
                                     <div class="profile_author_name">
                                         <p>Neurologist </p>
                                         <h5>Dr. Robar Smith</h5>
                                     </div>
                                     <div class="profile_info_details">
-                                        <a href="#">My Profile </a>
-                                        <a href="#">Settings</a>
-                                        <a href="#">Log Out </a>
+                                        <a href="backend/#">My Profile </a>
+                                        <a href="backend/#">Settings</a>
+                                        <a href="backend/#">Log Out </a>
                                     </div>
                                 </div>
                             </div>
@@ -159,14 +159,14 @@ adminhead('Coupons');
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h3 class="m-0">Data table</h3>
+                                        <!-- <h3 class="m-0">Data table</h3> -->
                                     </div>
                                 </div>
                             </div>
                             <div class="white_card_body">
                                 <div class="QA_section">
                                     <div class="white_box_tittle list_header">
-                                        <h4>Table</h4>
+                                        <h4>Coupons</h4>
                                         <div class="box_right d-flex lms_block">
                                             <div class="serach_field_2">
                                                 <div class="search_inner">
@@ -179,7 +179,7 @@ adminhead('Coupons');
                                                 </div>
                                             </div>
                                             <div class="add_button ms-2">
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#addcategory" class="btn_1">Add New</a>
+                                                <a href="backend/#" data-bs-toggle="modal" data-bs-target="#addcategory" class="btn_1">Add New</a>
                                             </div>
                                         </div>
                                     </div>
@@ -194,23 +194,13 @@ adminhead('Coupons');
                                                     <!-- <th scope="col">comment</th> -->
                                                     <!-- <th scope="col">Discount</th>
                                                     <th scope="col">Date Added</th> -->
-                                                    <!-- <th scope="col">Back Cover</th>
-                                                    <th scope="col">Status</th> -->
+                                                    <!-- <th scope="col">Back Cover</th>-->
+                                                    <th scope="col">Status</th> 
 
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <!-- <th scope="row"> <a href="#" class="question_content"> title here 1</a></th> -->
-                                                    <td>Category name</td>
-                                                    <td>Teacher James</td>
-                                                    <td>Lessons name</td>
-                                                    <!-- <td>16</td>
-                                                    <td>$25.00</td> -->
-                                                    <!-- <td><a href="#" class="status_btn">cover</a></td>
-
-                                                    <td><a href="#" class="status_btn">Active</a></td> -->
-                                                </tr>
+                                               <?php couponlist(); ?>
                                                 
                                             </tbody>
                                         </table>
@@ -230,7 +220,7 @@ adminhead('Coupons');
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer_iner text-center">
-                            <p>2020 © Influence - Designed by <a href="#"> <i class="ti-heart"></i> </a><a href="#"> Dashboard</a></p>
+                            <p>2020 © Influence - Designed by <a href="backend/#"> <i class="ti-heart"></i> </a><a href="backend/#"> Dashboard</a></p>
                         </div>
                     </div>
                 </div>
@@ -250,42 +240,42 @@ adminhead('Coupons');
             <div class="Chat_Listed_member">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/1.png" alt="">
+                                <img src="backend/img/staf/1.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/2.png" alt="">
+                                <img src="backend/img/staf/2.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/3.png" alt="">
+                                <img src="backend/img/staf/3.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/4.png" alt="">
+                                <img src="backend/img/staf/4.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/5.png" alt="">
+                                <img src="backend/img/staf/5.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
                                 <div class="more_member_count">
                                     <span>90+</span>
@@ -302,7 +292,7 @@ adminhead('Coupons');
             </p>
             <div class="CHATING_SENDER">
                 <div class="SMS_thumb">
-                    <img src="img/staf/1.png" alt="">
+                    <img src="backend/img/staf/1.png" alt="">
                 </div>
                 <div class="SEND_SMS_VIEW">
                     <P>Hi! Welcome .
@@ -314,7 +304,7 @@ adminhead('Coupons');
                     <P>Hello</P>
                 </div>
                 <div class="SMS_thumb">
-                    <img src="img/staf/1.png" alt="">
+                    <img src="backend/img/staf/1.png" alt="">
                 </div>
             </div>
         </div>
@@ -345,35 +335,14 @@ adminhead('Coupons');
     </div>
 
     <div id="back-top" style="display: none;">
-        <a title="Go to Top" href="#">
+        <a title="Go to Top" href="backend/#">
             <i class="ti-angle-up"></i>
         </a>
     </div>
 
 
 
-    <script src="js/jquery1-3.4.1.min.js"></script>
-
-    <script src="js/popper1.min.js"></script>
-
-    <script src="js/bootstrap.min.js.php"></script>
-
-    <script src="js/metisMenu.js"></script>
-
-    <script src="vendors/datatable/js/jquery.dataTables.min.js"></script>
-    <script src="vendors/datatable/js/dataTables.responsive.min.js"></script>
-    <script src="vendors/datatable/js/dataTables.buttons.min.js"></script>
-    <script src="vendors/datatable/js/buttons.flash.min.js"></script>
-    <script src="vendors/datatable/js/jszip.min.js"></script>
-    <script src="vendors/datatable/js/pdfmake.min.js"></script>
-    <script src="vendors/datatable/js/vfs_fonts.js"></script>
-    <script src="vendors/datatable/js/buttons.php5.min.js"></script>
-    <script src="vendors/datatable/js/buttons.print.min.js"></script>
-
-    <script src="vendors/scroll/perfect-scrollbar.min.js"></script>
-    <script src="vendors/scroll/scrollable-custom.js"></script>
-
-    <script src="js/custom.js"></script>
+    <?php adminscript(); ?>
 </body>
 
 </html>
