@@ -370,3 +370,22 @@ function viewallsales()
         </tr>';
     }
 }
+
+function alltransaction()
+{
+    $res = fetchAll('transactions');
+    foreach ($res as $row) {
+        $cos = customfetch('users', [['id', '=', $row['uid']]]);
+        echo '<tr>
+        <th scope="row"> <a href="" class="question_content"> '.$row['transid'].'</a></th>
+        <td>Category name</td>
+        <td>Teacher James</td>
+        <td>Lessons name</td>
+        <!-- <td>16</td>
+        <td>$25.00</td> -->
+        <!-- <td><a href="backend/#" class="status_btn">cover</a></td>
+
+        <td><a href="backend/#" class="status_btn">Active</a></td> -->
+    </tr>';
+    }
+}

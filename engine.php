@@ -211,5 +211,12 @@ $router = new Router([
             return Viewer::view('backend/updatesales.php', $context);
         }
     ),
+
+    new Route(
+        '/viewtransactions',
+        function ($context) {
+            return Viewer::view('backend/viewTransaction.php', $context);
+        }
+    ),
 ]);
 $router->launch();

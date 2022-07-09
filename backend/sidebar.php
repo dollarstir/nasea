@@ -87,7 +87,7 @@
         </a>
         <ul>
             <!-- <li><a class="active" href="index.php">Add Transactions</a></li> -->
-            <li><a href="viewtransaction">view Transactions</a></li>
+            <li><a href="viewtransactions   ">view Transactions</a></li>
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>
