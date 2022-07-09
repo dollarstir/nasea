@@ -436,4 +436,9 @@ function couponlist()
 // delete coupon
 function deletecoupon($id)
 {
+    if ($del = delete('coupon', [['id', '=', $id]]) == 'deleted') {
+        echo 'deleted';
+    } else {
+        echo 'Failed to delete book';
+    }
 }
