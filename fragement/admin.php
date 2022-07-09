@@ -394,11 +394,22 @@ function addcoupon($quantity, $discount)
 {
     $msg = '';
     for ($i = 1; $i <= $quantity; ++$i) {
-        $e = substr(str_shuffle('0123456789abcdefghijklmnopqrstuvwxyz-:,'), 0, 3);
+        $e = substr(str_shuffle('0123456789abcdefghijklmnopqrstuvwxyz'), 0, 3);
 
         $c = rand(000, 999);
         $d = 'NAC';
-        $msg .= $d.''.$c.''.$e.'<br>';
+        $rec = $d.''.$c.''.$e;
+        $record = [
+            'coupname' => $rec,
+            'percentage' => $discount,
+            'status' => 'active',
+            'dateadded' => date('jS F, Y'),
+        ];
+        $msg .= insert('coupon', $record);
     }
-    echo $msg;
+    $msg .= '';
+
+    // echo $msg;
+
+    echo 'couponsuccess';
 }
