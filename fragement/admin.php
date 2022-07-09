@@ -389,12 +389,21 @@ function alltransaction()
         <td><a href="backend/#" class="status_btn">Active</a></td> -->
     </tr>';
     }
-
-    function addcoupon($quantity, $discount)
-    {
-        for ($i = 1; $i <= $quantity; ++$i) {
-            $c = uniqid('NAC');
-            $msg .= $c.'<br>';
+}
+function addcoupon($quantity, $discount)
+{
+    $msg = '';
+    for ($i = 1; $i <= $quantity; ++$i) {
+        $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $randstring = '';
+        for ($j = 0; $j < 10; ++$j) {
+            $randstring = $characters[rand(0, 99)];
         }
+
+        $e = $randstring;
+        $c = rand(000, 999);
+        $d = 'NAC';
+        $msg .= $d.''.$c.''.$e.'<br>';
     }
+    echo $msg;
 }
