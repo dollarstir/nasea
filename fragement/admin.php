@@ -458,7 +458,7 @@ function reviewlist()
         <td>'.$book['title'].'</td>
         <td>'.$row['feedback'].'</td>
         <td>'.$row['dateadded'].'</td>
-        <button id="'.$row['id'].'"  class="btn btn-danger delreview"><i class="fa fa-trash"></i></a></button>
+        <td><button id="'.$row['id'].'"  class="btn btn-danger delreview"><i class="fa fa-trash"></i></a></button></td>
         <!-- <td>16</td>
         <td>$25.00</td> -->
         <!-- <td><a href="backend/#" class="status_btn">cover</a></td>
