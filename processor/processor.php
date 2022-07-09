@@ -179,6 +179,11 @@ require '../fragement/admin.php';
             editsale($id, $totalavl, $amw, $amtw);
             break;
 
+        case 'addcoupon':
+            extract($_POST);
+            addcoupon($quantity, $discount);
+            break;
+
         default:
 
         break;

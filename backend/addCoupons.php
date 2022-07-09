@@ -1,57 +1,20 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<?php involve('admin');
 
-<head>
+adminhead('Add Coupons');
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Sales</title>
-    <link rel="icon" href="img/logo.png" type="image/png">
-
-    <link rel="stylesheet" href="css/bootstrap1.min.css" />
-
-    <link rel="stylesheet" href="vendors/themefy_icon/themify-icons.css" />
-
-    <link rel="stylesheet" href="vendors/niceselect/css/nice-select.css" />
-
-    <link rel="stylesheet" href="vendors/owl_carousel/css/owl.carousel.css" />
-
-    <link rel="stylesheet" href="vendors/gijgo/gijgo.min.css" />
-
-    <link rel="stylesheet" href="vendors/font_awesome/css/all.min.css" />
-    <link rel="stylesheet" href="vendors/tagsinput/tagsinput.css" />
-
-    <link rel="stylesheet" href="vendors/datepicker/date-picker.css" />
-
-    <link rel="stylesheet" href="vendors/scroll/scrollable.css" />
-
-    <link rel="stylesheet" href="vendors/datatable/css/jquery.dataTables.min.css" />
-    <link rel="stylesheet" href="vendors/datatable/css/responsive.dataTables.min.css" />
-    <link rel="stylesheet" href="vendors/datatable/css/buttons.dataTables.min.css" />
-
-    <link rel="stylesheet" href="vendors/text_editor/summernote-bs4.css" />
-
-    <link rel="stylesheet" href="vendors/morris/morris.css">
-
-    <link rel="stylesheet" href="vendors/material_icon/material-icons.css" />
-
-    <link rel="stylesheet" href="css/metisMenu.css">
-
-    <link rel="stylesheet" href="css/style1.css" />
-    <link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS">
-</head>
+?>
 
 <body class="crm_body_bg">
 
 
     <nav class="sidebar vertical-scroll  ps-container ps-theme-default ps-active-y">
         <div class="logo d-flex justify-content-between">
-            <a href="index.php"><img src="img/logo.png" alt=""></a>
+            <a href="backend/index.php"><img src="backend/img/logo.png" alt=""></a>
             <div class="sidebar_close_icon d-lg-none">
                 <i class="ti-close"></i>
             </div>
         </div>
-        <?php include "sidebar.php"; ?>
+        <?php include 'sidebar.php'; ?>
     </nav>
 
     <section class="main_content dashboard_part large_header_bg">
@@ -69,7 +32,7 @@
                                     <div class="search_field">
                                         <input type="text" placeholder="Search here...">
                                     </div>
-                                    <button type="submit"> <img src="img/icon/icon_search.svg" alt=""> </button>
+                                    <button type="submit"> <img src="backend/img/icon/icon_search.svg" alt=""> </button>
                                 </form>
                             </div>
                             <span class="f_s_14 f_w_400 ml_25 white_text text_white">Apps</span>
@@ -77,7 +40,7 @@
                         <div class="header_right d-flex justify-content-between align-items-center">
                             <div class="header_notification_warp d-flex align-items-center">
                                 <li>
-                                    <a class="bell_notification_clicker nav-link-notify" href="#"> <img src="img/icon/bell.svg" alt="">
+                                    <a class="bell_notification_clicker nav-link-notify" href="backend/#"> <img src="backend/img/icon/bell.svg" alt="">
                                     </a>
 
                                     <div class="Menu_NOtification_Wrap">
@@ -88,10 +51,10 @@
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/2.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/2.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Cool Marketing </h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -100,10 +63,10 @@
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/4.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/4.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Awesome packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -112,10 +75,10 @@
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/3.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/3.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>what a packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -124,10 +87,10 @@
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/2.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/2.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Cool Marketing </h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -136,10 +99,10 @@
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/4.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/4.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>Awesome packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -148,10 +111,10 @@
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="img/staf/3.png" alt=""></a>
+                                                    <a href="backend/#"><img src="backend/img/staf/3.png" alt=""></a>
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
+                                                    <a href="backend/#">
                                                         <h5>what a packages</h5>
                                                     </a>
                                                     <p>Lorem ipsum dolor sit amet</p>
@@ -160,27 +123,27 @@
                                         </div>
                                         <div class="nofity_footer">
                                             <div class="submit_button text-center pt_20">
-                                                <a href="#" class="btn_1">See More</a>
+                                                <a href="backend/#" class="btn_1">See More</a>
                                             </div>
                                         </div>
                                     </div>
 
                                 </li>
                                 <li>
-                                    <a class="CHATBOX_open nav-link-notify" href="#"> <img src="img/icon/msg.svg" alt=""> </a>
+                                    <a class="CHATBOX_open nav-link-notify" href="backend/#"> <img src="backend/img/icon/msg.svg" alt=""> </a>
                                 </li>
                             </div>
                             <div class="profile_info">
-                                <img src="img/client_img.png" alt="#">
+                                <img src="backend/img/client_img.png" alt="#">
                                 <div class="profile_info_iner">
                                     <div class="profile_author_name">
                                         <p>Neurologist </p>
                                         <h5>Dr. Robar Smith</h5>
                                     </div>
                                     <div class="profile_info_details">
-                                        <a href="#">My Profile </a>
-                                        <a href="#">Settings</a>
-                                        <a href="#">Log Out </a>
+                                        <a href="backend/#">My Profile </a>
+                                        <a href="backend/#">Settings</a>
+                                        <a href="backend/#">Log Out </a>
                                     </div>
                                 </div>
                             </div>
@@ -198,21 +161,21 @@
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h3 class="m-0">Basic Form</h3>
+                                        <h3 class="m-0">Add Coupon</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="white_card_body">
                                 <!-- <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</h6> -->
-                                <form>
+                                <form class="addcoupon">
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleInputEmail1">Quantity</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Quantity">
+                                        <input type="number" name="quantity" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Quantity">
                                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleInputEmail1">Discount Percentage</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Discount Percentage">
+                                        <input type="number" name="discount" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Discount Percentage">
                                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                     </div>
                                     <!-- <div class="mb-3">
@@ -240,7 +203,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer_iner text-center">
-                            <p>2020 © Influence - Designed by <a href="#"> <i class="ti-heart"></i> </a><a href="#"> Dashboard</a></p>
+                            <p>2020 © Influence - Designed by <a href="backend/#"> <i class="ti-heart"></i> </a><a href="backend/#"> Dashboard</a></p>
                         </div>
                     </div>
                 </div>
@@ -260,42 +223,42 @@
             <div class="Chat_Listed_member">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/1.png" alt="">
+                                <img src="backend/img/staf/1.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/2.png" alt="">
+                                <img src="backend/img/staf/2.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/3.png" alt="">
+                                <img src="backend/img/staf/3.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/4.png" alt="">
+                                <img src="backend/img/staf/4.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
-                                <img src="img/staf/5.png" alt="">
+                                <img src="backend/img/staf/5.png" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="backend/#">
                             <div class="member_thumb">
                                 <div class="more_member_count">
                                     <span>90+</span>
@@ -312,7 +275,7 @@
             </p>
             <div class="CHATING_SENDER">
                 <div class="SMS_thumb">
-                    <img src="img/staf/1.png" alt="">
+                    <img src="backend/img/staf/1.png" alt="">
                 </div>
                 <div class="SEND_SMS_VIEW">
                     <P>Hi! Welcome .
@@ -324,7 +287,7 @@
                     <P>Hello</P>
                 </div>
                 <div class="SMS_thumb">
-                    <img src="img/staf/1.png" alt="">
+                    <img src="backend/img/staf/1.png" alt="">
                 </div>
             </div>
         </div>
@@ -354,56 +317,12 @@
         </div>
     </div>
     <div id="back-top" style="display: none;">
-        <a title="Go to Top" href="#">
+        <a title="Go to Top" href="backend/#">
             <i class="ti-angle-up"></i>
         </a>
     </div>
 
-    <script src="js/jquery1-3.4.1.min.js"></script>
-
-    <script src="js/popper1.min.js"></script>
-
-    <script src="js/bootstrap.min.js.php"></script>
-
-    <script src="js/metisMenu.js"></script>
-
-    <script src="vendors/count_up/jquery.waypoints.min.js"></script>
-
-    <script src="vendors/chartlist/Chart.min.js"></script>
-
-    <script src="vendors/count_up/jquery.counterup.min.js"></script>
-
-    <script src="vendors/niceselect/js/jquery.nice-select.min.js"></script>
-
-    <script src="vendors/owl_carousel/js/owl.carousel.min.js"></script>
-
-    <script src="vendors/datatable/js/jquery.dataTables.min.js"></script>
-    <script src="vendors/datatable/js/dataTables.responsive.min.js"></script>
-    <script src="vendors/datatable/js/dataTables.buttons.min.js"></script>
-    <script src="vendors/datatable/js/buttons.flash.min.js"></script>
-    <script src="vendors/datatable/js/jszip.min.js"></script>
-    <script src="vendors/datatable/js/pdfmake.min.js"></script>
-    <script src="vendors/datatable/js/vfs_fonts.js"></script>
-    <script src="vendors/datatable/js/buttons.php5.min.js"></script>
-    <script src="vendors/datatable/js/buttons.print.min.js"></script>
-    <script src="js/chart.min.js"></script>
-
-    <script src="vendors/progressbar/jquery.barfiller.js"></script>
-
-    <script src="vendors/tagsinput/tagsinput.js"></script>
-
-    <script src="vendors/text_editor/summernote-bs4.js"></script>
-    <script src="vendors/am_chart/amcharts.js"></script>
-
-    <script src="vendors/scroll/perfect-scrollbar.min.js"></script>
-    <script src="vendors/scroll/scrollable-custom.js"></script>
-    <script src="vendors/chart_am/core.js"></script>
-    <script src="vendors/chart_am/charts.js"></script>
-    <script src="vendors/chart_am/animated.js"></script>
-    <script src="vendors/chart_am/kelly.js"></script>
-    <script src="vendors/chart_am/chart-custom.js"></script>
-
-    <script src="js/custom.js"></script>
+    <?php adminscript(); ?>
 </body>
 
 </html>
