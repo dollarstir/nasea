@@ -193,6 +193,7 @@ adminhead('Reviews');
                                                     <th scope="col">Product Name</th>
                                                     <th scope="col">comment</th>
                                                     <th scope="col"> Posted on </th>
+                                                    <th scope="col"> Action </th>
                                                     <!-- <th scope="col">Discount</th>
                                                     <th scope="col">Date Added</th> -->
                                                     <!-- <th scope="col">Back Cover</th>

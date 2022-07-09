@@ -458,11 +458,22 @@ function reviewlist()
         <td>'.$book['title'].'</td>
         <td>'.$row['feedback'].'</td>
         <td>'.$row['dateadded'].'</td>
+        <button id="'.$row['id'].'"  class="btn btn-danger delreview"><i class="fa fa-trash"></i></a></button>
         <!-- <td>16</td>
         <td>$25.00</td> -->
         <!-- <td><a href="backend/#" class="status_btn">cover</a></td>
 
         <td><a href="backend/#" class="status_btn">Active</a></td> -->
     </tr>';
+    }
+}
+
+// deletereview
+function deletereview($id)
+{
+    if ($del = delete('reviews', [['id', '=', $id]]) == 'deleted') {
+        echo 'deleted';
+    } else {
+        echo 'Failed to delete book';
     }
 }
