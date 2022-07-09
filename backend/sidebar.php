@@ -99,8 +99,8 @@
             <span>Reviews</span>
         </a>
         <ul>
-            <li><a class="active" href="index.php">Add Reviews</a></li>
-            <li><a href="viewReview.php">view Reviews</a></li>
+            <!-- <li><a class="active" href="index.php">Add Reviews</a></li> -->
+            <li><a href="viewreviews">view Reviews</a></li>
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>

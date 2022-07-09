@@ -232,5 +232,12 @@ $router = new Router([
             return Viewer::view('backend/viewCoupons.php', $context);
         }
     ),
+
+    new Route(
+        '/viewreviews',
+        function ($context) {
+            return Viewer::view('backend/viewReview.php', $context);
+        }
+    ),
 ]);
 $router->launch();
