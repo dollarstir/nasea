@@ -218,5 +218,19 @@ $router = new Router([
             return Viewer::view('backend/viewTransaction.php', $context);
         }
     ),
+
+    new Route(
+        '/newcoupon',
+        function ($context) {
+            return Viewer::view('backend/addCoupons.php', $context);
+        }
+    ),
+
+    new Route(
+        '/viewcoupons',
+        function ($context) {
+            return Viewer::view('backend/viewCoupons.php', $context);
+        }
+    ),
 ]);
 $router->launch();
