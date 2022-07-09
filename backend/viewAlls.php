@@ -159,14 +159,14 @@ adminhead(' View All  Sales');
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h3 class="m-0">Data table</h3>
+                                        <!-- <h3 class="m-0">Data table</h3>/ -->
                                     </div>
                                 </div>
                             </div>
                             <div class="white_card_body">
                                 <div class="QA_section">
                                     <div class="white_box_tittle list_header">
-                                        <h4>Table</h4>
+                                        <h4>All Sales</h4>
                                         <div class="box_right d-flex lms_block">
                                             <div class="serach_field_2">
                                                 <div class="search_inner">
@@ -200,17 +200,7 @@ adminhead(' View All  Sales');
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <th scope="row"> <a href="backend/#" class="question_content"> title here 1</a></th>
-                                                    <td>Category name</td>
-                                                    <td>Teacher James</td>
-                                                    <td>Lessons name</td>
-                                                    <td>16</td>
-                                                    <td>$25.00</td>
-                                                    <!-- <td><a href="backend/#" class="status_btn">cover</a></td>
-
-                                                    <td><a href="backend/#" class="status_btn">Active</a></td> -->
-                                                </tr>
+                                               <?php viewallsales(); ?>
                                                 
                                             </tbody>
                                         </table>

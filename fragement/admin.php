@@ -350,3 +350,23 @@ function editsale($id, $totalavl, $amw, $amtw)
         }
     }
 }
+
+function viewallsales()
+{
+    $res = fetchAll('orders');
+    foreach ($res as $row) {
+        $sc = customfetch('authors', [['id', '=', $row['authorid']]]);
+        $scc = $sc[0];
+        echo ' <tr>
+            <th scope="row"> <a href="backend/#" class="question_content"> '.$scc['authname'].'</a></th>
+            <td>'.$row['bookname'].'</td>
+            <td>'.$row['discountprice'].'</td>
+            <td>'.$row['price'].'</td>
+            <td>'.$row['discount'].'</td>
+            <td>'.$row['dateadded'].'</td>
+            <!-- <td><a href="backend/#" class="status_btn">cover</a></td>
+
+            <td><a href="backend/#" class="status_btn">Active</a></td> -->
+        </tr>';
+    }
+}
