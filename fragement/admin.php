@@ -394,13 +394,8 @@ function addcoupon($quantity, $discount)
 {
     $msg = '';
     for ($i = 1; $i <= $quantity; ++$i) {
-        $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        $randstring = '';
-        for ($j = 0; $j < 10; ++$j) {
-            $randstring = $characters[rand(0, 99)];
-        }
+        $e = substr(str_shuffle('0123456789abcdefghijklmnopqrstuvwxyz-:,'), 0, 3);
 
-        $e = $randstring;
         $c = rand(000, 999);
         $d = 'NAC';
         $msg .= $d.''.$c.''.$e.'<br>';
