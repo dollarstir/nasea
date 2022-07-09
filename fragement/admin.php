@@ -442,3 +442,27 @@ function deletecoupon($id)
         echo 'Failed to delete book';
     }
 }
+
+function reviewlist()
+{
+    $res = fetchAll('reviews');
+    foreach ($res as $row) {
+        $b = customfetch('books', [['id', '=', $row['bid']]]);
+        $book = $b[0];
+        $u = customfetch('users', [['id', '=', $row['uid']]]);
+        $user = $u[0];
+
+        echo ' <tr>
+        <!-- <th scope="row"> <a href="backend/#" class="question_content"> title here 1</a></th> -->
+        <td>'.$user['name'].'</td>
+        <td>'.$book['title'].'</td>
+        <td>'.$row['feedback'].'</td>
+        <td>'.$row['dateadded'].'</td>
+        <!-- <td>16</td>
+        <td>$25.00</td> -->
+        <!-- <td><a href="backend/#" class="status_btn">cover</a></td>
+
+        <td><a href="backend/#" class="status_btn">Active</a></td> -->
+    </tr>';
+    }
+}
