@@ -184,6 +184,10 @@ require '../fragement/admin.php';
             addcoupon($quantity, $discount);
             break;
 
+        case 'deletecoupon':
+            extract($_POST);
+            deletecoupon($id);
+            break;
         default:
 
         break;

@@ -413,3 +413,22 @@ function addcoupon($quantity, $discount)
 
     echo 'couponsuccess';
 }
+
+function couponlist()
+{
+    $res = fetchAll('coupon');
+    foreach ($res as $row) {
+        echo ' <tr>
+        <!-- <th scope="row"> <a href="backend/#" class="question_content"> title here 1</a></th> -->
+        <td>'.$row['coupname'].'</td>
+        <td>'.$row['percentage'].'</td>
+        <td>'.$row['status'].'</td>
+        <td><button id="'.$row['id'].'"  class="btn btn-danger delcoupon"><i class="fa fa-trash"></i></a></button></td>
+        <!-- <td>16</td>
+        <td>$25.00</td> -->
+        <!-- <td><a href="backend/#" class="status_btn">cover</a></td>
+
+        <td><a href="backend/#" class="status_btn">Active</a></td> -->
+    </tr>';
+    }
+}

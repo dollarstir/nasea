@@ -196,6 +196,8 @@ adminhead('Coupons');
                                                     <th scope="col">Date Added</th> -->
                                                     <!-- <th scope="col">Back Cover</th>-->
                                                     <th scope="col">Status</th> 
+                                                    <th scope="col">Action</th> 
+
 
                                                 </tr>
                                             </thead>

@@ -802,5 +802,26 @@ $('.addcoupon').submit(function(e){
 
 
 
+// deletecoupon 
+$(document).on('click','.delcoupon',function(e){
+
+  e.preventDefault();
+  // before();
+  var id = $(this).attr('id');
+  var staff = {
+      url: 'processor/processor.php?action=deletecoupon',
+      type: 'post',
+      data: {"id": id},
+      // cache: false,
+      // contentType: false,
+      // processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
     
 })
