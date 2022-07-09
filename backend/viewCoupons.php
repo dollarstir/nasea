@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<?php involve('admin');
 
-<head>
+adminhead('Coupons');
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Sales</title>
-
-
-    <link rel="stylesheet" href="css/bootstrap1.min.css" />
-
-    <link rel="stylesheet" href="vendors/themefy_icon/themify-icons.css" />
-
-    <link rel="stylesheet" href="vendors/scroll/scrollable.css" />
-
-    <link rel="stylesheet" href="vendors/font_awesome/css/all.min.css" />
-
-    <link rel="stylesheet" href="vendors/datatable/css/jquery.dataTables.min.css" />
-    <link rel="stylesheet" href="vendors/datatable/css/responsive.dataTables.min.css" />
-    <link rel="stylesheet" href="vendors/datatable/css/buttons.dataTables.min.css" />
-
-
-    <link rel="stylesheet" href="css/metisMenu.css">
-
-    <link rel="stylesheet" href="css/style1.css" />
-</head>
+?>
 
 <body class="crm_body_bg">
 <nav class="sidebar vertical-scroll  ps-container ps-theme-default ps-active-y">
@@ -34,7 +12,7 @@
                 <i class="ti-close"></i>
             </div>
         </div>
-        <?php include "sidebar.php"; ?>
+        <?php include 'sidebar.php'; ?>
     </nav>
 
     <section class="main_content dashboard_part large_header_bg">

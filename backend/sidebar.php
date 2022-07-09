@@ -113,7 +113,7 @@
         </a>
         <ul>
             <li><a class="active" href="newcoupon">Add Coupons</a></li>
-            <li><a href="viewCoupons.php">view Coupons</a></li>
+            <li><a href="viewcoupons">view Coupons</a></li>
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>
