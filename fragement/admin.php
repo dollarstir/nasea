@@ -389,4 +389,12 @@ function alltransaction()
         <td><a href="backend/#" class="status_btn">Active</a></td> -->
     </tr>';
     }
+
+    function addcoupon($quantity, $discount)
+    {
+        for ($i = 1; $i <= $quantity; ++$i) {
+            $c = uniqid('NAC');
+            $msg .= $c.'<br>';
+        }
+    }
 }

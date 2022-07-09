@@ -236,6 +236,23 @@ $(function(){
 
         }
 
+        else if(response == 'couponsuccess'){
+
+          swal({
+              title: "Success",
+              text: "Coupon generated Successfuly",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location.reload();
+            });
+
+      }
+
         else if(response == 'newslettersuccess'){
 
           swal({
