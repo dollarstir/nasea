@@ -478,6 +478,19 @@ function deletereview($id)
     }
 }
 
-function addads()
+function addads($type, $link)
 {
+    if (empty($type) || empty(empty(trim($link)))) {
+        echo 'All fields are required';
+    } else {
+        if (empty($_FILES['adimage']['name'])) {
+            echo 'Upload Ads Banner ';
+        } else {
+            if (insert('ads', ['type' => $type, 'link' => $link, 'status' => 'active', 'dateadded' => date('jS F, Y')], $_FILES, '../yolkassets/upload') == 'success') {
+                echo 'success';
+            } else {
+                echo 'Failed to add Ads';
+            }
+        }
+    }
 }
