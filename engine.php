@@ -292,14 +292,14 @@ $router = new Router([
     new Route(
         '/app',
         function ($context) {
-            return Viewer::view('backend/appSetings.php', $context);
+            return Viewer::view('backend/appSettings.php', $context);
         }
     ),
 
     new Route(
         '/social',
         function ($context) {
-            return Viewer::view('backend/socialSetiings.php', $context);
+            return Viewer::view('backend/socialSettings.php', $context);
         }
     ),
 

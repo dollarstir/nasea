@@ -218,7 +218,7 @@
             <li><a href="datepicker.php">Date Picker</a></li>
         </ul>
     </li> -->
-    <li class="">
+    <!-- <li class="">
         <a class="has-arrow" href="#" aria-expanded="false">
             <div class="icon_menu">
                 <img src="img/menu-icon/4.svg" alt="">
@@ -231,7 +231,7 @@
             <li><a href="Max_Length.php">Max Length</a></li>
             <li><a href="Layouts.php">Layouts</a></li>
         </ul>
-    </li> 
+    </li>  -->
     <!--
     <li class="">
         <a href="Board.php" aria-expanded="false">
@@ -311,7 +311,7 @@
             <li><a href="Pagination.php">Pagination</a></li>
         </ul>
     </li> -->
-    <li class="">
+    <!-- <li class="">
         <a class="has-arrow" href="#" aria-expanded="false">
             <div class="icon_menu">
                 <img src="img/menu-icon/11.svg" alt="">
@@ -322,7 +322,7 @@
             <li><a href="data_table.php">Data Tables</a></li>
             <li><a href="bootstrap_table.php">Bootstrap</a></li>
         </ul>
-    </li>
+    </li> -->
     <!-- <li class="">
         <a class="has-arrow" href="#" aria-expanded="false">
             <div class="icon_menu">

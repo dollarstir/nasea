@@ -1,6 +1,6 @@
 <?php involve('admin');
 
-adminhead(' Contact Page');
+adminhead(' App Settings');
 
 ?>
 
@@ -161,13 +161,13 @@ adminhead(' Contact Page');
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h3 class="m-0">Edit Contact Page</h3>
+                                        <h3 class="m-0">Edit App Settigs</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="white_card_body">
                                 <!-- <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</h6> -->
-                                <form class="editcontact">
+                                <form class="editapp">
                                     
                                     <div class="white_card_body">
                                         <!-- <h6 class="card-subtitle mb-2">Select  Ads Type</h6>
@@ -182,24 +182,18 @@ adminhead(' Contact Page');
                                             </select>
                                         </div> -->
                                         <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Company Email Address</label>
-                                            <input type="email" name="appemail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" value="<?php viewcontinfo('appemail'); ?>">
+                                            <label class="form-label" for="exampleInputEmail1">Company Name</label>
+                                            <input type="text" name="appname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" value="<?php viewcontinfo('appname'); ?>">
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
-                                        <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Company Phone Number</label>
-                                            <input type="number" name="appcontact" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="phone" value="<?php viewcontinfo('appcontact'); ?>">
-                                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Comapny Address</label>
-                                            <textarea  name="appaddress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address"><?php viewcontinfo('appaddress'); ?></textarea>
-                                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                                        </div>
+                                       
                                         <div class="white_card_body">
                                             
-                                            
+                                            <h6 class="card-subtitle mb-2">App Logo</h6>
+                                            <div class="input-group mb-3">
+                                                <input type="file" name="applogo" class="form-control" id="inputGroupFile03">
+                                                <label class="input-group-text" for="inputGroupFile03">Upload</label>
+                                            </div>
                                             
                                             <!-- <div class="mb-3">
                                         <label class="form-label" for="exampleInputPassword1">Password</label>

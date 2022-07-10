@@ -225,6 +225,10 @@ require '../fragement/admin.php';
             extract($_POST);
             editcontact($appemail, $appcontact, $appaddress);
             break;
+        case 'editapp':
+            extract($_POST);
+            editapp($appname);
+            break;
         default:
 
         break;
