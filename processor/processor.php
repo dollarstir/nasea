@@ -218,7 +218,12 @@ require '../fragement/admin.php';
             break;
         case 'editabout':
             extract($_POST);
-            editabout($who, $mission, $vision);
+            edibit($who, $mission, $vision);
+            break;
+
+        case 'editcontact':
+            extract($_POST);
+            editcontact($appemail, $appcontact, $appaddress);
             break;
         default:
 

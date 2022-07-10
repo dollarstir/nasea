@@ -167,7 +167,7 @@ adminhead(' Contact Page');
                             </div>
                             <div class="white_card_body">
                                 <!-- <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</h6> -->
-                                <form class="addpoem">
+                                <form class="editcontact">
                                     
                                     <div class="white_card_body">
                                         <!-- <h6 class="card-subtitle mb-2">Select  Ads Type</h6>
@@ -182,23 +182,23 @@ adminhead(' Contact Page');
                                             </select>
                                         </div> -->
                                         <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Title</label>
-                                            <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="title">
+                                            <label class="form-label" for="exampleInputEmail1">Company Email Address</label>
+                                            <input type="email" name="appemail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" value="<?php viewcontinfo('appemail'); ?>">
+                                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="exampleInputEmail1">Company Phone Number</label>
+                                            <input type="number" name="appcontact" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="phone" value="<?php viewcontinfo('appcontact'); ?>">
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
 
                                         <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Description</label>
-                                            <textarea  name="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="desccription"></textarea>
+                                            <label class="form-label" for="exampleInputEmail1">Comapny Address</label>
+                                            <textarea  name="appaddress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address"><?php viewcontinfo('appaddress'); ?></textarea>
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
                                         <div class="white_card_body">
                                             
-                                            <h6 class="card-subtitle mb-2">Poem Cover Image</h6>
-                                            <div class="input-group mb-3">
-                                                <input type="file" name="image" class="form-control" id="inputGroupFile03">
-                                                <label class="input-group-text" for="inputGroupFile03">Upload</label>
-                                            </div>
                                             
                                             
                                             <!-- <div class="mb-3">

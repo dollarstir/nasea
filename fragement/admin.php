@@ -610,16 +610,34 @@ function viewabout($data)
     echo $res[0][$data];
 }
 
-function editabout($who, $mission, $vision)
+function edibit($who, $mission, $vision)
 {
     if (empty(trim($who)) || empty(trim($mission)) || empty(trim($vision))) {
         echo 'all filed are required';
     } else {
-        if (update() == 'success') {
-            echo '';
-        }
-        else{
-            echo '';
+        if (update('aboutpage', ['who' => $who, 'mission' => $mission, 'vision' => $vision]) == 'success') {
+            echo 'Updated Successfully';
+        } else {
+            echo 'Failed to Update';
         }
     }
+}
+
+function editcontact($appemail, $appcontact, $appaddress)
+{
+    if (empty(trim($appemail)) || empty(trim($appcontact)) || empty(trim($appaddress))) {
+        echo 'all filed are required';
+    } else {
+        if (update('settings', ['appemail' => $appemail, 'appcontact' => $appcontact, 'appaddress' => $appaddress]) == 'success') {
+            echo 'Updated Successfully';
+        } else {
+            echo 'Failed to Update';
+        }
+    }
+}
+
+function viewcontinfo($data)
+{
+    $res = fetchAll('settings');
+    echo $res[0][$data];
 }
