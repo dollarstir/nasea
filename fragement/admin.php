@@ -480,7 +480,7 @@ function deletereview($id)
 
 function addads($type, $link)
 {
-    if (empty($type) || empty(empty(trim($link)))) {
+    if (empty($type) || empty(trim($link))) {
         echo 'All fields are required';
     } else {
         if (empty($_FILES['adimage']['name'])) {
