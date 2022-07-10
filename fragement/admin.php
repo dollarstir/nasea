@@ -609,3 +609,17 @@ function viewabout($data)
     $res = fetchAll('aboutpage');
     echo $res[0][$data];
 }
+
+function editabout($who, $mission, $vision)
+{
+    if (empty(trim($who)) || empty(trim($mission)) || empty(trim($vision))) {
+        echo 'all filed are required';
+    } else {
+        if (update() == 'success') {
+            echo '';
+        }
+        else{
+            echo '';
+        }
+    }
+}

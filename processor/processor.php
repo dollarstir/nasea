@@ -216,6 +216,10 @@ require '../fragement/admin.php';
             extract($_POST);
             deletemessage($id);
             break;
+        case 'editabout':
+            extract($_POST);
+            editabout($who, $mission, $vision);
+            break;
         default:
 
         break;
