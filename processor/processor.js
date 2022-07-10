@@ -901,5 +901,49 @@ $('.addpoem').submit(function(e){
 });
 
 
+// delete poem
+
+$(document).on('click','.delpoem',function(e){
+
+  e.preventDefault();
+  // before();
+  var id = $(this).attr('id');
+  var staff = {
+      url: 'processor/processor.php?action=deletepoem',
+      type: 'post',
+      data: {"id": id},
+      // cache: false,
+      // contentType: false,
+      // processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
+// delete message
+
+$(document).on('click','.delmessage',function(e){
+
+  e.preventDefault();
+  // before();
+  var id = $(this).attr('id');
+  var staff = {
+      url: 'processor/processor.php?action=deletemessage',
+      type: 'post',
+      data: {"id": id},
+      // cache: false,
+      // contentType: false,
+      // processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
     
 })

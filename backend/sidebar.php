@@ -151,8 +151,8 @@
             <span>Messages</span>
         </a>
         <ul>
-            <li><a class="active" href="index.php">Add Messages</a></li>
-            <li><a href="index_2.php">view Messages</a></li>
+            <!-- <li><a class="active" href="index.php">Add Messages</a></li> -->
+            <li><a href="viewmessages">view Messages</a></li>
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>
@@ -164,8 +164,8 @@
             <span>Pages</span>
         </a>
         <ul>
-            <li><a class="active" href="index.php">Add Pages</a></li>
-            <li><a href="index_2.php">view Pages</a></li>
+            <li><a class="active" href="editabout">About Page</a></li>
+            <li><a href="editcontact">Contact Page</a></li>
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>

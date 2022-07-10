@@ -207,6 +207,15 @@ require '../fragement/admin.php';
             extract($_POST);
             addpoem($title, $description);
             break;
+        case 'deletepoem':
+            extract($_POST);
+            deletepoem($id);
+            break;
+
+        case 'deletemessage':
+            extract($_POST);
+            deletemessage($id);
+            break;
         default:
 
         break;

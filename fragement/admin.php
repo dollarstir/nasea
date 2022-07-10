@@ -571,3 +571,41 @@ function deletepoem($id)
         echo 'Failed to delete poem';
     }
 }
+
+function messagelist()
+{
+    $res = fetchAll('messages');
+    foreach ($res as $row) {
+        echo ' <tr>
+        <!-- <th scope="row"> <a href="backend/#" class="question_content"> title here 1</a></th> -->
+        <td>'.$row['name'].'</td>
+        <td>'.$row['email'].'</td>
+        <td>'.$row['subject'].'</td>
+        <td>'.$row['message'].'</td>
+       
+        <td><button id="'.$row['id'].'"  class="btn btn-danger delmessage"><i class="fa fa-trash"></i></a></button></td>
+        <!-- <td>16</td>
+        <td>$25.00</td> -->
+        <!-- <td><a href="backend/#" class="status_btn">cover</a></td>
+
+        <td><a href="backend/#" class="status_btn">Active</a></td> -->
+    </tr>';
+    }
+}
+
+// delete message
+
+function deletemessage($id)
+{
+    if ($del = delete('messages', [['id', '=', $id]]) == 'deleted') {
+        echo 'deleted';
+    } else {
+        echo 'Failed to delete poem';
+    }
+}
+
+function viewabout($data)
+{
+    $res = fetchAll('aboutpage');
+    echo $res[0][$data];
+}

@@ -267,5 +267,26 @@ $router = new Router([
             return Viewer::view('backend/viewPoems.php', $context);
         }
     ),
+
+    new Route(
+        '/viewmessages',
+        function ($context) {
+            return Viewer::view('backend/viewMessages.php', $context);
+        }
+    ),
+
+    new Route(
+        '/editabout',
+        function ($context) {
+            return Viewer::view('backend/editabout.php', $context);
+        }
+    ),
+
+    new Route(
+        '/editcontact',
+        function ($context) {
+            return Viewer::view('backend/editContact.php', $context);
+        }
+    ),
 ]);
 $router->launch();
