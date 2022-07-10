@@ -196,7 +196,7 @@ adminhead(' Add Poem');
                                             
                                             <h6 class="card-subtitle mb-2">Poem Cover Image</h6>
                                             <div class="input-group mb-3">
-                                                <input type="file" name="adimage" class="form-control" id="inputGroupFile03">
+                                                <input type="file" name="image" class="form-control" id="inputGroupFile03">
                                                 <label class="input-group-text" for="inputGroupFile03">Upload</label>
                                             </div>
                                             

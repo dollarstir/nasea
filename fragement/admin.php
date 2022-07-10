@@ -439,7 +439,7 @@ function deletecoupon($id)
     if ($del = delete('coupon', [['id', '=', $id]]) == 'deleted') {
         echo 'deleted';
     } else {
-        echo 'Failed to delete book';
+        echo 'Failed to delete coupon';
     }
 }
 
@@ -474,7 +474,7 @@ function deletereview($id)
     if ($del = delete('reviews', [['id', '=', $id]]) == 'deleted') {
         echo 'deleted';
     } else {
-        echo 'Failed to delete book';
+        echo 'Failed to delete review';
     }
 }
 
@@ -521,6 +521,23 @@ function deleteads($id)
     if ($del = delete('ads', [['id', '=', $id]]) == 'deleted') {
         echo 'deleted';
     } else {
-        echo 'Failed to delete book';
+        echo 'Failed to delete ads';
+    }
+}
+
+function addpoem($title, $description)
+{
+    if (empty(trim($title)) || empty(trim($description))) {
+        echo 'All fields are required';
+    } else {
+        if (empty($_FILES['image']['name'])) {
+            echo 'Upload Cover Image';
+        } else {
+            if (insert('blog', ['title' => $title, 'description' => $description, 'dateadded' => date('jS F, Y')], $_FILES, '../yolkassets/upload') == 'success') {
+                echo 'success';
+            } else {
+                echo 'failed to add poem';
+            }
+        }
     }
 }
