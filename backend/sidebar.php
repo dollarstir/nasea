@@ -125,8 +125,8 @@
             <span>Ads</span>
         </a>
         <ul>
-            <li><a class="active" href="index.php">Add Ads</a></li>
-            <li><a href="index_2.php">view Ads</a></li>
+            <li><a  href="newads">Add Ads</a></li>
+            <li><a href="viewads">View Ads</a></li>
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>

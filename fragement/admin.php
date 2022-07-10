@@ -477,3 +477,7 @@ function deletereview($id)
         echo 'Failed to delete book';
     }
 }
+
+function addads()
+{
+}

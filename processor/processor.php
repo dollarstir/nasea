@@ -192,6 +192,11 @@ require '../fragement/admin.php';
             extract($_POST);
             deletereview($id);
             break;
+
+        case 'addads':
+            extract($_POST);
+            addads($type, $link);
+            break;
         default:
 
         break;
