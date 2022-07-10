@@ -166,7 +166,7 @@ adminhead('Poems');
                             <div class="white_card_body">
                                 <div class="QA_section">
                                     <div class="white_box_tittle list_header">
-                                        <h4>Reviews</h4>
+                                        <h4>Poems</h4>
                                         <div class="box_right d-flex lms_block">
                                             <div class="serach_field_2">
                                                 <div class="search_inner">
@@ -189,10 +189,10 @@ adminhead('Poems');
                                             <thead>
                                                 <tr>
                                                     <!-- <th scope="col">Transaction ID</th> -->
-                                                    <th scope="col">Customer Name</th>
-                                                    <th scope="col">Product Name</th>
-                                                    <th scope="col">comment</th>
-                                                    <th scope="col"> Posted on </th>
+                                                    <th scope="col">Title</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">Banner</th>
+                                                    
                                                     <th scope="col"> Action </th>
                                                     <!-- <th scope="col">Discount</th>
                                                     <th scope="col">Date Added</th> -->
@@ -202,7 +202,7 @@ adminhead('Poems');
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                               <?php reviewlist(); ?>
+                                               <?php poemlist(); ?>
                                                 
                                             </tbody>
                                         </table>

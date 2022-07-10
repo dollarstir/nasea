@@ -541,3 +541,33 @@ function addpoem($title, $description)
         }
     }
 }
+
+function poemlist()
+{
+    $res = fetchAll('blog');
+    foreach ($res as $row) {
+        echo ' <tr>
+        <!-- <th scope="row"> <a href="backend/#" class="question_content"> title here 1</a></th> -->
+        <td>'.$row['title'].'</td>
+        <td>'.$row['description'].'</td>
+        <td><img src="yolkassets/upload/'.$row['image'].'" style="width:100px;height:150px;"/></td>
+       
+        <td><button id="'.$row['id'].'"  class="btn btn-danger delpoem"><i class="fa fa-trash"></i></a></button></td>
+        <!-- <td>16</td>
+        <td>$25.00</td> -->
+        <!-- <td><a href="backend/#" class="status_btn">cover</a></td>
+
+        <td><a href="backend/#" class="status_btn">Active</a></td> -->
+    </tr>';
+    }
+}
+
+// delete poem
+function deletepoem($id)
+{
+    if ($del = delete('blog', [['id', '=', $id]]) == 'deleted') {
+        echo 'deleted';
+    } else {
+        echo 'Failed to delete poem';
+    }
+}
