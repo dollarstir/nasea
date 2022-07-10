@@ -229,6 +229,11 @@ require '../fragement/admin.php';
             extract($_POST);
             editapp($appname);
             break;
+
+        case 'editsocial':
+            extract($_POST);
+            editsocial($facebook, $twitter, $instagram, $linkedin);
+            break;
         default:
 
         break;

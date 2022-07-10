@@ -1,6 +1,6 @@
 <?php involve('admin');
 
-adminhead(' App Settings');
+adminhead(' Social Settings');
 
 ?>
 
@@ -161,13 +161,13 @@ adminhead(' App Settings');
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h3 class="m-0">Edit App Settigs</h3>
+                                        <h3 class="m-0">Edit Social Settigs</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="white_card_body">
                                 <!-- <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</h6> -->
-                                <form class="editapp">
+                                <form class="editsocial">
                                     
                                     <div class="white_card_body">
                                         <!-- <h6 class="card-subtitle mb-2">Select  Ads Type</h6>
@@ -182,19 +182,33 @@ adminhead(' App Settings');
                                             </select>
                                         </div> -->
                                         <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Company Name</label>
-                                            <input type="text" name="appname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" value="<?php viewcontinfo('appname'); ?>">
+                                            <label class="form-label" for="exampleInputEmail1">Facebook</label>
+                                            <input type="text" name="facebook" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" value="<?php viewcontinfo('facebook'); ?>">
+                                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label" for="exampleInputEmail1">Twitter</label>
+                                            <input type="text" name="twitter" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" value="<?php viewcontinfo('twitter'); ?>">
+                                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label" for="exampleInputEmail1">Instagram </label>
+                                            <input type="text" name="instagram" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewcontinfo('instagram'); ?>">
+                                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label" for="exampleInputEmail1">Linkedin</label>
+                                            <input type="text" name="linkedin" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewcontinfo('linkedin'); ?>">
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
                                        
                                         <div class="white_card_body">
-                                            <img src="yolkassets/upload/<?php viewcontinfo('applogo'); ?>" style="width:150px;height:150px;" />
                                             
-                                            <h6 class="card-subtitle mb-2">App Logo</h6>
-                                            <div class="input-group mb-3">
-                                                <input type="file" name="applogo" class="form-control" id="inputGroupFile03" value="<?php viewcontinfo('applogo'); ?>">
-                                                <label class="input-group-text" for="inputGroupFile03">Upload</label>
-                                            </div>
+                                            
+                                            
                                             
                                             <!-- <div class="mb-3">
                                         <label class="form-label" for="exampleInputPassword1">Password</label>

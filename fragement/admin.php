@@ -641,3 +641,28 @@ function viewcontinfo($data)
     $res = fetchAll('settings');
     echo $res[0][$data];
 }
+
+function editapp($appname)
+{
+    if (empty(trim($appname))) {
+        echo 'App name cannot be empty';
+    } else {
+        if (!isset($_FILES['applogo'])) {
+            echo 'Upload app logo';
+        } else {
+            if (update('settings', ['appname' => $appname], [], $_FILES, '../yolkassets/upload') == 'success') {
+                echo 'Updated Successfully';
+            } else {
+                echo 'Failed to update';
+            }
+        }
+    }
+}
+function editsocial($facebook, $twitter, $instagram, $linkedin)
+{
+    if (update('settings', ['facebook' => $facebook, 'twitter' => $twitter, 'instagram' => $instagram, 'linkedin' => $linkedin]) == 'success') {
+        echo 'Updated Successfully';
+    } else {
+        echo 'Failed to update';
+    }
+}
