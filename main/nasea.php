@@ -100,12 +100,11 @@ begin('Welcome');
                 <div class="col-lg-12">
                     <div class="banner-img-2">
                         <a href="main/#"><img src="main/img/banner/5.jpg" alt="banner" /></a>
-                        <div class="banner-text">
-                            <h3>G. Meyer Books & Spiritual Traveler Press</h3>
-                            <h2>Sale up to 30% off</h2>
-                        </div>
+                        
                     </div>
                 </div>
+
+                
             </div>
         </div>
     </div>

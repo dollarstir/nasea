@@ -176,8 +176,8 @@ adminhead(' Add Ads');
                                             <select class="form-select" name="type" id="inputGroupSelect01">
                                                 <option value="">Choose type</option>
                                                 <option value="double">Two at page</option>
-                                                <option value="sidebar">Siderbar Ad</option>
-                                                <option value="singlelong">Single Long Add</option>
+                                                <option value="side">Siderbar Ad</option>
+                                                <option value="single">Single Long Add</option>
                                                 
                                             </select>
                                         </div>
