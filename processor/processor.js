@@ -861,6 +861,27 @@ $('.addads').submit(function(e){
   $.ajax(staff);
 });
 
+// delete ads
+
+$(document).on('click','.delads',function(e){
+
+  e.preventDefault();
+  // before();
+  var id = $(this).attr('id');
+  var staff = {
+      url: 'processor/processor.php?action=deleteads',
+      type: 'post',
+      data: {"id": id},
+      // cache: false,
+      // contentType: false,
+      // processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
 
     
 })

@@ -1,13 +1,12 @@
 <?php involve('admin');
 
-adminhead(' Add Ads');
+adminhead('Ads');
 
 ?>
 
 <body class="crm_body_bg">
 
-
-    <nav class="sidebar vertical-scroll  ps-container ps-theme-default ps-active-y">
+<nav class="sidebar vertical-scroll  ps-container ps-theme-default ps-active-y">
         <div class="logo d-flex justify-content-between">
             <a href="backend/index.php"><img src="backend/img/logo.png" alt=""></a>
             <div class="sidebar_close_icon d-lg-none">
@@ -16,7 +15,6 @@ adminhead(' Add Ads');
         </div>
         <?php include 'sidebar.php'; ?>
     </nav>
-
     <section class="main_content dashboard_part large_header_bg">
 
         <div class="container-fluid g-0">
@@ -154,69 +152,73 @@ adminhead(' Add Ads');
         </div>
 
         <div class="main_content_iner ">
-            <div class="container-fluid p-0 sm_padding_15px">
+            <div class="container-fluid p-0">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="white_card card_height_100 mb_30">
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h3 class="m-0">Add Ads</h3>
+                                        <!-- <h3 class="m-0">Data table</h3> -->
                                     </div>
                                 </div>
                             </div>
                             <div class="white_card_body">
-                                <!-- <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</h6> -->
-                                <form class="addads">
-                                    
-                                    <div class="white_card_body">
-                                        <h6 class="card-subtitle mb-2">Select  Ads Type</h6>
-                                        <div class="input-group mb-3">
-                                            <label class="input-group-text" for="inputGroupSelect01">Options</label>
-                                            <select class="form-select" name="type" id="inputGroupSelect01">
-                                                <option value="">Choose type</option>
-                                                <option value="double">Two at page</option>
-                                                <option value="side">Siderbar Ad</option>
-                                                <option value="single">Single Long Add</option>
-                                                
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">link To Ads</label>
-                                            <input type="text" name="link" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="link">
-                                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                                        </div>
-                                        <div class="white_card_body">
-                                            
-                                            <h6 class="card-subtitle mb-2">Ads Banner</h6>
-                                            <div class="input-group mb-3">
-                                                <input type="file" name="adimage" class="form-control" id="inputGroupFile03">
-                                                <label class="input-group-text" for="inputGroupFile03">Upload</label>
+                                <div class="QA_section">
+                                    <div class="white_box_tittle list_header">
+                                        <h4>Ads</h4>
+                                        <div class="box_right d-flex lms_block">
+                                            <div class="serach_field_2">
+                                                <div class="search_inner">
+                                                    <form Active="#">
+                                                        <div class="search_field">
+                                                            <input type="text" placeholder="Search content here...">
+                                                        </div>
+                                                        <button type="submit"> <i class="ti-search"></i> </button>
+                                                    </form>
+                                                </div>
                                             </div>
-                                            
-                                            
-                                            <!-- <div class="mb-3">
-                                        <label class="form-label" for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                    </div> -->
-                                            <!-- <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-label form-check-label" for="exampleCheck1">Check me out</label>
-                                    </div> -->
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
+                                            <div class="add_button ms-2">
+                                                <a href="backend/#" data-bs-toggle="modal" data-bs-target="#addcategory" class="btn_1">Add New</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="QA_table mb_30">
+
+                                        <table class="table lms_table_active ">
+                                            <thead>
+                                                <tr>
+                                                    <!-- <th scope="col">Transaction ID</th> -->
+                                                    <th scope="col">Type</th>
+                                                    <th scope="col">link</th>
+                                                    <th scope="col">Banner</th>
+                                                    <th scope="col"> Status</th>
+                                                    <th scope="col"> Action </th>
+                                                    <!-- <th scope="col">Discount</th>
+                                                    <th scope="col">Date Added</th> -->
+                                                    <!-- <th scope="col">Back Cover</th>
+                                                    <th scope="col">Status</th> -->
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                               <?php adslist(); ?>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
-
+                    <div class="col-12">
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="footer_part">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer_iner text-center">
@@ -333,11 +335,14 @@ adminhead(' Add Ads');
             </div>
         </div>
     </div>
+
     <div id="back-top" style="display: none;">
         <a title="Go to Top" href="backend/#">
             <i class="ti-angle-up"></i>
         </a>
     </div>
+
+
 
     <?php adminscript(); ?>
 </body>

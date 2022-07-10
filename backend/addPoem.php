@@ -1,6 +1,6 @@
 <?php involve('admin');
 
-adminhead(' Add Ads');
+adminhead(' Add Poem');
 
 ?>
 
@@ -161,7 +161,7 @@ adminhead(' Add Ads');
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h3 class="m-0">Add Ads</h3>
+                                        <h3 class="m-0">Add Poem</h3>
                                     </div>
                                 </div>
                             </div>

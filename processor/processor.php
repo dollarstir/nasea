@@ -197,6 +197,11 @@ require '../fragement/admin.php';
             extract($_POST);
             addads($type, $link);
             break;
+
+        case 'deleteads':
+            extract($_POST);
+            deleteads($id);
+            break;
         default:
 
         break;

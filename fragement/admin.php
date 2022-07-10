@@ -494,3 +494,33 @@ function addads($type, $link)
         }
     }
 }
+
+function adslist()
+{
+    $res = fetchAll('ads');
+    foreach ($res as $row) {
+        echo ' <tr>
+        <!-- <th scope="row"> <a href="backend/#" class="question_content"> title here 1</a></th> -->
+        <td>'.$row['type'].'</td>
+        <td>'.$row['link'].'</td>
+        <td><img src="yolkassets/upload/'.$row['adimage'].'" style="width:100px;height:150px;"/></td>
+        <td>'.$row['status'].'</td>
+        <td><button id="'.$row['id'].'"  class="btn btn-danger delads"><i class="fa fa-trash"></i></a></button></td>
+        <!-- <td>16</td>
+        <td>$25.00</td> -->
+        <!-- <td><a href="backend/#" class="status_btn">cover</a></td>
+
+        <td><a href="backend/#" class="status_btn">Active</a></td> -->
+    </tr>';
+    }
+}
+
+// delete ads
+function deleteads($id)
+{
+    if ($del = delete('ads', [['id', '=', $id]]) == 'deleted') {
+        echo 'deleted';
+    } else {
+        echo 'Failed to delete book';
+    }
+}
