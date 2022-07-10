@@ -183,13 +183,13 @@ adminhead(' Social Settings');
                                         </div> -->
                                         <div class="mb-3">
                                             <label class="form-label" for="exampleInputEmail1">Facebook</label>
-                                            <input type="text" name="facebook" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" value="<?php viewcontinfo('facebook'); ?>">
+                                            <input type="text" name="facebook" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewcontinfo('facebook'); ?>">
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
 
                                         <div class="mb-3">
                                             <label class="form-label" for="exampleInputEmail1">Twitter</label>
-                                            <input type="text" name="twitter" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" value="<?php viewcontinfo('twitter'); ?>">
+                                            <input type="text" name="twitter" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewcontinfo('twitter'); ?>">
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
 
