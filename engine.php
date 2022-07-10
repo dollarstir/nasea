@@ -288,5 +288,26 @@ $router = new Router([
             return Viewer::view('backend/editContact.php', $context);
         }
     ),
+
+    new Route(
+        '/app',
+        function ($context) {
+            return Viewer::view('backend/appSetings.php', $context);
+        }
+    ),
+
+    new Route(
+        '/social',
+        function ($context) {
+            return Viewer::view('backend/socialSetiings.php', $context);
+        }
+    ),
+
+    new Route(
+        '/profile',
+        function ($context) {
+            return Viewer::view('backend/profileSettings.php', $context);
+        }
+    ),
 ]);
 $router->launch();

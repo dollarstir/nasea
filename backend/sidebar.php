@@ -177,8 +177,10 @@
             <span>Settings</span>
         </a>
         <ul>
-            <li><a class="active" href="index.php">Add Settings</a></li>
-            <li><a href="index_2.php">view Settings</a></li>
+            <li><a class="active" href="app">App</a></li>
+            <li><a href="social">Social</a></li>
+            <li><a href="profile">Profile</a></li>
+
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>
