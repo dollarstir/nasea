@@ -99,7 +99,7 @@ begin('Welcome');
             <div class="row">
                 <div class="col-lg-12">
                     <div class="banner-img-2">
-                        <a href="main/#"><img src="main/img/banner/5.jpg" alt="banner" /></a>
+                        <?php adverts('single', 1); ?>
                         
                     </div>
                 </div>
