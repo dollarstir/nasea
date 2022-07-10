@@ -138,8 +138,8 @@
             <span>Poems</span>
         </a>
         <ul>
-            <li><a class="active" href="index.php">Add Poems</a></li>
-            <li><a href="index_2.php">view Poems</a></li>
+            <li><a class="active" href="newpoem">Add Poems</a></li>
+            <li><a href="viewpoems">view Poems</a></li>
             <!-- <li><a href="index_3.php">Dark Menu</a></li> -->
         </ul>
     </li>

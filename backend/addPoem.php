@@ -167,7 +167,7 @@ adminhead(' Add Poem');
                             </div>
                             <div class="white_card_body">
                                 <!-- <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</h6> -->
-                                <form class="addads">
+                                <form class="addpoem">
                                     
                                     <div class="white_card_body">
                                         <!-- <h6 class="card-subtitle mb-2">Select  Ads Type</h6>
@@ -188,13 +188,13 @@ adminhead(' Add Poem');
                                         </div>
 
                                         <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Title</label>
-                                            <textarea  name="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="title"></textarea>
+                                            <label class="form-label" for="exampleInputEmail1">Description</label>
+                                            <textarea  name="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="desccription"></textarea>
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
                                         <div class="white_card_body">
                                             
-                                            <h6 class="card-subtitle mb-2">Ads Banner</h6>
+                                            <h6 class="card-subtitle mb-2">Poem Cover Image</h6>
                                             <div class="input-group mb-3">
                                                 <input type="file" name="adimage" class="form-control" id="inputGroupFile03">
                                                 <label class="input-group-text" for="inputGroupFile03">Upload</label>

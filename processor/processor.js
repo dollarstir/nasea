@@ -882,6 +882,24 @@ $(document).on('click','.delads',function(e){
   $.ajax(staff);
 });
 
+// add poem
+$('.addpoem').submit(function(e){
+
+  e.preventDefault();
+  var staff = {
+      url: 'processor/processor.php?action=addpoem',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
 
     
 })

@@ -202,6 +202,11 @@ require '../fragement/admin.php';
             extract($_POST);
             deleteads($id);
             break;
+
+        case 'addpoem':
+            extract($_POST);
+            addpoem($title, $description);
+            break;
         default:
 
         break;

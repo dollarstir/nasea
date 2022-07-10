@@ -253,5 +253,19 @@ $router = new Router([
             return Viewer::view('backend/viewAds.php', $context);
         }
     ),
+
+    new Route(
+        '/newpoem',
+        function ($context) {
+            return Viewer::view('backend/addPoem.php', $context);
+        }
+    ),
+
+    new Route(
+        '/viewpoems',
+        function ($context) {
+            return Viewer::view('backend/viewPoems.php', $context);
+        }
+    ),
 ]);
 $router->launch();
