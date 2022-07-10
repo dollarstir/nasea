@@ -170,7 +170,7 @@ adminhead(' Add Poem');
                                 <form class="addads">
                                     
                                     <div class="white_card_body">
-                                        <h6 class="card-subtitle mb-2">Select  Ads Type</h6>
+                                        <!-- <h6 class="card-subtitle mb-2">Select  Ads Type</h6>
                                         <div class="input-group mb-3">
                                             <label class="input-group-text" for="inputGroupSelect01">Options</label>
                                             <select class="form-select" name="type" id="inputGroupSelect01">
@@ -180,10 +180,16 @@ adminhead(' Add Poem');
                                                 <option value="single">Single Long Add</option>
                                                 
                                             </select>
-                                        </div>
+                                        </div> -->
                                         <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">link To Ads</label>
-                                            <input type="text" name="link" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="link">
+                                            <label class="form-label" for="exampleInputEmail1">Title</label>
+                                            <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="title">
+                                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label" for="exampleInputEmail1">Title</label>
+                                            <textarea  name="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="title"></textarea>
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
                                         <div class="white_card_body">
