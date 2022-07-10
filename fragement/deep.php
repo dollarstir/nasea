@@ -618,6 +618,8 @@ function adverts($type, $limit)
             echo'<div class="banner-img-2">
             <a href="'.$row['link'].'"><img src="yolkassets/upload/'.$row['adimage'].'" alt="banner" /></a>
         </div>';
+        } elseif ($type == 'single') {
+            echo '<a href="'.$row['link'].'"><img src="yolkassets/upload'.$row['adimage'].'" alt="banner" /></a>';
         }
     }
 }
