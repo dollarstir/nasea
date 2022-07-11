@@ -2,6 +2,7 @@
 
 function adminhead($title)
 {
+    mainchecker('admin', 'adminlogin');
     echo '<!DOCTYPE html>
     <html lang="zxx">
     
