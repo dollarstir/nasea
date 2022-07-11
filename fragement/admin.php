@@ -530,21 +530,11 @@ function admintopbar()
                 <div class="sidebar_icon d-lg-none">
                     <i class="ti-menu"></i>
                 </div>
-                <div class="serach_field-area d-flex align-items-center">
-                    <div class="search_inner">
-                        <form action="#">
-                            <div class="search_field">
-                                <input type="text" placeholder="Search here...">
-                            </div>
-                            <button type="submit"> <img src="backend/img/icon/icon_search.svg" alt=""> </button>
-                        </form>
-                    </div>
-                    <span class="f_s_14 f_w_400 ml_25 white_text text_white">Apps</span>
-                </div>
+                
                 <div class="header_right d-flex justify-content-between align-items-center">
                     <div class="header_notification_warp d-flex align-items-center">
                         <li>
-                            <a class="bell_notification_clicker nav-link-notify" href="backend/#"> <img src="backend/img/icon/bell.svg" alt="">
+                            <a class="bell_notification_clicker nav-link-notify" href="viewreviews"> <img src="backend/img/icon/bell.svg" alt="">
                             </a>
 
                             <div class="Menu_NOtification_Wrap">
@@ -555,7 +545,7 @@ function admintopbar()
 
                                     <div class="single_notify d-flex align-items-center">
                                         <div class="notify_thumb">
-                                            <a href="backend/#"><img src="backend/img/staf/2.png" alt=""></a>
+                                            <a href=""><img src="backend/img/staf/2.png" alt=""></a>
                                         </div>
                                         <div class="notify_content">
                                             <a href="backend/#">
@@ -567,7 +557,7 @@ function admintopbar()
 
                                     <div class="single_notify d-flex align-items-center">
                                         <div class="notify_thumb">
-                                            <a href="backend/#"><img src="backend/img/staf/4.png" alt=""></a>
+                                            <a href=""><img src="backend/img/staf/4.png" alt=""></a>
                                         </div>
                                         <div class="notify_content">
                                             <a href="backend/#">
@@ -634,20 +624,20 @@ function admintopbar()
 
                         </li>
                         <li>
-                            <a class="CHATBOX_open nav-link-notify" href="backend/#"> <img src="backend/img/icon/msg.svg" alt=""> </a>
+                            <a class="CHATBOX_open nav-link-notify" href="viewmessages"> <img src="backend/img/icon/msg.svg" alt=""> </a>
                         </li>
                     </div>
                     <div class="profile_info">
-                        <img src="backend/img/client_img.png" alt="#">
+                        <img src="yolkassets/upload/'.$_SESSION['admin']['pic'].'" alt="#">
                         <div class="profile_info_iner">
                             <div class="profile_author_name">
-                                <p>Neurologist </p>
-                                <h5>Dr. Robar Smith</h5>
+                                <!--<p>Neurologist </p>-->
+                                <h5>'.$_SESSION['admin']['name'].'</h5>
                             </div>
                             <div class="profile_info_details">
-                                <a href="backend/#">My Profile </a>
-                                <a href="backend/#">Settings</a>
-                                <a href="backend/#">Log Out </a>
+                                <a href="profile">My Profile </a>
+                                <a href="app">Settings</a>
+                                <button id="adminlogout"  style="border:none;background-color:transparent;padding:4px;">Log Out </button>
                             </div>
                         </div>
                     </div>

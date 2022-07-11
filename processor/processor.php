@@ -239,6 +239,10 @@ require '../fragement/admin.php';
             extract($_POST);
             adminlogin($email, $password);
             break;
+
+        case 'adminlogout':
+            adminlogout();
+            break;
         default:
 
         break;
