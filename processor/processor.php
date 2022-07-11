@@ -234,6 +234,11 @@ require '../fragement/admin.php';
             extract($_POST);
             editsocial($facebook, $twitter, $instagram, $linkedin);
             break;
+
+        case 'adminlogin':
+            extract($_POST);
+            adminlogin($email, $password);
+            break;
         default:
 
         break;

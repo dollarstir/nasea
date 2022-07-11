@@ -1018,5 +1018,23 @@ $('.editsocial').submit(function(e){
 });
 
 
+$('.adminlogin').submit(function(e){
+
+  e.preventDefault();
+  var staff = {
+      url: 'processor/processor.php?action=adminlogin',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
     
 })
