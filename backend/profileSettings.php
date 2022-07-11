@@ -1,6 +1,6 @@
 <?php involve('admin');
 
-adminhead(' About Page');
+adminhead(' Profile Settings');
 
 ?>
 
@@ -21,13 +21,13 @@ adminhead(' About Page');
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h3 class="m-0">Edit About Page</h3>
+                                        <h3 class="m-0">Edit Social Settigs</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="white_card_body">
                                 <!-- <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</h6> -->
-                                <form class="editabout">
+                                <form class="editsocial">
                                     
                                     <div class="white_card_body">
                                         <!-- <h6 class="card-subtitle mb-2">Select  Ads Type</h6>
@@ -41,30 +41,33 @@ adminhead(' About Page');
                                                 
                                             </select>
                                         </div> -->
-                                        
-
                                         <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Who We Are</label>
-                                            <textarea rows="5"  name="who" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="desccription"><?php viewabout('who'); ?></textarea>
-                                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                                        </div>
-
-
-                                        <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Mission</label>
-                                            <textarea rows="5"  name="mission" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="desccription"><?php viewabout('mission'); ?></textarea>
+                                            <label class="form-label" for="exampleInputEmail1">Facebook</label>
+                                            <input type="text" name="facebook" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewcontinfo('facebook'); ?>">
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
 
                                         <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Vision</label>
-                                            <textarea rows="5"  name="vision" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="desccription"><?php viewabout('vision'); ?></textarea>
+                                            <label class="form-label" for="exampleInputEmail1">Twitter</label>
+                                            <input type="text" name="twitter" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewcontinfo('twitter'); ?>">
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label" for="exampleInputEmail1">Instagram </label>
+                                            <input type="text" name="instagram" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewcontinfo('instagram'); ?>">
+                                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label" for="exampleInputEmail1">Linkedin</label>
+                                            <input type="text" name="linkedin" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewcontinfo('linkedin'); ?>">
+                                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                        </div>
+                                       
                                         <div class="white_card_body">
                                             
-                                            <!-- <h6 class="card-subtitle mb-2">Poem Cover Image</h6> -->
-                                           
+                                            
                                             
                                             
                                             <!-- <div class="mb-3">
