@@ -637,7 +637,7 @@ function admintopbar()
                             <div class="profile_info_details">
                                 <a href="profile">My Profile </a>
                                 <a href="app">Settings</a>
-                                <button id="adminlogout"  style="border:none;background-color:transparent;padding:4px;">Log Out </button>
+                                <button class="adminlogout"  style="border:none;background-color:transparent;padding:4px;">Log Out </button>
                             </div>
                         </div>
                     </div>
