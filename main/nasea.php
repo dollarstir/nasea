@@ -482,13 +482,13 @@ begin('Welcome');
                     </div>
                     <div class="link-follow">
                         <ul>
-                            <li><a href="main/#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="<?php viewinfo('twitter'); ?>"><i class="fa fa-twitter"></i></a></li>
                             <!-- <li><a href="main/#"><i class="fa fa-google-plus"></i></a></li> -->
-                            <li><a href="main/#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="main/#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="<?php viewinfo('facebook'); ?>"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="<?php viewinfo('linkedin'); ?>"><i class="fa fa-linkedin"></i></a></li>
                             <!-- <li><a href="main/#"><i class="fa fa-flickr"></i></a></li> -->
                             <!-- <li><a href="main/#"><i class="fa fa-vimeo"></i></a></li> -->
-                            <li><a href="main/#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="<?php viewinfo('instagram'); ?>"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>

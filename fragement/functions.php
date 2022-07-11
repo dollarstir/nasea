@@ -970,8 +970,8 @@ function topbars1()
                                         <h5>Total <span id="cartot">&#8373;'.carttotal().'</span></h5>
                                     </div>
                                     <div class="cart-bottom">
-                                        <a class="view-cart" href="cart">view cart</a>
-                                        <a href="checkout">Check out</a>
+                                        <a class="view-cart" href="../cart">view cart</a>
+                                        <a href="../checkout">Check out</a>
                                     </div>
                                 </div>
                             </li>

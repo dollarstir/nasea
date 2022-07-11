@@ -955,3 +955,10 @@ function blogrecent()
         echo '<li><a href="../poem/'.$row['id'].'">'.$row['title'].'</a></li>';
     }
 }
+
+function viewinfo($data)
+{
+    $res = fetchAll('settings');
+
+    echo $res[0][$data];
+}

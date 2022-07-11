@@ -309,5 +309,33 @@ $router = new Router([
             return Viewer::view('backend/profileSettings.php', $context);
         }
     ),
+
+    new Route(
+        '/authenticate',
+        function ($context) {
+            return Viewer::view('backend/myLogin.php', $context);
+        }
+    ),
+
+    new Route(
+        '/adminlogin',
+        function ($context) {
+            return Viewer::view('backend/myLogin.php', $context);
+        }
+    ),
+
+    new Route(
+        '/adminauth',
+        function ($context) {
+            return Viewer::view('backend/myLogin.php', $context);
+        }
+    ),
+
+    new Route(
+        '/adminsign',
+        function ($context) {
+            return Viewer::view('backend/myLogin.php', $context);
+        }
+    ),
 ]);
 $router->launch();
