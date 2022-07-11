@@ -677,6 +677,8 @@ function adminlogin($email, $password)
             if (authenticate('solo', [['password', '=', md5($password)]]) == 'success') {
                 if (loginauth('solo', 'admin', [['email', '=', $email], ['password', '=', md5($password)]], 'AND') == 'success') {
                     echo 'adminloginsuccess';
+                } else {
+                    echo 'Failed to login';
                 }
             } else {
                 echo 'Invalid login credentials';
