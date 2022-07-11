@@ -115,6 +115,11 @@ function adminscript()
     ';
 }
 
+function admintopbar()
+{
+    echo'';
+}
+
 function customers()
 {
     $res = fetchAll('users');
