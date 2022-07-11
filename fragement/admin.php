@@ -117,9 +117,10 @@ function adminscript()
 
 function mainsidebar()
 {
+    $getl = fetchAll('settings');
     echo '<nav class="sidebar vertical-scroll  ps-container ps-theme-default ps-active-y">
     <div class="logo d-flex justify-content-between">
-        <a href="backend/index.php"><img src="backend/img/logo.png" alt=""></a>
+        <a href="home"><img src="yolkassets/upload/'.$getl[0]['applogo'].'" style="height:150px;width:200px;" alt=""></a>
         <div class="sidebar_close_icon d-lg-none">
             <i class="ti-close"></i>
         </div>
