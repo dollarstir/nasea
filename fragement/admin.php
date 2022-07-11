@@ -667,3 +667,22 @@ function editsocial($facebook, $twitter, $instagram, $linkedin)
         echo 'Failed to update';
     }
 }
+
+function adminlogin($email, $password)
+{
+    if (empty(trim($email)) || empty(trim($password))) {
+        echo 'email or password cannot be empty';
+    } else {
+        if (authenticate('solo', [['email', '=', $email]]) == 'success') {
+            if (authenticate('solo', [['password', '=', md5($password)]]) == 'success') {
+                if (loginauth('solo', 'admin', [['email', '=', $email], ['password', '=', md5($password)]], 'AND') == 'success') {
+                    echo 'adminloginsuccess';
+                }
+            } else {
+                echo 'Invalid login credentials';
+            }
+        } else {
+            echo 'email not in records';
+        }
+    }
+}
