@@ -241,7 +241,9 @@ require '../fragement/admin.php';
             break;
 
         case 'adminlogout':
-            adminlogout();
+            if (logout('admin') == 'success') {
+                echo 'adminlogout';
+            }
             break;
         default:
 

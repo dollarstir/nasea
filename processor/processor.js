@@ -236,6 +236,26 @@ $(function(){
             });
 
       }
+
+
+
+
+      else if(response == 'adminlogout'){
+
+        swal({
+            title: "Logout Successfull!",
+            text: "will be redirected soon",
+            timer: 2000,
+            type: 'success',
+            padding: "2em",
+            onOpen: function () {
+              swal.showLoading();
+            },
+          }).then(function (result) {
+            window.location="adminlogin";
+          });
+
+    }
         else if(response == 'Updated Successfully'){
 
             swal({
