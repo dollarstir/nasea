@@ -1177,6 +1177,12 @@ function viewcontinfo($data)
     echo $res[0][$data];
 }
 
+function viewadmininfo($data)
+{
+    $res = fetchAll('solo');
+    echo $res[0][$data];
+}
+
 function editapp($appname)
 {
     if (empty(trim($appname))) {

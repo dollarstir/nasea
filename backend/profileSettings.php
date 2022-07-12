@@ -42,45 +42,38 @@ adminhead(' Profile Settings');
                                             </select>
                                         </div> -->
                                         <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Facebook</label>
-                                            <input type="text" name="facebook" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewcontinfo('facebook'); ?>">
+                                            <label class="form-label" for="exampleInputEmail1">Name</label>
+                                            <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewadmininfo('name'); ?>">
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
 
                                         <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Twitter</label>
-                                            <input type="text" name="twitter" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewcontinfo('twitter'); ?>">
+                                            <label class="form-label" for="exampleInputEmail1">Email</label>
+                                            <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewadmininfo('email'); ?>">
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
 
                                         <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Instagram </label>
-                                            <input type="text" name="instagram" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewcontinfo('instagram'); ?>">
+                                            <label class="form-label" for="exampleInputEmail1">Phone Number</label>
+                                            <input type="text" name="phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewadmininfo('phone'); ?>">
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
 
-                                        <div class="mb-3">
-                                            <label class="form-label" for="exampleInputEmail1">Linkedin</label>
-                                            <input type="text" name="linkedin" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewcontinfo('linkedin'); ?>">
-                                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                                        </div>
+                                        
                                        
                                         <div class="white_card_body">
                                             
                                             
                                             
                                             
-                                            <!-- <div class="mb-3">
-                                        <label class="form-label" for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                    </div> -->
-                                            <!-- <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-label form-check-label" for="exampleCheck1">Check me out</label>
-                                    </div> -->
+                                          
                                             <button type="submit" class="btn btn-primary">Submit</button>
                                 </form>
+
+                                
                             </div>
+
+                            
                         </div>
                     </div>
 
