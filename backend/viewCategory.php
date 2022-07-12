@@ -28,7 +28,7 @@ adminhead('View Category');
                                 <div class="QA_section">
                                     <div class="white_box_tittle list_header">
                                         <h4>CATEGORIES</h4>
-                                        <div class="box_right d-flex lms_block">
+                                        <!-- <div class="box_right d-flex lms_block">
                                             <div class="serach_field_2">
                                                 <div class="search_inner">
                                                     <form Active="#">
@@ -42,11 +42,11 @@ adminhead('View Category');
                                             <div class="add_button ms-2">
                                                 <a href="backend/#" data-bs-toggle="modal" data-bs-target="#addcategory" class="btn_1">Add New</a>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="QA_table mb_30">
 
-                                        <table class="table lms_table_active ">
+                                        <table id="example" class="table lms_table_active display" style="width:100%">
                                             <thead>
                                                 <tr>
                                                     <th scope="col">ID</th>

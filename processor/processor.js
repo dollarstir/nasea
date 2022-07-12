@@ -1,5 +1,7 @@
 
 $(function(){
+  $('#example').DataTable();
+  
   $('.mybill').hide();
 
   $(document).on('click','.showbill',function(e){

@@ -47,6 +47,29 @@ function adminhead($title)
     
         <link rel="stylesheet" href="backend/css/style1.css" />
         <link rel="stylesheet" href="backend/css/colors/default.css" id="colorSkinCSS">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+        <script>
+        $(document).ready(function() {
+            $("#example").DataTable({
+                "searching": true,
+                "paging": true,
+                "order": [
+                    [0, "asc"]
+                ],
+                "ordering": true,
+                dom: "Bfrtip",
+                buttons: [
+                    "copy", "csv", "excel", "pdf", "print"
+                ],
+
+
+                "columnDefa": [{
+                    "targeta": [3], //column index/
+                    "orderable": false
+                }],
+            });
+        });
+    </script>
     </head>';
 }
 
@@ -111,6 +134,8 @@ function adminscript()
     <script src="https://demo.dashboardpack.com/sales-html/js/dashboard_init.js"></script>
     <script src="backend/js/custom.js"></script>
     '.Yolk::uicore('jsa').'
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    
     <script src="processor/processor.js"></script>
     ';
 }
@@ -1179,7 +1204,7 @@ function viewcontinfo($data)
 
 function viewadmininfo($data)
 {
-    session_start();
+    // session_start();
     $res = customfetch('solo', [['id', '=', $_SESSION['admin']['id']]]);
     echo $res[0][$data];
 }
