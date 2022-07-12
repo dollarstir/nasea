@@ -27,7 +27,7 @@ adminhead(' Profile Settings');
                             </div>
                             <div class="white_card_body">
                                 <!-- <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</h6> -->
-                                <form class="editsocial">
+                                <form class="editprofile">
                                     
                                     <div class="white_card_body">
                                         <!-- <h6 class="card-subtitle mb-2">Select  Ads Type</h6>
@@ -56,6 +56,7 @@ adminhead(' Profile Settings');
                                         <div class="mb-3">
                                             <label class="form-label" for="exampleInputEmail1">Phone Number</label>
                                             <input type="text" name="phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewadmininfo('phone'); ?>">
+                                            <input type="text" name="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="<?php viewadmininfo('id'); ?>">
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
 

@@ -245,6 +245,11 @@ require '../fragement/admin.php';
                 echo 'adminlogout';
             }
             break;
+
+        case 'editprofile':
+            extract($_POST);
+            editprofile($id,$name, $email, $phone);
+            break;
         default:
 
         break;

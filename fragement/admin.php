@@ -1179,7 +1179,8 @@ function viewcontinfo($data)
 
 function viewadmininfo($data)
 {
-    $res = fetchAll('solo');
+    session_start();
+    $res = customfetch('solo', [['id', '=', $_SESSION['admin']['id']]]);
     echo $res[0][$data];
 }
 
@@ -1225,6 +1226,19 @@ function adminlogin($email, $password)
             }
         } else {
             echo 'email not in records';
+        }
+    }
+}
+
+function editprofile($id, $name, $email, $phone)
+{
+    if (empty(trim($name)) || empty(trim($email)) || empty(trim($phone))) {
+        echo 'All fields are required';
+    } else {
+        if (update('solo', ['name' => $name, 'email' => $email, 'phone' => $phone], ['id' => $id]) == 'success') {
+            echo 'Updated Successfully';
+        } else {
+            echo 'Failed to Update';
         }
     }
 }
