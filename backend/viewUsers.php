@@ -46,7 +46,7 @@ adminhead('Dashborad');
                                     </div>
                                     <div class="QA_table mb_30">
 
-                                        <table id="example" class="table lms_table_active display">
+                                        <table id="kofi" class="table lms_table_active display">
                                             <thead>
                                                 <tr>
                                                     <th scope="col">name</th>

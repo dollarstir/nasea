@@ -46,7 +46,7 @@ adminhead('View Category');
                                     </div>
                                     <div class="QA_table mb_30">
 
-                                        <table id="example" class="table lms_table_active display" style="width:100%">
+                                        <table id="kofi" class="table lms_table_active display" style="width:100%">
                                             <thead>
                                                 <tr>
                                                     <th scope="col">ID</th>
