@@ -104,6 +104,7 @@ function footer()
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-top-menu bb-2">
+                    
                         <nav>
                             <ul>
                                 <li><a href="main/#">home</a></li>
