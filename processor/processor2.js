@@ -532,7 +532,7 @@ $(document).on('click','.previewbtn',function(e){
   // before();
   var id = $(this).attr('id');
   var staff = {
-      url: 'processor/processor.php?action=prodpreview',
+      url: '../processor/processor.php?action=prodpreview',
       type: 'post',
       data: {"id": id},
       // cache: false,
