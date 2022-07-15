@@ -1,24 +1,24 @@
 
 $(function(){
 
-  $("#kofi").DataTable({
-    "searching": true,
-    "paging": true,
-    "order": [
-        [0, "asc"]
-    ],
-    "ordering": true,
-    dom: "Bfrtip",
-    buttons: [
-        "copy", "csv", "excel", "pdf", "print"
-    ],
+//   $("#kofi").DataTable({
+//     "searching": true,
+//     "paging": true,
+//     "order": [
+//         [0, "asc"]
+//     ],
+//     "ordering": true,
+//     dom: "Bfrtip",
+//     buttons: [
+//         "copy", "csv", "excel", "pdf", "print"
+//     ],
 
 
-    "columnDefa": [{
-        "targeta": [3], //column index/
-        "orderable": false
-    }],
-});
+//     "columnDefa": [{
+//         "targeta": [3], //column index/
+//         "orderable": false
+//     }],
+// });
   // $('#example').DataTable({
   //   pageLength: 10,
   //   filter: true,
