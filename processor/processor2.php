@@ -1,5 +1,6 @@
 <?php
 
+// created by dollarstir
 // require 'loader/autoloader.php';
 require 'fragement/deep.php';
  if (isset($_GET['action'])) {
