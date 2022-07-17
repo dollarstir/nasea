@@ -20,6 +20,7 @@ function addtocart($id)
         $bookid = array_column($_SESSION['cart'], 'bookid');
         if (!in_array($id, $bookid)) {
             $count = count($_SESSION['cart']);
+            echo "test";
             $cartitem = [
                 'bookid' => $id,
                 'bookname' => $book['title'],
