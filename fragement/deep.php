@@ -12,9 +12,9 @@
     
 function addtocart($id)
     {
-    exit($id);
     session_start();
     $dt = customfetch('books', [['id', '=', $id]]);
+    exit(var_dump($dt));
     $book = $dt[0];
 
     if (isset($_SESSION['cart'])) {
