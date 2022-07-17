@@ -12,17 +12,10 @@
  
 function addtocart($id)
     {
-    // session_start();
-    try {
-
-        $dt = customfetch('books', [['id', '=', $id]]);
-    } catch(\Throwable $e) {
-        exit(var_dump($e));
-    }
-
-    // $book = $dt[0];
-
-    echo "Boom";
+    initsession();
+    $dt = customfetch('books', [['id', '=', $id]]);
+    $book = $dt[0];
+    exit($book);
 
     // if (isset($_SESSION['cart'])) {
     //     $bookid = array_column($_SESSION['cart'], 'bookid');
