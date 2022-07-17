@@ -2,6 +2,7 @@
 
 // created by dollarstir
 // require 'loader/autoloader.php';
+exit("sss");
 require 'fragement/deep.php';
  if (isset($_GET['action'])) {
      switch ($_GET['action']) {
