@@ -148,6 +148,7 @@ exit("sss - processors");
             commentpoem($postid, $cname, $cmail, $message);
             break;
         default:
+            exit("No Function");
 
         break;
     }
