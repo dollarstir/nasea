@@ -1,5 +1,7 @@
 <?php
 
+// by dollarstir
+
 function adminhead($title)
 {
     mainchecker('admin', 'adminlogin');
