@@ -3,14 +3,10 @@
 // created by dollarstir
 // require 'loader/autoloader.php';
 require '../fragement/deep.php';
-exit("sss - processors");
-
  if (isset($_GET['action'])) {
      switch ($_GET['action']) {
         case 'addtocart':
             extract($_POST);
-            exit("test");
-
             // echo $id;
             addtocart($id);
 
