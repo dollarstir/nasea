@@ -244,7 +244,7 @@ function scripts()
     <script src="main/js/plugins.js"></script>
     <!-- main js -->
     <script src="main/js/main.js"></script>
-    <script src="processor/processor.js"></script>
+    <script src="processor/processor.js?ver='. time() . '"></script>
     ';
 }
 
