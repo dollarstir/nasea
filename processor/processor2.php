@@ -2,8 +2,9 @@
 
 // created by dollarstir
 // require 'loader/autoloader.php';
-exit("sss");
 require 'fragement/deep.php';
+exit("sss");
+
  if (isset($_GET['action'])) {
      switch ($_GET['action']) {
         case 'addtocart':
