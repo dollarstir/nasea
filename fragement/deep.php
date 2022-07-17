@@ -13,8 +13,7 @@
 function addtocart($id)
     {
         
-    // initsession();
-    exit("ss");
+    initsession();
     // $dt = customfetch('books', [['id', '=', $id]]);
     // $book = $dt[0];
 
