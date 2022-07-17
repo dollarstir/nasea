@@ -9,6 +9,7 @@
     // github: https://github.com/dollarstir
 
     // *************************************
+exit(var_dump($action));
 
 function addtocart($id)
 {

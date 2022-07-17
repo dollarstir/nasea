@@ -43,7 +43,6 @@ class Router
      */
     public function launch()
     {
-        if($action != "product/4") exit(var_dump($action));
         // Removing subfolder from url and correct root route
         $action = trim($this->action, '/');
         $root = trim(Path::rebase(), '/');
