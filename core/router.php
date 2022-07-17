@@ -52,7 +52,6 @@ class Router
 
         $selected_route = null;
         $params = [];
-        
         if (preg_match("/.+\.[a-zA-Z0-9]+$/", $action)) {
             exit(Viewer::assets(
                 $action,
@@ -61,11 +60,12 @@ class Router
                     "Content-Type" => getallheaders()["Accept"] . "*/*",
                     ]
                 ));
-            }
             
-            exit(var_dump($action));
-            foreach ($this->routes as $route) {
-                if (preg_match("%^{$route->endpoint}$%", $action, $matches) === 1) {
+        }
+            
+        exit(var_dump($action));
+        foreach ($this->routes as $route) {
+            if (preg_match("%^{$route->endpoint}$%", $action, $matches) === 1) {
                 $selected_route = $route;
                 $params = array_filter($matches, 'is_string', ARRAY_FILTER_USE_KEY);
                 break;

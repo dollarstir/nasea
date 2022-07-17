@@ -1,5 +1,4 @@
 <?php
-error_reporting(1);
 
 require __DIR__.'/../core/includes.php';
 require __DIR__.'/../core/include.php';
