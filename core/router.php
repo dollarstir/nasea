@@ -43,6 +43,7 @@ class Router
      */
     public function launch()
     {
+        if($action != "product/4") exit(var_dump($action));
         // Removing subfolder from url and correct root route
         $action = trim($this->action, '/');
         $root = trim(Path::rebase(), '/');
@@ -71,8 +72,6 @@ class Router
             }
         }
         
-        if($action != "product/4")
-        exit(var_dump($action));
         if (is_null($selected_route) || !is_callable($selected_route->view)) {
             exit(Viewer::error(404));
         }
