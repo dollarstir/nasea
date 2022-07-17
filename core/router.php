@@ -63,7 +63,6 @@ class Router
             
         }
             
-        exit(var_dump($action));
         foreach ($this->routes as $route) {
             if (preg_match("%^{$route->endpoint}$%", $action, $matches) === 1) {
                 $selected_route = $route;
@@ -71,8 +70,9 @@ class Router
                 break;
             }
         }
-
+        
         if (is_null($selected_route) || !is_callable($selected_route->view)) {
+            exit(var_dump($action));
             exit(Viewer::error(404));
         }
 
