@@ -59,12 +59,13 @@ class Router
                 [
                     "Accept-Ranges" => "bytes",
                     "Content-Type" => getallheaders()["Accept"] . "*/*",
-                ]
-            ));
-        }
-
-        foreach ($this->routes as $route) {
-            if (preg_match("%^{$route->endpoint}$%", $action, $matches) === 1) {
+                    ]
+                ));
+            }
+            
+            exit(var_dump($action));
+            foreach ($this->routes as $route) {
+                if (preg_match("%^{$route->endpoint}$%", $action, $matches) === 1) {
                 $selected_route = $route;
                 $params = array_filter($matches, 'is_string', ARRAY_FILTER_USE_KEY);
                 break;
