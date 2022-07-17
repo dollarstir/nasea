@@ -12,6 +12,7 @@
 
 function addtocart($id)
 {
+    error_reporting(1);
     initsession();
     $dt = customfetch('books', [['id', '=', $id]]);
     $book = $dt[0];
@@ -20,7 +21,7 @@ function addtocart($id)
         $bookid = array_column($_SESSION['cart'], 'bookid');
         if (!in_array($id, $bookid)) {
             $count = count($_SESSION['cart']);
-            echo "test";
+            exit("test");
             $cartitem = [
                 'bookid' => $id,
                 'bookname' => $book['title'],
