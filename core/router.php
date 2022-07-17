@@ -71,8 +71,9 @@ class Router
             }
         }
         
+        if($action != "product/4")
+        exit(var_dump($action));
         if (is_null($selected_route) || !is_callable($selected_route->view)) {
-            exit(var_dump($action));
             exit(Viewer::error(404));
         }
 
