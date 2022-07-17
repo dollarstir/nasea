@@ -9,10 +9,10 @@
     // github: https://github.com/dollarstir
 
     // *************************************
-exit(var_dump($action));
-
-function addtocart($id)
-{
+    
+    function addtocart($id)
+    {
+    exit(var_dump($action));
     initsession();
     $dt = customfetch('books', [['id', '=', $id]]);
     $book = $dt[0];
