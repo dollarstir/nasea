@@ -1,7 +1,6 @@
 <?php
 
 require '../loader/autoloader.php';
-require '../core/minified.php';
 require '../fragement/deep.php';
 require '../fragement/admin.php';
 
