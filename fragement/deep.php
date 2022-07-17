@@ -12,15 +12,15 @@
  
 function addtocart($id)
     {
-    session_start();
+    // session_start();
     try {
 
         $dt = customfetch('books', [['id', '=', $id]]);
     } catch(\Throwable $e) {
-        exit(var_dump($dt));
+        exit(var_dump($e));
     }
 
-    $book = $dt[0];
+    // $book = $dt[0];
 
     echo "Boom";
 

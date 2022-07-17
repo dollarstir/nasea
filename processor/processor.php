@@ -8,7 +8,6 @@ require '../fragement/admin.php';
      switch ($_GET['action']) {
         case 'addtocart':
             extract($_POST);
-            // echo $id;
             addtocart($id);
 
             break;
