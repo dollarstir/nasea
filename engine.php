@@ -1,6 +1,8 @@
 <?php
 
 require_once 'loader/autoloader.php';
+exit("sss");
+
 $router = new Router([
     new Route(
         '/',
