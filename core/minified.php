@@ -10,7 +10,7 @@ function fetchall($table, $order = [], $limit = '')
 
 function customfetch($table, $target, $conjunction = '', $order = [], $limit = '')
 {
-    exit("ss");
+    // exit("ss");
     $init = new Sel();
     $response = $init->select($table, $target, $conjunction, $order, $limit);
 
