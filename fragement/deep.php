@@ -12,10 +12,8 @@
  
 function addtocart($id)
     {
-        require '../core/minified.php';
-
     session_start();
-    $dt = customfetch('books', [['id', '=', $id]]);
+    $dt = customfetch('books', ['id', '=', $id]);
     $book = $dt[0];
 
     if (isset($_SESSION['cart'])) {
