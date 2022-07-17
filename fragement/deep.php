@@ -12,42 +12,43 @@
     
 function addtocart($id)
     {
-    initsession();
-    $dt = customfetch('books', [['id', '=', $id]]);
+        
     var_dump($dt);
-    $book = $dt[0];
+    initsession();
+    // $dt = customfetch('books', [['id', '=', $id]]);
+    // $book = $dt[0];
 
-    if (isset($_SESSION['cart'])) {
-        $bookid = array_column($_SESSION['cart'], 'bookid');
-        if (!in_array($id, $bookid)) {
-            $count = count($_SESSION['cart']);
-            $cartitem = [
-                'bookid' => $id,
-                'bookname' => $book['title'],
-                'bookcover' => $book['front'],
-                'bookback' => $book['back'],
-                'bookprice' => $book['price'],
-            ];
+    // if (isset($_SESSION['cart'])) {
+    //     $bookid = array_column($_SESSION['cart'], 'bookid');
+    //     if (!in_array($id, $bookid)) {
+    //         $count = count($_SESSION['cart']);
+    //         $cartitem = [
+    //             'bookid' => $id,
+    //             'bookname' => $book['title'],
+    //             'bookcover' => $book['front'],
+    //             'bookback' => $book['back'],
+    //             'bookprice' => $book['price'],
+    //         ];
 
-            $_SESSION['cart'][$count] = $cartitem;
+    //         $_SESSION['cart'][$count] = $cartitem;
 
-            echo 'addedtocart';
-        } else {
-            echo 'Item already in cart';
-        }
-    } else {
-        $cartitem = [
-                'bookid' => $id,
-                'bookname' => $book['title'],
-                'bookcover' => $book['front'],
-                'bookback' => $book['back'],
-                'bookprice' => $book['price'],
-        ];
+    //         echo 'addedtocart';
+    //     } else {
+    //         echo 'Item already in cart';
+    //     }
+    // } else {
+    //     $cartitem = [
+    //             'bookid' => $id,
+    //             'bookname' => $book['title'],
+    //             'bookcover' => $book['front'],
+    //             'bookback' => $book['back'],
+    //             'bookprice' => $book['price'],
+    //     ];
 
-        $_SESSION['cart'][0] = $cartitem;
+    //     $_SESSION['cart'][0] = $cartitem;
 
-        echo 'addedtocart';
-    }
+    //     echo 'addedtocart';
+    // }
 }
 
 function viewcartmain()
