@@ -10,13 +10,12 @@
 
     // *************************************
 
-exit("sss - fragment deep");
-
 function addtocart($id)
 {
     initsession();
     $dt = customfetch('books', [['id', '=', $id]]);
     $book = $dt[0];
+    exit("addtocard");
 
     if (isset($_SESSION['cart'])) {
         $bookid = array_column($_SESSION['cart'], 'bookid');
