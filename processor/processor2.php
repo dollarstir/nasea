@@ -3,7 +3,7 @@
 // created by dollarstir
 // require 'loader/autoloader.php';
 require 'fragement/deep.php';
-exit("sss");
+exit("sss - processors");
 
  if (isset($_GET['action'])) {
      switch ($_GET['action']) {

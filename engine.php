@@ -1,7 +1,7 @@
 <?php
 
 require_once 'loader/autoloader.php';
-exit("sss");
+exit("sss - engine");
 
 $router = new Router([
     new Route(

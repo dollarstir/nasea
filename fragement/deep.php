@@ -10,9 +10,10 @@
 
     // *************************************
 
+exit("sss - fragment deep");
+
 function addtocart($id)
 {
-    error_reporting(1);
     initsession();
     $dt = customfetch('books', [['id', '=', $id]]);
     $book = $dt[0];
