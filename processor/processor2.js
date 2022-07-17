@@ -359,7 +359,7 @@ $(document).on('click','.addtocart',function(e){
   var id = $(this).attr('id');
   var staff = {
       // url: '../processor/processor2.php?action=addtocart&id=1',
-      url: 'processor/processor2.php?action=removecart',
+      url: '../processor/processor2.php?action=removecart',
 
       type: 'post',
       data: {"id": id},
