@@ -14,7 +14,7 @@ function addtocart($id)
     {
         
     session_start();
-    // $dt = customfetch('books', [['id', '=', $id]]);
+    $dt = customfetch('books', [['id', '=', $id]]);
     // $book = $dt[0];
 
     // if (isset($_SESSION['cart'])) {
