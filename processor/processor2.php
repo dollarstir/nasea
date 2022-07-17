@@ -7,6 +7,8 @@ require 'fragement/deep.php';
      switch ($_GET['action']) {
         case 'addtocart':
             extract($_POST);
+            exit("test");
+
             // echo $id;
             addtocart($id);
 
