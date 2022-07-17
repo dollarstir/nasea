@@ -9,7 +9,7 @@
     // github: https://github.com/dollarstir
 
     // *************************************
-    
+ 
 function addtocart($id)
     {
     session_start();
