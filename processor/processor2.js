@@ -624,7 +624,7 @@ $('.review').submit(function(e){
   // before();
   // var id = $(this).attr('id');
   var staff = {
-      url: 'processor/processor2.php?action=review',
+      url: '/processor/processor2.php?action=review',
       type: 'post',
       data: new FormData(this),
       cache: false,
