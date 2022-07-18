@@ -52,17 +52,17 @@ class Router
 
         $selected_route = null;
         $params = [];
-        
         if (preg_match("/.+\.[a-zA-Z0-9]+$/", $action)) {
             exit(Viewer::assets(
                 $action,
                 [
                     "Accept-Ranges" => "bytes",
                     "Content-Type" => getallheaders()["Accept"] . "*/*",
-                ]
-            ));
+                    ]
+                ));
+            
         }
-
+            
         foreach ($this->routes as $route) {
             if (preg_match("%^{$route->endpoint}$%", $action, $matches) === 1) {
                 $selected_route = $route;
@@ -70,7 +70,7 @@ class Router
                 break;
             }
         }
-
+        
         if (is_null($selected_route) || !is_callable($selected_route->view)) {
             exit(Viewer::error(404));
         }

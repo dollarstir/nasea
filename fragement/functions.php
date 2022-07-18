@@ -399,7 +399,7 @@ function scripts2()
     <script src="../main/js/plugins.js"></script>
     <!-- main js -->
     <script src="../main/js/main.js"></script>
-    <script src="../processor/processor2.js"></script>
+    <script src="../processor/processor2.js?ver='.time().'"></script>
     ';
 }
 function topbars()

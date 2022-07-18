@@ -1,13 +1,14 @@
 <?php
 
 // created by dollarstir
-// require 'loader/autoloader.php';
-require 'fragement/deep.php';
+require '../loader/autoloader.php';
+require '../fragement/deep.php';
+require '../fragement/admin.php';
+
  if (isset($_GET['action'])) {
      switch ($_GET['action']) {
         case 'addtocart':
             extract($_POST);
-            // echo $id;
             addtocart($id);
 
             break;
@@ -144,6 +145,7 @@ require 'fragement/deep.php';
             commentpoem($postid, $cname, $cmail, $message);
             break;
         default:
+            exit("No Function");
 
         break;
     }

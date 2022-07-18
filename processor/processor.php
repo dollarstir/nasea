@@ -3,11 +3,11 @@
 require '../loader/autoloader.php';
 require '../fragement/deep.php';
 require '../fragement/admin.php';
+
  if (isset($_GET['action'])) {
      switch ($_GET['action']) {
         case 'addtocart':
             extract($_POST);
-            // echo $id;
             addtocart($id);
 
             break;
