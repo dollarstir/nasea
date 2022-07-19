@@ -31,5 +31,5 @@ if ($amount == '' || $token == '' || $ref == '') {
     unset($_SESSION['ref']);
     unset($_SESSION['amount']);
     unset($_SESSION['token']);
-    // echo '<script>window.location="account"</script>';
+    echo '<script>window.location="account"</script>';
 }
