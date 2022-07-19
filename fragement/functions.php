@@ -282,7 +282,7 @@ function footer1()
                                 </div>
                                 <div class="footer-mid-menu">
                                     <ul>
-                                        <li><a href="contact">Addresses</a></li>
+                                        <li><a href="../contact">Addresses</a></li>
                                         <!--<li><a href="">Credit slips </a></li>-->
                                         <li><a href="../account"> Orders</a></li>
                                         <li><a href="../account">Personal info</a></li>
