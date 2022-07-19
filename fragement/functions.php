@@ -899,6 +899,7 @@ function app()
 
 function topbars1()
 {
+    $ggg = fetchAll('settings');
     $soday = (!isset($_SESSION['user'])) ? '<li><a href="login">Sign in</a></li>' : '<li><button class="logout">Logout</button></li>';
 
     return '<!-- header-top-area-start -->
@@ -954,7 +955,7 @@ function topbars1()
                 </div>
                 <div class="col-lg-6 col-md-4 col-12">
                     <div class="logo-area text-center logo-xs-mrg">
-                        <a href="../home"><img src="../main/img/logo/logo.png" alt="logo" /></a>
+                        <a href="../home"><img src="../yolkassets/upload/'.$ggg[0]['applogo'].'" alt="logo" /></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-12">
