@@ -9,9 +9,9 @@
     // github: https://github.com/dollarstir
 
     // *************************************
- 
+
 function addtocart($id)
-    {
+{
     initsession();
     $dt = customfetch('books', [['id', '=', $id]]);
     $book = $dt[0];
@@ -619,7 +619,21 @@ function adverts($type, $limit)
             <a href="'.$row['link'].'"><img src="yolkassets/upload/'.$row['adimage'].'" alt="banner" /></a>
         </div>';
         } elseif ($type == 'single') {
-            echo '<a href="'.$row['link'].'"><img style="width:100%;height:200px;" src="yolkassets/upload/'.$row['adimage'].'" alt="banner" /></a>';
+            echo' <div class="banner-area-5 mtb-95">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="banner-img-2">
+                            
+                        <a href="'.$row['link'].'"><img style="width:100%;height:200px;" src="yolkassets/upload/'.$row['adimage'].'" alt="banner" /></a>
+                        </div>
+                    </div>
+    
+                    
+                </div>
+            </div>
+        </div>';
+            // echo '<a href="'.$row['link'].'"><img style="width:100%;height:200px;" src="yolkassets/upload/'.$row['adimage'].'" alt="banner" /></a>';
         }
     }
 }

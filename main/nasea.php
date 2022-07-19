@@ -94,20 +94,9 @@ begin('Welcome');
     <!-- slider-area-end -->
    
     <!-- banner-area-start -->
-    <div class="banner-area-5 mtb-95">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="banner-img-2">
-                        <?php adverts('single', 1); ?>
-                        
-                    </div>
-                </div>
 
-                
-            </div>
-        </div>
-    </div>
+    <?php adverts('single', 1); ?>
+   
     <!-- banner-area-end -->
   
     <!-- new-book-area-start -->
