@@ -955,7 +955,7 @@ function topbars1()
                 </div>
                 <div class="col-lg-6 col-md-4 col-12">
                     <div class="logo-area text-center logo-xs-mrg">
-                        <a href="../home"><img src="../yolkassets/upload/'.$ggg[0]['applogo'].'" alt="logo" /></a>
+                        <a href="../home"><img src="../yolkassets/upload/'.$ggg[0]['applogo'].'" alt="logo"  style="width:200px;height:150px;"/></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-12">
