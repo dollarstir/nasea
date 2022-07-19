@@ -465,7 +465,7 @@ echo '<!doctype html>
 		</div>
 		<!-- product-main-area-end -->
 		<!-- footer-area-start -->
-		<?php footer2(); ?>
+		<?php footer1(); ?>
 		<!-- footer-area-end -->
 		<!-- Modal -->
         <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
