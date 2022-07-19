@@ -133,10 +133,10 @@ function footer()
                                 </div>
                                 <div class="footer-mid-menu">
                                     <ul>
-                                        <li><a href="main/about.html">About us</a></li>
-                                        <li><a href="main/#">Prices drop </a></li>
-                                        <li><a href="main/#">New products</a></li>
-                                        <li><a href="main/#">Best sales</a></li>
+                                        <li><a href="aboutus">About us</a></li>
+                                        
+                                        <li><a href=books">New products</a></li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -165,8 +165,8 @@ function footer()
                                     <ul>
                                         <li><a href="contact">Addresses</a></li>
                                         <!--<li><a href="">Credit slips </a></li>-->
-                                        <li><a href="main/#"> Orders</a></li>
-                                        <li><a href="main/#">Personal info</a></li>
+                                        <li><a href="account"> Orders</a></li>
+                                        <li><a href="account">Personal info</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -204,6 +204,125 @@ function footer()
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="payment-img text-right">
                         <a href=""><img src="main/img/momo.png" alt="payment" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-bottom-end -->
+</footer>';
+}
+
+function footer1()
+{
+    $app = app();
+    echo '  <footer>
+    <!-- footer-top-start -->
+    <div class="footer-top">
+        <!--<div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-top-menu bb-2">
+                    
+                        <nav>
+                            <ul>
+                                <li><a href="../home">home</a></li>
+                                <li><a href="main/#">Enable Cookies</a></li>
+                                <li><a href="main/#">Privacy and Cookie Policy</a></li>
+                                <li><a href="../contact">contact us</a></li>
+                                <li><a href="../poems">Poems</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </div>
+    <!-- footer-top-start -->
+    <!-- footer-mid-start -->
+    <div class="footer-mid ptb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-footer br-2 xs-mb">
+                                <div class="footer-title mb-20">
+                                    <h3>Products</h3>
+                                </div>
+                                <div class="footer-mid-menu">
+                                    <ul>
+                                        <li><a href="../aboutus">About us</a></li>
+                                        
+                                        <li><a href="../books">New products</a></li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-footer br-2 xs-mb">
+                                <div class="footer-title mb-20">
+                                    <h3>Our company</h3>
+                                </div>
+                                <div class="footer-mid-menu">
+                                    <ul>
+                                        <li><a href="../contact">Contact us</a></li>
+                                        <!--<li><a href="">Sitemap</a></li>-->
+                                        <li><a href="../books">books</a></li>
+                                        <li><a href="../account">My account </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-footer br-2 xs-mb">
+                                <div class="footer-title mb-20">
+                                    <h3>Your account</h3>
+                                </div>
+                                <div class="footer-mid-menu">
+                                    <ul>
+                                        <li><a href="contact">Addresses</a></li>
+                                        <!--<li><a href="">Credit slips </a></li>-->
+                                        <li><a href="../account"> Orders</a></li>
+                                        <li><a href="../account">Personal info</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="single-footer mrg-sm">
+                        <div class="footer-title mb-20">
+                            <h3>STORE INFORMATION</h3>
+                        </div>
+                        <div class="footer-contact">
+                            <p class="adress">
+                                <span>'.$app['appname'].'</span>
+                                '.$app['appaddress'].'
+                            </p>
+                            <p><span>Call us now:</span> '.$app['appcontact'].'</p>
+                            <p><span>Email:</span> '.$app['appemail'].'</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-mid-end -->
+    <!-- footer-bottom-start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row bt-2">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="copy-right-area">
+                        <p>&copy; '.date('Y').' <strong> '.$app['appname'].'</strong>  by <a href="https://github.com/dollarstir" target="_blank"><strong>Dollarsoft</strong></a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="payment-img text-right">
+                        <a href=""><img src="../main/img/momo.png" alt="payment" /></a>
                     </div>
                 </div>
             </div>
