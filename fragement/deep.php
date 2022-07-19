@@ -809,7 +809,7 @@ function bycatpage($id, $type, $limit = '', $page = 1)
         <div class="product-wrapper mb-40">
             <div class="product-img">
                 <a href="../product/'.$row['id'].'">
-                    <img src="yolkassets/upload/'.$row['front'].'" alt="book" class="primary" />
+                    <img src="/yolkassets/upload/'.$row['front'].'" alt="book" class="primary" />
                 </a>
                 <div class="quick-view">
                     <button id="'.$row['id'].'" class="btn btn-success previewbtn" style="background-color: rgb(240, 124, 41) !important;border:none;"  data-target="#productModal" data-toggle="modal" title="Quick View">
