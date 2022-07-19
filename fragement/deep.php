@@ -609,11 +609,30 @@ function adverts($type, $limit)
     $ad = customfetch('ads', [['type', '=', $type], ['status', '=', 'active']], 'AND', ['id' => 'DESC'], $limit);
     foreach ($ad as $row) {
         if ($type == 'double') {
-            echo '<div class="col-lg-6 col-md-6 col-12">
+            echo '<div class="banner-static-area bg ptb-100">
+            <div class="container">
+                <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-12">
             <div class="banner-shadow-hover xs-mb">
                 <a href="'.$row['link'].'" target="blank"><img src="yolkassets/upload/'.$row['adimage'].'" alt="banner" /></a>
             </div>
+        </div>
+                    
+                    <!-- <div class="col-lg-6 col-md-6 col-12">
+                        <div class="banner-shadow-hover">
+                            <a href="main/#"><img src="main/img/banner/9.jpg" alt="banner" /></a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
         </div>';
+
+        //     echo '<div class="col-lg-6 col-md-6 col-12">
+        //     <div class="banner-shadow-hover xs-mb">
+        //         <a href="'.$row['link'].'" target="blank"><img src="yolkassets/upload/'.$row['adimage'].'" alt="banner" /></a>
+        //     </div>
+        // </div>';
         } elseif ($type == 'side') {
             echo'<div class="banner-img-2">
             <a href="'.$row['link'].'"><img src="yolkassets/upload/'.$row['adimage'].'" alt="banner" /></a>

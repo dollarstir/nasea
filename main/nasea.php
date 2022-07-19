@@ -363,18 +363,9 @@ begin('Welcome');
     </div>
     <!-- new-book-area-start -->
     <!-- banner-static-area-start -->
-    <div class="banner-static-area bg ptb-100">
-        <div class="container">
-            <div class="row">
-                <?php adverts('double', 2); ?>
-                <!-- <div class="col-lg-6 col-md-6 col-12">
-                    <div class="banner-shadow-hover">
-                        <a href="main/#"><img src="main/img/banner/9.jpg" alt="banner" /></a>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </div>
+
+    <?php adverts('double', 2); ?>
+    
     <!-- banner-static-area-end -->
     <!-- most-product-area-start -->
     <div class="most-product-area pt-90 pb-100">
