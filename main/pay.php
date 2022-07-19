@@ -214,7 +214,7 @@ echo '<!doctype html>
 		</div>
 		<!-- checkout-area-end -->
 		<!-- footer-area-start -->
-		<?php footer2(); ?>
+		<?php footer1(); ?>
 		<!-- footer-area-end -->
 		
 		
