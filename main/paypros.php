@@ -26,7 +26,7 @@ if ($amount == '' || $token == '' || $ref == '') {
         $mess = 'Dear '.$s[0]['authname'].', you have received an amount of GHS'.$ar['discountprice'].' on sales of your book '.$ar['bookname'];
         $mess2 = '<html><body><img src="https://naseabooks.com/yolkassets/upload/logo.png" style="width:150px;height:100px;"><p>Dear '.$s[0]['authname'].', you have received an amount of GHS'.$ar['discountprice'].' on sales of your book '.$ar['bookname'].'</p><p><table style="width:100%;  border-collapse: collapse;"><tr><th style="border-collapse: collapse;">Book Name</th><th style="border-collapse: collapse;">Price(GHS)</th><th style="border-collapse: collapse;">Discount Price(GHS)</th><th style="border-collapse: collapse;">Discount(%)</th></tr><tr><td style="border-collapse: collapse; border:1px solid;">'.$ar['bookname'].'</td><td style="border-collapse: collapse; border:1px solid;">'.$ar['price'].'</td><td style="border-collapse: collapse; border:1px solid;">'.$ar['discountprice'].'</td><td style="border-collapse: collapse; border:1px solid;">'.$ar['discount'].'</td></tr></table></p></body></html>';
         sms('Naseabooks', $s[0]['authnumber'], $mess);
-        sendmail('naseabooks.com', 'Book Purchase', $mess2, $from_name = 'Nasea Books', $s[0]['authemail'], $reply_to = 'support@naseabooks.com', $reply_to_name = 'Nasea Books');
+        sendmail('naseabooks.com', 'Book Purchase', 'Hello', $from_name = 'Nasea Books', $s[0]['authemail'], $reply_to = 'support@naseabooks.com', $reply_to_name = 'Nasea Books');
     }
     unset($_SESSION['ref']);
     unset($_SESSION['amount']);
