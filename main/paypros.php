@@ -23,7 +23,7 @@ if ($amount == '' || $token == '' || $ref == '') {
 
     foreach ($do as $ar) {
         $s = customfetch('authors', [['id', '=', $ar['authorid']]]);
-        $ko = customfetch('users', [['id', '=', $ar['authorid']]]);
+        $ko = customfetch('users', [['id', '=', $ar['uid']]]);
         $umess = 'Dear '.$ko[0]['name'].', Your order with order number : '.$ar['orderno'].' has been completed';
         $mess = 'Dear '.$s[0]['authname'].', you have received an amount of GHS'.$ar['discountprice'].' on sales of your book '.$ar['bookname'];
         $mess2 = '<html><body><center><img src="https://naseabooks.com/yolkassets/upload/logo.png" style="width:150px;height:100px;"></center><p>Dear '.$s[0]['authname'].', you have received an amount of GHS'.$ar['discountprice'].' on sales of your book '.$ar['bookname'].'</p><p><table style="width:100%;  border-collapse: collapse;border:1px solid;"><tr><th style="border-collapse: collapse;">Book Name</th><th style="border-collapse: collapse;">Price(GHS)</th><th style="border-collapse: collapse;">Discount Price(GHS)</th><th style="border-collapse: collapse;">Discount(%)</th></tr><tr><td style="border-collapse: collapse; border:1px solid;">'.$ar['bookname'].'</td><td style="border-collapse: collapse; border:1px solid;">'.$ar['price'].'</td><td style="border-collapse: collapse; border:1px solid;">'.$ar['discountprice'].'</td><td style="border-collapse: collapse; border:1px solid;">'.$ar['discount'].'</td></tr></table></p></body></html>';
