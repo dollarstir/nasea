@@ -100,7 +100,7 @@ require '../fragement/admin.php';
             if (!isset($password)) {
                 $password = '';
             }
-            orderregister($fname, $lname, $email, $phone, $country, $address, $city, $password);
+            orderregister($fname, $lname, $email, $phone, $country, $password);
 
             break;
 
@@ -248,7 +248,7 @@ require '../fragement/admin.php';
 
         case 'editprofile':
             extract($_POST);
-            editprofile($id,$name, $email, $phone);
+            editprofile($id, $name, $email, $phone);
             break;
         default:
 

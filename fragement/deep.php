@@ -271,9 +271,9 @@ function user()
 }
 
 // checking if users is logged in
-function orderregister($fname, $lname, $email, $phone, $country, $address, $city, $password)
+function orderregister($fname, $lname, $email, $phone, $country, $password)
 {
-    if ($fname == '' || $lname == '' || $email == '' || $phone == '' || $country == '' || $address == '' || $city == '') {
+    if ($fname == '' || $lname == '' || $email == '' || $phone == '' || $country == '') {
         echo 'Áll fields are required';
     } else {
         if (trim($password, '') != '') {
@@ -287,8 +287,7 @@ function orderregister($fname, $lname, $email, $phone, $country, $address, $city
                 'email' => $email,
                 'phone' => $phone,
                 'country' => $country,
-                'address' => $address,
-                'çity' => $city,
+
                 'password' => md5($password),
                 ];
                 $add = insert('users', $detail);
