@@ -161,7 +161,7 @@ echo '<!doctype html>
 												<a href="#"><i class="fa fa-envelope-o"></i></a>
 											</div> -->
 											<div class="product-addto-links-text">
-												<p><?php echo substr($bk['description'], 0, 100).'....'; ?></p>
+												<!-- <p></p> -->
 											</div>
 										</div>
 									</div>
@@ -173,7 +173,7 @@ echo '<!doctype html>
 						<div class="product-info-area mt-80">
 							<!-- Nav tabs -->
 							<ul class="nav">
-								<li><a class="active" href="#Details" data-toggle="tab">Details</a></li>
+								<li><a class="active" href="#Details" data-toggle="tab">Book Description</a></li>
 								<li><a href="#Reviews" data-toggle="tab">Reviews 3</a></li>
 							</ul>
 							<div class="tab-content">
