@@ -32,7 +32,7 @@ if ($amount == '' || $token == '' || $ref == '') {
         sms('Naseabooks', $ko[0]['phone'], $umess);
 
         sendmail('naseabooks.com', 'Book Purchase', $mess2, $from_name = 'Nasea Books', [$s[0]['authemail']], $reply_to = 'support@naseabooks.com', $reply_to_name = 'Nasea Books');
-        sendmail('naseabooks.com', 'Order status', $mess2, $from_name = 'Nasea Books', [$ko[0]['email']], $reply_to = 'support@naseabooks.com', $reply_to_name = 'Nasea Books');
+        sendmail('naseabooks.com', 'Order status', $umess2, $from_name = 'Nasea Books', [$ko[0]['email']], $reply_to = 'support@naseabooks.com', $reply_to_name = 'Nasea Books');
     }
     unset($_SESSION['ref']);
     unset($_SESSION['amount']);
