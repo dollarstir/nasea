@@ -440,7 +440,7 @@ begin('Welcome');
     <div class="social-group-area ptb-60">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
+                <!-- <div class="col-lg-6 col-md-6 col-12">
                     <div class="section-title-3">
                         <h3>Latest Tweets</h3>
                     </div>
@@ -455,8 +455,8 @@ begin('Welcome');
                             <a href="main/#">koparion</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
+                </div> -->
+                <div class="col-lg-12 col-md-12 col-12">
                     <div class="section-title-3">
                         <h3>Stay Connected</h3>
                     </div>
