@@ -37,7 +37,7 @@ $a = contactdetials();
 		</div>
 		<!-- breadcrumbs-area-end -->
 		<!-- googleMap-area-start -->
-		<div class="map-area mb-70">
+		<!-- <div class="map-area mb-70">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -45,7 +45,7 @@ $a = contactdetials();
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- googleMap-end -->
 		<!-- contact-area-start -->
 		<div class="contact-area mb-70">
