@@ -462,7 +462,7 @@ begin('Welcome');
                     </div>
                     <div class="link-follow">
                         <ul>
-                            <li><a href="<?php viewinfo('twitter'); ?>"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="<?php viewinfo('twitter'); ?>"><i class="fa fa-whatsapp"></i></a></li>
                             <!-- <li><a href="main/#"><i class="fa fa-google-plus"></i></a></li> -->
                             <li><a href="<?php viewinfo('facebook'); ?>"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="<?php viewinfo('linkedin'); ?>"><i class="fa fa-linkedin"></i></a></li>
