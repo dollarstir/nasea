@@ -515,6 +515,7 @@ function download()
         echo 'Nothing Download yet';
     } else {
         foreach ($d as $key) {
+            $coso = customfetch('books', [['id', '=', $key['bid']]]);
             if (strtotime($key['dateadded']) < strtotime(date('jS F, Y')) == true) {
                 $e = 'Yes';
             } else {
@@ -524,7 +525,7 @@ function download()
             <td>'.$key['bookname'].'</td>
             <td>'.$key['dateadded'].'</td>
             <td>'.$e.'</td>
-            <td><a class="btn btn-sqr" href="yolkassets/upload/" download><i
+            <td><a class="btn btn-sqr" href="yolkassets/upload/'.$coso[0]['link'].'" download><i
                         class="fa fa-cloud-download"></i>
                     Download File</a></td>
         </tr>';
