@@ -162,18 +162,7 @@ if (isset($_SESSION['user'])) {
                                                 <input type="text" placeholder="Apartment, suite, unit etc. (optional)">
                                             </div>
                                         </div> -->
-                                        <!-- <div class="col-lg-12 col-md-12 col-12">
-                                            <div class="checkout-form-list">
-                                                <label>Town / City <span class="required">*</span></label>
-                                                <input type="text" name="city" placeholder="Town / City" value="<?php echo isset($_SESSION['user']) ? $user['city'] : ''; ?>">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <div class="checkout-form-list">
-                                                <label>State / County <span class="required">*</span></label>										
-                                                <input type="text" name="state" placeholder="" value="<?php echo isset($_SESSION['user']) ? $user['state'] : ''; ?>">
-                                            </div>
-                                        </div> -->
+                                        
                                         <!-- <div class="col-lg-6 col-md-6 col-12">
                                             <div class="checkout-form-list">
                                                 <label>Postcode / Zip <span class="required">*</span></label>										
