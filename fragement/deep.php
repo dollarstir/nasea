@@ -525,7 +525,7 @@ function download()
             <td>'.$key['bookname'].'</td>
             <td>'.$key['dateadded'].'</td>
             <td>'.$e.'</td>
-            <td><a class="btn btn-sqr" href="yolkassets/upload/'.$coso[0]['link'].'" download><i
+            <td><a class="btn btn-sqr" href="yolkassets/upload/'.$key['bookname'].'" download><i
                         class="fa fa-cloud-download"></i>
                     Download File</a></td>
         </tr>';
