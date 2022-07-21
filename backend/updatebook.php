@@ -80,12 +80,13 @@ adminhead(' Edit books');
                                             <h6 class="card-subtitle mb-2">Book Back Cover</h6>
                                             <img src="yolkassets/upload/<?php getdata('books', $_GET['token'], 'back'); ?>"  style="width:100px;height:100px"/>
                                             <div class="input-group mb-3">
-                                                <input type="file" name="back" class="form-control" id="inputGroupFile04">
+                                                <input type="file" name="back" class="form-control" id="inputGroupFile04" value="<?php getdata('books', $_GET['token'], 'back'); ?>">
                                                 <label class="input-group-text" for="inputGroupFile04">Upload</label>
                                             </div>
                                             <h6 class="card-subtitle mb-2">Book File</h6>
+                                            
                                             <div class="input-group mb-3">
-                                                <input type="file" name="link" class="form-control" id="inputGroupFile05">
+                                                <input type="file" name="link" class="form-control" id="inputGroupFile05" value="<?php getdata('books', $_GET['token'], 'link'); ?>">
                                                 <label class="input-group-text" for="inputGroupFile05">Upload</label>
                                             </div>
                                             
