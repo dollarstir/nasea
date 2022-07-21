@@ -30,7 +30,7 @@ adminhead(' Edit books');
                                 <form class="editbook">
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleInputEmail1">Title</label>
-                                        <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Title" value="<?php getdata('books', $_GET['token'], 'title'); ?>>
+                                        <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Title" value="<?php getdata('books', $_GET['token'], 'title'); ?>">
                                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                     </div>
                                     <div class="white_card_body">
