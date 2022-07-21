@@ -61,12 +61,12 @@ $user = user();
 							<div class="row">
 								<div class="col-lg-3 col-md-4">
 									<div class="myaccount-tab-menu nav" role="tablist">
-										<a href="#dashboad" class="active" data-toggle="tab"><i
+										<a href="#dashboad" data-toggle="tab"><i
 												class="fa fa-dashboard"></i>
 											Dashboard</a>
 										<a href="#orders" data-toggle="tab"><i class="fa fa-cart-arrow-down"></i>
 											Orders</a>
-										<a href="#download" data-toggle="tab"><i class="fa fa-cloud-download"></i>
+										<a href="#download" class="active" data-toggle="tab"><i class="fa fa-cloud-download"></i>
 											Download</a>
 										<!-- <a href="#payment-method" data-toggle="tab"><i class="fa fa-credit-card"></i>
 											Payment
