@@ -84,7 +84,7 @@ $user = user();
 								<div class="col-lg-9 col-md-8">
 									<div class="tab-content" id="myaccountContent">
 										<!-- Single Tab Content Start -->
-										<div class="tab-pane fade show active" id="dashboad" role="tabpanel">
+										<div class="tab-pane fade" id="dashboad" role="tabpanel">
 											<div class="myaccount-content">
 												<h5>Dashboard</h5>
 												<div class="welcome">
@@ -130,7 +130,7 @@ $user = user();
 										<!-- Single Tab Content End -->
 
 										<!-- Single Tab Content Start -->
-										<div class="tab-pane fade" id="download" role="tabpanel">
+										<div class="tab-pane fade show active" id="download" role="tabpanel">
 											<div class="myaccount-content">
 												<h5>Downloads</h5>
 												<div class="myaccount-table table-responsive text-center">
