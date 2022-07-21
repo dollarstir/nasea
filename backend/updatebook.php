@@ -30,7 +30,7 @@ adminhead(' Edit books');
                                 <form class="editbook">
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleInputEmail1">Title</label>
-                                        <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Title">
+                                        <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Title" value="<?php getdata('books', $_GET['token'], 'title'); ?>>
                                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                     </div>
                                     <div class="white_card_body">
@@ -38,13 +38,13 @@ adminhead(' Edit books');
                                         <div class="input-group mb-3">
                                             <label class="input-group-text" for="inputGroupSelect01">Options</label>
                                             <select class="form-select" name="author" id="inputGroupSelect01">
-                                                <option value="">Choose Author</option>
+                                                <option value="<?php getdata('books', $_GET['token'], 'author'); ?>"><?php getdata('books', $_GET['token'], 'author'); ?></option>
                                                 <?php selectauthors(); ?>
                                             </select>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label" for="exampleInputEmail1">Book Description</label>
-                                            <input type="text" name="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Description">
+                                            <input type="text" name="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Description" value="<?php getdata('books', $_GET['token'], 'description'); ?>">
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
                                         <div class="white_card_body">
@@ -52,7 +52,9 @@ adminhead(' Edit books');
                                             <div class="input-group mb-3">
                                                 <label class="input-group-text" for="inputGroupSelect01">Options</label>
                                                 <select class="form-select" name="category" id="inputGroupSelect01">
-                                                    <option value="">Choose category</option>
+                                                    <?php $ccoo = customfetch('category', [['id', '=', getdata('books', $_GET['token'], 'category')]]);
+                                                    ?>
+                                                    <option value="<?php getdata('books', $_GET['token'], 'category'); ?>"><?php  echo $ccoo[0]['catname']; ?></option>
                                                    <?php selectcategory(); ?>
                                                     
                                                 </select>
