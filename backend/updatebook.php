@@ -49,7 +49,7 @@ adminhead(' Edit books');
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label" for="exampleInputEmail1">Book Description</label>
-                                            <input type="text" name="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Description" value="<?php getdata('books', $_GET['token'], 'description'); ?>">
+                                            <textarea  name="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Description" ><?php getdata('books', $_GET['token'], 'description'); ?></textarea>
                                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
                                         <div class="white_card_body">
