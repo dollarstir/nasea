@@ -1330,3 +1330,16 @@ function editauthor($id, $authname, $authnumber, $authemail)
         }
     }
 }
+
+function editbook($id, $title, $author, $description, $category, $price)
+{
+    if (empty(trim($title)) || empty(trim($description)) || empty(trim($price))) {
+        echo 'Author details cannot be empty';
+    } else {
+        if (update('books', ['title' => $title, 'author' => $author, 'description' => $description, 'category' => $category, 'price' => $price], ['id' => $id]) == 'success') {
+            echo 'Updated Successfully';
+        } else {
+            echo 'Failed to update';
+        }
+    }
+}
