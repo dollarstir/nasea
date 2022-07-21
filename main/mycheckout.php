@@ -118,13 +118,15 @@ if (isset($_SESSION['user'])) {
                                                 <label>Country <span class="required">*</span></label>
                                                 <select name="country">
                                                   <option value="<?php echo isset($_SESSION['user']) ? $user['country'] : ''; ?>"><?php echo isset($_SESSION['user']) ? $user['country'] : 'Select Country'; ?></option>
-                                                  <option value="saab">Algeria</option>
-                                                  <option value="mercedes">Afghanistan</option>
-                                                  <option value="audi">Ghana</option>
-                                                  <option value="audi2">Albania</option>
-                                                  <option value="audi3">Bahrain</option>
-                                                  <option value="audi4">Colombia</option>
-                                                  <option value="audi5">Dominican Republic</option>
+                                                  <option value="Algeria">Algeria</option>
+                                                  <option value="Afghanistan">Afghanistan</option>
+                                                  <option value="Ghana">Ghana</option>
+                                                  <option value="Albania">Albania</option>
+                                                  <option value="Bahrain">Bahrain</option>
+                                                  <option value="Colombia">Colombia</option>
+                                                  <option value="Dominican Republic">Dominican Republic</option>
+                                                  <option value="USA">United State of America</option>
+                                                  <option value="UK">United Kingdom</option>
                                                 </select> 										
                                             </div>
                                         </div>
