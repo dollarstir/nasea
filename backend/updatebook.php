@@ -84,7 +84,7 @@ adminhead(' Edit books');
                                                 <label class="input-group-text" for="inputGroupFile04">Upload</label>
                                             </div>
                                             <h6 class="card-subtitle mb-2">Book File</h6>
-                                            <iframe src="yolkassets/upload/<?php getdata('books', $_GET['token'], 'link'); ?>"  style="width:100%;height:100px"></iframe>
+                                            <iframe src="yolkassets/upload/<?php getdata('books', $_GET['token'], 'link'); ?>"  style="width:100%;height:200px"></iframe>
                                             <div class="input-group mb-3">
                                                 <input type="file" name="link" class="form-control" id="inputGroupFile05" value="<?php getdata('books', $_GET['token'], 'link'); ?>">
                                                 <label class="input-group-text" for="inputGroupFile05">Upload</label>
