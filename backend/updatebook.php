@@ -43,7 +43,7 @@ adminhead(' Edit books');
                                                     $suauth = customfetch('books', [['id', '=', $_GET['token']]]);
                                                     $ccoo = customfetch('authors', [['id', '=', $suauth[0]['author']]]);
                                                     ?>
-                                                <option value="<?php getdata('books', $_GET['token'], 'author'); ?>"><?php echo $ccoo; [0]['authname']; ?></option>
+                                                <option value="<?php getdata('books', $_GET['token'], 'author'); ?>"><?php echo $ccoo[0]['authname']; ?></option>
                                                 <?php selectauthors(); ?>
                                             </select>
                                         </div>
