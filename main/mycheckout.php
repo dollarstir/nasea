@@ -127,6 +127,7 @@ if (isset($_SESSION['user'])) {
                                                   <option value="Dominican Republic">Dominican Republic</option>
                                                   <option value="USA">United State of America</option>
                                                   <option value="UK">United Kingdom</option>
+                                                  <option value="Other">Other</option>
                                                 </select> 										
                                             </div>
                                         </div>
