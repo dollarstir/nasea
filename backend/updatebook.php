@@ -38,7 +38,12 @@ adminhead(' Edit books');
                                         <div class="input-group mb-3">
                                             <label class="input-group-text" for="inputGroupSelect01">Options</label>
                                             <select class="form-select" name="author" id="inputGroupSelect01">
-                                                <option value="<?php getdata('books', $_GET['token'], 'author'); ?>"><?php getdata('books', $_GET['token'], 'author'); ?></option>
+
+                                            <?php
+                                                    $suauth = customfetch('books', [['id', '=', $_GET['token']]]);
+                                                    $ccoo = customfetch('authors', [['id', '=', $suauth[0]['author']]]);
+                                                    ?>
+                                                <option value="<?php getdata('books', $_GET['token'], 'author'); ?>"><?php echo $ccoo; [0]['authname']; ?></option>
                                                 <?php selectauthors(); ?>
                                             </select>
                                         </div>
