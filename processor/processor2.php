@@ -25,7 +25,7 @@ require '../fragement/admin.php';
 
         case 'viewcart':
             initsession();
-            echo minicart();
+            echo minicart1();
             break;
         case 'carttotal':
             initsession();
@@ -145,7 +145,7 @@ require '../fragement/admin.php';
             commentpoem($postid, $cname, $cmail, $message);
             break;
         default:
-            exit("No Function");
+            exit('No Function');
 
         break;
     }
