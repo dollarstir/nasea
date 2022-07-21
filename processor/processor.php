@@ -260,6 +260,10 @@ require '../fragement/admin.php';
             extract($_POST);
             editauthor($id, $authname, $authnumber, $authemail);
             break;
+        case 'editauthor':
+            extract($_POST);
+            editbook($id, $title, $author, $description, $category, $price);
+            break;
         default:
 
         break;
