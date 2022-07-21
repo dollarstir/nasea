@@ -52,7 +52,9 @@ adminhead(' Edit books');
                                             <div class="input-group mb-3">
                                                 <label class="input-group-text" for="inputGroupSelect01">Options</label>
                                                 <select class="form-select" name="category" id="inputGroupSelect01">
-                                                    <?php $ccoo = customfetch('category', [['id', '=', getdata('books', $_GET['token'], 'category')]]);
+                                                    <?php
+                                                    $sucat = customfetch('books', [['id', '=', $_GET['token']]]);
+                                                    $ccoo = customfetch('category', [['id', '=', $sucat[0]['category']]]);
                                                     ?>
                                                     <option value="<?php getdata('books', $_GET['token'], 'category'); ?>"><?php  echo $ccoo[0]['catname']; ?></option>
                                                    <?php selectcategory(); ?>
