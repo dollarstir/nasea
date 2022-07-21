@@ -569,7 +569,7 @@ function topbars()
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-5 col-12">
-                    <--<div class="header-search">
+                    <!--<div class="header-search">
                         <form action="#">
                             <input type="text" placeholder="Search entire store here..." />
                             <a href="main/#"><i class="fa fa-search"></i></a>
