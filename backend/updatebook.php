@@ -71,7 +71,8 @@ adminhead(' Edit books');
                                                 <input type="number" name="price" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Price" value="<?php getdata('books', $_GET['token'], 'price'); ?>">
                                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                             </div>
-                                            <h6 class="card-subtitle mb-2">Book Couver Picture</h6>
+                                            <h6 class="card-subtitle mb-2">Book Cover Picture</h6>
+                                            <img src="yolkassets/upload/<?php getdata('books', $_GET['token'], 'front'); ?>"  style="width:100px;height:100px"/>
                                             <div class="input-group mb-3">
                                                 <input type="file" name="front" class="form-control" id="inputGroupFile03">
                                                 <label class="input-group-text" for="inputGroupFile03">Upload</label>
