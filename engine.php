@@ -337,5 +337,12 @@ $router = new Router([
             return Viewer::view('backend/myLogin.php', $context);
         }
     ),
+
+    new Route(
+        '/editcat',
+        function ($context) {
+            return Viewer::view('backend/updatecat.php', $context);
+        }
+    ),
 ]);
 $router->launch();
