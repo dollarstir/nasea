@@ -1,6 +1,6 @@
 <?php involve('admin');
 
-adminhead('Categories');
+adminhead('Edit Category');
 
 ?>
 
@@ -21,7 +21,7 @@ adminhead('Categories');
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title">
-                                        <h3 class="m-0">ADD CATEGORY</h3>
+                                        <h3 class="m-0">EDIT CATEGORY</h3>
                                     </div>
                                 </div>
                             </div>
