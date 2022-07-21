@@ -790,7 +790,8 @@ function authors()
         <td>'.$row['authnumber'].'</td>
         <td>'.$row['authemail'].'</td>
         
-         <td><button id="'.$row['id'].'"  class="btn btn-danger delauthor"><i class="fa fa-trash"></i></a></button></td>
+         <td><a href="editauthor?token='.$row['id'].'"  class="btn btn-primary"><i class="fa fa-edit"></i></a>
+         <button id="'.$row['id'].'"  class="btn btn-danger delauthor"><i class="fa fa-trash"></i></a></button></td>
     </tr>';
     }
 }
