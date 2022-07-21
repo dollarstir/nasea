@@ -344,5 +344,12 @@ $router = new Router([
             return Viewer::view('backend/updatecat.php', $context);
         }
     ),
+
+    new Route(
+        '/editauthor',
+        function ($context) {
+            return Viewer::view('backend/updateauthor.php', $context);
+        }
+    ),
 ]);
 $router->launch();
