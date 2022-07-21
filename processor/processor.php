@@ -255,6 +255,11 @@ require '../fragement/admin.php';
             extract($_POST);
             editcategory($id, $catname);
             break;
+
+        case 'editauthor':
+            extract($_POST);
+            editauthor($id, $authname, $authnumber, $authemail);
+            break;
         default:
 
         break;

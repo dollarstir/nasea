@@ -1317,3 +1317,15 @@ function editcategory($id, $catname)
         }
     }
 }
+function editauthor($id, $authname, $authnumber, $authemail)
+{
+    if (empty(trim($authname)) || empty(trim($authnumber)) || empty(trim($authemail))) {
+        echo 'Author details cannot be empty';
+    } else {
+        if (update('authors', ['authname' => $authname, 'authnumber' => $authnumber, 'authemail'=> $authemail], ['id' => $id]) == 'success') {
+            echo 'Updated Successfully';
+        } else {
+            echo 'Failed to update';
+        }
+    }
+}
