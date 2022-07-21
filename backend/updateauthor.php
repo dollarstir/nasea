@@ -30,7 +30,7 @@ adminhead('Edit Author');
                                 <form class="addauthor">
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleInputEmail1">Name of Author</label>
-                                        <input type="text" name="authname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name of Author">
+                                        <input type="text" name="authname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name of Author" value="<?php getdata('authors', $_GET['token'], 'authname'); ?>">
                                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                     </div>
                                     <div class="mb-3">
