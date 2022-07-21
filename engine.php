@@ -351,5 +351,12 @@ $router = new Router([
             return Viewer::view('backend/updateauthor.php', $context);
         }
     ),
+
+    new Route(
+        '/editbook',
+        function ($context) {
+            return Viewer::view('backend/updatebook.php', $context);
+        }
+    ),
 ]);
 $router->launch();
