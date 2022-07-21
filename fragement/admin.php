@@ -1303,3 +1303,16 @@ function getdata($table, $cp, $data)
 
     echo $d[0][$data];
 }
+
+function editcategory($id, $catname)
+{
+    if (empty(trim($catname))) {
+        echo 'Category name cannot be empty';
+    } else {
+        if (update('category', ['catname' => $catname], ['id' => $id]) == 'success') {
+            echo 'Updated Successfully';
+        } else {
+            echo 'Failed to update';
+        }
+    }
+}

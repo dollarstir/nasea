@@ -250,6 +250,11 @@ require '../fragement/admin.php';
             extract($_POST);
             editprofile($id, $name, $email, $phone);
             break;
+
+        case 'editcategory':
+            extract($_POST);
+            editcategory($id, $catname);
+            break;
         default:
 
         break;
