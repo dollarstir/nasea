@@ -27,7 +27,7 @@ adminhead('Edit Category');
                             </div>
                             <div class="white_card_body">
                                 <!-- <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</h6> -->
-                                <form  class="editcateory">
+                                <form  class="editcategory">
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleInputEmail1">Name of Category</label>
                                         <input type="text" name="catname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name of category" value="<?php getdata('category', $_GET['token'], 'catname'); ?>">
