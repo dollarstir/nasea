@@ -739,7 +739,7 @@ function categories()
         <th scope="row"> <a href="" class="question_content"> '.$row['id'].'</a></th>
         <td>'.$row['catname'].'</td>
        
-         <td><button id="'.$row['id'].'"  class="btn btn-danger delcategory"><i class="fa fa-trash"></i></button>td> 
+         <td><button id="'.$row['id'].'"  class="btn btn-danger delcategory"><i class="fa fa-trash"></i></button></td> 
          <td><a href="editcart?token='.$row['id'].'"  class="btn btn-primary"><i class="fa fa-edit"></i></a></td> 
     </tr>';
     }
