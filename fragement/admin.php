@@ -1296,3 +1296,10 @@ function editprofile($id, $name, $email, $phone)
         }
     }
 }
+
+function getdata($table, $cp, $data)
+{
+    $d = customfetch($table, [['id', '=', $cp]]);
+
+    echo $d[0][$data];
+}
