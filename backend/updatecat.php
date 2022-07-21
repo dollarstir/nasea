@@ -31,6 +31,7 @@ adminhead('Edit Category');
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleInputEmail1">Name of Category</label>
                                         <input type="text" name="catname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name of category" value="<?php getdata('category', $_GET['token'], 'catname'); ?>">
+                                        <input type="text" name="catname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name of category" value="<?php getdata('category', $_GET['token'], 'id'); ?>">
                                         
                                     </div>
                                     <!-- <div class="mb-3">
