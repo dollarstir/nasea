@@ -81,13 +81,13 @@ $(function(){
               },
             }).then(function (result) {
               // window.location.reload();
-              $("#cartcount").load('processor/processor2.php?action=countcart');
-              $("#minicart").load('processor/processor2.php?action=viewcart');
-              $("#cartot").load('processor/processor2.php?action=carttotal');
-              $("#vcart").load('processor/processor2.php?action=viewmaincart');
-              $("#checkcart").load('processor/processor2.php?action=checkoutcart');
-              $("#mku").load('processor/processor2.php?action=cartsubtotal');
-              $("#ordtt").load('processor/processor2.php?action=carttotal');
+              $("#cartcount").load('../processor/processor2.php?action=countcart');
+              $("#minicart").load('../processor/processor2.php?action=viewcart');
+              $("#cartot").load('../processor/processor2.php?action=carttotal');
+              $("#vcart").load('../processor/processor2.php?action=viewmaincart');
+              $("#checkcart").load('../processor/processor2.php?action=checkoutcart');
+              $("#mku").load('../processor/processor2.php?action=cartsubtotal');
+              $("#ordtt").load('../processor/processor2.php?action=carttotal');
               swal.close();
               
             });
