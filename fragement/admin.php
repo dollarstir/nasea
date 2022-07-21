@@ -867,7 +867,8 @@ function booklist()
         <td><img src="yolkassets/upload/'.$row['front'].'"  style="width:100px;height:150px;"/></td>
         <td><img src="yolkassets/upload/'.$row['back'].'"  style="width:100px;height:150px;"/></td>
 
-        <td><button id="'.$row['id'].'"  class="btn btn-danger delbook"><i class="fa fa-trash"></i></a></button></td>
+        <td><a href="editbook?token='.$row['id'].'"  class="btn btn-primary"><i class="fa fa-edit"></i></a>
+        <button id="'.$row['id'].'"  class="btn btn-danger delbook"><i class="fa fa-trash"></i></a></button></td>
     </tr>';
     }
 }
@@ -1322,7 +1323,7 @@ function editauthor($id, $authname, $authnumber, $authemail)
     if (empty(trim($authname)) || empty(trim($authnumber)) || empty(trim($authemail))) {
         echo 'Author details cannot be empty';
     } else {
-        if (update('authors', ['authname' => $authname, 'authnumber' => $authnumber, 'authemail'=> $authemail], ['id' => $id]) == 'success') {
+        if (update('authors', ['authname' => $authname, 'authnumber' => $authnumber, 'authemail' => $authemail], ['id' => $id]) == 'success') {
             echo 'Updated Successfully';
         } else {
             echo 'Failed to update';
