@@ -570,10 +570,10 @@ function topbars()
             <div class="row">
                 <div class="col-lg-3 col-md-5 col-12">
                     <div class="header-search">
-                        <form action="#">
-                            <input type="text" placeholder="Search entire store here..." />
-                            <a href="books"><i class="fa fa-search"></i></a>
-                        </form>
+                    <form action="search">
+                    <input type="text" placeholder="Search book by name or price" name="keyword" />
+                    <button type="submit" class="mybtnsearch"><i class="fa fa-search"></i></button>
+                </form>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-4 col-12">
