@@ -54,6 +54,43 @@
 /* google-font */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800%7CRufina:400,700');
 
+
+.mybtnsearch{
+    background-clip: border-box;
+background-color: rgb(240, 124, 41);
+background-image: none;
+background-origin: padding-box;
+background-position-x: 0px;
+background-position-y: 0px;
+background-repeat: repeat;
+background-size: auto;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 5px;
+border-top-left-radius: 0px;
+border-top-right-radius: 5px;
+box-sizing: border-box;
+color: rgb(255, 255, 255);
+display: block;
+font-family: "Open Sans", sans-serif;
+font-size: 18px;
+font-weight: 400;
+height: 42px;
+line-height: 40px;
+position: absolute;
+right: 0px;
+text-align: center;
+text-decoration-color: rgb(255, 255, 255);
+text-decoration-line: none;
+text-decoration-style: solid;
+text-decoration-thickness: auto;
+top: 0px;
+transition-delay: 0s;
+transition-duration: 0.3s;
+transition-property: all;
+transition-timing-function: ease;
+width: 42px;
+}
+
 html,
 body {
     height: 100%;

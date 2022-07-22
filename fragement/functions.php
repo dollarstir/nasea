@@ -1219,7 +1219,7 @@ function topbars1()
                     <div class="header-search">
                         <form action="../search">
                             <input type="text" placeholder="Search book by name or price" name="keyword" />
-                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <button type="submit" class="mybtnsearch"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
                 </div>
