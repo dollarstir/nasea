@@ -436,10 +436,10 @@ echo '<!doctype html>
 							<?php
 
                             if (isset($_GET['page'])) {
-                                echo   mypagecount('sub', 10, $_GET['page']);
+                                echo   mycustomepagecount1($context['id'], 'sub', 20, $_GET['page']);
                             } else {
-                                echo mypagecount('sub', 10, 1);
-                            } ?>
+                                echo mycustomepagecount1($context['id'], 'sub', 20, 1);
+                            }?>
 								
 							</ul>
 						</div>
