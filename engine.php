@@ -121,6 +121,13 @@ $router = new Router([
         }
     ),
 
+    new Route(
+        '/search',
+        function ($context) {
+            return Viewer::view('main/bookquery.php', $context);
+        }
+    ),
+
     // admin routes
 
     new Route(
