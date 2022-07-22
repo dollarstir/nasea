@@ -120,10 +120,10 @@ begin('Search Result');
 								
 							<?php
 
-                            if (isset($_GET['page'])) {
-                                bookspage('main', 10, $_GET['page']);
+                            if (isset($_GET['keyword'])) {
+                                bookfilterpage('main', 10, $_GET['keyword']);
                             } else {
-                                bookspage('main', 10, 1);
+                                bookpage('main', 10, 1);
                             }
 
 ?>
