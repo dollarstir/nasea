@@ -856,7 +856,7 @@ function bycatpage($id, $type, $limit = '', $page = 1)
                 </div>
                 <div class="add-to-link">
                     <ul>
-                        <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                        <li><a href="product/'.$row['id'].'" title="Details"><i class="fa fa-external-link"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -893,7 +893,7 @@ function bycatpage($id, $type, $limit = '', $page = 1)
                         <li><a href="#"><i class="fa fa-star"></i></a></li>
                     </ul>
                 </div>
-                <h4><a href="product/'.$row['id'].'">'.$row['title'].'</a></h4>
+                <h4><a href="../product/'.$row['id'].'">'.$row['title'].'</a></h4>
                 <div class="product-price">
                     <ul>
                         <li>&#8373; '.$row['price'].'</li>
@@ -906,7 +906,7 @@ function bycatpage($id, $type, $limit = '', $page = 1)
                 </div>
                 <div class="add-to-link">
                     <ul>
-                        <li><a href="" title="Details"><i class="fa fa-external-link"></i></a></li>
+                        <li><a href="../product/'.$row['id'].'" title="Details"><i class="fa fa-external-link"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -969,7 +969,7 @@ function byauthpage($id, $type, $limit = '', $page = 1)
                 </div>
                 <div class="add-to-link">
                     <ul>
-                        <li><a href="product-details.html" title="Details"><i class="fa fa-external-link"></i></a></li>
+                        <li><a href="product/'.$row['id'].'" title="Details"><i class="fa fa-external-link"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -1006,7 +1006,7 @@ function byauthpage($id, $type, $limit = '', $page = 1)
                         <li><a href="#"><i class="fa fa-star"></i></a></li>
                     </ul>
                 </div>
-                <h4><a href="product/'.$row['id'].'">'.$row['title'].'</a></h4>
+                <h4><a href="../product/'.$row['id'].'">'.$row['title'].'</a></h4>
                 <div class="product-price">
                     <ul>
                         <li>&#8373; '.$row['price'].'</li>
@@ -1019,7 +1019,7 @@ function byauthpage($id, $type, $limit = '', $page = 1)
                 </div>
                 <div class="add-to-link">
                     <ul>
-                        <li><a href="" title="Details"><i class="fa fa-external-link"></i></a></li>
+                        <li><a href="../product/'.$row['id'].'" title="Details"><i class="fa fa-external-link"></i></a></li>
                     </ul>
                 </div>
             </div>
