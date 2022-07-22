@@ -1219,7 +1219,7 @@ function topbars1()
                     <div class="header-search">
                         <form action="#">
                             <input type="text" placeholder="Search entire store here..." />
-                            <a href="../books"><i class="fa fa-search"></i></a>
+                            <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
                 </div>
