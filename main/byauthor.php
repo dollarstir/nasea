@@ -174,11 +174,11 @@ echo '<!doctype html>
 								
 							<?php
 
-                            if (isset($_GET['page'])) {
-                                bookspage('sub', 10, $_GET['page']);
-                            } else {
-                                bookspage('sub', 10, 1);
-                            }
+                                if (isset($_GET['page'])) {
+                                    byauthpage($context['id'], 'sub', 20, $_GET['page']);
+                                } else {
+                                    byauthpage($context['id'], 'sub', 20, 1);
+                                }
 
 ?>
 							</div>
