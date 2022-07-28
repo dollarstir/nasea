@@ -9,7 +9,7 @@ echo '<!doctype html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title> Book by '.$autod[0]['authname'].' </title>
+        <title> Books by '.$autod[0]['authname'].' </title>
         <meta name="description" content="Nasea books is one of the Best E-book stores in the world">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
@@ -129,7 +129,7 @@ echo '<!doctype html>
 						<a href="#"><img src="https://htmldemo.net/koparion/koparion/img/banner/32.jpg" alt="banner" /></a>
 					</div> -->
 					<div class="section-title-5 mb-30">
-						<h2>Book By <?php echo $autod[0]['authname']; ?></h2>
+						<h2>Books By <?php echo $autod[0]['authname']; ?></h2>
 					</div>
 					<!-- <div class="toolbar mb-30">
 						<div class="shop-tab">
