@@ -364,6 +364,21 @@ function scripts()
     <!-- main js -->
     <script src="main/js/main.js"></script>
     <script src="processor/processor.js"></script>
+
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src="https://embed.tawk.to/62e3d52b54f06e12d88bed32/1g94vhcuj";
+s1.charset="UTF-8;
+s1.setAttribute("crossorigin","*");
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
     ';
 }
 
@@ -519,6 +534,20 @@ function scripts2()
     <!-- main js -->
     <script src="../main/js/main.js"></script>
     <script src="../processor/processor2.js?ver='.time().'"></script>
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src="https://embed.tawk.to/62e3d52b54f06e12d88bed32/1g94vhcuj";
+s1.charset="UTF-8;
+s1.setAttribute("crossorigin","*");
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
     ';
 }
 function topbars()
