@@ -754,6 +754,16 @@ function deletecategory($id)
     }
 }
 
+// delete users
+
+function deletecustomer($id)
+{
+    if ($del = delete('users', [['id', '=', $id]]) == 'deleted') {
+        echo 'deleted';
+    } else {
+        echo 'Failed to delete Category';
+    }
+}
 // add author
 function addauthor($authname, $authnumber, $authemail)
 {
