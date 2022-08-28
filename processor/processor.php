@@ -152,6 +152,12 @@ require '../fragement/admin.php';
 
             break;
 
+        case 'deletecustomer':
+            extract($_POST);
+
+            deletecustomer($id);
+
+            break;
         case 'addauthor':
             extract($_POST);
             addauthor($authname, $authnumner, $authemail);

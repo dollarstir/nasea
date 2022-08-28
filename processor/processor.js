@@ -747,6 +747,32 @@ $(document).on('click','.delcategory',function(e){
 });
 
 
+
+
+
+// delete users 
+
+// 
+$(document).on('click','.delcustomer',function(e){
+
+  e.preventDefault();
+  // before();
+  var id = $(this).attr('id');
+  var staff = {
+      url: 'processor/processor.php?action=deletecustomer',
+      type: 'post',
+      data: {"id": id},
+      // cache: false,
+      // contentType: false,
+      // processData: false,
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
+
 // add authors
 $('.addauthor').submit(function(e){
 
