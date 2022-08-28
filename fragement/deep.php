@@ -300,6 +300,7 @@ function user()
 // checking if users is logged in
 function orderregister($fname, $lname, $email, $phone, $country, $password)
 {
+    error_reporting(0);
     if ($fname == '' || $lname == '' || $email == '' || $phone == '' || $country == '') {
         echo 'Áll fields are required';
     } else {
