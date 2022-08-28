@@ -713,7 +713,7 @@ function customers()
         <td>'.$row['country'].'</td>
         <td>'.$row['address'].'</td>
         <td>'.$row['city'].'</td>
-        <!-- <td><a href="backend/#" class="status_btn">Active</a></td> -->
+         <td><button id="'.$row['id'].'"  class="btn btn-danger delcustomer"><i class="fa fa-trash"></i></button></td>
     </tr>';
     }
 }
