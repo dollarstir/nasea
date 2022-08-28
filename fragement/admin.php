@@ -144,14 +144,8 @@ function adminscript()
     <!-- data-table js -->
     <script src="backend/default/files/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
     <script src="backend/default/files/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="backend/default/files/assets/pages/data-table/js/jszip.min.js"></script>
-    <script src="backend/default/files/assets/pages/data-table/js/pdfmake.min.js"></script>
-    <script src="backend/default/files/assets/pages/data-table/js/vfs_fonts.js"></script>
-    <script src="backend/default/files/assets/pages/data-table/extensions/buttons/js/dataTables.buttons.min.js"></script>
-    <script src="backend/default/files/assets/pages/data-table/extensions/buttons/js/buttons.flash.min.js"></script>
-    <script src="backend/default/files/assets/pages/data-table/extensions/buttons/js/jszip.min.js"></script>
-    <script src="backend/default/files/assets/pages/data-table/extensions/buttons/js/vfs_fonts.js"></script>
-    <script src="backend/default/files/assets/pages/data-table/extensions/buttons/js/buttons.colVis.min.js"></script>
+   
+    
     <script src="backend/default/files/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
     <script src="backend/default/files/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
     
