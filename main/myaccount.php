@@ -3,6 +3,7 @@
 involve('functions');
 
 begin('Dashborad');
+mainchecker('user', 'home');
 $user = user();
 
  ?>
