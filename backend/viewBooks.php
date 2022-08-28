@@ -33,7 +33,7 @@ adminhead(' View books');
                                                 <div class="search_inner">
                                                     <form Active="#" class="">
                                                         <div class="search_field">
-                                                            <input type="text" placeholder="Search content here...">
+                                                            <input id="myInput" type="text" placeholder="Search content here...">
                                                         </div>
                                                         <button type="submit"> <i class="ti-search"></i> </button>
                                                     </form>
@@ -60,7 +60,7 @@ adminhead(' View books');
 
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody id="myTable">
                                                 <?php booklist(); ?>
                                                 
                                             </tbody>
