@@ -303,7 +303,7 @@ function orderregister($fname, $lname, $email, $phone, $country, $password)
     if ($fname == '' || $lname == '' || $email == '' || $phone == '' || $country == '') {
         echo 'Áll fields are required';
     } else {
-        if (trim($password, '') != '') {
+        if (trim($password) != '') {
             $ck = authenticate('users', [['email', '=', $email]]);
             if ($ck == 'success') {
                 echo 'User Account Already exist . login instead';
@@ -320,7 +320,7 @@ function orderregister($fname, $lname, $email, $phone, $country, $password)
                 $add = insert('users', $detail);
 
                 if ($add == 'success') {
-                    if (loginauth('users', 'user', [['email', '=', $login], ['password', '=', md5($password)]], 'AND') == 'success') {
+                    if (loginauth('users', 'user', [['email', '=', $email], ['password', '=', md5($password)]], 'AND') == 'success') {
                         orders();
                     } else {
                         echo 'Failed to login';
