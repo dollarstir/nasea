@@ -39,9 +39,9 @@ adminhead(' View books');
                                                     </form>
                                                 </div>
                                             </div>
-                                            <div class="add_button ms-2">
+                                            <!-- <div class="add_button ms-2">
                                                 <a href="backend/#" data-bs-toggle="modal" data-bs-target="#addcategory" class="btn_1">Add New</a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="QA_table mb_30">
