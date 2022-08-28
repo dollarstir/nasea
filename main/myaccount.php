@@ -4,8 +4,9 @@ involve('functions');
 
 begin('Dashborad');
 mainchecker('user', 'login');
-$user = user();
-
+if (isset($_SESSION['user'])) {
+    $user = user();
+}
  ?>
 
 <body class="cart">
