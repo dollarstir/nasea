@@ -87,7 +87,7 @@ function adminscript()
 
     <script src="backend/js/popper1.min.js"></script>
 
-    <script src="backend/js/bootstrap.min.js.php"></script>
+    
 
     <script src="backend/js/metisMenu.js"></script>
 
