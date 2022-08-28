@@ -75,7 +75,11 @@ class Auth extends database
             $row = $ft->rowCount();
             $logs = $ft->fetch();
             if ($row > 0) {
-                session_start();
+                // session_start();
+                if (!isset($_SESSION)) {
+                    session_start();
+                }
+
                 $_SESSION[$sessionvariable] = $logs;
                 $msg = 'success';
             } else {
