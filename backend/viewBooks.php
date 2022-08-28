@@ -33,9 +33,9 @@ adminhead(' View books');
                                                 <div class="search_inner">
                                                     <form Active="#" class="">
                                                         <div class="search_field">
-                                                            <input id="myInput" type="text" placeholder="Search content here...">
+                                                            <input id="myInput" type="text" placeholder="Search book here...">
                                                         </div>
-                                                        <button type="submit"> <i class="ti-search"></i> </button>
+                                                        <!-- <button type="submit"> <i class="ti-search"></i> </button> -->
                                                     </form>
                                                 </div>
                                             </div>
