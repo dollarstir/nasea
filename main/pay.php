@@ -193,14 +193,17 @@ echo '<!doctype html>
                                                 </div>
                                             </div>
                                             <div class="order-button-payment">
-                                                <?php echo Yolkpay::handler();
+                                                <?php
+
+                                                 $yolkpay = new Yolkpay();
+                                                 echo $yolkpay->handler();
                                                     $d = user();
                                                     $name = explode(' ', $d['name']);
                                                     $fname = $name[0];
                                                     $lname = $name[1];
 
-                                                echo Yolkpay::payscript($fname, $lname, $d['email'], $d['phone'], paytotal($context['token']), '', $context['token']);
-                                                echo Yolkpay::pay('Pay Now');
+                                                echo $yolkpay->payscript($fname, $lname, $d['email'], $d['phone'], paytotal($context['token']), '', $context['token']);
+                                                echo $yolkpay->pay('Pay Now');
                                                 ?>
                                             </div>
                                         </div>
