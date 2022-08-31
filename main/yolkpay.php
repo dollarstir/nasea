@@ -63,7 +63,7 @@ function payWithPaystack() {
                     {
                         display_name: "Mobile Number",
                         variable_name: "mobile_number",
-                        value:"+233556676471"
+                        value:"'.$phone.'"
                     }
                     
             
