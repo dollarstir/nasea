@@ -113,7 +113,7 @@ begin('Welcome');
 					<div class="tab-content">
 						<div class="tab-pane fade show active" id="th">
 							<div class="row">
-								<?php books(12);
+								<?php books(4);
 
                                     ?>
 							</div>
