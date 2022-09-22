@@ -758,7 +758,7 @@ function recentpoem()
                 </div>-->
             </div>
             <div class="post-content">
-                <h3><a href="">'.$key['title'].'</a></h3>
+                <h3><a href="poem/'.$key['id'].'">'.$key['title'].'</a></h3>
                <!-- <span class="meta-author"> Demo koparion </span>-->
                 <p>'.substr($key['description'], 0, 100).'....</p>
             </div>
